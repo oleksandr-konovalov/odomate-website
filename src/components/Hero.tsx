@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/hooks/useLanguage';
 import { ExternalLink } from 'lucide-react';
 import logo from '@/assets/logo.png';
-import appMockup from '@/assets/app-mockup.png';
+import appMockup from '@/assets/app-mockup-updated.png';
 import appleBadge from '@/assets/apple-badge.png';
 import googleBadge from '@/assets/google-badge.png';
 
@@ -15,7 +15,7 @@ export const Hero = () => {
         <div className="text-center lg:text-left space-y-8">
           {/* Brand Line */}
           <div className="flex items-center justify-center lg:justify-start gap-4 mb-6">
-            <img src={logo} alt="Odomate" className="h-12 w-12 animate-pulse-glow" />
+            <img src={logo} alt="Odomate" className="h-16 w-16 rounded-full animate-pulse-glow" />
             <div>
               <h2 className="text-2xl font-bold brand-gradient">Odomate</h2>
               <p className="text-sm text-muted-foreground italic">"Your car. Your body."</p>

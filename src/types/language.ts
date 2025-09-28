@@ -56,6 +56,22 @@ export interface Translations {
     privacy: string;
     terms: string;
   };
+  privacy: {
+    title: string;
+    lastUpdated: string;
+    content: {
+      heading: string;
+      text: string;
+    }[];
+  };
+  terms: {
+    title: string;
+    lastUpdated: string;
+    content: {
+      heading: string;
+      text: string;
+    }[];
+  };
   gdpr: {
     text: string;
     accept: string;

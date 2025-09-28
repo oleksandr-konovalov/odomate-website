@@ -54,7 +54,7 @@ export const translations: Record<Language, Translations> = {
         },
         {
           question: 'What makes the AI predictions accurate?',
-          answer: 'Our AI analyzes your driving patterns, vehicle history, manufacturer data, and millions of data points to provide highly accurate maintenance predictions.',
+          answer: 'When you add a new vehicle, our AI instantly analyzes all vehicle data (model, year, configuration, engine, etc.), considers online reviews and official manufacturer recommendations to determine optimal service intervals for every component.',
         },
         {
           question: 'Can I use it for multiple vehicles?',
@@ -77,6 +77,58 @@ export const translations: Record<Language, Translations> = {
     footer: {
       privacy: 'Privacy Policy',
       terms: 'Terms of Service',
+    },
+    privacy: {
+      title: 'Privacy Policy',
+      lastUpdated: 'Last updated: September 28, 2025',
+      content: [
+        {
+          heading: 'Information We Collect',
+          text: 'We collect information you provide directly to us, such as when you create an account, use our services, or contact us for support.'
+        },
+        {
+          heading: 'How We Use Your Information',
+          text: 'We use the information we collect to provide, maintain, and improve our services, process transactions, and communicate with you.'
+        },
+        {
+          heading: 'Information Sharing',
+          text: 'We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except as described in this policy.'
+        },
+        {
+          heading: 'Data Security',
+          text: 'We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.'
+        },
+        {
+          heading: 'Contact Us',
+          text: 'If you have any questions about this Privacy Policy, please contact us at privacy@odomate.com.'
+        }
+      ]
+    },
+    terms: {
+      title: 'Terms of Service',
+      lastUpdated: 'Last updated: September 28, 2025',
+      content: [
+        {
+          heading: 'Acceptance of Terms',
+          text: 'By accessing and using Odomate, you accept and agree to be bound by the terms and provision of this agreement.'
+        },
+        {
+          heading: 'Use License',
+          text: 'Permission is granted to temporarily use Odomate for personal, non-commercial transitory viewing only.'
+        },
+        {
+          heading: 'Disclaimer',
+          text: 'The materials on Odomate are provided on an \'as is\' basis. Odomate makes no warranties, expressed or implied.'
+        },
+        {
+          heading: 'Limitations',
+          text: 'In no event shall Odomate or its suppliers be liable for any damages arising out of the use or inability to use the materials on Odomate.'
+        },
+        {
+          heading: 'Contact Us',
+          text: 'If you have any questions about these Terms, please contact us at legal@odomate.com.'
+        }
+      ]
     },
     gdpr: {
       text: 'We use analytics to improve your experience. By continuing to use our website, you accept our data processing practices.',
@@ -123,7 +175,7 @@ export const translations: Record<Language, Translations> = {
         },
         {
           title: 'Семейная подписка',
-          description: 'Управляйте до 3 автомобилями с семейным планом или используйте личную подписку на один автомобиль.',
+          description: 'Управляйте до 3 автомобилей с семейным планом или используйте личную подписку на один автомобиль.',
         },
       ],
     },
@@ -136,11 +188,11 @@ export const translations: Record<Language, Translations> = {
         },
         {
           question: 'Что делает ИИ-прогнозы точными?',
-          answer: 'Наш ИИ анализирует ваши привычки вождения, историю автомобиля, данные производителя и миллионы точек данных.',
+          answer: 'При добавлении нового автомобиля наш ИИ мгновенно анализирует все данные о машине (модель, год, комплектацию, двигатель и т.д.), учитывает отзывы в интернете и официальные рекомендации производителя для определения оптимальных интервалов обслуживания каждого компонента.',
         },
         {
           question: 'Можно ли использовать для нескольких автомобилей?',
-          answer: 'Да! Личный план покрывает 1 автомобиль, а семейная подписка позволяет управлять до 3 автомобилями.',
+          answer: 'Да! Личный план покрывает 1 автомобиль, а семейная подписка позволяет управлять до 3 автомобилей.',
         },
         {
           question: 'Безопасны ли мои данные?',
@@ -159,6 +211,58 @@ export const translations: Record<Language, Translations> = {
     footer: {
       privacy: 'Политика конфиденциальности',
       terms: 'Условия использования',
+    },
+    privacy: {
+      title: 'Политика конфиденциальности',
+      lastUpdated: 'Последнее обновление: 28 сентября 2025',
+      content: [
+        {
+          heading: 'Информация, которую мы собираем',
+          text: 'Мы собираем информацию, которую вы предоставляете нам напрямую, например, когда создаете аккаунт, используете наши услуги или обращаетесь в службу поддержки.'
+        },
+        {
+          heading: 'Как мы используем вашу информацию',
+          text: 'Мы используем собранную информацию для предоставления, поддержания и улучшения наших услуг, обработки транзакций и общения с вами.'
+        },
+        {
+          heading: 'Передача информации',
+          text: 'Мы не продаем, не обмениваем и не передаем вашу личную информацию третьим лицам без вашего согласия, за исключением случаев, описанных в этой политике.'
+        },
+        {
+          heading: 'Безопасность данных',
+          text: 'Мы применяем соответствующие меры безопасности для защиты вашей личной информации от несанкционированного доступа, изменения, раскрытия или уничтожения.'
+        },
+        {
+          heading: 'Свяжитесь с нами',
+          text: 'Если у вас есть вопросы по этой Политике конфиденциальности, свяжитесь с нами по адресу privacy@odomate.com.'
+        }
+      ]
+    },
+    terms: {
+      title: 'Условия использования',
+      lastUpdated: 'Последнее обновление: 28 сентября 2025',
+      content: [
+        {
+          heading: 'Принятие условий',
+          text: 'Получая доступ и используя Odomate, вы принимаете и соглашаетесь соблюдать условия и положения этого соглашения.'
+        },
+        {
+          heading: 'Лицензия на использование',
+          text: 'Разрешается временное использование Odomate только для личного, некоммерческого просмотра.'
+        },
+        {
+          heading: 'Отказ от ответственности',
+          text: 'Материалы на Odomate предоставляются "как есть". Odomate не дает никаких гарантий, явных или подразумеваемых.'
+        },
+        {
+          heading: 'Ограничения',
+          text: 'Ни при каких обстоятельствах Odomate или его поставщики не несут ответственности за любой ущерб, возникший в результате использования или невозможности использования материалов на Odomate.'
+        },
+        {
+          heading: 'Свяжитесь с нами',
+          text: 'Если у вас есть вопросы по этим Условиям, свяжитесь с нами по адресу legal@odomate.com.'
+        }
+      ]
     },
     gdpr: {
       text: 'Мы используем аналитику для улучшения вашего опыта. Продолжая использовать наш сайт, вы принимаете наши практики обработки данных.',
@@ -218,7 +322,7 @@ export const translations: Record<Language, Translations> = {
         },
         {
           question: 'Qu\'est-ce qui rend les prédictions IA précises?',
-          answer: 'Notre IA analyse vos habitudes de conduite, l\'historique du véhicule, les données du fabricant et des millions de points de données.',
+          answer: 'Lorsque vous ajoutez un nouveau véhicule, notre IA analyse instantanément toutes les données du véhicule (modèle, année, configuration, moteur, etc.), considère les avis en ligne et les recommandations officielles du fabricant pour déterminer les intervalles de service optimaux pour chaque composant.',
         },
         {
           question: 'Puis-je l\'utiliser pour plusieurs véhicules?',
@@ -241,6 +345,58 @@ export const translations: Record<Language, Translations> = {
     footer: {
       privacy: 'Politique de confidentialité',
       terms: 'Conditions d\'utilisation',
+    },
+    privacy: {
+      title: 'Politique de confidentialité',
+      lastUpdated: 'Dernière mise à jour: 28 septembre 2025',
+      content: [
+        {
+          heading: 'Informations que nous collectons',
+          text: 'Nous collectons les informations que vous nous fournissez directement, comme lorsque vous créez un compte, utilisez nos services ou nous contactez pour le support.'
+        },
+        {
+          heading: 'Comment nous utilisons vos informations',
+          text: 'Nous utilisons les informations collectées pour fournir, maintenir et améliorer nos services, traiter les transactions et communiquer avec vous.'
+        },
+        {
+          heading: 'Partage d\'informations',
+          text: 'Nous ne vendons, échangeons ou transférons pas vos informations personnelles à des tiers sans votre consentement, sauf comme décrit dans cette politique.'
+        },
+        {
+          heading: 'Sécurité des données',
+          text: 'Nous mettons en place des mesures de sécurité appropriées pour protéger vos informations personnelles contre l\'accès non autorisé, la modification, la divulgation ou la destruction.'
+        },
+        {
+          heading: 'Nous contacter',
+          text: 'Si vous avez des questions sur cette Politique de confidentialité, contactez-nous à privacy@odomate.com.'
+        }
+      ]
+    },
+    terms: {
+      title: 'Conditions d\'utilisation',
+      lastUpdated: 'Dernière mise à jour: 28 septembre 2025',
+      content: [
+        {
+          heading: 'Acceptation des conditions',
+          text: 'En accédant et en utilisant Odomate, vous acceptez et acceptez d\'être lié par les termes et dispositions de cet accord.'
+        },
+        {
+          heading: 'Licence d\'utilisation',
+          text: 'L\'autorisation est accordée d\'utiliser temporairement Odomate uniquement pour un visionnage personnel et non commercial.'
+        },
+        {
+          heading: 'Avertissement',
+          text: 'Les matériaux sur Odomate sont fournis sur une base "tel quel". Odomate ne donne aucune garantie, expresse ou implicite.'
+        },
+        {
+          heading: 'Limitations',
+          text: 'En aucun cas Odomate ou ses fournisseurs ne seront responsables de tout dommage découlant de l\'utilisation ou de l\'incapacité d\'utiliser les matériaux sur Odomate.'
+        },
+        {
+          heading: 'Nous contacter',
+          text: 'Si vous avez des questions sur ces Conditions, contactez-nous à legal@odomate.com.'
+        }
+      ]
     },
     gdpr: {
       text: 'Nous utilisons des analyses pour améliorer votre expérience. En continuant à utiliser notre site Web, vous acceptez nos pratiques de traitement des données.',
@@ -300,7 +456,7 @@ export const translations: Record<Language, Translations> = {
         },
         {
           question: 'Was macht die KI-Vorhersagen genau?',
-          answer: 'Unsere KI analysiert Ihre Fahrgewohnheiten, Fahrzeughistorie, Herstellerdaten und Millionen von Datenpunkten.',
+          answer: 'Wenn Sie ein neues Fahrzeug hinzufügen, analysiert unsere KI sofort alle Fahrzeugdaten (Modell, Jahr, Ausstattung, Motor usw.), berücksichtigt Online-Bewertungen und offizielle Herstellerempfehlungen, um optimale Serviceintervalle für jede Komponente zu bestimmen.',
         },
         {
           question: 'Kann ich es für mehrere Fahrzeuge verwenden?',
@@ -323,6 +479,58 @@ export const translations: Record<Language, Translations> = {
     footer: {
       privacy: 'Datenschutzrichtlinie',
       terms: 'Nutzungsbedingungen',
+    },
+    privacy: {
+      title: 'Datenschutzrichtlinie',
+      lastUpdated: 'Zuletzt aktualisiert: 28. September 2025',
+      content: [
+        {
+          heading: 'Informationen, die wir sammeln',
+          text: 'Wir sammeln Informationen, die Sie uns direkt zur Verfügung stellen, z.B. wenn Sie ein Konto erstellen, unsere Dienste nutzen oder uns für Support kontaktieren.'
+        },
+        {
+          heading: 'Wie wir Ihre Informationen verwenden',
+          text: 'Wir verwenden die gesammelten Informationen, um unsere Dienste bereitzustellen, zu warten und zu verbessern, Transaktionen zu verarbeiten und mit Ihnen zu kommunizieren.'
+        },
+        {
+          heading: 'Informationsaustausch',
+          text: 'Wir verkaufen, handeln oder übertragen Ihre persönlichen Informationen nicht an Dritte ohne Ihre Zustimmung, außer wie in dieser Richtlinie beschrieben.'
+        },
+        {
+          heading: 'Datensicherheit',
+          text: 'Wir implementieren angemessene Sicherheitsmaßnahmen zum Schutz Ihrer persönlichen Informationen vor unbefugtem Zugriff, Änderung, Offenlegung oder Zerstörung.'
+        },
+        {
+          heading: 'Kontaktieren Sie uns',
+          text: 'Wenn Sie Fragen zu dieser Datenschutzrichtlinie haben, kontaktieren Sie uns unter privacy@odomate.com.'
+        }
+      ]
+    },
+    terms: {
+      title: 'Nutzungsbedingungen',
+      lastUpdated: 'Zuletzt aktualisiert: 28. September 2025',
+      content: [
+        {
+          heading: 'Annahme der Bedingungen',
+          text: 'Durch den Zugriff und die Nutzung von Odomate akzeptieren Sie die Bedingungen und Bestimmungen dieser Vereinbarung und erklären sich damit einverstanden.'
+        },
+        {
+          heading: 'Nutzungslizenz',
+          text: 'Die Erlaubnis wird erteilt, Odomate vorübergehend nur für den persönlichen, nicht-kommerziellen vorübergehenden Gebrauch zu nutzen.'
+        },
+        {
+          heading: 'Haftungsausschluss',
+          text: 'Die Materialien auf Odomate werden auf "wie besehen" Basis bereitgestellt. Odomate gibt keine Garantien, weder ausdrücklich noch stillschweigend.'
+        },
+        {
+          heading: 'Beschränkungen',
+          text: 'In keinem Fall sind Odomate oder seine Lieferanten für Schäden verantwortlich, die aus der Nutzung oder Unfähigkeit zur Nutzung der Materialien auf Odomate entstehen.'
+        },
+        {
+          heading: 'Kontaktieren Sie uns',
+          text: 'Wenn Sie Fragen zu diesen Bedingungen haben, kontaktieren Sie uns unter legal@odomate.com.'
+        }
+      ]
     },
     gdpr: {
       text: 'Wir verwenden Analysen zur Verbesserung Ihrer Erfahrung. Durch die weitere Nutzung unserer Website akzeptieren Sie unsere Datenverarbeitungspraktiken.',
@@ -382,20 +590,20 @@ export const translations: Record<Language, Translations> = {
         },
         {
           question: 'Co sprawia, że prognozy AI są dokładne?',
-          answer: 'Nasze AI analizuje Twoje nawyki jazdy, historię pojazdu, dane producenta i miliony punktów danych.',
+          answer: 'Gdy dodajesz nowy pojazd, nasza AI natychmiast analizuje wszystkie dane pojazdu (model, rok, konfigurację, silnik itp.), uwzględnia opinie internetowe i oficjalne zalecenia producenta, aby określić optymalne interwały serwisowe dla każdego komponentu.',
         },
         {
-          question: 'Czy mogę używać dla wielu pojazdów?',
+          question: 'Czy mogę używać go do wielu pojazdów?',
           answer: 'Tak! Plan osobisty obejmuje 1 pojazd, podczas gdy subskrypcja rodzinna pozwala zarządzać do 3 pojazdami.',
         },
         {
           question: 'Czy moje dane są bezpieczne?',
-          answer: 'Absolutnie. Używamy szyfrowania end-to-end i przestrzegamy przepisów RODO dla ochrony danych.',
+          answer: 'Absolutnie. Używamy szyfrowania end-to-end i przestrzegamy przepisów RODO w celu zapewnienia prywatności danych.',
         },
       ],
     },
     contact: {
-      title: 'Skontaktuj się',
+      title: 'Skontaktuj się z nami',
       name: 'Twoje imię',
       email: 'Adres e-mail',
       message: 'Twoja wiadomość',
@@ -406,16 +614,68 @@ export const translations: Record<Language, Translations> = {
       privacy: 'Polityka prywatności',
       terms: 'Warunki korzystania',
     },
+    privacy: {
+      title: 'Polityka prywatności',
+      lastUpdated: 'Ostatnia aktualizacja: 28 września 2025',
+      content: [
+        {
+          heading: 'Informacje, które zbieramy',
+          text: 'Zbieramy informacje, które dostarczasz nam bezpośrednio, np. podczas tworzenia konta, korzystania z naszych usług lub kontaktu z pomocą techniczną.'
+        },
+        {
+          heading: 'Jak wykorzystujemy Twoje informacje',
+          text: 'Wykorzystujemy zebrane informacje do świadczenia, utrzymywania i ulepszania naszych usług, przetwarzania transakcji i komunikacji z Tobą.'
+        },
+        {
+          heading: 'Udostępnianie informacji',
+          text: 'Nie sprzedajemy, nie wymieniamy ani nie przekazujemy Twoich danych osobowych stronom trzecim bez Twojej zgody, z wyjątkiem przypadków opisanych w tej polityce.'
+        },
+        {
+          heading: 'Bezpieczeństwo danych',
+          text: 'Wdrażamy odpowiednie środki bezpieczeństwa w celu ochrony Twoich danych osobowych przed nieautoryzowanym dostępem, zmianą, ujawnieniem lub zniszczeniem.'
+        },
+        {
+          heading: 'Skontaktuj się z nami',
+          text: 'Jeśli masz pytania dotyczące tej Polityki prywatności, skontaktuj się z nami pod adresem privacy@odomate.com.'
+        }
+      ]
+    },
+    terms: {
+      title: 'Warunki korzystania',
+      lastUpdated: 'Ostatnia aktualizacja: 28 września 2025',
+      content: [
+        {
+          heading: 'Akceptacja warunków',
+          text: 'Uzyskując dostęp i korzystając z Odomate, akceptujesz i zgadzasz się przestrzegać warunków tego porozumienia.'
+        },
+        {
+          heading: 'Licencja użytkowania',
+          text: 'Udzielamy pozwolenia na tymczasowe użytkowanie Odomate wyłącznie do celów osobistych, niekomercyjnych.'
+        },
+        {
+          heading: 'Zastrzeżenia',
+          text: 'Materiały na Odomate są udostępniane "tak jak są". Odomate nie udziela żadnych gwarancji, wyrażonych ani dorozumianych.'
+        },
+        {
+          heading: 'Ograniczenia',
+          text: 'W żadnym przypadku Odomate ani jego dostawcy nie ponoszą odpowiedzialności za jakiekolwiek szkody wynikające z korzystania lub niemożności korzystania z materiałów na Odomate.'
+        },
+        {
+          heading: 'Skontaktuj się z nami',
+          text: 'Jeśli masz pytania dotyczące tych Warunków, skontaktuj się z nami pod adresem legal@odomate.com.'
+        }
+      ]
+    },
     gdpr: {
-      text: 'Używamy analityki aby poprawić Twoje doświadczenia. Kontynuując korzystanie z naszej strony, akceptujesz nasze praktyki przetwarzania danych.',
+      text: 'Używamy analityki w celu poprawy Twojego doświadczenia. Kontynuując korzystanie z naszej strony internetowej, akceptujesz nasze praktyki przetwarzania danych.',
       accept: 'Akceptuj',
     },
   },
   es: {
     meta: {
       title: 'Odomate - Tu coche. Tu cuerpo.',
-      description: 'Aplicación inteligente de seguimiento de mantenimiento de autos con predicciones de IA, registro automático de kilometraje y gestión integral de servicios.',
-      keywords: 'mantenimiento de autos, aplicación automotriz, seguimiento de kilometraje, libro de servicio, predicciones IA, gestión de vehículos',
+      description: 'Aplicación inteligente de seguimiento de mantenimiento de automóviles con predicciones de IA, registro automático de kilometraje y gestión integral de servicios.',
+      keywords: 'mantenimiento de automóviles, aplicación automotriz, seguimiento de kilometraje, libro de servicio, predicciones de IA, gestión de vehículos',
     },
     nav: {
       features: 'Características',
@@ -423,11 +683,11 @@ export const translations: Record<Language, Translations> = {
       contact: 'Contacto',
     },
     hero: {
-      title: 'Cuidado inteligente del auto al alcance de tus manos',
+      title: 'Cuidado inteligente del automóvil al alcance de tu mano',
       subtitle: 'Rastrea el mantenimiento, predice las necesidades de servicio y mantén tu vehículo en perfectas condiciones con IA.',
     },
     features: {
-      title: 'Todo lo que necesitas para el cuidado perfecto del auto',
+      title: 'Todo lo que necesitas para el cuidado perfecto del automóvil',
       items: [
         {
           title: 'Navegación en vivo',
@@ -443,15 +703,15 @@ export const translations: Record<Language, Translations> = {
         },
         {
           title: 'Predicción de vida útil basada en IA',
-          description: 'Algoritmos avanzados de IA predicen cuándo las partes de tu auto necesitarán atención.',
+          description: 'Algoritmos avanzados de IA predicen cuándo las partes de tu automóvil necesitarán atención.',
         },
         {
           title: 'Libro de servicio digital',
-          description: 'Historial completo de mantenimiento digital con recibos, fotos y registros de servicio.',
+          description: 'Historia completa de mantenimiento digital con recibos, fotos y registros de servicio.',
         },
         {
           title: 'Suscripción familiar',
-          description: 'Gestiona hasta 3 autos con plan familiar o mantente personal con suscripción de un auto.',
+          description: 'Gestiona hasta 3 automóviles con plan familiar o mantente personal con suscripción de un auto.',
         },
       ],
     },
@@ -460,26 +720,26 @@ export const translations: Record<Language, Translations> = {
       items: [
         {
           question: '¿Cómo funciona el seguimiento automático de kilometraje?',
-          answer: 'Nuestra aplicación usa GPS e integración OBD-II para registrar automáticamente el kilometraje sin entrada manual.',
+          answer: 'Nuestra aplicación utiliza GPS e integración OBD-II para registrar automáticamente el kilometraje sin entrada manual.',
         },
         {
-          question: '¿Qué hace precisas las predicciones de IA?',
-          answer: 'Nuestra IA analiza tus patrones de conducción, historial del vehículo, datos del fabricante y millones de puntos de datos.',
+          question: '¿Qué hace que las predicciones de IA sean precisas?',
+          answer: 'Cuando agregas un nuevo vehículo, nuestra IA analiza instantáneamente todos los datos del vehículo (modelo, año, configuración, motor, etc.), considera reseñas en línea y recomendaciones oficiales del fabricante para determinar intervalos de servicio óptimos para cada componente.',
         },
         {
-          question: '¿Puedo usarla para múltiples vehículos?',
+          question: '¿Puedes usarlo para múltiples vehículos?',
           answer: '¡Sí! El plan personal cubre 1 vehículo, mientras que la suscripción familiar te permite gestionar hasta 3 vehículos.',
         },
         {
           question: '¿Están seguros mis datos?',
-          answer: 'Absolutamente. Usamos cifrado de extremo a extremo y cumplimos con las regulaciones GDPR para proteger tus datos.',
+          answer: 'Absolutamente. Utilizamos cifrado de extremo a extremo y cumplimos con las regulaciones GDPR para garantizar la privacidad de los datos.',
         },
       ],
     },
     contact: {
       title: 'Ponte en contacto',
       name: 'Tu nombre',
-      email: 'Dirección de correo',
+      email: 'Dirección de correo electrónico',
       message: 'Tu mensaje',
       send: 'Enviar mensaje',
       success: '¡Gracias! Tu mensaje ha sido enviado.',
@@ -487,6 +747,58 @@ export const translations: Record<Language, Translations> = {
     footer: {
       privacy: 'Política de privacidad',
       terms: 'Términos de servicio',
+    },
+    privacy: {
+      title: 'Política de privacidad',
+      lastUpdated: 'Última actualización: 28 de septiembre de 2025',
+      content: [
+        {
+          heading: 'Información que recopilamos',
+          text: 'Recopilamos información que nos proporcionas directamente, como cuando creas una cuenta, usas nuestros servicios o nos contactas para soporte.'
+        },
+        {
+          heading: 'Cómo usamos tu información',
+          text: 'Usamos la información recopilada para proporcionar, mantener y mejorar nuestros servicios, procesar transacciones y comunicarnos contigo.'
+        },
+        {
+          heading: 'Compartir información',
+          text: 'No vendemos, intercambiamos o transferimos tu información personal a terceros sin tu consentimiento, excepto como se describe en esta política.'
+        },
+        {
+          heading: 'Seguridad de datos',
+          text: 'Implementamos medidas de seguridad apropiadas para proteger tu información personal contra acceso no autorizado, alteración, divulgación o destrucción.'
+        },
+        {
+          heading: 'Contáctanos',
+          text: 'Si tienes preguntas sobre esta Política de privacidad, contáctanos en privacy@odomate.com.'
+        }
+      ]
+    },
+    terms: {
+      title: 'Términos de servicio',
+      lastUpdated: 'Última actualización: 28 de septiembre de 2025',
+      content: [
+        {
+          heading: 'Aceptación de términos',
+          text: 'Al acceder y usar Odomate, aceptas y te comprometes a cumplir con los términos y disposiciones de este acuerdo.'
+        },
+        {
+          heading: 'Licencia de uso',
+          text: 'Se otorga permiso para usar temporalmente Odomate solo para visualización personal y no comercial.'
+        },
+        {
+          heading: 'Descargo de responsabilidad',
+          text: 'Los materiales en Odomate se proporcionan "tal como están". Odomate no ofrece garantías, expresas o implícitas.'
+        },
+        {
+          heading: 'Limitaciones',
+          text: 'En ningún caso Odomate o sus proveedores serán responsables de cualquier daño que surja del uso o la incapacidad de usar los materiales en Odomate.'
+        },
+        {
+          heading: 'Contáctanos',
+          text: 'Si tienes preguntas sobre estos Términos, contáctanos en legal@odomate.com.'
+        }
+      ]
     },
     gdpr: {
       text: 'Usamos análisis para mejorar tu experiencia. Al continuar usando nuestro sitio web, aceptas nuestras prácticas de procesamiento de datos.',

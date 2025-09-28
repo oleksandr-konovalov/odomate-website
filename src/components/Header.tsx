@@ -32,7 +32,7 @@ export const Header = () => {
     }`}>
       <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <img src={logo} alt="Odomate" className="h-8 w-8" />
+          <img src={logo} alt="Odomate" className="h-10 w-10 rounded-full" />
           <span className="text-xl font-bold brand-gradient">Odomate</span>
         </div>
 
@@ -41,21 +41,21 @@ export const Header = () => {
           <Button 
             variant="ghost" 
             onClick={() => scrollToSection('features')}
-            className="hover:text-primary transition-colors"
+            className="hover:text-foreground hover:bg-primary/10 transition-colors"
           >
             {t.nav.features}
           </Button>
           <Button 
             variant="ghost" 
             onClick={() => scrollToSection('faq')}
-            className="hover:text-primary transition-colors"
+            className="hover:text-foreground hover:bg-primary/10 transition-colors"
           >
             {t.nav.faq}
           </Button>
           <Button 
             variant="ghost" 
             onClick={() => scrollToSection('contact')}
-            className="hover:text-primary transition-colors"
+            className="hover:text-foreground hover:bg-primary/10 transition-colors"
           >
             {t.nav.contact}
           </Button>
