@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER MANUAL RU</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background-color: #fff;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 8px;
+        }
+        h3 {
+            color: #7f8c8d;
+            margin-top: 20px;
+        }
+        h4 {
+            color: #95a5a6;
+            margin-top: 15px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas, monospace;
+            font-size: 0.9em;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        blockquote {
+            border-left: 4px solid #3498db;
+            margin-left: 0;
+            padding-left: 20px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: 600;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        hr {
+            border: none;
+            border-top: 2px solid #ecf0f1;
+            margin: 30px 0;
+        }
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ecf0f1;
+            color: #95a5a6;
+            font-size: 0.9em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1 id="odomate">Odomate – Руководство пользователя</h1>
+<h2 id="_1">Введение</h2>
+<p>Odomate — приложение для управления автомобилем, навигации и учета поездок с ИИ‑рекомендациями по обслуживанию.</p>
+<h2 id="1">1. Начало работы</h2>
+<ol>
+<li>Установите и откройте приложение.  </li>
+<li>Создайте аккаунт или войдите (e‑mail).  </li>
+<li>Добавьте первый автомобиль (марка, модель, год, VIN опционально).  </li>
+<li>Задайте единицы измерения (км/ми) и язык в настройках.</li>
+</ol>
+<h2 id="2">2. Автомобили</h2>
+<ul>
+<li>Добавление/редактирование/удаление авто.  </li>
+<li>Поля: марка, модель, год, VIN, номер (опционально).  </li>
+<li>Обновление пробега; вложения (документы/заметки).  </li>
+<li>Поддержка нескольких авто.</li>
+</ul>
+<h2 id="3">3. Поездки</h2>
+<h3 id="31">3.1 Ручной учет (Бесплатно)</h3>
+<ul>
+<li>Создание поездки: старт/финиш, дистанция, заметки.  </li>
+<li>Категории и теги.</li>
+</ul>
+<h3 id="32">3.2 Навигация и автоматическое отслеживание (Премиум)</h3>
+<ol>
+<li>Найдите цель (адрес/место/координаты).  </li>
+<li>Добавьте промежуточные точки (по желанию).  </li>
+<li>Запустите навигацию и следуйте инструкциям.  </li>
+<li>Автоматическое отслеживание работает во время активной навигации: записывает дистанцию и маршрут в фоне.  </li>
+<li>Автоперестроение маршрута при отклонении.</li>
+</ol>
+<p>Примечания:<br />
+- Карты: Mapbox.<br />
+- Навигация и маршруты: Valhalla (собственный сервер), Mapbox как резервный.<br />
+- Поиск: Nominatim.<br />
+- Влияние на батарею: GPS потребляет больше энергии.<br />
+- Всегда соблюдайте ПДД.</p>
+<h2 id="4">4. Обслуживание</h2>
+<h3 id="41">4.1 ИИ‑планы ТО</h3>
+<ul>
+<li>На основе данных авто и пробега.  </li>
+<li>Предложения по интервалам и расходникам.</li>
+</ul>
+<h3 id="42">4.2 Напоминания</h3>
+<ul>
+<li>Напоминания приходят автоматически на основе ИИ‑планов обслуживания и установленных интервалов.  </li>
+<li>Включите push‑уведомления в настройках (нужны разрешения устройства).</li>
+</ul>
+<h2 id="5">5. Синхронизация</h2>
+<ul>
+<li>Аккаунт через Supabase; данные синхронизируются между устройствами.  </li>
+<li>Offline‑first: изменения отправляются при восстановлении сети.  </li>
+<li>Конфликты: побеждает последняя правка; при необходимости исправьте вручную.</li>
+</ul>
+<h2 id="6">6. Настройки</h2>
+<ul>
+<li>Единицы (км/ми), язык, формат времени (12/24 часа), формат температуры (°C/°F).  </li>
+<li>Уведомления (ТО, трекинг).  </li>
+<li>Конфиденциальность: удаление аккаунта, отказ от аналитики.  </li>
+<li>Опции карты: трафик, 3D, масштаб, избегать платных дорог, избегать автомагистралей, избегать водных переправ.</li>
+</ul>
+<h2 id="7">7. Советы по точности</h2>
+<ul>
+<li>Держите GPS включенным; при необходимости настройте энергосбережение.  </li>
+<li>Для определения направления движения всегда используется технология «movement‑bearing».  </li>
+<li>Обновляйте приложение.</li>
+</ul>
+<h2 id="8">8. Решение проблем</h2>
+<ul>
+<li>Нет GPS‑позиции: проверьте разрешения и службы геолокации.  </li>
+<li>Навигация остановилась: проверьте интернет/GPS, перезапустите приложение.  </li>
+<li>Синхронизация зависла: проверьте подключение и повторите позже.  </li>
+<li>Свяжитесь с поддержкой (ниже).</li>
+</ul>
+<h2 id="9">9. Конфиденциальность</h2>
+<ul>
+<li>Локация используется только при активной навигации/треккинге.  </li>
+<li>Анонимная аналитика для улучшения качества.  </li>
+<li>Подробности: <code>legal/PRIVACY_POLICY_RU.md</code>, <code>legal/GDPR_COMPLIANCE_RU.md</code>.</li>
+</ul>
+<h2 id="10">10. Поддержка</h2>
+<p>E‑mail: support@odomate.net<br />
+Сайт: odomate.net</p>
+<div class="footer">
+    <p>Generated from Markdown • Odomate Legal Documents</p>
+</div>
+</body>
+</html>

@@ -1,14 +1,44 @@
+# Odomate - Car Maintenance Tracking App
+# https://odomate.net
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# Crawl-delay for polite bots
+Crawl-delay: 1
+
+# Sitemap
+Sitemap: https://odomate.net/sitemap.xml
+
+# Specific bot rules
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# Social media bots
 User-agent: Twitterbot
 Allow: /
 
 User-agent: facebookexternalhit
 Allow: /
 
-User-agent: *
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Pinterestbot
 Allow: /

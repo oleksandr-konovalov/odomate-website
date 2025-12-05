@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDPR COMPLIANCE ES</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background-color: #fff;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 8px;
+        }
+        h3 {
+            color: #7f8c8d;
+            margin-top: 20px;
+        }
+        h4 {
+            color: #95a5a6;
+            margin-top: 15px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas, monospace;
+            font-size: 0.9em;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        blockquote {
+            border-left: 4px solid #3498db;
+            margin-left: 0;
+            padding-left: 20px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: 600;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        hr {
+            border: none;
+            border-top: 2px solid #ecf0f1;
+            margin: 30px 0;
+        }
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ecf0f1;
+            color: #95a5a6;
+            font-size: 0.9em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1 id="odomate-declaracion-de-cumplimiento-gdpr">Odomate – Declaración de Cumplimiento GDPR</h1>
+<p><strong>Fecha:</strong> 22 de noviembre de 2024</p>
+<h2 id="responsable-del-tratamiento-art-4">Responsable del tratamiento (Art. 4)</h2>
+<p>Oleksandr Konovalov<br />
+Correo: support@odomate.net<br />
+Sitio: odomate.net</p>
+<h2 id="finalidades-del-tratamiento-art-5">Finalidades del tratamiento (Art. 5)</h2>
+<ul>
+<li>Prestación de funcionalidades de la app (vehículos, mantenimiento, navegación, registro de viajes)  </li>
+<li>Sincronización y gestión de cuenta  </li>
+<li>Soporte y comunicaciones de servicio  </li>
+<li>Mejora de rendimiento, resolución de errores, seguridad (analíticas/crashes anónimos)  </li>
+<li>Recomendaciones de mantenimiento basadas en IA</li>
+</ul>
+<h2 id="bases-juridicas-art-6">Bases jurídicas (Art. 6)</h2>
+<ul>
+<li>Ejecución de contrato (Art. 6(1)(b)): funcionalidades esenciales, cuenta, sincronización</li>
+<li>Intereses legítimos (Art. 6(1)(f)): seguridad, estabilidad, estadísticas de uso anónimas</li>
+<li>Consentimiento (Art. 6(1)(a)), cuando proceda: notificaciones, funciones opcionales</li>
+</ul>
+<h2 id="categorias-de-datos">Categorías de datos</h2>
+<ul>
+<li>Contacto: correo electrónico  </li>
+<li>Uso: interacciones, vistas de pantalla (anónimo)  </li>
+<li>Técnicos: dispositivo/SO, versión app, diagnósticos/crashes  </li>
+<li>Ubicación: precisa/aproximada durante navegación/seguimiento  </li>
+<li>Vehículo: marca, modelo, VIN, kilometraje, historial de mantenimiento  </li>
+<li>Viajes: inicio/fin, distancia, ruta, notas</li>
+</ul>
+<h2 id="destinatarios-art-13">Destinatarios (Art. 13)</h2>
+<ul>
+<li>Supabase (autenticación/almacenamiento)  </li>
+<li>Mapbox (mapas/navegación), OSRM (rutas), Nominatim (geocodificación) – tratamiento temporal de ubicación en navegación activa  </li>
+<li>OpenAI (recomendaciones IA: datos de vehículo/kilometraje, sin identificadores personales)  </li>
+<li>Firebase (analíticas/crashes anónimos)</li>
+</ul>
+<h2 id="transferencias-internacionales-art-44-y-ss">Transferencias internacionales (Art. 44 y ss.)</h2>
+<p>Tratamiento posible en Norte/Centroamérica y la UE. Se aplican garantías adecuadas (Cláusulas Contractuales Tipo) para asegurar un nivel de protección adecuado.</p>
+<h2 id="plazos-de-conservacion-art-5">Plazos de conservación (Art. 5)</h2>
+<ul>
+<li>Datos de cuenta: mientras esté activa  </li>
+<li>Tras borrar la cuenta: eliminación inmediata en el servidor  </li>
+<li>Historial de viajes: hasta borrado manual  </li>
+<li>Analíticas/crashes anónimos: 26 meses (por defecto de Firebase)</li>
+</ul>
+<h2 id="derechos-de-los-interesados-art-1222">Derechos de los interesados (Art. 12–22)</h2>
+<p>Acceso, rectificación, supresión, limitación, oposición, portabilidad.<br />
+Solicitudes: support@odomate.net.<br />
+Reclamación: ante la autoridad de control competente (Art. 77).</p>
+<h2 id="seguridad-art-32">Seguridad (Art. 32)</h2>
+<ul>
+<li>Cifrado en tránsito (HTTPS/TLS) y en reposo (almacenamiento cifrado)  </li>
+<li>Controles de acceso y registro de eventos  </li>
+<li>Minimización de datos</li>
+</ul>
+<h2 id="nota-sobre-la-ubicacion">Nota sobre la ubicación</h2>
+<p>La ubicación precisa se procesa solo con navegación activa o seguimiento automático de viajes. No hay compartición permanente a terceros con fines publicitarios/seguimiento. Durante la navegación, las coordenadas pueden enviarse temporalmente a Mapbox/OSRM/Nominatim para calcular rutas.</p>
+<h2 id="dpo-y-contacto">DPO y contacto</h2>
+<p>No se requiere DPO según la evaluación actual de riesgos.<br />
+Contacto: support@odomate.net</p>
+<p>—</p>
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER MANUAL FR</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background-color: #fff;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 8px;
+        }
+        h3 {
+            color: #7f8c8d;
+            margin-top: 20px;
+        }
+        h4 {
+            color: #95a5a6;
+            margin-top: 15px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas, monospace;
+            font-size: 0.9em;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        blockquote {
+            border-left: 4px solid #3498db;
+            margin-left: 0;
+            padding-left: 20px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: 600;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        hr {
+            border: none;
+            border-top: 2px solid #ecf0f1;
+            margin: 30px 0;
+        }
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ecf0f1;
+            color: #95a5a6;
+            font-size: 0.9em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1 id="odomate-guide-utilisateur">Odomate – Guide Utilisateur</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Odomate est une application de gestion de véhicule, de navigation et de suivi des trajets avec recommandations d'entretien basées sur l'IA.</p>
+<h2 id="1-bien-demarrer">1. Bien démarrer</h2>
+<ol>
+<li>Installez et ouvrez l'app.  </li>
+<li>Créez un compte ou connectez‑vous (e‑mail).  </li>
+<li>Ajoutez votre premier véhicule (marque, modèle, année, VIN optionnel).  </li>
+<li>Réglez unités (km/mi) et langue dans les paramètres.</li>
+</ol>
+<h2 id="2-vehicules">2. Véhicules</h2>
+<ul>
+<li>Ajouter/modifier/supprimer un véhicule.  </li>
+<li>Champs : marque, modèle, année, VIN, immatriculation (optionnel).  </li>
+<li>Mettre à jour le kilométrage ; joindre documents/notes.  </li>
+<li>Multi‑véhicules pris en charge.</li>
+</ul>
+<h2 id="3-trajets">3. Trajets</h2>
+<h3 id="31-saisie-manuelle-gratuit">3.1 Saisie manuelle (Gratuit)</h3>
+<ul>
+<li>Créer un trajet : début/fin, distance, notes.  </li>
+<li>Ajouter catégories et tags.</li>
+</ul>
+<h3 id="32-navigation-et-suivi-automatique-premium">3.2 Navigation et suivi automatique (Premium)</h3>
+<ol>
+<li>Recherchez une destination (adresse/lieu/coordonnées).  </li>
+<li>Ajoutez des étapes (optionnel).  </li>
+<li>Lancez la navigation et suivez les instructions.  </li>
+<li>Le suivi automatique fonctionne pendant la navigation active : enregistre distance et itinéraire en arrière‑plan.  </li>
+<li>Recalcul automatique en cas de sortie d'itinéraire.</li>
+</ol>
+<p>Notes :<br />
+- Cartes : Mapbox.<br />
+- Navigation et itinéraires : Valhalla (auto-hébergé), Mapbox comme solution de secours.<br />
+- Recherche : Nominatim.<br />
+- Batterie : le GPS consomme davantage.<br />
+- Respectez toujours le code de la route.</p>
+<h2 id="4-entretien">4. Entretien</h2>
+<h3 id="41-plan-ia">4.1 Plan IA</h3>
+<ul>
+<li>Basé sur les données véhicule et le kilométrage.  </li>
+<li>Propose des échéances d'entretien et pièces à prévoir.</li>
+</ul>
+<h3 id="42-rappels">4.2 Rappels</h3>
+<ul>
+<li>Les rappels sont envoyés automatiquement sur la base des plans d'entretien IA et des intervalles définis.  </li>
+<li>Activez les notifications push dans les paramètres (autorisation d'appareil requise).</li>
+</ul>
+<h2 id="5-synchronisation">5. Synchronisation</h2>
+<ul>
+<li>Compte via Supabase ; données synchronisées entre appareils.  </li>
+<li>Offline‑first : les modifications sont envoyées à la reconnexion.  </li>
+<li>Conflits : dernière modification prioritaire ; corriger manuellement si besoin.</li>
+</ul>
+<h2 id="6-parametres">6. Paramètres</h2>
+<ul>
+<li>Unités (km/mi), langue, format de l'heure (12/24 heures), format de température (°C/°F).  </li>
+<li>Notifications (entretien, suivi).  </li>
+<li>Confidentialité : suppression du compte, opt‑out d'analyses.  </li>
+<li>Options de carte : trafic, 3D, échelle, éviter les péages, éviter les autoroutes, éviter les ferries.</li>
+</ul>
+<h2 id="7-conseils-de-precision">7. Conseils de précision</h2>
+<ul>
+<li>Laissez le GPS activé ; ajustez l'économie d'énergie si nécessaire.  </li>
+<li>La technologie movement‑bearing est toujours utilisée pour déterminer la direction du mouvement.  </li>
+<li>Mettez l'app à jour.</li>
+</ul>
+<h2 id="8-depannage">8. Dépannage</h2>
+<ul>
+<li>Pas de position : vérifiez autorisations et services de localisation.  </li>
+<li>Navigation arrêtée : vérifiez Internet/GPS, redémarrez l'app.  </li>
+<li>Sync bloquée : vérifiez la connexion et réessayez.  </li>
+<li>Contactez le support (ci‑dessous).</li>
+</ul>
+<h2 id="9-confidentialite">9. Confidentialité</h2>
+<ul>
+<li>Localisation uniquement en navigation/suivi actifs.  </li>
+<li>Analyses anonymes pour améliorer l'app.  </li>
+<li>Détails : <code>legal/PRIVACY_POLICY_FR.md</code>, <code>legal/GDPR_COMPLIANCE_FR.md</code>.</li>
+</ul>
+<h2 id="10-support">10. Support</h2>
+<p>E‑mail : support@odomate.net<br />
+Site : odomate.net</p>
+<div class="footer">
+    <p>Generated from Markdown • Odomate Legal Documents</p>
+</div>
+</body>
+</html>

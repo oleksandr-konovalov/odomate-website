@@ -4,6 +4,7 @@ import { LanguageSelector } from '@/components/LanguageSelector';
 import { useLanguage } from '@/hooks/useLanguage';
 import { Menu, X } from 'lucide-react';
 import logo from '@/assets/logo.png';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
   const { t } = useLanguage();
@@ -28,38 +29,43 @@ export const Header = () => {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled ? 'bg-background/80 backdrop-blur-lg border-b border-primary/20' : 'bg-transparent'
+      scrolled ? 'bg-background/95 backdrop-blur-xl border-b border-primary/20 shadow-lg shadow-primary/5' : 'bg-background/50 backdrop-blur-sm'
     }`}>
-      <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <img src={logo} alt="Odomate" className="h-10 w-10 rounded-full" />
-          <span className="text-xl font-bold brand-gradient">Odomate</span>
-        </div>
+      <nav className="container mx-auto px-6 h-20 flex items-center justify-between">
+        <Link to="/" className="flex items-center gap-3 group">
+          <div className="relative">
+            <div className="absolute inset-0 bg-primary/20 rounded-full blur-md group-hover:blur-lg transition-all"></div>
+            <img src={logo} alt="Odomate" className="relative h-12 w-12 rounded-full ring-2 ring-primary/30 group-hover:ring-primary/50 transition-all" />
+          </div>
+          <span className="text-2xl font-bold brand-gradient">Odomate</span>
+        </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-2">
           <Button 
             variant="ghost" 
             onClick={() => scrollToSection('features')}
-            className="hover:text-foreground hover:bg-primary/10 transition-colors"
+            className="hover:text-primary hover:bg-primary/10 transition-all font-medium"
           >
             {t.nav.features}
           </Button>
           <Button 
             variant="ghost" 
             onClick={() => scrollToSection('faq')}
-            className="hover:text-foreground hover:bg-primary/10 transition-colors"
+            className="hover:text-primary hover:bg-primary/10 transition-all font-medium"
           >
             {t.nav.faq}
           </Button>
           <Button 
             variant="ghost" 
             onClick={() => scrollToSection('contact')}
-            className="hover:text-foreground hover:bg-primary/10 transition-colors"
+            className="hover:text-primary hover:bg-primary/10 transition-all font-medium"
           >
             {t.nav.contact}
           </Button>
-          <LanguageSelector />
+          <div className="ml-4 pl-4 border-l border-border/50">
+            <LanguageSelector />
+          </div>
         </div>
 
         {/* Mobile Menu Button */}

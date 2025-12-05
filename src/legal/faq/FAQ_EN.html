@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ EN</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background-color: #fff;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 8px;
+        }
+        h3 {
+            color: #7f8c8d;
+            margin-top: 20px;
+        }
+        h4 {
+            color: #95a5a6;
+            margin-top: 15px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas, monospace;
+            font-size: 0.9em;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        blockquote {
+            border-left: 4px solid #3498db;
+            margin-left: 0;
+            padding-left: 20px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: 600;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        hr {
+            border: none;
+            border-top: 2px solid #ecf0f1;
+            margin: 30px 0;
+        }
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ecf0f1;
+            color: #95a5a6;
+            font-size: 0.9em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1 id="odomate-frequently-asked-questions-faq">Odomate - Frequently Asked Questions (FAQ)</h1>
+<p><strong>Last Updated:</strong> November 22, 2024</p>
+<h2 id="general-questions">General Questions</h2>
+<h3 id="what-is-odomate">What is Odomate?</h3>
+<p>Odomate is a comprehensive vehicle management app that helps you track maintenance, plan trips, and navigate with real-time GPS guidance. It combines AI-powered maintenance recommendations with advanced navigation features.</p>
+<h3 id="is-odomate-free">Is Odomate free?</h3>
+<p>Yes! Odomate offers a free tier with vehicle management, manual trip tracking, and AI maintenance recommendations. Premium features like GPS navigation, automatic trip tracking, and push notifications require a subscription ($4.99/month or $49.99/year).</p>
+<h3 id="what-platforms-does-odomate-support">What platforms does Odomate support?</h3>
+<p>Odomate is available for Android and iOS devices.</p>
+<h3 id="what-languages-does-odomate-support">What languages does Odomate support?</h3>
+<p>Odomate supports 7 languages: English, Spanish, German, French, Polish, Russian, and Ukrainian.</p>
+<h3 id="do-i-need-an-internet-connection">Do I need an internet connection?</h3>
+<ul>
+<li><strong>Offline:</strong> All functionality works offline except navigation, automatic trip tracking, and AI component-life analysis</li>
+<li><strong>Navigation:</strong> Requires internet for real-time routing and map tiles</li>
+<li><strong>AI features:</strong> Requires internet for OpenAI integration</li>
+</ul>
+<hr />
+<h2 id="account-privacy">Account &amp; Privacy</h2>
+<h3 id="how-do-i-create-an-account">How do I create an account?</h3>
+<ol>
+<li>Download Odomate from Google Play or App Store</li>
+<li>Open the app and tap "Register"</li>
+<li>Enter your email and create a password</li>
+<li>Verify your email address</li>
+<li>Start adding vehicles!</li>
+</ol>
+<h3 id="is-my-data-secure">Is my data secure?</h3>
+<p>Yes! We use industry-standard encryption for:
+- All data transmission (end-to-end encryption)
+- Local storage on your device
+- Cloud backups via Supabase</p>
+<h3 id="do-you-sell-my-data">Do you sell my data?</h3>
+<p><strong>No.</strong> We never sell your personal data to third parties. We collect anonymous analytics to improve the app, but your personal information, trip routes, and vehicle data remain private.</p>
+<h3 id="can-i-delete-my-account">Can I delete my account?</h3>
+<p>Yes! Go to Profile → Settings → Delete Account. Your data is deleted immediately on the server.</p>
+<h3 id="what-data-do-you-collect">What data do you collect?</h3>
+<p>We collect:
+- Email address (for authentication)
+- Vehicle information (make, model, VIN, maintenance history)
+- Trip data (distance, duration, routes - stored locally and in Supabase)
+- Anonymous analytics (device model, OS version, feature usage)</p>
+<p>We do <strong>NOT</strong> collect or share precise GPS coordinates for analytics.</p>
+<hr />
+<h2 id="features-usage">Features &amp; Usage</h2>
+<h3 id="whats-included-in-the-free-version">What's included in the free version?</h3>
+<ul>
+<li>Manage 1 vehicle</li>
+<li>Manual trip tracking</li>
+<li>AI maintenance recommendations</li>
+<li>In-app notifications for maintenance</li>
+<li>Weather forecast with recommendations for trips</li>
+<li>Parking mode: timer for paid parking and parking spot finder</li>
+<li>Vehicle information storage</li>
+<li>Sync across devices</li>
+</ul>
+<h3 id="whats-included-in-premium">What's included in Premium?</h3>
+<ul>
+<li><strong>Manage up to 2 vehicles</strong></li>
+<li><strong>GPS Navigation:</strong> Turn-by-turn directions with Valhalla (self-hosted)</li>
+<li><strong>Automatic Trip Tracking:</strong> Background GPS recording</li>
+<li><strong>Push Notifications:</strong> Maintenance reminders</li>
+<li><strong>Service Book Export:</strong> In PDF format</li>
+<li><strong>Route Planning:</strong> Save and share multi-waypoint routes</li>
+</ul>
+<h3 id="how-does-ai-maintenance-work">How does AI maintenance work?</h3>
+<p>Our AI (powered by OpenAI) analyzes your vehicle specifications (make, model, year, engine type, mileage) and generates personalized maintenance intervals for:
+- Oil changes
+- Tire rotations
+- Brake inspections
+- Filter replacements
+- And more!</p>
+<h3 id="can-i-track-multiple-vehicles">Can I track multiple vehicles?</h3>
+<p>Yes! In the free version you can manage 1 vehicle. Premium subscription allows you to manage up to 2 vehicles. Each vehicle has its own maintenance schedule and trip history.</p>
+<h3 id="does-automatic-trip-tracking-drain-my-battery">Does automatic trip tracking drain my battery?</h3>
+<p>We've optimized battery usage, but background GPS tracking does consume more power than normal. Premium users can toggle automatic tracking on/off as needed.</p>
+<h3 id="can-i-export-my-service-book">Can I export my service book?</h3>
+<p>Yes! Premium users can export the service book in PDF format.</p>
+<hr />
+<h2 id="navigation">Navigation</h2>
+<h3 id="how-accurate-is-the-navigation">How accurate is the navigation?</h3>
+<p>Odomate uses Valhalla (self-hosted) for routing, which rely on OpenStreetMap data. Accuracy depends on map data quality in your region. Always follow traffic signs and laws.</p>
+<h3 id="can-i-use-navigation-offline">Can I use navigation offline?</h3>
+<p>No, navigation requires an active internet connection for real-time routing and map tiles.</p>
+<h3 id="does-navigation-show-traffic">Does navigation show traffic?</h3>
+<p>Yes! Premium users can enable traffic visualization in navigation settings.</p>
+<h3 id="can-i-add-multiple-waypoints">Can I add multiple waypoints?</h3>
+<p>Yes! Premium users can create routes with multiple stops and save them for future use.</p>
+<h3 id="why-does-navigation-sometimes-reroute-me">Why does navigation sometimes reroute me?</h3>
+<p>Odomate automatically reroutes if:
+- You deviate from the planned route
+- Traffic conditions change
+- A faster route becomes available</p>
+<hr />
+<h2 id="subscription-billing">Subscription &amp; Billing</h2>
+<h3 id="how-much-does-premium-cost">How much does Premium cost?</h3>
+<ul>
+<li><strong>Premium:</strong> $10/month</li>
+</ul>
+<h3 id="how-do-i-subscribe-to-premium">How do I subscribe to Premium?</h3>
+<ol>
+<li>Open Odomate</li>
+<li>Go to Profile → Premium</li>
+<li>Select your plan</li>
+<li>Complete payment via Google Play or App Store</li>
+</ol>
+<h3 id="can-i-cancel-my-subscription">Can I cancel my subscription?</h3>
+<p>Yes, anytime! Your subscription remains active until the end of the current billing period. No refunds for partial months.</p>
+<h3 id="is-there-a-free-trial">Is there a free trial?</h3>
+<p>Yes! New users receive a 3-day free trial of Premium features (if available in your region).</p>
+<h3 id="what-payment-methods-do-you-accept">What payment methods do you accept?</h3>
+<p>Payments are processed through:
+- <strong>Android:</strong> Google Play Billing
+- <strong>iOS:</strong> App Store In-App Purchase </p>
+<h3 id="what-happens-if-i-cancel-premium">What happens if I cancel Premium?</h3>
+<ul>
+<li>You keep all your vehicles and trip history</li>
+<li>Navigation and automatic trip tracking will be disabled</li>
+<li>Push notifications for maintenance become unavailable</li>
+<li>AI maintenance recommendations remain available</li>
+<li>You can resubscribe anytime to restore features</li>
+</ul>
+<hr />
+<h2 id="technical-issues">Technical Issues</h2>
+<h3 id="the-app-crashes-or-freezes-what-should-i-do">The app crashes or freezes. What should I do?</h3>
+<ol>
+<li>Restart the app</li>
+<li>Check for app updates in Google Play/App Store</li>
+<li>Clear app cache (Settings → Apps → Odomate → Clear Cache)</li>
+<li>If the problem persists, contact support@odomate.net with:</li>
+<li>Device model</li>
+<li>OS version</li>
+<li>Description of the issue</li>
+</ol>
+<h3 id="gps-location-is-inaccurate-how-can-i-fix-it">GPS location is inaccurate. How can I fix it?</h3>
+<ul>
+<li>Enable "High Accuracy" location mode in device settings</li>
+<li>Ensure GPS permission is granted to Odomate</li>
+<li>Use the app outdoors with clear sky view</li>
+<li>Restart your device</li>
+<li>Check if other GPS apps work correctly</li>
+</ul>
+<h3 id="my-trip-didnt-save-why">My trip didn't save. Why?</h3>
+<p>Trips shorter than 0.1 km (100 meters) are automatically discarded. Also check:
+- GPS permission is enabled
+- Internet connection for syncing to Supabase
+- Sufficient storage space on device</p>
+<h3 id="sync-is-not-working-what-should-i-do">Sync is not working. What should I do?</h3>
+<ul>
+<li>Check your internet connection</li>
+<li>Log out and log back in</li>
+<li>Force sync from Profile → Sync Now</li>
+<li>Contact support if the issue persists</li>
+</ul>
+<h3 id="i-forgot-my-password-how-do-i-reset-it">I forgot my password. How do I reset it?</h3>
+<ol>
+<li>On the login screen, tap "Forgot Password?"</li>
+<li>Enter your email address</li>
+<li>Check your email for a reset link</li>
+<li>Follow the link to create a new password</li>
+</ol>
+<hr />
+<h2 id="maintenance-reminders">Maintenance &amp; Reminders</h2>
+<h3 id="how-do-i-add-a-maintenance-record">How do I add a maintenance record?</h3>
+<ol>
+<li>Select your vehicle</li>
+<li>Go to Maintenance tab</li>
+<li>Tap "+ Add Maintenance"</li>
+<li>Enter details (type, date, mileage, cost, notes)</li>
+<li>Save</li>
+</ol>
+<h3 id="how-do-i-set-up-maintenance-reminders">How do I set up maintenance reminders?</h3>
+<p>All maintenance reminders are set automatically based on AI-generated schedules. You can edit maintenance intervals for each component as needed.</p>
+<h3 id="can-i-customize-maintenance-intervals">Can I customize maintenance intervals?</h3>
+<p>Yes! Edit any maintenance item and adjust the interval (by mileage or time).</p>
+<h3 id="will-i-get-push-notifications-for-maintenance">Will I get push notifications for maintenance?</h3>
+<p>Push notifications are only available for Premium users. Enable notifications in device settings and Odomate will remind you when maintenance is due. Free users receive in-app notifications.</p>
+<hr />
+<h2 id="data-privacy">Data &amp; Privacy</h2>
+<h3 id="where-is-my-data-stored">Where is my data stored?</h3>
+<ul>
+<li><strong>Locally:</strong> Encrypted SQLite database on your device</li>
+<li><strong>Cloud:</strong> Supabase servers (North America, Central America, Europe)</li>
+</ul>
+<h3 id="can-i-use-odomate-without-cloud-sync">Can I use Odomate without cloud sync?</h3>
+<p>No, Supabase authentication is required. However, all data is cached locally so you can access it offline.</p>
+<h3 id="what-happens-to-my-data-if-i-delete-the-app">What happens to my data if I delete the app?</h3>
+<ul>
+<li>Local data is deleted immediately</li>
+<li>Cloud data remains in Supabase until you delete your account</li>
+<li>Reinstall the app and log in to restore your data</li>
+</ul>
+<h3 id="does-odomate-track-my-location-all-the-time">Does Odomate track my location all the time?</h3>
+<p>No. Location is only accessed during:
+- Active navigation
+- Automatic trip tracking (Premium, when enabled)
+- Saving parking location
+- Finding parking spot</p>
+<hr />
+<h2 id="contact-support">Contact &amp; Support</h2>
+<h3 id="how-do-i-report-a-bug">How do I report a bug?</h3>
+<p>Email us at support@odomate.net with:
+- Description of the bug
+- Steps to reproduce
+- Screenshots (if possible)
+- Device and OS information</p>
+<h3 id="how-do-i-request-a-feature">How do I request a feature?</h3>
+<p>We love feedback! Email support@odomate.net with your feature request.</p>
+<h3 id="how-long-does-support-take-to-respond">How long does support take to respond?</h3>
+<p>We aim to respond within 48 hours, typically within 24 hours on weekdays.</p>
+<h3 id="can-i-get-a-refund">Can I get a refund?</h3>
+<p>Refunds are handled by Google Play or App Store per their policies. Contact support@odomate.net within 48 hours of purchase for consideration.</p>
+<hr />
+<h2 id="additional-resources">Additional Resources</h2>
+<p><strong>Website:</strong> odomate.net<br />
+<strong>Email:</strong> support@odomate.net<br />
+<strong>Privacy Policy:</strong> <a href="PRIVACY_POLICY_EN.md">View Policy</a><br />
+<strong>Terms of Service:</strong> <a href="TERMS_OF_SERVICE_EN.md">View Terms</a></p>
+<hr />
+<p><strong>Didn't find your question? Contact support@odomate.net</strong></p>
+
+</body>
+</html>

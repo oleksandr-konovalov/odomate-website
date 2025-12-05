@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER MANUAL EN</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background-color: #fff;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 8px;
+        }
+        h3 {
+            color: #7f8c8d;
+            margin-top: 20px;
+        }
+        h4 {
+            color: #95a5a6;
+            margin-top: 15px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas, monospace;
+            font-size: 0.9em;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        blockquote {
+            border-left: 4px solid #3498db;
+            margin-left: 0;
+            padding-left: 20px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: 600;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        hr {
+            border: none;
+            border-top: 2px solid #ecf0f1;
+            margin: 30px 0;
+        }
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ecf0f1;
+            color: #95a5a6;
+            font-size: 0.9em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1 id="odomate-user-manual">Odomate – User Manual</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Odomate is an application for vehicle management, navigation, and trip tracking with AI-powered maintenance recommendations.</p>
+<h2 id="1-getting-started">1. Getting Started</h2>
+<ol>
+<li>Install and open the application.  </li>
+<li>Create an account or log in (email).  </li>
+<li>Add your first vehicle (make, model, year, VIN optional).  </li>
+<li>Set units of measurement (km/mi) and language in settings.</li>
+</ol>
+<h2 id="2-vehicles">2. Vehicles</h2>
+<ul>
+<li>Add/edit/delete vehicles.  </li>
+<li>Fields: make, model, year, VIN, license plate (optional).  </li>
+<li>Update odometer; attachments (documents/notes).  </li>
+<li>Multiple vehicles supported.</li>
+</ul>
+<h2 id="3-trips">3. Trips</h2>
+<h3 id="31-manual-logging-free">3.1 Manual Logging (Free)</h3>
+<ul>
+<li>Create trip: start/finish, distance, notes.  </li>
+<li>Categories and tags.</li>
+</ul>
+<h3 id="32-navigation-and-automatic-tracking-premium">3.2 Navigation and Automatic Tracking (Premium)</h3>
+<ol>
+<li>Find destination (address/place/coordinates).  </li>
+<li>Add waypoints (optional).  </li>
+<li>Start navigation and follow instructions.  </li>
+<li>Automatic tracking works during active navigation: records distance and route in background.  </li>
+<li>Automatic rerouting when deviating from route.</li>
+</ol>
+<p>Notes:<br />
+- Maps: Mapbox.<br />
+- Navigation and routing: Valhalla (self-hosted), Mapbox as fallback.<br />
+- Search: Nominatim.<br />
+- Battery impact: GPS consumes more power.<br />
+- Always follow traffic laws.</p>
+<h2 id="4-maintenance">4. Maintenance</h2>
+<h3 id="41-ai-maintenance-plans">4.1 AI Maintenance Plans</h3>
+<ul>
+<li>Based on vehicle data and mileage.  </li>
+<li>Recommendations for service intervals and components.</li>
+</ul>
+<h3 id="42-reminders">4.2 Reminders</h3>
+<ul>
+<li>Reminders are sent automatically based on AI maintenance plans and set intervals.  </li>
+<li>Enable push notifications in settings (device permissions required).</li>
+</ul>
+<h2 id="5-synchronization">5. Synchronization</h2>
+<ul>
+<li>Account via Supabase; data syncs across devices.  </li>
+<li>Offline-first: changes sent when connection restored.  </li>
+<li>Conflicts: last edit wins; manual correction if needed.</li>
+</ul>
+<h2 id="6-settings">6. Settings</h2>
+<ul>
+<li>Units (km/mi), language, time format (12/24 hour), temperature format (°C/°F).  </li>
+<li>Notifications (maintenance, tracking).  </li>
+<li>Privacy: account deletion, analytics opt-out.  </li>
+<li>Map options: traffic, 3D, zoom, avoid tolls, avoid highways, avoid ferries.</li>
+</ul>
+<h2 id="7-accuracy-tips">7. Accuracy Tips</h2>
+<ul>
+<li>Keep GPS enabled; adjust power saving if necessary.  </li>
+<li>Movement-bearing technology is always used for determining direction of travel.  </li>
+<li>Keep the app updated.</li>
+</ul>
+<h2 id="8-troubleshooting">8. Troubleshooting</h2>
+<ul>
+<li>No GPS position: check permissions and location services.  </li>
+<li>Navigation stopped: check internet/GPS, restart app.  </li>
+<li>Sync stuck: check connection and retry later.  </li>
+<li>Contact support (below).</li>
+</ul>
+<h2 id="9-privacy">9. Privacy</h2>
+<ul>
+<li>Location used only during active navigation/tracking.  </li>
+<li>Anonymous analytics for quality improvement.  </li>
+<li>Details: <code>legal/PRIVACY_POLICY_EN.md</code>, <code>legal/GDPR_COMPLIANCE_EN.md</code>.</li>
+</ul>
+<h2 id="10-support">10. Support</h2>
+<p>Email: support@odomate.net<br />
+Website: odomate.net</p>
+<div class="footer">
+    <p>Generated from Markdown • Odomate Legal Documents</p>
+</div>
+</body>
+</html>
