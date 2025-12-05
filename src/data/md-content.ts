@@ -1,0 +1,2046 @@
+export const mdContent = {
+  "en": {
+    "faq": {
+      "items": [
+        {
+          "question": "What is Odomate?",
+          "answer": "Odomate is a comprehensive vehicle management app that helps you track maintenance, plan trips, and navigate with real-time GPS guidance. It combines AI-powered maintenance recommendations with advanced navigation features."
+        },
+        {
+          "question": "Is Odomate free?",
+          "answer": "Yes! Odomate offers a free tier with vehicle management, manual trip tracking, and AI maintenance recommendations. Premium features like GPS navigation, automatic trip tracking, and push notifications require a subscription ($4.99/month or $49.99/year)."
+        },
+        {
+          "question": "What platforms does Odomate support?",
+          "answer": "Odomate is available for Android and iOS devices."
+        },
+        {
+          "question": "What languages does Odomate support?",
+          "answer": "Odomate supports 7 languages: English, Spanish, German, French, Polish, Russian, and Ukrainian."
+        },
+        {
+          "question": "Do I need an internet connection?",
+          "answer": "- **Offline:** All functionality works offline except navigation, automatic trip tracking, and AI component-life analysis\n- **Navigation:** Requires internet for real-time routing and map tiles\n- **AI features:** Requires internet for OpenAI integration\n---"
+        },
+        {
+          "question": "How do I create an account?",
+          "answer": "1. Download Odomate from Google Play or App Store\n2. Open the app and tap \"Register\"\n3. Enter your email and create a password\n4. Verify your email address\n5. Start adding vehicles!"
+        },
+        {
+          "question": "Is my data secure?",
+          "answer": "Yes! We use industry-standard encryption for:\n- All data transmission (end-to-end encryption)\n- Local storage on your device\n- Cloud backups via Supabase"
+        },
+        {
+          "question": "Do you sell my data?",
+          "answer": "**No.** We never sell your personal data to third parties. We collect anonymous analytics to improve the app, but your personal information, trip routes, and vehicle data remain private."
+        },
+        {
+          "question": "Can I delete my account?",
+          "answer": "Yes! Go to Profile → Settings → Delete Account. Your data is deleted immediately on the server."
+        },
+        {
+          "question": "What data do you collect?",
+          "answer": "We collect:\n- Email address (for authentication)\n- Vehicle information (make, model, VIN, maintenance history)\n- Trip data (distance, duration, routes - stored locally and in Supabase)\n- Anonymous analytics (device model, OS version, feature usage)\nWe do **NOT** collect or share precise GPS coordinates for analytics.\n---"
+        },
+        {
+          "question": "What's included in the free version?",
+          "answer": "- Manage 1 vehicle\n- Manual trip tracking\n- AI maintenance recommendations\n- In-app notifications for maintenance\n- Weather forecast with recommendations for trips\n- Parking mode: timer for paid parking and parking spot finder\n- Vehicle information storage\n- Sync across devices"
+        },
+        {
+          "question": "What's included in Premium?",
+          "answer": "- **Manage up to 2 vehicles**\n- **GPS Navigation:** Turn-by-turn directions with Valhalla (self-hosted)\n- **Automatic Trip Tracking:** Background GPS recording\n- **Push Notifications:** Maintenance reminders\n- **Service Book Export:** In PDF format\n- **Route Planning:** Save and share multi-waypoint routes"
+        },
+        {
+          "question": "How does AI maintenance work?",
+          "answer": "Our AI (powered by OpenAI) analyzes your vehicle specifications (make, model, year, engine type, mileage) and generates personalized maintenance intervals for:\n- Oil changes\n- Tire rotations\n- Brake inspections\n- Filter replacements\n- And more!"
+        },
+        {
+          "question": "Can I track multiple vehicles?",
+          "answer": "Yes! In the free version you can manage 1 vehicle. Premium subscription allows you to manage up to 2 vehicles. Each vehicle has its own maintenance schedule and trip history."
+        },
+        {
+          "question": "Does automatic trip tracking drain my battery?",
+          "answer": "We've optimized battery usage, but background GPS tracking does consume more power than normal. Premium users can toggle automatic tracking on/off as needed."
+        },
+        {
+          "question": "Can I export my service book?",
+          "answer": "Yes! Premium users can export the service book in PDF format.\n---"
+        },
+        {
+          "question": "How accurate is the navigation?",
+          "answer": "Odomate uses Valhalla (self-hosted) for routing, which rely on OpenStreetMap data. Accuracy depends on map data quality in your region. Always follow traffic signs and laws."
+        },
+        {
+          "question": "Can I use navigation offline?",
+          "answer": "No, navigation requires an active internet connection for real-time routing and map tiles."
+        },
+        {
+          "question": "Does navigation show traffic?",
+          "answer": "Yes! Premium users can enable traffic visualization in navigation settings."
+        },
+        {
+          "question": "Can I add multiple waypoints?",
+          "answer": "Yes! Premium users can create routes with multiple stops and save them for future use."
+        },
+        {
+          "question": "Why does navigation sometimes reroute me?",
+          "answer": "Odomate automatically reroutes if:\n- You deviate from the planned route\n- Traffic conditions change\n- A faster route becomes available\n---"
+        },
+        {
+          "question": "How much does Premium cost?",
+          "answer": "- **Premium:** $10/month"
+        },
+        {
+          "question": "How do I subscribe to Premium?",
+          "answer": "1. Open Odomate\n2. Go to Profile → Premium\n3. Select your plan\n4. Complete payment via Google Play or App Store"
+        },
+        {
+          "question": "Can I cancel my subscription?",
+          "answer": "Yes, anytime! Your subscription remains active until the end of the current billing period. No refunds for partial months."
+        },
+        {
+          "question": "Is there a free trial?",
+          "answer": "Yes! New users receive a 3-day free trial of Premium features (if available in your region)."
+        },
+        {
+          "question": "What payment methods do you accept?",
+          "answer": "Payments are processed through:\n- **Android:** Google Play Billing\n- **iOS:** App Store In-App Purchase"
+        },
+        {
+          "question": "What happens if I cancel Premium?",
+          "answer": "- You keep all your vehicles and trip history\n- Navigation and automatic trip tracking will be disabled\n- Push notifications for maintenance become unavailable\n- AI maintenance recommendations remain available\n- You can resubscribe anytime to restore features\n---"
+        },
+        {
+          "question": "The app crashes or freezes. What should I do?",
+          "answer": "1. Restart the app\n2. Check for app updates in Google Play/App Store\n3. Clear app cache (Settings → Apps → Odomate → Clear Cache)\n4. If the problem persists, contact support@odomate.net with:\n   - Device model\n   - OS version\n   - Description of the issue"
+        },
+        {
+          "question": "GPS location is inaccurate. How can I fix it?",
+          "answer": "- Enable \"High Accuracy\" location mode in device settings\n- Ensure GPS permission is granted to Odomate\n- Use the app outdoors with clear sky view\n- Restart your device\n- Check if other GPS apps work correctly"
+        },
+        {
+          "question": "My trip didn't save. Why?",
+          "answer": "Trips shorter than 0.1 km (100 meters) are automatically discarded. Also check:\n- GPS permission is enabled\n- Internet connection for syncing to Supabase\n- Sufficient storage space on device"
+        },
+        {
+          "question": "Sync is not working. What should I do?",
+          "answer": "- Check your internet connection\n- Log out and log back in\n- Force sync from Profile → Sync Now\n- Contact support if the issue persists"
+        },
+        {
+          "question": "I forgot my password. How do I reset it?",
+          "answer": "1. On the login screen, tap \"Forgot Password?\"\n2. Enter your email address\n3. Check your email for a reset link\n4. Follow the link to create a new password\n---"
+        },
+        {
+          "question": "How do I add a maintenance record?",
+          "answer": "1. Select your vehicle\n2. Go to Maintenance tab\n3. Tap \"+ Add Maintenance\"\n4. Enter details (type, date, mileage, cost, notes)\n5. Save"
+        },
+        {
+          "question": "How do I set up maintenance reminders?",
+          "answer": "All maintenance reminders are set automatically based on AI-generated schedules. You can edit maintenance intervals for each component as needed."
+        },
+        {
+          "question": "Can I customize maintenance intervals?",
+          "answer": "Yes! Edit any maintenance item and adjust the interval (by mileage or time)."
+        },
+        {
+          "question": "Will I get push notifications for maintenance?",
+          "answer": "Push notifications are only available for Premium users. Enable notifications in device settings and Odomate will remind you when maintenance is due. Free users receive in-app notifications.\n---"
+        },
+        {
+          "question": "Where is my data stored?",
+          "answer": "- **Locally:** Encrypted SQLite database on your device\n- **Cloud:** Supabase servers (North America, Central America, Europe)"
+        },
+        {
+          "question": "Can I use Odomate without cloud sync?",
+          "answer": "No, Supabase authentication is required. However, all data is cached locally so you can access it offline."
+        },
+        {
+          "question": "What happens to my data if I delete the app?",
+          "answer": "- Local data is deleted immediately\n- Cloud data remains in Supabase until you delete your account\n- Reinstall the app and log in to restore your data"
+        },
+        {
+          "question": "Does Odomate track my location all the time?",
+          "answer": "No. Location is only accessed during:\n- Active navigation\n- Automatic trip tracking (Premium, when enabled)\n- Saving parking location\n- Finding parking spot\n---"
+        },
+        {
+          "question": "How do I report a bug?",
+          "answer": "Email us at support@odomate.net with:\n- Description of the bug\n- Steps to reproduce\n- Screenshots (if possible)\n- Device and OS information"
+        },
+        {
+          "question": "How do I request a feature?",
+          "answer": "We love feedback! Email support@odomate.net with your feature request."
+        },
+        {
+          "question": "How long does support take to respond?",
+          "answer": "We aim to respond within 48 hours, typically within 24 hours on weekdays."
+        },
+        {
+          "question": "Can I get a refund?",
+          "answer": "Refunds are handled by Google Play or App Store per their policies. Contact support@odomate.net within 48 hours of purchase for consideration.\n---\n**Website:** odomate.net  \n**Email:** support@odomate.net  \n**Privacy Policy:** [View Policy](PRIVACY_POLICY_EN.md)  \n**Terms of Service:** [View Terms](TERMS_OF_SERVICE_EN.md)\n---\n**Didn't find your question? Contact support@odomate.net**"
+        }
+      ]
+    },
+    "privacy": {
+      "content": [
+        {
+          "heading": "Introduction",
+          "text": "Welcome to Odomate! This Privacy Policy explains how Oleksandr Konovalov (\"we,\" \"us,\" or \"our\") collects, uses, and protects your information when you use the Odomate mobile application (\"App\"). We are committed to protecting your privacy and ensuring transparency about our data practices.\nBy using Odomate, you agree to the collection and use of information in accordance with this policy.\n**Contact Information:**\n- Developer: Oleksandr Konovalov\n- Email: support@odomate.net\n- Website: odomate.net"
+        },
+        {
+          "heading": "Information We Collect",
+          "text": "**Account Information:**\n- Email address (for authentication via Supabase)\n- Password (encrypted and securely stored)\n**Vehicle Information:**\n- Vehicle make, model, year\n- VIN number\n- Odometer readings\n- Maintenance history and schedules\n- Notes and custom data you add\n**Trip Data:**\n- Trip start/end times and locations\n- Distance traveled\n- Route information\n- Trip notes and categories\n**Location Data:**\n- GPS coordinates during active navigation or trip tracking\n- Location data is stored locally on your device and synced to Supabase for backup\n- **We do NOT share precise GPS coordinates with third parties** except for navigation services (Valhalla, Nominatim, Overpass (self-hosted; speed limit data, POI, Nominatim search support), Mapbox (fallback)) temporarily during active navigation\n- Location permission is required for navigation and trip tracking features\n**Device Information:**\n- Device model and manufacturer\n- Operating system version (Android/iOS)\n- App version\n- Device language and region settings\n**Usage Analytics (Anonymous):**\n- Screen views and feature usage\n- Service usage statistics (Nominatim, Valhalla, Nominatim, Overpass (self-hosted; speed limit data, POI, Nominatim search support), Mapbox (fallback))\n- App performance metrics and crash reports\n- Error logs and debugging information\n**Important:** We do NOT collect or store precise GPS coordinates for analytics purposes. Location data is only used for core app functionality (navigation, trip tracking) and is never shared with analytics services.\n**OpenAI Integration:**\n- Vehicle make, model, year, and engine specifications (VIN-derived data)\n- Mileage information\n- Used ONLY for AI-powered maintenance interval recommendations\n- **We do NOT send:** personal information, trip routes, or precise locations to OpenAI"
+        },
+        {
+          "heading": "How We Use Your Information",
+          "text": "We use collected information for the following purposes:\n- Provide vehicle management and maintenance tracking\n- Track and save your trips manually\n- Generate personalized maintenance schedules using AI analysis\n- Sync your data across devices\n- Send maintenance reminders via push notifications\n- Enable GPS navigation with real-time directions\n- Track and save your trips automatically (background tracking)\n- Provide component lifespan predictions based on your vehicle specifications\n- Analyze app usage patterns (anonymously) to improve user experience\n- Monitor service performance (Nominatim, Valhalla, Nominatim, Overpass (self-hosted; speed limit data, POI, Nominatim search support), Mapbox (fallback))\n- Detect and fix bugs, crashes, and errors\n- Optimize routing algorithms and navigation accuracy\n- Send you maintenance reminders and notifications\n- Respond to your support requests\n- Inform you about important app updates or changes"
+        },
+        {
+          "heading": "Data Storage and Security",
+          "text": "**Local Storage:**\n- All trip data, vehicle information, and maintenance records are stored locally on your device using encrypted SQLite database\n**Cloud Backup (Supabase):**\n- Your data is backed up to Supabase cloud servers for synchronization\n- Supabase is compliant with GDPR and uses encryption in transit and at rest\n- Servers are located in: North America, Central America, and Europe\n- **End-to-end encryption** for data transmission\n- **Encrypted local storage** using industry-standard encryption\n- **Secure authentication** with Supabase Auth\n- **Regular security audits** and updates\n- **No third-party advertising networks** with access to your data\n- **Active Users:** Your data is retained as long as you maintain an active account\n- **Deleted Accounts:** All personal data is deleted immediately upon account deletion\n- **Trip History:** Stored indefinitely unless you manually delete trips\n- **Analytics Data:** Anonymous analytics data is retained for 26 months (Firebase default)"
+        },
+        {
+          "heading": "Third-Party Services",
+          "text": "Odomate integrates with the following third-party services:\n**Supabase** (supabase.com)\n- Purpose: User authentication, data synchronization, and cloud storage\n- Data Shared: Email, encrypted password, vehicle data, trip data\n- Privacy Policy: https://supabase.com/privacy\n**Mapbox** (mapbox.com)\n- Purpose: Map rendering, navigation, routing\n- Data Shared: Temporary GPS coordinates during navigation, search queries\n- Privacy Policy: https://www.mapbox.com/privacy\n**OpenStreetMap (OSRM)** (project-osrm.org)\n- Purpose: Route calculation\n- Data Shared: Start/end coordinates for route requests\n- Privacy Policy: https://wiki.openstreetmap.org/wiki/Privacy_Policy\n**Nominatim** (nominatim.org)\n- Purpose: Address geocoding and reverse geocoding\n- Data Shared: Search queries, coordinates for reverse geocoding\n- Privacy Policy: https://operations.osmfoundation.org/policies/nominatim/\n**OpenAI** (openai.com)\n- Purpose: AI-powered maintenance interval recommendations\n- Data Shared: Vehicle specifications (make, model, year, engine type), mileage\n- **NOT Shared:** Personal information, trip routes, GPS coordinates\n- Privacy Policy: https://openai.com/privacy\n**Firebase Analytics & Crashlytics** (firebase.google.com)\n- Purpose: Anonymous usage analytics, crash reports, performance monitoring\n- Data Shared: Device model, OS version, app version, screen views, feature usage, crash logs\n- **NOT Shared:** Personal information, email, GPS coordinates, trip details\n- Privacy Policy: https://firebase.google.com/support/privacy"
+        },
+        {
+          "heading": "Your Privacy Rights",
+          "text": "You have the right to:\n- **Access Your Data:** View all your stored information in the app\n- **Delete Your Data:** Permanently delete your account and all associated data\n- **Correct Your Data:** Edit vehicle information, trips, and maintenance records at any time\nTo delete your account and all data:\n1. Open Odomate app\n2. Go to Profile → Settings\n3. Select \"Delete Account\"\n4. Confirm deletion\n**What happens:**\n- Immediate deletion from local device\n- Server-side data is deleted immediately\n- Cannot be undone\nIf you are located in the European Union, you have additional rights:\n- Right to data portability\n- Right to restrict processing\n- Right to object to processing\n- Right to lodge a complaint with a supervisory authority\nContact us at support@odomate.net to exercise these rights."
+        },
+        {
+          "heading": "Children's Privacy",
+          "text": "Odomate is not intended for users under the age of 16. We do not knowingly collect personal information from children under 16. If you believe we have collected data from a child, please contact us immediately, and we will delete such information."
+        },
+        {
+          "heading": "International Data Transfers",
+          "text": "Your data may be transferred to and stored in servers located in North America, Central America, or Europe. By using Odomate, you consent to this transfer. We ensure that all transfers comply with applicable data protection laws, including GDPR for EU users."
+        },
+        {
+          "heading": "Changes to This Privacy Policy",
+          "text": "We may update this Privacy Policy from time to time. We will notify you of any significant changes by:\n- Posting the new Privacy Policy in the app\n- Updating the \"Last Updated\" date at the top\n- Sending an in-app notification (for major changes)\nYour continued use of Odomate after changes become effective constitutes acceptance of the updated policy."
+        },
+        {
+          "heading": "Contact Us",
+          "text": "If you have any questions, concerns, or requests regarding this Privacy Policy or your data, please contact us:\n**Email:** support@odomate.net  \n**Website:** odomate.net  \n**Developer:** Oleksandr Konovalov\nWe will respond to your inquiry within 30 days.\n**Summary:** Odomate collects only the data necessary to provide vehicle management, navigation, and maintenance tracking features. We do not sell your data to third parties, and we use industry-standard security measures to protect your information. You maintain full control over your data and can delete your account at any time."
+        }
+      ]
+    },
+    "terms": {
+      "content": [
+        {
+          "heading": "Agreement to Terms",
+          "text": "By accessing or using the Odomate mobile application (\"App\"), you agree to be bound by these Terms of Service (\"Terms\"). If you do not agree to these Terms, do not use the App.\n**Contact Information:**\n- Developer: Oleksandr Konovalov\n- Email: support@odomate.net\n- Website: odomate.net"
+        },
+        {
+          "heading": "Description of Service",
+          "text": "Odomate is a vehicle management and navigation application that provides:\n- Vehicle management (add, edit, delete vehicles)\n- Manual trip tracking\n- In-app notifications for maintenance reminders\n- Vehicle information storage\n- Service book export\n- **GPS Navigation:** Real-time turn-by-turn navigation\n- **Automatic Trip Tracking:** Automatic logging with background GPS recording\n- **Route Planning:** Multi-waypoint route creation and saving\n- **AI-Powered Maintenance:** Personalized maintenance schedules powered by OpenAI\n- **Weather Forecast:** With driving recommendations\n- **Parking Mode:** Timer for paid parking and parking spot finder\n- **Push Notifications:** Maintenance reminders\n- **Advanced Analytics:** Detailed trip statistics and insights"
+        },
+        {
+          "heading": "Account Registration",
+          "text": "- You must create an account to use Odomate\n- You must provide a valid email address\n- You are responsible for maintaining the confidentiality of your password\n- You must be at least 16 years old to create an account\n- You are responsible for all activities under your account\n- Notify us immediately of any unauthorized use at support@odomate.net\n- We are not liable for any loss resulting from unauthorized use of your account"
+        },
+        {
+          "heading": "Subscription and Payments",
+          "text": "**Premium:**\n- Price: $4.99 USD/month or $49.99 USD/year\n- Billed monthly or annually\n- Includes all premium features for one user\n- Cancel anytime\n- Subscriptions are billed in advance (monthly or annually)\n- Payment is processed through Google Play Billing (Android) or App Store In-App Purchase (iOS)\n- Manage subscription: in Google Account settings (Android) or iCloud settings (iOS)\n- Prices are in USD and may vary by region due to currency conversion and local taxes\n- New users may receive a free trial period (if offered)\n- Your payment method will be charged automatically at the end of the trial unless you cancel\n- Cancel before the trial ends to avoid charges\n- You can cancel your subscription at any time\n- Cancellation takes effect at the end of the current billing period\n- No refunds for partial months\n- Refund requests within 48 hours of purchase may be considered on a case-by-case basis\n- We reserve the right to change subscription prices with 30 days' notice\n- Price changes do not affect your current billing period\n- You may cancel your subscription if you do not agree to the new price"
+        },
+        {
+          "heading": "Acceptable Use",
+          "text": "- Use the App for any illegal purpose\n- Attempt to hack, reverse engineer, or compromise the App's security\n- Share your account credentials with others\n- Use the App to track others without their consent\n- Upload malicious code or viruses\n- Abuse or overload our servers with excessive requests\n- Scrape or copy data from the App for commercial purposes\n- Violate any applicable laws or regulations\n- Always obey traffic laws and road signs\n- Navigation is provided \"as is\" and may contain errors\n- You are solely responsible for your driving decisions\n- We are not liable for accidents, traffic violations, or damages resulting from using the navigation feature"
+        },
+        {
+          "heading": "User Content",
+          "text": "- You retain ownership of all data you enter into the App (trip notes, vehicle information, etc.)\n- You grant us a license to store, process, and display your data to provide the service\n- You are responsible for backing up your data\n- You can delete your account and all data at any time\n- Upon account deletion, your data is deleted immediately on the server\n- Some anonymized analytics data may be retained per our Privacy Policy"
+        },
+        {
+          "heading": "Intellectual Property",
+          "text": "- Odomate and all related trademarks, logos, and content are owned by Oleksandr Konovalov\n- You may not copy, modify, distribute, or create derivative works from the App\n- Map data © OpenStreetMap contributors\n- Navigation powered by Valhalla, Nominatim, Overpass (self-hosted; speed limit data, POI, Nominatim search support), Mapbox (fallback), and Nominatim\n- AI features powered by OpenAI"
+        },
+        {
+          "heading": "Privacy and Data Protection",
+          "text": "Your privacy is important to us. Please review our [Privacy Policy](PRIVACY_POLICY_EN.md) to understand how we collect, use, and protect your data."
+        },
+        {
+          "heading": "Disclaimers and Limitations of Liability",
+          "text": "THE APP IS PROVIDED \"AS IS\" AND \"AS AVAILABLE\" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:\n- Warranties of merchantability\n- Fitness for a particular purpose\n- Non-infringement\n- Accuracy of navigation data\n- Uninterrupted or error-free service\nTO THE MAXIMUM EXTENT PERMITTED BY LAW, OLEKSANDR KONOVALOV SHALL NOT BE LIABLE FOR:\n- Indirect, incidental, special, or consequential damages\n- Loss of profits, data, or business opportunities\n- Personal injury or property damage resulting from use of the App\n- Inaccurate navigation or routing information\n- Service interruptions or data loss"
+        },
+        {
+          "heading": "Third-Party Services",
+          "text": "Odomate integrates with third-party services:\n- **Supabase:** Authentication and data storage\n- **Mapbox:** Maps and navigation\n- **OSRM:** Route calculation\n- **Nominatim:** Geocoding\n- **OpenAI:** AI-powered recommendations\n- **Firebase:** Analytics and crash reporting\nYour use of these services is subject to their respective terms and privacy policies."
+        },
+        {
+          "heading": "Termination",
+          "text": "- You may terminate your account at any time by deleting it in the App settings\nWe may suspend or terminate your account if:\n- You violate these Terms\n- You engage in fraudulent or illegal activity\n- Your account is inactive for 24 months\n- We discontinue the service (with 30 days' notice)\n- Upon termination, your access to premium features will cease immediately\n- Your data will be deleted per our Privacy Policy\n- No refunds for partial subscription periods"
+        },
+        {
+          "heading": "Changes to Terms",
+          "text": "We may update these Terms from time to time. The current version is always published on our website at odomate.net, where the \"Last Updated\" date is maintained. Your continued use of the App after changes become effective constitutes acceptance of the Terms published on the website."
+        },
+        {
+          "heading": "Governing Law and Dispute Resolution",
+          "text": "These Terms are governed by the laws of Ukraine, without regard to conflict of law principles.\n- Any disputes arising from these Terms or the App shall be resolved through good-faith negotiations\n- If negotiations fail, disputes may be submitted to binding arbitration or the competent courts of Ukraine\nEU users have the right to file a complaint with their local data protection authority and to bring legal proceedings in their country of residence."
+        },
+        {
+          "heading": "Severability",
+          "text": "If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions shall remain in full force and effect."
+        },
+        {
+          "heading": "Contact Us",
+          "text": "If you have any questions about these Terms, please contact us:\n**Email:** support@odomate.net  \n**Website:** odomate.net  \n**Developer:** Oleksandr Konovalov\n**By using Odomate, you acknowledge that you have read, understood, and agreed to these Terms of Service.**"
+        }
+      ]
+    },
+    "userManual": "## Introduction\nOdomate is an application for vehicle management, navigation, and trip tracking with AI-powered maintenance recommendations.\n## 1. Getting Started\n1. Install and open the application.  \n2. Create an account or log in (email).  \n3. Add your first vehicle (make, model, year, VIN optional).  \n4. Set units of measurement (km/mi) and language in settings.\n## 2. Vehicles\n- Add/edit/delete vehicles.  \n- Fields: make, model, year, VIN, license plate (optional).  \n- Update odometer; attachments (documents/notes).  \n- Multiple vehicles supported.\n## 3. Trips\n### 3.1 Manual Logging (Free)\n- Create trip: start/finish, distance, notes.  \n- Categories and tags.\n### 3.2 Navigation and Automatic Tracking (Premium)\n1. Find destination (address/place/coordinates).  \n2. Add waypoints (optional).  \n3. Start navigation and follow instructions.  \n4. Automatic tracking works during active navigation: records distance and route in background.  \n5. Automatic rerouting when deviating from route.\nNotes:  \n- Maps: Mapbox.  \n- Navigation and routing: Valhalla (self-hosted), Mapbox as fallback.  \n- Search: Nominatim.  \n- Battery impact: GPS consumes more power.  \n- Always follow traffic laws.\n## 4. Maintenance\n### 4.1 AI Maintenance Plans\n- Based on vehicle data and mileage.  \n- Recommendations for service intervals and components.\n### 4.2 Reminders\n- Reminders are sent automatically based on AI maintenance plans and set intervals.  \n- Enable push notifications in settings (device permissions required).\n## 5. Synchronization\n- Account via Supabase; data syncs across devices.  \n- Offline-first: changes sent when connection restored.  \n- Conflicts: last edit wins; manual correction if needed.\n## 6. Settings\n- Units (km/mi), language, time format (12/24 hour), temperature format (°C/°F).  \n- Notifications (maintenance, tracking).  \n- Privacy: account deletion, analytics opt-out.  \n- Map options: traffic, 3D, zoom, avoid tolls, avoid highways, avoid ferries.\n## 7. Accuracy Tips\n- Keep GPS enabled; adjust power saving if necessary.  \n- Movement-bearing technology is always used for determining direction of travel.  \n- Keep the app updated.\n## 8. Troubleshooting\n- No GPS position: check permissions and location services.  \n- Navigation stopped: check internet/GPS, restart app.  \n- Sync stuck: check connection and retry later.  \n- Contact support (below).\n## 9. Privacy\n- Location used only during active navigation/tracking.  \n- Anonymous analytics for quality improvement.  \n- Details: `legal/PRIVACY_POLICY_EN.md`, `legal/GDPR_COMPLIANCE_EN.md`.\n## 10. Support\nEmail: support@odomate.net  \nWebsite: odomate.net",
+    "gdprCompliance": "## Controller (Art. 4)\nOleksandr Konovalov  \nEmail: support@odomate.net  \nWebsite: odomate.net\n## Purposes of Processing (Art. 5)\n- Provide app functionality (vehicle management, maintenance tracking, navigation, trip logging)  \n- Account management and synchronization  \n- Support and service notifications  \n- Stability, troubleshooting, and security (anonymous analytics/crash reports)  \n- AI‑based maintenance recommendations\n## Legal Bases (Art. 6)\n- Contract performance (Art. 6(1)(b)): core features, account, sync  \n- Legitimate interests (Art. 6(1)(f)): security, stability, anonymous usage statistics  \n- Consent (Art. 6(1)(a)) where required: notifications and optional features\n## Categories of Personal Data\n- Contact: email  \n- Usage: interactions, screen views (anonymous)  \n- Technical: device/OS, app version, diagnostics/crash data  \n- Geolocation: precise/approximate during navigation/trip tracking  \n- Vehicle data: make, model, VIN, odometer, service history  \n- Trip data: start/finish, distance, route geometry, notes\n## Recipients (Art. 13)\n- Supabase (authentication/storage)  \n- Mapbox (maps/navigation), OSRM (routing), Nominatim (geocoding) – temporary processing of coordinates during active navigation  \n- OpenAI (AI recommendations: vehicle/odometer context, without personal identifiers)  \n- Firebase (anonymous analytics/crash reporting)\n## International Transfers (Art. 44 et seq.)\nProcessing may occur in data centers in North/Central America and the EU. Appropriate safeguards (including Standard Contractual Clauses) are applied to ensure an adequate level of protection.\n## Retention (Art. 5)\n- Account data: retained while the account is active  \n- Deleted accounts: server‑side data is deleted immediately upon account deletion  \n- Trip history: retained until you manually delete trips  \n- Anonymous analytics/crash data: 26 months (Firebase default)\n## Data Subject Rights (Art. 12–22)\nRight of access, rectification, erasure, restriction, objection, and portability.  \nRequests: support@odomate.net.  \nComplaints: competent supervisory authority (Art. 77).\n## Security (Art. 32)\n- Encryption in transit (HTTPS/TLS) and at rest (encrypted databases)  \n- Access controls and audit logging  \n- Data minimization\n## Note on Location Data\nPrecise location is processed only during active navigation or when automatic trip tracking is enabled. No continuous sharing with third parties for advertising/tracking. During navigation, coordinates may be temporarily sent to Mapbox/OSRM/Nominatim for routing.\n## DPO and Contact\nA DPO is not required based on current risk assessment.  \nContact: support@odomate.net"
+  },
+  "ru": {
+    "faq": {
+      "items": [
+        {
+          "question": "Что такое Odomate?",
+          "answer": "Odomate — это комплексное приложение для управления автомобилем, которое помогает отслеживать обслуживание, планировать поездки и навигировать с помощью GPS в реальном времени. Оно сочетает рекомендации по обслуживанию на основе ИИ с расширенными функциями навигации."
+        },
+        {
+          "question": "Бесплатно ли Odomate?",
+          "answer": "Да! Odomate предлагает бесплатный тариф с управлением автомобилем, ручным учетом поездок и рекомендациями по обслуживанию на основе ИИ. Премиум-функции, такие как GPS-навигация, автоматический трекинг поездок и push-уведомления, требуют подписки ($4.99/мес или $49.99/год)."
+        },
+        {
+          "question": "Какие платформы поддерживает Odomate?",
+          "answer": "Odomate доступен для устройств Android и iOS."
+        },
+        {
+          "question": "Нужно ли интернет-соединение?",
+          "answer": "- **Офлайн:** Весь функционал работает офлайн, кроме навигации, автоматического треккинга поездок и ИИ‑анализа срока службы компонентов\n- **Для навигации:** Требуется интернет для маршрутизации в реальном времени и загрузки карт\n- **Для функций ИИ:** Требуется интернет для интеграции с OpenAI\n---"
+        },
+        {
+          "question": "Как создать аккаунт?",
+          "answer": "1. Загрузите Odomate из Google Play или App Store\n2. Откройте приложение и нажмите «Регистрация»\n3. Введите email и создайте пароль\n4. Подтвердите адрес электронной почты\n5. Начните добавлять автомобили!"
+        },
+        {
+          "question": "Безопасны ли мои данные?",
+          "answer": "Да! Мы используем шифрование промышленного стандарта для:\n- Всей передачи данных (сквозное шифрование)\n- Локального хранения на вашем устройстве\n- Облачных резервных копий через Supabase"
+        },
+        {
+          "question": "Продаете ли вы мои данные?",
+          "answer": "**Нет.** Мы никогда не продаем ваши персональные данные третьим лицам. Мы собираем анонимную аналитику для улучшения приложения, но ваша личная информация, маршруты поездок и данные об автомобиле остаются конфиденциальными."
+        },
+        {
+          "question": "Могу ли я удалить свой аккаунт?",
+          "answer": "Да! Перейдите в Профиль → Настройки → Удалить аккаунт. Ваши данные удаляются немедленно на сервере."
+        },
+        {
+          "question": "Какие данные вы собираете?",
+          "answer": "Мы собираем:\n- Адрес электронной почты (для аутентификации)\n- Информацию об автомобиле (марка, модель, VIN, история обслуживания)\n- Данные о поездках (расстояние, длительность, маршруты — хранятся локально и в Supabase)\n- Анонимную аналитику (модель устройства, версия ОС, использование функций)\nМы **НЕ** собираем и не передаем точные GPS-координаты для аналитики.\n---"
+        },
+        {
+          "question": "Что включено в бесплатную версию?",
+          "answer": "- Управление 1 автомобилем\n- Ручной учет поездок\n- ИИ-рекомендации по обслуживанию\n- Уведомления в приложении о необходимом обслуживании\n- Прогноз погоды с рекомендациями для поездок\n- Режим парковки: таймер для платной парковки и поиск места парковки\n- Хранение информации об автомобиле\n- Синхронизация между устройствами"
+        },
+        {
+          "question": "Что включено в Premium?",
+          "answer": "- **Управление до 2 автомобилей**\n- **GPS-навигация:** Пошаговые инструкции с использованием собственных серверов (Valhalla)\n- **Автоматический трекинг поездок:** Автоматический учет с фоновой записью GPS\n- **Push-уведомления:** Напоминания о техобслуживании\n- **Экспорт сервисной книжки:** В формате PDF\n- **Планирование маршрутов:** Сохранение и совместное использование маршрутов с несколькими точками"
+        },
+        {
+          "question": "Как работает обслуживание с ИИ?",
+          "answer": "Наш ИИ (на основе OpenAI) анализирует характеристики вашего автомобиля (марка, модель, год, тип двигателя, пробег) и создает персонализированные интервалы обслуживания для:\n- Замены масла\n- Ротации шин\n- Проверки тормозов\n- Замены фильтров\n- И многого другого!"
+        },
+        {
+          "question": "Могу ли я отслеживать несколько автомобилей?",
+          "answer": "Да! В бесплатной версии вы можете управлять 1 автомобилем. Подписка Premium позволяет управлять до 2 автомобилей. У каждого автомобиля свой график обслуживания и история поездок."
+        },
+        {
+          "question": "Разряжает ли автоматический трекинг поездок батарею?",
+          "answer": "Мы оптимизировали использование батареи, но фоновый трекинг GPS потребляет больше энергии, чем обычно. Пользователи Premium могут включать/выключать автоматический трекинг по необходимости."
+        },
+        {
+          "question": "Могу ли я экспортировать сервисную книжку?",
+          "answer": "Да! Пользователи Premium могут экспортировать сервисную книжку в формате PDF.\n---"
+        },
+        {
+          "question": "Насколько точна навигация?",
+          "answer": "Odomate использует Valhalla (самохостинг) для маршрутизации, которые основаны на данных OpenStreetMap. Точность зависит от качества картографических данных в вашем регионе. Всегда следуйте дорожным знакам и правилам."
+        },
+        {
+          "question": "Могу ли я использовать навигацию офлайн?",
+          "answer": "Нет, для навигации требуется активное интернет-соединение для маршрутизации в реальном времени и загрузки тайлов карт."
+        },
+        {
+          "question": "Показывает ли навигация пробки?",
+          "answer": "Да! Пользователи Premium могут включить визуализацию пробок в настройках навигации."
+        },
+        {
+          "question": "Могу ли я добавить несколько промежуточных точек?",
+          "answer": "Да! Пользователи Premium могут создавать маршруты с несколькими остановками и сохранять их для будущего использования."
+        },
+        {
+          "question": "Почему навигация иногда перестраивает маршрут?",
+          "answer": "Odomate автоматически перестраивает маршрут, если:\n- Вы отклоняетесь от запланированного маршрута\n- Меняются условия движения\n- Становится доступен более быстрый маршрут\n---"
+        },
+        {
+          "question": "Сколько стоит Premium?",
+          "answer": "- **Premium:** $4.99/мес или $49.99/год"
+        },
+        {
+          "question": "Как оформить подписку Premium?",
+          "answer": "1. Откройте Odomate\n2. Перейдите в Профиль → Premium\n3. Выберите тариф (месячный или годовой)\n4. Завершите оплату через Google Play или App Store\n5. Управление подпиской: в настройках Google Account (Android) или iCloud (iOS)"
+        },
+        {
+          "question": "Могу ли я отменить подписку?",
+          "answer": "Да, в любое время! Ваша подписка остается активной до конца текущего расчетного периода. Возврат средств за неполные месяцы не предусмотрен."
+        },
+        {
+          "question": "Есть ли бесплатный пробный период?",
+          "answer": "Да! Новые пользователи получают 3-дневный бесплатный пробный период функций Premium (если доступно в вашем регионе)."
+        },
+        {
+          "question": "Какие способы оплаты вы принимаете?",
+          "answer": "Платежи обрабатываются через:\n- **Android:** Google Play Billing\n- **iOS:** App Store In-App Purchase"
+        },
+        {
+          "question": "Что произойдет, если я отменю Premium?",
+          "answer": "- Вы сохраняете все свои автомобили и историю поездок\n- Навигация и автоматический трекинг поездок будут отключены\n- Push-уведомления о техобслуживании станут недоступны\n- ИИ-рекомендации по обслуживанию останутся доступны\n- Вы можете возобновить подписку в любое время, чтобы восстановить функции\n---"
+        },
+        {
+          "question": "Приложение зависает или падает. Что делать?",
+          "answer": "1. Перезапустите приложение\n2. Проверьте наличие обновлений в Google Play/App Store\n3. Очистите кеш приложения (Настройки → Приложения → Odomate → Очистить кеш)\n4. Если проблема сохраняется, свяжитесь с support@odomate.net с указанием:\n   - Модели устройства\n   - Версии ОС\n   - Описания проблемы"
+        },
+        {
+          "question": "GPS-местоположение неточное. Как исправить?",
+          "answer": "- Включите режим «Высокая точность» в настройках местоположения устройства\n- Убедитесь, что Odomate имеет разрешение на доступ к GPS\n- Используйте приложение на открытом воздухе с хорошим обзором неба\n- Перезагрузите устройство\n- Проверьте, правильно ли работают другие GPS-приложения"
+        },
+        {
+          "question": "Моя поездка не сохранилась. Почему?",
+          "answer": "Поездки короче 0,1 км (100 метров) автоматически удаляются. Также проверьте:\n- Разрешение GPS включено\n- Интернет-соединение для синхронизации с Supabase\n- Достаточно места на устройстве"
+        },
+        {
+          "question": "Синхронизация не работает. Что делать?",
+          "answer": "- Проверьте интернет-соединение\n- Выйдите и войдите снова\n- Принудительная синхронизация из Профиль → Синхронизация\n- Свяжитесь со службой поддержки, если проблема сохраняется"
+        },
+        {
+          "question": "Я забыл пароль. Как сбросить его?",
+          "answer": "1. На экране входа нажмите «Забыли пароль?»\n2. Введите адрес электронной почты\n3. Проверьте почту на наличие ссылки для сброса\n4. Перейдите по ссылке, чтобы создать новый пароль\n---"
+        },
+        {
+          "question": "Как добавить запись об обслуживании?",
+          "answer": "1. Выберите автомобиль\n2. Перейдите на вкладку Обслуживание\n3. Нажмите «+ Добавить обслуживание»\n4. Введите данные (тип, дата, пробег, стоимость, заметки)\n5. Сохраните"
+        },
+        {
+          "question": "Как настроить напоминания об обслуживании?",
+          "answer": "Все напоминания об обслуживании устанавливаются автоматически на основе планов, созданных ИИ. Вы можете редактировать интервалы обслуживания для каждого компонента по необходимости."
+        },
+        {
+          "question": "Могу ли я настроить интервалы обслуживания?",
+          "answer": "Да! Отредактируйте любой элемент обслуживания и настройте интервал (по пробегу или времени)."
+        },
+        {
+          "question": "Получу ли я push-уведомления об обслуживании?",
+          "answer": "Push-уведомления доступны только для пользователей Premium. Включите уведомления в настройках устройства, и Odomate будет напоминать вам, когда обслуживание требуется. Бесплатные пользователи получают уведомления в приложении.\n---"
+        },
+        {
+          "question": "Где хранятся мои данные?",
+          "answer": "- **Локально:** Зашифрованная база данных SQLite на вашем устройстве\n- **Облако:** Серверы Supabase (Северная Америка, Центральная Америка, Европа)"
+        },
+        {
+          "question": "Могу ли я использовать Odomate без облачной синхронизации?",
+          "answer": "Нет, требуется аутентификация Supabase. Однако все данные кешируются локально, поэтому вы можете получить к ним доступ офлайн."
+        },
+        {
+          "question": "Что происходит с моими данными, если я удалю приложение?",
+          "answer": "- Локальные данные удаляются немедленно\n- Облачные данные остаются в Supabase, пока вы не удалите аккаунт\n- Переустановите приложение и войдите, чтобы восстановить данные"
+        },
+        {
+          "question": "Отслеживает ли Odomate мое местоположение постоянно?",
+          "answer": "Нет. Доступ к местоположению происходит только во время:\n- Активной навигации\n- Автоматического трекинга поездок (Premium, когда включено)\n- Сохранения места парковки\n- Поиска места парковки\n---"
+        },
+        {
+          "question": "Как сообщить об ошибке?",
+          "answer": "Напишите нам на support@odomate.net с указанием:\n- Описания ошибки\n- Шагов для воспроизведения\n- Скриншотов (если возможно)\n- Информации об устройстве и ОС"
+        },
+        {
+          "question": "Как запросить новую функцию?",
+          "answer": "Мы любим обратную связь! Напишите на support@odomate.net с вашим предложением."
+        },
+        {
+          "question": "Сколько времени занимает ответ службы поддержки?",
+          "answer": "Мы стремимся ответить в течение 48 часов, обычно в течение 24 часов в рабочие дни."
+        },
+        {
+          "question": "Могу ли я получить возврат средств?",
+          "answer": "Возвраты средств обрабатываются Google Play или App Store в соответствии с их политикой. Свяжитесь с support@odomate.net в течение 48 часов после покупки для рассмотрения.\n---\n**Сайт:** odomate.net  \n**Email:** support@odomate.net  \n**Политика конфиденциальности:** [Просмотреть](PRIVACY_POLICY_RU.md)  \n**Условия использования:** [Просмотреть](TERMS_OF_SERVICE_RU.md)\n---\n**Не нашли ответ на свой вопрос? Свяжитесь с support@odomate.net**"
+        }
+      ]
+    },
+    "privacy": {
+      "content": [
+        {
+          "heading": "Введение",
+          "text": "Добро пожаловать в Odomate! Эта Политика конфиденциальности объясняет, как Олександр Коновалов (\"мы\", \"наш\" или \"нас\") собирает, использует и защищает вашу информацию при использовании мобильного приложения Odomate (\"Приложение\"). Мы стремимся защитить вашу конфиденциальность и обеспечить прозрачность наших практик обработки данных.\nИспользуя Odomate, вы соглашаетесь на сбор и использование информации в соответствии с этой политикой.\n**Контактная Информация:**\n- Разработчик: Олександр Коновалов\n- Email: support@odomate.net\n- Веб-сайт: odomate.net"
+        },
+        {
+          "heading": "Информация, Которую Мы Собираем",
+          "text": "**Информация об Аккаунте:**\n- Адрес электронной почты (для аутентификации через Supabase)\n- Пароль (зашифрован и надежно хранится)\n**Информация о Транспорте:**\n- Марка, модель и год автомобиля\n- VIN номер\n- Показания одометра\n- История и расписания технического обслуживания\n- Заметки и пользовательские данные, которые вы добавляете\n**Данные о Поездках:**\n- Время и местоположения начала/окончания поездки\n- Пройденное расстояние\n- Информация о маршруте\n- Заметки и категории поездок\n**Данные о Местоположении:**\n- GPS координаты во время активной навигации или отслеживания поездок\n- Данные о местоположении хранятся локально на вашем устройстве и синхронизируются с Supabase для резервного копирования\n- **Навигационные сервисы работают на собственных серверах** (Valhalla, Nominatim, Overpass) — данные не передаются третьим лицам\n- **Mapbox используется редко** только как резервный сервис при недоступности основных\n- Разрешение на определение местоположения требуется для функций навигации и отслеживания поездок\n**Информация об Устройстве:**\n- Модель и производитель устройства\n- Версия операционной системы (Android/iOS)\n- Версия приложения\n- Настройки языка и региона устройства\n**Аналитика Использования (Анонимная):**\n- Просмотры экранов и использование функций\n- Статистика использования навигационных сервисов (анонимно)\n- Метрики производительности приложения и отчеты о сбоях\n- Журналы ошибок и отладочная информация\n**Важно:** Мы НЕ собираем и не храним точные GPS координаты для целей аналитики. Данные о местоположении используются только для основного функционала приложения (навигация, отслеживание поездок) и никогда не передаются аналитическим сервисам.\n**Интеграция с OpenAI:**\n- Марка, модель, год и характеристики двигателя автомобиля (данные из VIN)\n- Информация о пробеге\n- Используется ТОЛЬКО для ИИ-рекомендаций по интервалам обслуживания\n- **Мы НЕ отправляем:** личную информацию, маршруты поездок или точные координаты в OpenAI"
+        },
+        {
+          "heading": "Как Мы Используем Вашу Информацию",
+          "text": "Мы используем собранную информацию для следующих целей:\n- Управление транспортом и отслеживание обслуживания\n- Ручное сохранение поездок\n- Генерация персонализированных расписаний обслуживания с использованием ИИ-анализа\n- Синхронизация данных между устройствами\n- Отправка напоминаний о техобслуживании через push-уведомления\n- GPS навигация с направлениями в реальном времени\n- Автоматическое отслеживание и сохранение поездок (в фоне)\n- Прогноз срока службы компонентов на основе характеристик автомобиля\n- Анализ паттернов использования приложения (анонимно) для улучшения пользовательского опыта\n- Мониторинг производительности навигационных сервисов\n- Обнаружение и исправление ошибок, сбоев и багов\n- Оптимизация алгоритмов маршрутизации и точности навигации\n- Отправка напоминаний о техобслуживании и уведомлений\n- Ответы на ваши запросы в поддержку\n- Информирование о важных обновлениях или изменениях приложения"
+        },
+        {
+          "heading": "Хранение и Безопасность Данных",
+          "text": "**Локальное Хранилище:**\n- Все данные о поездках, информация о транспорте и записи об обслуживании хранятся локально на вашем устройстве в зашифрованной базе данных SQLite\n**Облачное Резервное Копирование (Supabase):**\n- Ваши данные резервируются на облачных серверах Supabase для синхронизации\n- Supabase соответствует GDPR и использует шифрование при передаче и хранении\n- Серверы расположены в: Европе\n- **Сквозное шифрование** для передачи данных\n- **Зашифрованное локальное хранилище** с использованием промышленных стандартов шифрования\n- **Безопасная аутентификация** с Supabase Auth\n- **Регулярные аудиты безопасности** и обновления\n- **Отсутствие сторонних рекламных сетей** с доступом к вашим данным\n- **Активные пользователи:** Данные хранятся, пока аккаунт активен\n- **Удаленные аккаунты:** Все персональные данные удаляются немедленно после удаления аккаунта\n- **История поездок:** Хранится бессрочно, пока вы не удалите поездки вручную\n- **Аналитические данные:** Анонимные данные хранятся 26 месяцев (по умолчанию Firebase)"
+        },
+        {
+          "heading": "Сторонние Сервисы",
+          "text": "Odomate интегрируется со следующими сторонними сервисами:\n**Supabase** (supabase.com)\n- Назначение: Аутентификация пользователей, синхронизация данных и облачное хранилище\n- Передаваемые Данные: Email, зашифрованный пароль, данные о транспорте, данные о поездках\n- Политика Конфиденциальности: https://supabase.com/privacy\n**Valhalla** (самохостинг)\n- Назначение: Расчет маршрутов и навигация\n- Передаваемые Данные: Координаты начала/конца/промежуточных точек для запросов маршрута\n- Хостинг: Собственные серверы (данные не передаются третьим лицам)\n**Nominatim** (самохостинг)\n- Назначение: Геокодирование адресов и обратное геокодирование\n- Передаваемые Данные: Поисковые запросы, координаты для обратного геокодирования\n- Хостинг: Собственные серверы (данные не передаются третьим лицам)\n**Overpass API** (самохостинг)\n- Назначение: Поиск объектов на карте (POI, адреса)\n- Передаваемые Данные: Поисковые запросы, координаты области поиска\n- Хостинг: Собственные серверы (данные не передаются третьим лицам)\n**Mapbox** (mapbox.com) — резервный сервис\n- Назначение: Резервный сервис для маршрутизации (используется редко при недоступности основных сервисов)\n- Передаваемые Данные: Временные GPS координаты только при активации резервного режима\n- Политика Конфиденциальности: https://www.mapbox.com/privacy\n**OpenAI** (openai.com)\n- Назначение: ИИ-рекомендации по интервалам обслуживания\n- Передаваемые Данные: Характеристики автомобиля (марка, модель, год, тип двигателя), пробег\n- **НЕ Передается:** Личная информация, маршруты поездок, GPS координаты\n- Политика Конфиденциальности: https://openai.com/privacy\n**Firebase Analytics & Crashlytics** (firebase.google.com)\n- Назначение: Анонимная аналитика использования, отчеты о сбоях, мониторинг производительности\n- Передаваемые Данные: Модель устройства, версия ОС, версия приложения, просмотры экранов, использование функций, журналы сбоев\n- **НЕ Передается:** Личная информация, email, GPS координаты, детали поездок\n- Политика Конфиденциальности: https://firebase.google.com/support/privacy"
+        },
+        {
+          "heading": "Ваши Права на Конфиденциальность",
+          "text": "Вы имеете право:\n- **Получить доступ к данным:** Просматривать сохраненную в приложении информацию\n- **Удалить данные:** Удалить аккаунт и все связанные с ним данные\n- **Исправить данные:** Редактировать информацию о транспорте, поездках и обслуживании\nЧтобы удалить ваш аккаунт и все данные:\n1. Откройте приложение Odomate\n2. Перейдите в Профиль → Настройки\n3. Выберите \"Удалить Аккаунт\"\n4. Подтвердите удаление\n**Что происходит:**\n- Немедленное удаление с локального устройства\n- Данные на сервере удаляются немедленно\n- Невозможно отменить\nЕсли вы находитесь в Европейском Союзе, у вас есть дополнительные права:\n- Право на переносимость данных\n- Право на ограничение обработки\n- Право на возражение против обработки\n- Право подать жалобу в надзорный орган\nСвяжитесь с нами по адресу support@odomate.net для реализации этих прав."
+        },
+        {
+          "heading": "Конфиденциальность Детей",
+          "text": "Odomate не предназначен для пользователей младше 16 лет. Мы не собираем намеренно личную информацию от детей младше 16 лет. Если вы считаете, что мы собрали данные ребенка, немедленно свяжитесь с нами, и мы удалим такую информацию."
+        },
+        {
+          "heading": "Международные Передачи Данных",
+          "text": "Ваши данные хранятся на серверах, расположенных в Европе. Все обработки данных соответствуют применимым законам о защите данных, включая GDPR."
+        },
+        {
+          "heading": "Изменения в Этой Политике Конфиденциальности",
+          "text": "Мы можем время от времени обновлять эту Политику конфиденциальности. Мы уведомим вас о любых существенных изменениях путем:\n- Публикации новой Политики конфиденциальности в приложении\n- Обновления даты \"Последнее Обновление\" вверху\n- Отправки уведомления в приложении (для важных изменений)\nВаше продолжение использования Odomate после вступления изменений в силу означает принятие обновленной политики."
+        },
+        {
+          "heading": "Свяжитесь с Нами",
+          "text": "Если у вас есть вопросы, замечания или запросы относительно этой Политики конфиденциальности или ваших данных, свяжитесь с нами:\n**Email:** support@odomate.net  \n**Веб-сайт:** odomate.net  \n**Разработчик:** Олександр Коновалов\nМы ответим на ваш запрос в течение 30 дней.\n**Резюме:** Odomate собирает только данные, необходимые для предоставления функций управления транспортом, навигации и отслеживания обслуживания. Мы не продаем ваши данные третьим лицам и используем промышленные стандарты безопасности для защиты вашей информации. Вы сохраняете полный контроль над своими данными и можете удалить свой аккаунт в любое время."
+        }
+      ]
+    },
+    "terms": {
+      "content": [
+        {
+          "heading": "Принятие условий",
+          "text": "Используя приложение Odomate, вы соглашаетесь с настоящими Условиями использования. Если вы не согласны, не используйте приложение.\n**Контакты:**\n- Разработчик: Oleksandr Konovalov\n- E‑mail: support@odomate.net\n- Сайт: odomate.net"
+        },
+        {
+          "heading": "Описание сервиса",
+          "text": "Odomate — это приложение для управления автомобилем и навигации, включающее:\n- Управление 1 автомобилем (добавление/редактирование/удаление)\n- Ручной учет поездок\n- ИИ-рекомендации по обслуживанию\n- Уведомления в приложении о необходимом обслуживании\n- Прогноз погоды с рекомендациями для поездок\n- Режим парковки: таймер для платной парковки и поиск места парковки\n- Хранение информации об автомобилях\n- **Управление до 2 автомобилей**\n- **GPS‑навигация:** пошаговая навигация в реальном времени\n- **Авто‑трек поездок:** автоматический учет с фоновой записью GPS\n- **Планирование маршрутов:** маршруты с несколькими точками\n- **Push‑уведомления:** напоминания о техобслуживании\n- **Экспорт сервисной книжки:** в формате PDF"
+        },
+        {
+          "heading": "Регистрация аккаунта",
+          "text": "- Для использования Odomate требуется аккаунт\n- Нужен действительный адрес электронной почты\n- Вы отвечаете за конфиденциальность пароля\n- Возраст: 16+ лет\n- Вы несете ответственность за действия в своем аккаунте\n- Немедленно сообщайте о несанкционированном доступе: support@odomate.net\n- Мы не отвечаем за убытки из‑за несанкционированного доступа"
+        },
+        {
+          "heading": "Подписка и платежи",
+          "text": "**Premium:**\n- Цена: $4.99/мес или $49.99/год\n- Помесячная или годовая оплата\n- Все премиум‑функции для одного пользователя\n- Отмена в любое время\n- Взимается авансом (ежемесячно или ежегодно)\n- Оплата через Google Play Billing (Android) или App Store IAP (iOS)\n- Управление подпиской: в настройках Google Account (Android) или iCloud (iOS)\n- Цены в USD; итоговая стоимость зависит от курса и местных налогов\n- Могут предоставляться бесплатные пробные периоды\n- В конце пробного периода списание произойдет автоматически, если не отмените\n- Отмените до окончания, чтобы избежать списания\n- Отменить можно в любой момент\n- Действует с конца текущего расчетного периода\n- Частичные периоды не компенсируются\n- Запросы возврата в течение 48 часов рассматриваются индивидуально\n- Возможны изменения цены с уведомлением за 30 дней\n- Не влияет на текущий оплаченный период\n- Если не согласны — отмените подписку"
+        },
+        {
+          "heading": "Допустимое использование",
+          "text": "- Использовать приложение для незаконных целей\n- Взламывать, декомпилировать или иным образом нарушать безопасность\n- Передавать учетные данные третьим лицам\n- Отслеживать других без их согласия\n- Загружать вредоносный код/вирусы\n- Перегружать сервера чрезмерными запросами\n- Скрапить/копировать данные в коммерческих целях\n- Нарушать применимые законы и правила\n- Соблюдайте ПДД и дорожные знаки\n- Навигация предоставляется «как есть» и может содержать ошибки\n- Вы несете ответственность за решения при вождении\n- Мы не отвечаем за аварии/штрафы/ущерб вследствие использования навигации"
+        },
+        {
+          "heading": "Пользовательский контент",
+          "text": "- Вы сохраняете права собственности на свои данные\n- Вы предоставляете нам лицензию на хранение/обработку/отображение данных для оказания сервиса\n- Вы отвечаете за резервные копии\n- Вы можете удалить аккаунт и все данные в любой момент\n- После удаления аккаунта данные удаляются немедленно на сервере\n- Некоторая анонимная аналитика может храниться согласно Политике конфиденциальности"
+        },
+        {
+          "heading": "Интеллектуальная собственность",
+          "text": "- Odomate и связанные бренды/логотипы/контент принадлежат Oleksandr Konovalov\n- Запрещено копировать, модифицировать, распространять и создавать производные\n- Данные карт © участники OpenStreetMap\n- Навигация: Valhalla, Nominatim, Overpass (самохостинг; ограничения скорости, POI, поддержка поиска Nominatim), Mapbox (резерв), Nominatim\n- ИИ‑функции: OpenAI"
+        },
+        {
+          "heading": "Конфиденциальность",
+          "text": "См. нашу [Политику конфиденциальности](PRIVACY_POLICY_RU.md), чтобы понять, как мы собираем, используем и защищаем ваши данные."
+        },
+        {
+          "heading": "Отказ от гарантий и ограничение ответственности",
+          "text": "ПРИЛОЖЕНИЕ ПРЕДОСТАВЛЯЕТСЯ «КАК ЕСТЬ» И «ПО МЕРЕ ДОСТУПНОСТИ» БЕЗ КАКИХ‑ЛИБО ГАРАНТИЙ, ПРЯМЫХ ИЛИ ПОДРАЗУМЕВАЕМЫХ, ВКЛЮЧАЯ, НО НЕ ОГРАНИЧИВАЯСЬ:\n- Коммерческой пригодностью\n- Пригодностью для конкретной цели\n- Ненарушением прав\n- Точностью навигационных данных\n- Непрерывностью или безошибочностью работы\nВ ПРЕДЕЛАХ, ДОПУСТИМЫХ ЗАКОНОМ, OLEKSANDR KONOVALOV НЕ НЕСЕТ ОТВЕТСТВЕННОСТИ ЗА:\n- Косвенный, случайный, особый или последующий ущерб\n- Упущенную выгоду, потерю данных или возможностей\n- Травмы/ущерб имуществу вследствие использования приложения\n- Неточности навигационных/маршрутных данных\n- Перебои в сервисе или потерю данных"
+        },
+        {
+          "heading": "Сторонние сервисы",
+          "text": "Odomate интегрирует:\n- **Supabase:** аутентификация и хранение\n- **Mapbox:** карты и навигация\n- **OSRM:** расчет маршрутов\n- **Nominatim:** геокодирование\n- **OpenAI:** ИИ‑рекомендации\n- **Firebase:** аналитика и отчеты о сбоях\nИспользование подчиняется условиям и политикам соответствующих провайдеров."
+        },
+        {
+          "heading": "Прекращение",
+          "text": "- Удалите аккаунт в настройках в любое время\nМы можем приостановить/закрыть аккаунт, если:\n- Нарушены эти Условия\n- Имеется мошенническая/незаконная активность\n- Аккаунт неактивен 24 месяца\n- Сервис прекращается (уведомление за 30 дней)\n- Доступ к премиум прекращается сразу\n- Данные удаляются по Политике конфиденциальности\n- Возвраты за частичные периоды не предоставляются"
+        },
+        {
+          "heading": "Изменения Условий",
+          "text": "Мы можем обновлять Условия. Актуальная версия всегда публикуется на сайте odomate.net, где обновляется дата «Последнее обновление». Продолжение использования означает согласие с обновленными условиями, опубликованными на сайте."
+        },
+        {
+          "heading": "Применимое право и споры",
+          "text": "Настоящие Условия регулируются законодательством Украины, без учета коллизионных норм.\n- Споры решаются путем добросовестных переговоров\n- При неудаче — арбитраж или компетентные суды Украины\nПользователи ЕС вправе обращаться в местные органы по защите данных и в суд в стране проживания."
+        },
+        {
+          "heading": "Разделимость",
+          "text": "Недействительность отдельного положения не влияет на действительность остальных положений."
+        },
+        {
+          "heading": "Контакты",
+          "text": "Вопросы по Условиям:  \n**E‑mail:** support@odomate.net  \n**Сайт:** odomate.net  \n**Разработчик:** Oleksandr Konovalov\n**Используя Odomate, вы подтверждаете, что прочитали, поняли и согласны с настоящими Условиями использования.**"
+        }
+      ]
+    },
+    "userManual": "## Введение\nOdomate — приложение для управления автомобилем, навигации и учета поездок с ИИ‑рекомендациями по обслуживанию.\n## 1. Начало работы\n1. Установите и откройте приложение.  \n2. Создайте аккаунт или войдите (e‑mail).  \n3. Добавьте первый автомобиль (марка, модель, год, VIN опционально).  \n4. Задайте единицы измерения (км/ми) и язык в настройках.\n## 2. Автомобили\n- Добавление/редактирование/удаление авто.  \n- Поля: марка, модель, год, VIN, номер (опционально).  \n- Обновление пробега; вложения (документы/заметки).  \n- Поддержка нескольких авто.\n## 3. Поездки\n### 3.1 Ручной учет (Бесплатно)\n- Создание поездки: старт/финиш, дистанция, заметки.  \n- Категории и теги.\n### 3.2 Навигация и автоматическое отслеживание (Премиум)\n1. Найдите цель (адрес/место/координаты).  \n2. Добавьте промежуточные точки (по желанию).  \n3. Запустите навигацию и следуйте инструкциям.  \n4. Автоматическое отслеживание работает во время активной навигации: записывает дистанцию и маршрут в фоне.  \n5. Автоперестроение маршрута при отклонении.\nПримечания:  \n- Карты: Mapbox.  \n- Навигация и маршруты: Valhalla (собственный сервер), Mapbox как резервный.  \n- Поиск: Nominatim.  \n- Влияние на батарею: GPS потребляет больше энергии.  \n- Всегда соблюдайте ПДД.\n## 4. Обслуживание\n### 4.1 ИИ‑планы ТО\n- На основе данных авто и пробега.  \n- Предложения по интервалам и расходникам.\n### 4.2 Напоминания\n- Напоминания приходят автоматически на основе ИИ‑планов обслуживания и установленных интервалов.  \n- Включите push‑уведомления в настройках (нужны разрешения устройства).\n## 5. Синхронизация\n- Аккаунт через Supabase; данные синхронизируются между устройствами.  \n- Offline‑first: изменения отправляются при восстановлении сети.  \n- Конфликты: побеждает последняя правка; при необходимости исправьте вручную.\n## 6. Настройки\n- Единицы (км/ми), язык, формат времени (12/24 часа), формат температуры (°C/°F).  \n- Уведомления (ТО, трекинг).  \n- Конфиденциальность: удаление аккаунта, отказ от аналитики.  \n- Опции карты: трафик, 3D, масштаб, избегать платных дорог, избегать автомагистралей, избегать водных переправ.\n## 7. Советы по точности\n- Держите GPS включенным; при необходимости настройте энергосбережение.  \n- Для определения направления движения всегда используется технология «movement‑bearing».  \n- Обновляйте приложение.\n## 8. Решение проблем\n- Нет GPS‑позиции: проверьте разрешения и службы геолокации.  \n- Навигация остановилась: проверьте интернет/GPS, перезапустите приложение.  \n- Синхронизация зависла: проверьте подключение и повторите позже.  \n- Свяжитесь с поддержкой (ниже).\n## 9. Конфиденциальность\n- Локация используется только при активной навигации/треккинге.  \n- Анонимная аналитика для улучшения качества.  \n- Подробности: `legal/PRIVACY_POLICY_RU.md`, `legal/GDPR_COMPLIANCE_RU.md`.\n## 10. Поддержка\nE‑mail: support@odomate.net  \nСайт: odomate.net",
+    "gdprCompliance": "**Дата:** 22 ноября 2024 г.\n## Оператор (Ст. 4)\nOleksandr Konovalov  \nE‑mail: support@odomate.net  \nСайт: odomate.net\n## Цели обработки (Ст. 5)\n- Предоставление функций приложения (авто, обслуживание, навигация, учет поездок)  \n- Синхронизация и управление аккаунтом  \n- Поддержка и сервисные уведомления  \n- Повышение стабильности, устранение ошибок, безопасность (анонимная аналитика/крэши)  \n- Рекомендации по обслуживанию на основе ИИ\n## Правовые основания (Ст. 6)\n- Исполнение договора (Ст. 6(1)(b)): ключевые функции, аккаунт, синхронизация\n- Законные интересы (Ст. 6(1)(f)): безопасность, стабильность, анонимная статистика использования\n- Согласие (Ст. 6(1)(a)) при необходимости: уведомления, опциональные функции\n## Категории персональных данных\n- Контактные: электронная почта  \n- Использование: взаимодействия, просмотры экранов (анонимно)  \n- Технические: устройство/ОС, версия приложения, диагностика/крэши  \n- Геоданные: точные/приблизительные при навигации/треккинге  \n- Данные об авто: марка, модель, VIN, пробег, история обслуживания  \n- Данные поездок: старт/финиш, дистанция, маршрут, заметки\n## Получатели (Ст. 13)\n- Supabase (аутентификация/хранение)  \n- Valhalla, Nominatim, Overpass (навигация/геокодирование) – собственные серверы, данные не передаются третьим лицам\n- Mapbox (резервный сервис навигации) – используется редко при недоступности основных сервисов\n- OpenAI (ШІ‑рекомендации: данные авто/пробег, без персональных идентификаторов)  \n- Firebase (анонимная аналитика/отчеты о сбоях)\n## Трансграничная передача (Ст. 44 и далее)\nОбработка данных происходит в дата‑центрах ЕС. Все данные хранятся в Европе с соблюдением GDPR.\n## Сроки хранения (Ст. 5)\n- Данные аккаунта: пока аккаунт активен  \n- После удаления аккаунта: данные удаляются немедленно на сервере  \n- История поездок: до ручного удаления пользователем  \n- Анонимная аналитика/крэши: 26 месяцев (по умолчанию Firebase)\n## Права субъектов (Ст. 12–22)\nПраво на доступ, исправление, удаление, ограничение, возражение, переносимость.  \nЗапросы: support@odomate.net.  \nЖалоба: в компетентный надзорный орган (Ст. 77).\n## Безопасность (Ст. 32)\n- Шифрование при передаче (HTTPS/TLS) и в хранении (шифрованные базы)  \n- Контроль доступа и журналирование  \n- Минимизация данных\n## Примечание о геоданных\nТочное местоположение обрабатывается только при активной навигации или включенном авто‑треккинге поездок. Навигационные сервисы (Valhalla, Nominatim, Overpass) работают на собственных серверах — данные не передаются третьим лицам. Mapbox используется редко только как резервный сервис при недоступности основных.\n## DPO и контакт\nDPO не требуется по текущей оценке рисков.  \nКонтакт: support@odomate.net\n—"
+  },
+  "uk": {
+    "faq": {
+      "items": [
+        {
+          "question": "Що таке Odomate?",
+          "answer": "Odomate — це комплексний додаток для керування автомобілем, який допомагає відстежувати обслуговування, планувати поїздки та навігувати за допомогою GPS у реальному часі. Він поєднує рекомендації з обслуговування на основі ШІ з розширеними функціями навігації."
+        },
+        {
+          "question": "Чи безкоштовний Odomate?",
+          "answer": "Так! Odomate пропонує безкоштовний тариф з керуванням автомобілем, ручним обліком поїздок та рекомендаціями з обслуговування на основі ШІ. Преміум‑функції, такі як GPS‑навігація, автоматичний трекінг поїздок та push-сповіщення, потребують підписки ($4.99/міс або $49.99/рік)."
+        },
+        {
+          "question": "Які платформи підтримує Odomate?",
+          "answer": "Odomate доступний для пристроїв Android та iOS."
+        },
+        {
+          "question": "Чи потрібне інтернет‑з'єднання?",
+          "answer": "- **Офлайн:** Весь функціонал працює офлайн, окрім навігації, автоматичного трекінгу поїздок та ШІ‑аналізу терміну служби компонентів\n- **Для навігації:** Потрібен інтернет для маршрутизації в реальному часі та завантаження карт\n- **Для функцій ШІ:** Потрібен інтернет для інтеграції з OpenAI\n---"
+        },
+        {
+          "question": "Як створити акаунт?",
+          "answer": "1. Завантажте Odomate з Google Play або App Store\n2. Відкрийте додаток та натисніть «Реєстрація»\n3. Введіть email та створіть пароль\n4. Підтвердіть адресу електронної пошти\n5. Починайте додавати автомобілі!"
+        },
+        {
+          "question": "Чи безпечні мої дані?",
+          "answer": "Так! Ми використовуємо шифрування промислового стандарту для:\n- Усієї передачі даних (наскрізне шифрування)\n- Локального зберігання на вашому пристрої\n- Хмарних резервних копій через Supabase"
+        },
+        {
+          "question": "Чи продаєте ви мої дані?",
+          "answer": "**Ні.** Ми ніколи не продаємо ваші персональні дані третім особам. Ми збираємо анонімну аналітику для покращення додатку, але ваша особиста інформація, маршрути поїздок та дані про автомобіль залишаються конфіденційними."
+        },
+        {
+          "question": "Чи можу я видалити свій акаунт?",
+          "answer": "Так! Перейдіть у Профіль → Налаштування → Видалити акаунт. Ваші дані видаляються негайно на сервері."
+        },
+        {
+          "question": "Які дані ви збираєте?",
+          "answer": "Ми збираємо:\n- Адресу електронної пошти (для автентифікації)\n- Інформацію про автомобіль (марка, модель, VIN, історія обслуговування)\n- Дані про поїздки (відстань, тривалість, маршрути — зберігаються локально та в Supabase)\n- Анонімну аналітику (модель пристрою, версія ОС, використання функцій)\nМи **НЕ** збираємо та не передаємо точні GPS‑координати для аналітики.\n---"
+        },
+        {
+          "question": "Що включено в безкоштовну версію?",
+          "answer": "- Керування 1 автомобілем\n- Ручний облік поїздок\n- ШІ-рекомендації з обслуговування\n- Сповіщення в додатку про необхідне обслуговування\n- Прогноз погоди з рекомендаціями для поїздок\n- Режим парковки: таймер для платного паркування та пошук місця парковки\n- Зберігання інформації про автомобіль\n- Синхронізація між пристроями"
+        },
+        {
+          "question": "Що включено в Premium?",
+          "answer": "- **Керування до 2 автомобілів**\n- **GPS‑навігація:** Покрокові інструкції з Valhalla (власний хостинг)\n- **Автоматичний трекінг поїздок:** Фонова запис GPS\n- **Push-сповіщення:** Нагадування про техобслуговування\n- **Експорт сервісної книжки:** У форматі PDF\n- **Планування маршрутів:** Збереження та спільне використання маршрутів з кількома точками"
+        },
+        {
+          "question": "Як працює обслуговування з ШІ?",
+          "answer": "Наш ШІ (на основі OpenAI) аналізує характеристики вашого автомобіля (марка, модель, рік, тип двигуна, пробіг) та створює персоналізовані інтервали обслуговування для:\n- Заміни масла\n- Ротації шин\n- Перевірки гальм\n- Заміни фільтрів\n- І багато іншого!"
+        },
+        {
+          "question": "Чи можу я відстежувати кілька автомобілів?",
+          "answer": "Так! У безкоштовній версії ви можете керувати 1 автомобілем. Підписка Premium дозволяє керувати до 2 автомобілів. У кожного автомобіля свій графік обслуговування та історія поїздок."
+        },
+        {
+          "question": "Чи розряджає автоматичний трекінг поїздок батарею?",
+          "answer": "Ми оптимізували використання батареї, але фоновий трекінг GPS споживає більше енергії, ніж зазвичай. Користувачі Premium можуть вмикати/вимикати автоматичний трекінг за потреби."
+        },
+        {
+          "question": "Чи можу я експортувати сервісну книжку?",
+          "answer": "Так! Користувачі Premium можуть експортувати сервісну книжку у форматі PDF.\n---"
+        },
+        {
+          "question": "Наскільки точна навігація?",
+          "answer": "Odomate використовує Valhalla (власний хостинг) для маршрутизації, які базуються на даних OpenStreetMap. Точність залежить від якості картографічних даних у вашому регіоні. Завжди дотримуйтесь дорожніх знаків та правил."
+        },
+        {
+          "question": "Чи можу я використовувати навігацію офлайн?",
+          "answer": "Ні, для навігації потрібне активне інтернет‑з'єднання для маршрутизації в реальному часі та завантаження тайлів карт."
+        },
+        {
+          "question": "Чи показує навігація пробки?",
+          "answer": "Так! Користувачі Premium можуть увімкнути візуалізацію пробок у налаштуваннях навігації."
+        },
+        {
+          "question": "Чи можу я додати кілька проміжних точок?",
+          "answer": "Так! Користувачі Premium можуть створювати маршрути з кількома зупинками та зберігати їх для майбутнього використання."
+        },
+        {
+          "question": "Чому навігація іноді перебудовує маршрут?",
+          "answer": "Odomate автоматично перебудовує маршрут, якщо:\n- Ви відхиляєтесь від запланованого маршруту\n- Змінюються умови руху\n- Стає доступним швидший маршрут\n---"
+        },
+        {
+          "question": "Скільки коштує Premium?",
+          "answer": "- **Premium:** $4.99/міс або $49.99/рік"
+        },
+        {
+          "question": "Як оформити підписку Premium?",
+          "answer": "1. Відкрийте Odomate\n2. Перейдіть у Профіль → Premium\n3. Виберіть тариф\n4. Завершіть оплату через Google Play або App Store"
+        },
+        {
+          "question": "Чи можу я скасувати підписку?",
+          "answer": "Так, у будь‑який час! Ваша підписка залишається активною до кінця поточного розрахункового періоду. Повернення коштів за неповні місяці не передбачено."
+        },
+        {
+          "question": "Чи є безкоштовний пробний період?",
+          "answer": "Так! Нові користувачі отримують 3‑денний безкоштовний пробний період функцій Premium (якщо доступно у вашому регіоні)."
+        },
+        {
+          "question": "Які способи оплати ви приймаєте?",
+          "answer": "Платежі обробляються через:\n- **Android:** Google Play Billing\n- **iOS:** App Store In‑App Purchase"
+        },
+        {
+          "question": "Що станеться, якщо я скасую Premium?",
+          "answer": "- Ви зберігаєте всі свої автомобілі та історію поїздок\n- Навігація та автоматичний трекінг поїздок будуть вимкнені\n- Push-сповіщення про техобслуговування стануть недоступні\n- ШІ-рекомендації з обслуговування залишаться доступні\n- Ви можете поновити підписку в будь‑який час, щоб відновити функції\n---"
+        },
+        {
+          "question": "Додаток зависає або падає. Що робити?",
+          "answer": "1. Перезапустіть додаток\n2. Перевірте наявність оновлень у Google Play/App Store\n3. Очистіть кеш додатку (Налаштування → Додатки → Odomate → Очистити кеш)\n4. Якщо проблема зберігається, зв'яжіться з support@odomate.net із зазначенням:\n   - Моделі пристрою\n   - Версії ОС\n   - Опису проблеми"
+        },
+        {
+          "question": "GPS‑місцезнаходження неточне. Як виправити?",
+          "answer": "- Увімкніть режим «Висока точність» у налаштуваннях місцезнаходження пристрою\n- Переконайтеся, що Odomate має дозвіл на доступ до GPS\n- Використовуйте додаток на відкритому повітрі з гарним оглядом неба\n- Перезавантажте пристрій\n- Перевірте, чи правильно працюють інші GPS‑додатки"
+        },
+        {
+          "question": "Моя поїздка не збереглася. Чому?",
+          "answer": "Поїздки коротші за 0,1 км (100 метрів) автоматично видаляються. Також перевірте:\n- Дозвіл GPS увімкнено\n- Інтернет‑з'єднання для синхронізації з Supabase\n- Достатньо місця на пристрої"
+        },
+        {
+          "question": "Синхронізація не працює. Що робити?",
+          "answer": "- Перевірте інтернет‑з'єднання\n- Вийдіть та увійдіть знову\n- Примусова синхронізація з Профіль → Синхронізація\n- Зв'яжіться зі службою підтримки, якщо проблема зберігається"
+        },
+        {
+          "question": "Я забув пароль. Як скинути його?",
+          "answer": "1. На екрані входу натисніть «Забули пароль?»\n2. Введіть адресу електронної пошти\n3. Перевірте пошту на наявність посилання для скидання\n4. Перейдіть за посиланням, щоб створити новий пароль\n---"
+        },
+        {
+          "question": "Як додати запис про обслуговування?",
+          "answer": "1. Виберіть автомобіль\n2. Перейдіть на вкладку Обслуговування\n3. Натисніть «+ Додати обслуговування»\n4. Введіть дані (тип, дата, пробіг, вартість, замітки)\n5. Збережіть"
+        },
+        {
+          "question": "Як налаштувати нагадування про обслуговування?",
+          "answer": "Усі нагадування про обслуговування встановлюються автоматично на основі планів, створених ШІ. Ви можете редагувати інтервали обслуговування для кожного компонента за необхідності."
+        },
+        {
+          "question": "Чи можу я налаштувати інтервали обслуговування?",
+          "answer": "Так! Відредагуйте будь‑який елемент обслуговування та налаштуйте інтервал (за пробігом або часом)."
+        },
+        {
+          "question": "Чи отримаю я push‑сповіщення про обслуговування?",
+          "answer": "Push-сповіщення доступні тільки для користувачів Premium. Увімкніть сповіщення в налаштуваннях пристрою, і Odomate нагадуватиме вам, коли обслуговування потрібне. Безкоштовні користувачі отримують сповіщення в додатку.\n---"
+        },
+        {
+          "question": "Де зберігаються мої дані?",
+          "answer": "- **Локально:** Зашифрована база даних SQLite на вашому пристрої\n- **Хмара:** Сервери Supabase (Північна Америка, Центральна Америка, Європа)"
+        },
+        {
+          "question": "Чи можу я використовувати Odomate без хмарної синхронізації?",
+          "answer": "Ні, потрібна автентифікація Supabase. Однак всі дані кешуються локально, тому ви можете отримати до них доступ офлайн."
+        },
+        {
+          "question": "Що відбувається з моїми даними, якщо я видалю додаток?",
+          "answer": "- Локальні дані видаляються негайно\n- Хмарні дані залишаються в Supabase, поки ви не видалите акаунт\n- Переінсталюйте додаток та увійдіть, щоб відновити дані"
+        },
+        {
+          "question": "Чи відстежує Odomate моє місцезнаходження постійно?",
+          "answer": "Ні. Доступ до місцезнаходження відбувається тільки під час:\n- Активної навігації\n- Автоматичного трекінгу поїздок (Premium, коли увімкнено)\n- Збереження місця парковки\n- Пошуку місця парковки\n---"
+        },
+        {
+          "question": "Як повідомити про помилку?",
+          "answer": "Напишіть нам на support@odomate.net із зазначенням:\n- Опису помилки\n- Кроків для відтворення\n- Скріншотів (якщо можливо)\n- Інформації про пристрій та ОС"
+        },
+        {
+          "question": "Як запитати нову функцію?",
+          "answer": "Ми любимо зворотний зв'язок! Напишіть на support@odomate.net з вашою пропозицією."
+        },
+        {
+          "question": "Скільки часу займає відповідь служби підтримки?",
+          "answer": "Ми прагнемо відповісти протягом 48 годин, зазвичай протягом 24 годин у робочі дні."
+        },
+        {
+          "question": "Чи можу я отримати повернення коштів?",
+          "answer": "Повернення коштів обробляються Google Play або App Store відповідно до їх політики. Зв'яжіться з support@odomate.net протягом 48 годин після покупки для розгляду.\n---\n**Сайт:** odomate.net  \n**Email:** support@odomate.net  \n**Політика конфіденційності:** [Переглянути](PRIVACY_POLICY_UK.md)  \n**Умови використання:** [Переглянути](TERMS_OF_SERVICE_UK.md)\n---\n**Не знайшли відповідь на своє запитання? Зв'яжіться з support@odomate.net**"
+        }
+      ]
+    },
+    "privacy": {
+      "content": [
+        {
+          "heading": "Вступ",
+          "text": "Ласкаво просимо до Odomate! Ця Політика конфіденційності пояснює, як Олександр Коновалов (\"ми\", \"наш\") збирає, використовує та захищає вашу інформацію при використанні мобільного додатку Odomate (\"Додаток\"). Ми прагнемо захистити вашу конфіденційність та забезпечити прозорість наших практик обробки даних.\nВикористовуючи Odomate, ви погоджуєтесь на збір та використання інформації відповідно до цієї політики.\n**Контактна Інформація:**\n- Розробник: Олександр Коновалов\n- Email: support@odomate.net\n- Веб‑сайт: odomate.net"
+        },
+        {
+          "heading": "Інформація, Яку Ми Збираємо",
+          "text": "**Інформація про Акаунт:**\n- Адреса електронної пошти (для автентифікації через Supabase)\n- Пароль (зашифрований та надійно зберігається)\n**Інформація про Транспорт:**\n- Марка, модель та рік автомобіля\n- VIN номер\n- Показання одометра\n- Історія та розклади технічного обслуговування\n- Замітки та користувацькі дані, які ви додаєте\n**Дані про Поїздки:**\n- Час та місцезнаходження початку/закінчення поїздки\n- Пройдена відстань\n- Інформація про маршрут\n- Замітки та категорії поїздок\n**Дані про Місцезнаходження:**\n- GPS координати під час активної навігації або відстеження поїздок\n- Дані про місцезнаходження зберігаються локально на вашому пристрої та синхронізуються з Supabase для резервного копіювання\n- **Ми НЕ передаємо точні GPS координати третім особам**, за винятком навігаційних сервісів (Valhalla, Nominatim, Overpass (власний хостинг; обмеження швидкості, POI, підтримка пошуку Nominatim), Mapbox (резерв)) тимчасово під час активної навігації\n- Дозвіл на визначення місцезнаходження потрібен для функцій навігації та відстеження поїздок\n**Інформація про Пристрій:**\n- Модель та виробник пристрою\n- Версія операційної системи (Android/iOS)\n- Версія додатку\n- Налаштування мови та регіону пристрою\n**Аналітика Використання (Анонімна):**\n- Перегляди екранів та використання функцій\n- Статистика використання сервісів (Nominatim, Valhalla, Nominatim, Overpass (власний хостинг; обмеження швидкості, POI, підтримка пошуку Nominatim), Mapbox (резерв))\n- Метрики продуктивності додатку та звіти про збої\n- Журнали помилок та налагоджувальна інформація\n**Важливо:** Ми НЕ збираємо та не зберігаємо точні GPS координати для цілей аналітики. Дані про місцезнаходження використовуються тільки для основного функціоналу додатку (навігація, відстеження поїздок) та ніколи не передаються аналітичним сервісам.\n**Інтеграція з OpenAI:**\n- Марка, модель, рік та характеристики двигуна автомобіля (дані з VIN)\n- Інформація про пробіг\n- Використовується ТІЛЬКИ для ШІ‑рекомендацій по інтервалам обслуговування\n- **Ми НЕ відправляємо:** особисту інформацію, маршрути поїздок або точні координати в OpenAI"
+        },
+        {
+          "heading": "Як Ми Використовуємо Вашу Інформацію",
+          "text": "Ми використовуємо зібрану інформацію для наступних цілей:\n- Керування транспортом та відстеження обслуговування\n- Ручне збереження поїздок\n- Генерація персоналізованих розкладів обслуговування за допомогою ШІ‑аналізу\n- Синхронізація даних між пристроями\n- Відправка нагадувань про техобслуговування через push‑сповіщення\n- GPS навігація з напрямками в реальному часі\n- Автоматичне відстеження та збереження поїздок (у фоні)\n- Прогноз терміну служби компонентів на основі характеристик автомобіля\n- Аналіз патернів використання додатку (анонімно) для покращення користувацького досвіду\n- Моніторинг продуктивності сервісів (Nominatim, Valhalla, Nominatim, Overpass (власний хостинг; обмеження швидкості, POI, підтримка пошуку Nominatim), Mapbox (резерв))\n- Виявлення та виправлення помилок, збоїв та багів\n- Оптимізація алгоритмів маршрутизації та точності навігації\n- Відправка нагадувань про техобслуговування та сповіщень\n- Відповіді на ваші запити в підтримку\n- Інформування про важливі оновлення або зміни додатку"
+        },
+        {
+          "heading": "Зберігання та Безпека Даних",
+          "text": "**Локальне Зберігання:**\n- Всі дані про поїздки, інформація про транспорт та записи про обслуговування зберігаються локально на вашому пристрої в зашифрованій базі даних SQLite\n**Хмарне Резервне Копіювання (Supabase):**\n- Ваші дані резервуються на хмарних серверах Supabase для синхронізації\n- Supabase відповідає GDPR та використовує шифрування при передачі та зберіганні\n- Сервери розташовані в: Північній Америці, Південній Америці та Європі\n- **Наскрізне шифрування** для передачі даних\n- **Зашифроване локальне сховище** з використанням промислових стандартів шифрування\n- **Безпечна автентифікація** з Supabase Auth\n- **Регулярні аудити безпеки** та оновлення\n- **Відсутність сторонніх рекламних мереж** з доступом до ваших даних\n- **Активні користувачі:** Дані зберігаються, поки акаунт активний\n- **Видалені акаунти:** Всі персональні дані видаляються негайно після видалення акаунту\n- **Історія поїздок:** Зберігається безстроково, поки ви не видалите поїздки вручну\n- **Аналітичні дані:** Анонімні дані зберігаються 26 місяців (за замовчуванням Firebase)"
+        },
+        {
+          "heading": "Сторонні Сервіси",
+          "text": "Odomate інтегрується з наступними сторонніми сервісами:\n**Supabase** (supabase.com)\n- Призначення: Автентифікація користувачів, синхронізація даних та хмарне сховище\n- Передані Дані: Email, зашифрований пароль, дані про транспорт, дані про поїздки\n- Політика Конфіденційності: https://supabase.com/privacy\n**Mapbox** (mapbox.com)\n- Призначення: Відрисовка карт, навігація, маршрутизація\n- Передані Дані: Тимчасові GPS координати під час навігації, пошукові запити\n- Політика Конфіденційності: https://www.mapbox.com/privacy\n**OpenStreetMap (OSRM)** (project-osrm.org)\n- Призначення: Розрахунок маршрутів\n- Передані Дані: Координати початку/кінця для запитів маршруту\n- Політика Конфіденційності: https://wiki.openstreetmap.org/wiki/Privacy_Policy\n**Nominatim** (nominatim.org)\n- Призначення: Геокодування адрес та зворотне геокодування\n- Передані Дані: Пошукові запити, координати для зворотного геокодування\n- Політика Конфіденційності: https://operations.osmfoundation.org/policies/nominatim/\n**OpenAI** (openai.com)\n- Призначення: ШІ‑рекомендації по інтервалам обслуговування\n- Передані Дані: Характеристики автомобіля (марка, модель, рік, тип двигуна), пробіг\n- **НЕ Передається:** Особиста інформація, маршрути поїздок, GPS координати\n- Політика Конфіденційності: https://openai.com/privacy\n**Firebase Analytics & Crashlytics** (firebase.google.com)\n- Призначення: Анонімна аналітика використання, звіти про збої, моніторинг продуктивності\n- Передані Дані: Модель пристрою, версія ОС, версія додатку, перегляди екранів, використання функцій, журнали збоїв\n- **НЕ Передається:** Особиста інформація, email, GPS координати, деталі поїздок\n- Політика Конфіденційності: https://firebase.google.com/support/privacy"
+        },
+        {
+          "heading": "Ваші Права на Конфіденційність",
+          "text": "Ви маєте право:\n- **Отримати доступ до даних:** Переглядати збережену в додатку інформацію\n- **Видалити дані:** Видалити акаунт та всі пов'язані з ним дані\n- **Виправити дані:** Редагувати інформацію про транспорт, поїздках та обслуговуванні\nЩоб видалити ваш акаунт та всі дані:\n1. Відкрийте додаток Odomate\n2. Перейдіть у Профіль → Налаштування\n3. Виберіть \"Видалити Акаунт\"\n4. Підтвердіть видалення\n**Що відбувається:**\n- Негайне видалення з локального пристрою\n- Дані на сервері видаляються негайно\n- Неможливо скасувати\nЯкщо ви знаходитесь в Європейському Союзі, у вас є додаткові права:\n- Право на переносимість даних\n- Право на обмеження обробки\n- Право на заперечення проти обробки\n- Право подати скаргу до наглядового органу\nЗв'яжіться з нами за адресою support@odomate.net для реалізації цих прав."
+        },
+        {
+          "heading": "Конфіденційність Дітей",
+          "text": "Odomate не призначений для користувачів молодше 16 років. Ми не збираємо навмисно особисту інформацію від дітей молодше 16 років. Якщо ви вважаєте, що ми зібрали дані дитини, негайно зв'яжіться з нами, і ми видалимо таку інформацію."
+        },
+        {
+          "heading": "Міжнародні Передачі Даних",
+          "text": "Ваші дані можуть бути передані та збережені на серверах, розташованих у Північній Америці, Південній Америці або Європі. Використовуючи Odomate, ви погоджуєтесь з цією передачею. Ми забезпечуємо відповідність всіх передач застосовним законам про захист даних, включаючи GDPR для користувачів ЄС."
+        },
+        {
+          "heading": "Зміни в Цій Політиці Конфіденційності",
+          "text": "Ми можемо час від часу оновлювати цю Політику конфіденційності. Ми сповістимо вас про будь‑які істотні зміни шляхом:\n- Публікації нової Політики конфіденційності в додатку\n- Оновлення дати \"Останнє Оновлення\" вгорі\n- Відправки сповіщення в додатку (для важливих змін)\nВаше продовження використання Odomate після набрання чинності змінами означає прийняття оновленої політики."
+        },
+        {
+          "heading": "Зв'яжіться з Нами",
+          "text": "Якщо у вас є питання, зауваження або запити щодо цієї Політики конфіденційності або ваших даних, зв'яжіться з нами:\n**Email:** support@odomate.net  \n**Веб‑сайт:** odomate.net  \n**Розробник:** Олександр Коновалов\nМи відповімо на ваш запит протягом 30 днів.\n**Резюме:** Odomate збирає тільки дані, необхідні для надання функцій керування транспортом, навігації та відстеження обслуговування. Ми не продаємо ваші дані третім особам та використовуємо промислові стандарти безпеки для захисту вашої інформації. Ви зберігаєте повний контроль над своїми даними та можете видалити свій акаунт у будь‑який час."
+        }
+      ]
+    },
+    "terms": {
+      "content": [
+        {
+          "heading": "Прийняття умов",
+          "text": "Використовуючи додаток Odomate, ви погоджуєтесь з цими Умовами використання. Якщо ви не згодні, не використовуйте додаток.\n**Контакти:**\n- Розробник: Олександр Коновалов\n- E‑mail: support@odomate.net\n- Сайт: odomate.net"
+        },
+        {
+          "heading": "Опис сервісу",
+          "text": "Odomate — це додаток для керування автомобілем та навігації, який надає:\n- Керування автомобілями (додавання/редагування/видалення)\n- Ручний облік поїздок\n- Базові нагадування про обслуговування\n- Зберігання інформації про автомобілі\n- **GPS‑навігація:** покрокова навігація в реальному часі (Mapbox)\n- **Авто‑трек поїздок:** фонова запис GPS\n- **Планування маршрутів:** маршрути з кількома точками\n- **ШІ‑обслуговування:** персональні плани ТО на базі OpenAI\n- **Розширена аналітика:** детальна статистика поїздок"
+        },
+        {
+          "heading": "Реєстрація акаунту",
+          "text": "- Для використання Odomate потрібен акаунт\n- Потрібна дійсна адреса електронної пошти\n- Ви відповідаєте за конфіденційність пароля\n- Вік: 16+ років\n- Ви несете відповідальність за дії у своєму акаунті\n- Негайно повідомляйте про несанкціонований доступ: support@odomate.net\n- Ми не відповідаємо за збитки через несанкціонований доступ"
+        },
+        {
+          "heading": "Підписка та платежі",
+          "text": "**Premium:**\n- Ціна: $4.99/міс або $49.99/рік\n- Щомісячна оплата, скасування будь‑коли\n- Всі преміум‑функції для одного користувача\n- Стягується авансом щомісяця\n- Оплата через Google Play Billing (Android), App Store IAP (iOS) або RevenueCat\n- Ціни в USD; підсумкова вартість залежить від курсу та місцевих податків\n- Можуть надаватися безкоштовні пробні періоди\n- В кінці пробного періоду списання відбудеться автоматично, якщо не скасуєте\n- Скасуйте до закінчення, щоб уникнути списання\n- Скасувати можна будь‑коли\n- Діє з кінця поточного розрахункового періоду\n- Часткові періоди не компенсуються\n- Запити повернення протягом 48 годин розглядаються індивідуально\n- Можливі зміни ціни з повідомленням за 30 днів\n- Не впливає на поточний оплачений період\n- Якщо не згодні — скасуйте підписку"
+        },
+        {
+          "heading": "Допустиме використання",
+          "text": "- Використовувати додаток для незаконних цілей\n- Зламувати, декомпілювати або іншим чином порушувати безпеку\n- Передавати облікові дані третім особам\n- Відстежувати інших без їх згоди\n- Завантажувати шкідливий код/віруси\n- Перевантажувати сервери надмірними запитами\n- Скрапити/копіювати дані в комерційних цілях\n- Порушувати застосовні закони та правила\n- Дотримуйтесь ПДР та дорожніх знаків\n- Навігація надається «як є» і може містити помилки\n- Ви несете відповідальність за рішення при водінні\n- Ми не відповідаємо за аварії/штрафи/збитки внаслідок використання навігації"
+        },
+        {
+          "heading": "Користувацький контент",
+          "text": "- Ви зберігаєте права власності на свої дані\n- Ви надаєте нам ліцензію на зберігання/обробку/відображення даних для надання сервісу\n- Ви відповідаєте за резервні копії\n- Ви можете видалити акаунт та всі дані будь‑коли\n- Після видалення акаунту дані видаляються негайно на сервері\n- Деяка анонімна аналітика може зберігатися згідно з Політикою конфіденційності"
+        },
+        {
+          "heading": "Інтелектуальна власність",
+          "text": "- Odomate та пов'язані бренди/логотипи/контент належать Олександру Коновалову\n- Заборонено копіювати, модифікувати, розповсюджувати та створювати похідні\n- Дані карт © учасники OpenStreetMap\n- Навігація: Valhalla, Nominatim, Overpass (власний хостинг; обмеження швидкості, POI, підтримка пошуку Nominatim), Mapbox (резерв), Nominatim\n- ШІ‑функції: OpenAI"
+        },
+        {
+          "heading": "Конфіденційність",
+          "text": "Див. нашу [Політику конфіденційності](PRIVACY_POLICY_UK.md), щоб зрозуміти, як ми збираємо, використовуємо та захищаємо ваші дані."
+        },
+        {
+          "heading": "Відмова від гарантій та обмеження відповідальності",
+          "text": "ДОДАТОК НАДАЄТЬСЯ «ЯК Є» ТА «ЗА НАЯВНОСТІ» БЕЗ БУДЬ‑ЯКИХ ГАРАНТІЙ, ПРЯМИХ АБО НЕПРЯМИХ, ВКЛЮЧАЮЧИ, АЛЕ НЕ ОБМЕЖУЮЧИСЬ:\n- Комерційною придатністю\n- Придатністю для конкретної мети\n- Ненарушенням прав\n- Точністю навігаційних даних\n- Безперервністю або безпомилковістю роботи\nВ МЕЖАХ, ДОЗВОЛЕНИХ ЗАКОНОМ, ОЛЕКСАНДР КОНОВАЛОВ НЕ НЕСЕ ВІДПОВІДАЛЬНОСТІ ЗА:\n- Непрямий, випадковий, особливий або наступний збиток\n- Упущену вигоду, втрату даних або можливостей\n- Травми/збиток майну внаслідок використання додатку\n- Неточності навігаційних/маршрутних даних\n- Перебої в сервісі або втрату даних"
+        },
+        {
+          "heading": "Сторонні сервіси",
+          "text": "Odomate інтегрує:\n- **Supabase:** автентифікація та зберігання\n- **Mapbox:** карти та навігація\n- **OSRM:** розрахунок маршрутів\n- **Nominatim:** геокодування\n- **OpenAI:** ШІ‑рекомендації\n- **Firebase:** аналітика та звіти про збої\nВикористання підпорядковується умовам та політикам відповідних провайдерів."
+        },
+        {
+          "heading": "Припинення",
+          "text": "- Видаліть акаунт у налаштуваннях будь‑коли\nМи можемо призупинити/закрити акаунт, якщо:\n- Порушені ці Умови\n- Є шахрайська/незаконна активність\n- Акаунт неактивний 24 місяці\n- Сервіс припиняється (повідомлення за 30 днів)\n- Доступ до преміум припиняється відразу\n- Дані видаляються за Політикою конфіденційності\n- Повернення за часткові періоди не надаються"
+        },
+        {
+          "heading": "Зміни Умов",
+          "text": "Ми можемо оновлювати Умови. Актуальна версія завжди публікується на сайті odomate.net, де оновлюється дата «Останнє оновлення». Продовження використання означає згоду з оновленими умовами, опублікованими на сайті."
+        },
+        {
+          "heading": "Застосовне право та спори",
+          "text": "Ці Умови регулюються законодавством України, без урахування колізійних норм.\n- Спори вирішуються шляхом добросовісних переговорів\n- При невдачі — арбітраж або компетентні суди України\nКористувачі ЄС мають право звертатися в місцеві органи із захисту даних та до суду в країні проживання."
+        },
+        {
+          "heading": "Розділюваність",
+          "text": "Недійсність окремого положення не впливає на чинність решти положень."
+        },
+        {
+          "heading": "Контакти",
+          "text": "Питання щодо Умов:  \n**E‑mail:** support@odomate.net  \n**Сайт:** odomate.net  \n**Розробник:** Олександр Коновалов\n**Використовуючи Odomate, ви підтверджуєте, що прочитали, зрозуміли та згодні з цими Умовами використання.**"
+        }
+      ]
+    },
+    "userManual": "## Вступ\nOdomate — додаток для керування автомобілем, навігації та обліку поїздок з ШІ‑рекомендаціями з обслуговування.\n## 1. Початок роботи\n1. Встановіть та відкрийте додаток.  \n2. Створіть акаунт або увійдіть (e‑mail).  \n3. Додайте перший автомобіль (марка, модель, рік, VIN опціонально).  \n4. Задайте одиниці вимірювання (км/ми) та мову в налаштуваннях.\n## 2. Автомобілі\n- Додавання/редагування/видалення авто.  \n- Поля: марка, модель, рік, VIN, номер (опціонально).  \n- Оновлення пробігу; вкладення (документи/замітки).  \n- Підтримка кількох авто.\n## 3. Поїздки\n### 3.1 Ручний облік (Безкоштовно)\n- Створення поїздки: старт/фініш, дистанція, замітки.  \n- Категорії та теги.\n### 3.2 Навігація та автоматичне відстеження (Преміум)\n1. Знайдіть ціль (адреса/місце/координати).  \n2. Додайте проміжні точки (за бажанням).  \n3. Запустіть навігацію та слідуйте інструкціям.  \n4. Автоматичне відстеження працює під час активної навігації: записує дистанцію та маршрут у фоні.  \n5. Автоперебудова маршруту при відхиленні.\nПримітки:  \n- Карти: Mapbox.  \n- Навігація та маршрути: Valhalla (власний сервер), Mapbox як резервний.  \n- Пошук: Nominatim.  \n- Вплив на батарею: GPS споживає більше енергії.  \n- Завжди дотримуйтесь ПДР.\n## 4. Обслуговування\n### 4.1 ШІ‑плани ТО\n- На основі даних авто та пробігу.  \n- Пропозиції щодо інтервалів та витратних матеріалів.\n### 4.2 Нагадування\n- Нагадування приходять автоматично на основі ШІ‑планів обслуговування та встановлених інтервалів.  \n- Увімкніть push‑сповіщення в налаштуваннях (потрібні дозволи пристрою).\n## 5. Синхронізація\n- Акаунт через Supabase; дані синхронізуються між пристроями.  \n- Offline‑first: зміни відправляються при відновленні мережі.  \n- Конфлікти: перемагає остання правка; при необхідності виправте вручну.\n## 6. Налаштування\n- Одиниці (км/ми), мова, формат часу (12/24 години), формат температури (°C/°F).  \n- Сповіщення (ТО, трекінг).  \n- Конфіденційність: видалення акаунту, відмова від аналітики.  \n- Опції карти: трафік, 3D, масштаб, уникати платних доріг, уникати автомагістралей, уникати водних переправ.\n## 7. Поради щодо точності\n- Тримайте GPS увімкненим; при необхідності налаштуйте енергозбереження.  \n- Для визначення напрямку руху завжди використовується технологія «movement‑bearing».  \n- Оновлюйте додаток.\n## 8. Вирішення проблем\n- Немає GPS‑позиції: перевірте дозволи та служби геолокації.  \n- Навігація зупинилася: перевірте інтернет/GPS, перезапустіть додаток.  \n- Синхронізація зависла: перевірте підключення та повторіть пізніше.  \n- Зв'яжіться з підтримкою (нижче).\n## 9. Конфіденційність\n- Локація використовується тільки при активній навігації/трекінгу.  \n- Анонімна аналітика для покращення якості.  \n- Подробиці: `legal/PRIVACY_POLICY_UK.md`, `legal/GDPR_COMPLIANCE_UK.md`.\n## 10. Підтримка\nE‑mail: support@odomate.net  \nСайт: odomate.net",
+    "gdprCompliance": "**Дата:** 22 листопада 2024 р.\n## Оператор (Ст. 4)\nОлександр Коновалов  \nE‑mail: support@odomate.net  \nСайт: odomate.net\n## Цілі обробки (Ст. 5)\n- Надання функцій додатку (авто, обслуговування, навігація, облік поїздок)  \n- Синхронізація та керування акаунтом  \n- Підтримка та сервісні сповіщення  \n- Підвищення стабільності, усунення помилок, безпека (анонімна аналітика/збої)  \n- Рекомендації з обслуговування на основі ШІ\n## Правові підстави (Ст. 6)\n- Виконання договору (Ст. 6(1)(b)): ключові функції, акаунт, синхронізація\n- Законні інтереси (Ст. 6(1)(f)): безпека, стабільність, анонімна статистика використання\n- Згода (Ст. 6(1)(a)) за необхідності: сповіщення, опціональні функції\n## Категорії персональних даних\n- Контактні: електронна пошта  \n- Використання: взаємодії, перегляди екранів (анонімно)  \n- Технічні: пристрій/ОС, версія додатку, діагностика/збої  \n- Геодані: точні/наближені під час навігації/трекінгу  \n- Дані про авто: марка, модель, VIN, пробіг, історія обслуговування  \n- Дані поїздок: старт/фініш, дистанція, маршрут, замітки\n## Отримувачі (Ст. 13)\n- Supabase (автентифікація/зберігання)  \n- Mapbox (карти/навігація), OSRM (маршрути), Nominatim (геокодування) – тимчасова обробка координат під час активної навігації  \n- OpenAI (ШІ‑рекомендації: дані авто/пробіг, без персональних ідентифікаторів)  \n- Firebase (анонімна аналітика/звіти про збої)\n## Міжнародні передачі (Ст. 44 та далі)\nОбробка можлива в дата‑центрах Північної/Південної Америки та ЄС. Застосовуються належні гарантії (включаючи стандартні договірні положення) для забезпечення достатнього рівня захисту.\n## Терміни зберігання (Ст. 5)\n- Дані акаунту: поки акаунт активний  \n- Після видалення акаунту: дані видаляються негайно на сервері  \n- Історія поїздок: до ручного видалення користувачем  \n- Анонімна аналітика/збої: 26 місяців (за замовчуванням Firebase)\n## Права суб'єктів (Ст. 12–22)\nПраво на доступ, виправлення, видалення, обмеження, заперечення, переносимість.  \nЗапити: support@odomate.net.  \nСкарга: до компетентного наглядового органу (Ст. 77).\n## Безпека (Ст. 32)\n- Шифрування при передачі (HTTPS/TLS) та в зберіганні (зашифровані бази)  \n- Контроль доступу та журналювання  \n- Мінімізація даних\n## Примітка щодо геоданих\nТочна локація обробляється тільки під час активної навігації або увімкненого авто‑трекінгу поїздок. Немає постійної передачі третім особам для реклами/трекінгу. Під час навігації координати можуть тимчасово передаватися до Mapbox/OSRM/Nominatim для розрахунку маршрутів.\n## DPO та контакт\nDPO не потрібен за поточною оцінкою ризиків.  \nКонтакт: support@odomate.net\n—"
+  },
+  "fr": {
+    "faq": {
+      "items": [
+        {
+          "question": "Qu'est-ce qu'Odomate ?",
+          "answer": "Odomate est une application complète de gestion de véhicule qui vous aide à suivre l'entretien, planifier des trajets et naviguer avec guidage GPS en temps réel. Elle combine des recommandations d'entretien basées sur l'IA avec des fonctionnalités de navigation avancées."
+        },
+        {
+          "question": "Odomate est-il gratuit ?",
+          "answer": "Oui ! Odomate propose une version gratuite avec gestion de véhicule, suivi manuel des trajets et recommandations d'entretien IA. Les fonctionnalités Premium comme la navigation GPS, le suivi automatique des trajets et les notifications push nécessitent un abonnement ($4.99/mois ou $49.99/an)."
+        },
+        {
+          "question": "Quelles plateformes Odomate prend-il en charge ?",
+          "answer": "Odomate est disponible pour les appareils Android et iOS."
+        },
+        {
+          "question": "Quelles langues Odomate prend-il en charge ?",
+          "answer": "Odomate prend en charge 7 langues : Anglais, Espagnol, Allemand, Français, Polonais, Russe et Ukrainien."
+        },
+        {
+          "question": "Ai-je besoin d'une connexion Internet ?",
+          "answer": "- **Hors ligne :** Toutes les fonctionnalités fonctionnent hors ligne sauf la navigation, le suivi automatique des trajets et l'analyse IA de la durée de vie des composants\n- **Pour la navigation :** Internet requis pour le routage en temps réel et les tuiles de carte\n- **Pour les fonctions IA :** Internet requis pour l'intégration OpenAI\n---"
+        },
+        {
+          "question": "Comment créer un compte ?",
+          "answer": "1. Téléchargez Odomate depuis Google Play ou App Store\n2. Ouvrez l'application et appuyez sur « S'inscrire »\n3. Entrez votre email et créez un mot de passe\n4. Vérifiez votre adresse email\n5. Commencez à ajouter des véhicules !"
+        },
+        {
+          "question": "Mes données sont-elles sécurisées ?",
+          "answer": "Oui ! Nous utilisons un chiffrement standard pour :\n- Toutes les transmissions de données (chiffrement de bout en bout)\n- Stockage local sur votre appareil\n- Sauvegardes cloud via Supabase"
+        },
+        {
+          "question": "Vendez-vous mes données ?",
+          "answer": "**Non.** Nous ne vendons jamais vos données personnelles à des tiers. Nous collectons des analyses anonymes pour améliorer l'application, mais vos informations personnelles, itinéraires de trajets et données de véhicule restent privées."
+        },
+        {
+          "question": "Puis-je supprimer mon compte ?",
+          "answer": "Oui ! Allez dans Profil → Paramètres → Supprimer le compte. Vos données sont effacées immédiatement côté serveur."
+        },
+        {
+          "question": "Quelles données collectez-vous ?",
+          "answer": "Nous collectons :\n- Adresse email (pour l'authentification)\n- Informations sur le véhicule (marque, modèle, VIN, historique d'entretien)\n- Données de trajets (distance, durée, itinéraires - stockées localement et dans Supabase)\n- Analyses anonymes (modèle d'appareil, version OS, utilisation des fonctionnalités)\nNous **NE** collectons **PAS** ni ne partageons les coordonnées GPS précises pour l'analyse.\n---"
+        },
+        {
+          "question": "Qu'est-ce qui est inclus dans la version gratuite ?",
+          "answer": "- Gérer 1 véhicule\n- Suivi manuel des trajets\n- Recommandations d'entretien IA\n- Notifications dans l'application pour l'entretien\n- Prévisions météo avec recommandations pour les trajets\n- Mode stationnement: minuteur pour stationnement payant et recherche de place\n- Stockage des informations sur le véhicule\n- Synchronisation entre appareils"
+        },
+        {
+          "question": "Qu'est-ce qui est inclus dans Premium ?",
+          "answer": "- **Gérer jusqu'à 2 véhicules**\n- **Navigation GPS :** Directions turn-by-turn avec Valhalla (auto-hébergé)\n- **Suivi automatique des trajets :** Enregistrement GPS en arrière-plan\n- **Notifications push :** Rappels d'entretien\n- **Export du carnet d'entretien :** Au format PDF\n- **Planification d'itinéraires :** Sauvegarde et partage d'itinéraires multi-points"
+        },
+        {
+          "question": "Comment fonctionne l'entretien IA ?",
+          "answer": "Notre IA (powered by OpenAI) analyse les spécifications de votre véhicule (marque, modèle, année, type de moteur, kilométrage) et génère des intervalles d'entretien personnalisés pour :\n- Vidanges d'huile\n- Rotations de pneus\n- Inspections de freins\n- Remplacements de filtres\n- Et plus encore !"
+        },
+        {
+          "question": "Puis-je suivre plusieurs véhicules ?",
+          "answer": "Oui ! Dans la version gratuite, vous pouvez gérer 1 véhicule. L'abonnement Premium permet de gérer jusqu'à 2 véhicules. Chaque véhicule a son propre calendrier d'entretien et historique de trajets."
+        },
+        {
+          "question": "Le suivi automatique des trajets vide-t-il la batterie ?",
+          "answer": "Nous avons optimisé l'utilisation de la batterie, mais le suivi GPS en arrière-plan consomme plus d'énergie que la normale. Les utilisateurs Premium peuvent activer/désactiver le suivi automatique selon leurs besoins."
+        },
+        {
+          "question": "Puis-je exporter mon carnet d'entretien ?",
+          "answer": "Oui ! Les utilisateurs Premium peuvent exporter le carnet d'entretien au format PDF.\n---"
+        },
+        {
+          "question": "Quelle est la précision de la navigation ?",
+          "answer": "Odomate utilise Valhalla (auto-hébergé) pour le routage, qui s'appuient sur les données OpenStreetMap. La précision dépend de la qualité des données cartographiques dans votre région. Suivez toujours les panneaux de signalisation et les lois."
+        },
+        {
+          "question": "Puis-je utiliser la navigation hors ligne ?",
+          "answer": "Non, la navigation nécessite une connexion Internet active pour le routage en temps réel et les tuiles de carte."
+        },
+        {
+          "question": "La navigation affiche-t-elle le trafic ?",
+          "answer": "Oui ! Les utilisateurs Premium peuvent activer la visualisation du trafic dans les paramètres de navigation."
+        },
+        {
+          "question": "Puis-je ajouter plusieurs points de passage ?",
+          "answer": "Oui ! Les utilisateurs Premium peuvent créer des itinéraires avec plusieurs arrêts et les sauvegarder pour une utilisation future."
+        },
+        {
+          "question": "Pourquoi la navigation me reroute-t-elle parfois ?",
+          "answer": "Odomate reroute automatiquement si :\n- Vous déviez de l'itinéraire prévu\n- Les conditions de circulation changent\n- Un itinéraire plus rapide devient disponible\n---"
+        },
+        {
+          "question": "Combien coûte Premium ?",
+          "answer": "- **Premium :** $4.99/mois ou $49.99/an"
+        },
+        {
+          "question": "Comment souscrire à Premium ?",
+          "answer": "1. Ouvrez Odomate\n2. Allez dans Profil → Premium\n3. Sélectionnez votre plan\n4. Complétez le paiement via Google Play ou App Store"
+        },
+        {
+          "question": "Puis-je annuler mon abonnement ?",
+          "answer": "Oui, à tout moment ! Votre abonnement reste actif jusqu'à la fin de la période de facturation en cours. Pas de remboursement pour les mois partiels."
+        },
+        {
+          "question": "Y a-t-il un essai gratuit ?",
+          "answer": "Oui ! Les nouveaux utilisateurs reçoivent un essai gratuit de 3 jours des fonctionnalités Premium (si disponible dans votre région)."
+        },
+        {
+          "question": "Quels modes de paiement acceptez-vous ?",
+          "answer": "Les paiements sont traités via :\n- **Android :** Google Play Billing\n- **iOS :** App Store In-App Purchase"
+        },
+        {
+          "question": "Que se passe-t-il si j'annule Premium ?",
+          "answer": "- Vous conservez tous vos véhicules et l'historique des trajets\n- La navigation et le suivi automatique des trajets seront désactivés\n- Les notifications push pour l'entretien deviennent indisponibles\n- Les recommandations d'entretien IA restent disponibles\n- Vous pouvez vous réabonner à tout moment pour restaurer les fonctionnalités\n---"
+        },
+        {
+          "question": "L'application plante ou se fige. Que faire ?",
+          "answer": "1. Redémarrez l'application\n2. Vérifiez les mises à jour dans Google Play/App Store\n3. Effacez le cache de l'application (Paramètres → Applications → Odomate → Effacer le cache)\n4. Si le problème persiste, contactez support@odomate.net avec :\n   - Modèle d'appareil\n   - Version de l'OS\n   - Description du problème"
+        },
+        {
+          "question": "La localisation GPS est imprécise. Comment corriger ?",
+          "answer": "- Activez le mode « Haute précision » dans les paramètres de localisation de l'appareil\n- Assurez-vous qu'Odomate a l'autorisation GPS\n- Utilisez l'application à l'extérieur avec une vue dégagée du ciel\n- Redémarrez votre appareil\n- Vérifiez si d'autres applications GPS fonctionnent correctement"
+        },
+        {
+          "question": "Mon trajet n'a pas été enregistré. Pourquoi ?",
+          "answer": "Les trajets de moins de 0,1 km (100 mètres) sont automatiquement supprimés. Vérifiez aussi :\n- L'autorisation GPS est activée\n- Connexion Internet pour la synchronisation avec Supabase\n- Espace de stockage suffisant sur l'appareil"
+        },
+        {
+          "question": "La synchronisation ne fonctionne pas. Que faire ?",
+          "answer": "- Vérifiez votre connexion Internet\n- Déconnectez-vous et reconnectez-vous\n- Forcez la synchronisation depuis Profil → Synchroniser maintenant\n- Contactez le support si le problème persiste"
+        },
+        {
+          "question": "J'ai oublié mon mot de passe. Comment le réinitialiser ?",
+          "answer": "1. Sur l'écran de connexion, appuyez sur « Mot de passe oublié ? »\n2. Entrez votre adresse email\n3. Vérifiez vos emails pour un lien de réinitialisation\n4. Suivez le lien pour créer un nouveau mot de passe\n---"
+        },
+        {
+          "question": "Comment ajouter un enregistrement d'entretien ?",
+          "answer": "1. Sélectionnez votre véhicule\n2. Allez dans l'onglet Entretien\n3. Appuyez sur « + Ajouter un entretien »\n4. Entrez les détails (type, date, kilométrage, coût, notes)\n5. Enregistrez"
+        },
+        {
+          "question": "Comment configurer les rappels d'entretien ?",
+          "answer": "Tous les rappels d'entretien sont configurés automatiquement basés sur les plans générés par l'IA. Vous pouvez modifier les intervalles d'entretien pour chaque composant selon vos besoins."
+        },
+        {
+          "question": "Puis-je personnaliser les intervalles d'entretien ?",
+          "answer": "Oui ! Modifiez n'importe quel élément d'entretien et ajustez l'intervalle (par kilométrage ou temps)."
+        },
+        {
+          "question": "Vais-je recevoir des notifications push pour l'entretien ?",
+          "answer": "Les notifications push sont uniquement disponibles pour les utilisateurs Premium. Activez les notifications dans les paramètres de l'appareil et Odomate vous rappellera quand l'entretien est dû. Les utilisateurs gratuits reçoivent des notifications dans l'application.\n---"
+        },
+        {
+          "question": "Où sont stockées mes données ?",
+          "answer": "- **Localement :** Base de données SQLite chiffrée sur votre appareil\n- **Cloud :** Serveurs Supabase (Amérique du Nord, Amérique centrale, Europe)"
+        },
+        {
+          "question": "Puis-je utiliser Odomate sans synchronisation cloud ?",
+          "answer": "Non, l'authentification Supabase est requise. Cependant, toutes les données sont mises en cache localement pour que vous puissiez y accéder hors ligne."
+        },
+        {
+          "question": "Qu'arrive-t-il à mes données si je supprime l'application ?",
+          "answer": "- Les données locales sont supprimées immédiatement\n- Les données cloud restent dans Supabase jusqu'à ce que vous supprimiez votre compte\n- Réinstallez l'application et connectez-vous pour restaurer vos données"
+        },
+        {
+          "question": "Odomate suit-il ma localisation en permanence ?",
+          "answer": "Non. L'accès à la localisation se produit uniquement pendant :\n- La navigation active\n- Le suivi automatique des trajets (Premium, lorsqu'activé)\n- L'enregistrement de l'emplacement de stationnement\n- La recherche d'une place de stationnement\n---"
+        },
+        {
+          "question": "Comment signaler un bug ?",
+          "answer": "Envoyez-nous un email à support@odomate.net avec :\n- Description du bug\n- Étapes pour le reproduire\n- Captures d'écran (si possible)\n- Informations sur l'appareil et l'OS"
+        },
+        {
+          "question": "Comment demander une fonctionnalité ?",
+          "answer": "Nous adorons les retours ! Envoyez un email à support@odomate.net avec votre demande."
+        },
+        {
+          "question": "Combien de temps prend la réponse du support ?",
+          "answer": "Nous visons à répondre dans les 48 heures, typiquement dans les 24 heures en semaine."
+        },
+        {
+          "question": "Puis-je obtenir un remboursement ?",
+          "answer": "Les remboursements sont gérés par Google Play ou App Store selon leurs politiques. Contactez support@odomate.net dans les 48 heures suivant l'achat pour examen.\n---\n**Site web :** odomate.net  \n**Email :** support@odomate.net  \n**Politique de confidentialité :** [Voir](PRIVACY_POLICY_FR.md)  \n**Conditions d'utilisation :** [Voir](TERMS_OF_SERVICE_FR.md)\n---\n**Vous n'avez pas trouvé votre question ? Contactez support@odomate.net**"
+        }
+      ]
+    },
+    "privacy": {
+      "content": [
+        {
+          "heading": "Introduction",
+          "text": "Bienvenue sur Odomate ! Cette politique décrit comment Oleksandr Konovalov (« nous ») collecte, utilise et protège vos informations lorsque vous utilisez l’application Odomate (« App »).\n**Contact :**  \nE‑mail : support@odomate.net  \nSite : odomate.net"
+        },
+        {
+          "heading": "Données que nous collectons",
+          "text": "- Adresse e‑mail (authentification Supabase)  \n- Informations véhicule (marque, modèle, année, VIN)  \n- Kilométrage, historique d’entretien, pièces remplacées, notes  \n- Données de trajets (heures, distance, itinéraire, notes)\n- Localisation (GPS) lors de la navigation ou du suivi de trajets  \n  Stockée localement et synchronisée avec Supabase pour sauvegarde.  \n  Aucune communication de localisation précise à des tiers sauf temporairement pour la navigation (Valhalla, Nominatim, Overpass (auto-hébergé ; limites de vitesse, POI, recherche Nominatim), Mapbox (secours), Nominatim).\n- Informations appareil (modèle, fabricant, version OS, version app, langue/région)\n- Analyses anonymes d’utilisation (vues d’écran, fonctionnalités), performances et journaux de plantage\n- OpenAI : uniquement spécifications véhicule et kilométrage pour recommandations ; aucune donnée personnelle ni itinéraire"
+        },
+        {
+          "heading": "Finalités d’utilisation",
+          "text": "- Gestion du véhicule et suivi d’entretien  \n- Saisie manuelle des trajets  \n- Génération de plannings d’entretien personnalisés via IA  \n- Synchronisation multi‑appareils  \n- Notifications de rappel entretien\n- Navigation GPS avec instructions en temps réel  \n- Suivi automatique des trajets (arrière‑plan)  \n- Prévisions de durée de vie des composants selon les spécifications du véhicule\n- Qualité, correction de bugs, performances, sécurité\n- Assistance et informations importantes"
+        },
+        {
+          "heading": "Fondements juridiques (RGPD)",
+          "text": "- Exécution du contrat (Art. 6(1)(b))  \n- Intérêt légitime (Art. 6(1)(f)) : sécurité, stabilité, statistiques anonymes  \n- Consentement (Art. 6(1)(a)) si requis (notifications, options)"
+        },
+        {
+          "heading": "Stockage, sécurité et conservation",
+          "text": "- Local : base SQLite chiffrée  \n- Cloud (Supabase) : chiffrement au repos/en transit, conformité RGPD (serveurs en NA/SA/UE)  \n- Chiffrement transport (HTTPS/TLS), contrôle d’accès  \n- Durées : données de compte tant que le compte est actif ; en cas de suppression du compte, suppression immédiate côté serveur ; analyses anonymes 26 mois (par défaut Firebase)"
+        },
+        {
+          "heading": "Partage et sous‑traitants",
+          "text": "Sous‑traitants essentiels : Supabase, Valhalla, Nominatim, Overpass (auto-hébergé ; limites de vitesse, POI, recherche Nominatim), Mapbox (secours), Nominatim, OpenAI, Firebase.  \nPas de vente de données. Pas d’utilisation à des fins publicitaires. Pas d’IDFA."
+        },
+        {
+          "heading": "Vos droits (UE)",
+          "text": "Droit d’accès, de rectification, d’effacement, de limitation, d’opposition, portabilité.  \nEffacement du compte dans l’app ; les données côté serveur sont supprimées immédiatement."
+        },
+        {
+          "heading": "Enfants",
+          "text": "L’app n’est pas destinée aux moins de 16 ans."
+        },
+        {
+          "heading": "Transferts internationaux",
+          "text": "Vers NA/SA/UE avec garanties appropriées (dont Clauses Contractuelles Types) assurant un niveau de protection adéquat."
+        },
+        {
+          "heading": "Modifications de la politique",
+          "text": "Nous informerons en cas de changements matériels dans l’app et mettrons à jour la date « Dernière mise à jour »."
+        },
+        {
+          "heading": "Contact",
+          "text": "support@odomate.net | odomate.net | Oleksandr Konovalov"
+        }
+      ]
+    },
+    "terms": {
+      "content": [
+        {
+          "heading": "Acceptation des Conditions",
+          "text": "En utilisant l'application Odomate, vous acceptez ces Conditions d'Utilisation. Si vous n'êtes pas d'accord, veuillez ne pas utiliser l'application.\n**Contact :**  \nDéveloppeur : Oleksandr Konovalov  \nE‑mail : support@odomate.net  \nSite : odomate.net"
+        },
+        {
+          "heading": "Description du Service",
+          "text": "Odomate est une application de gestion de véhicule et de navigation.\n- Gestion de véhicule (ajout/modification/suppression)  \n- Journal manuel des trajets  \n- Rappels d'entretien de base  \n- Stockage des informations du véhicule\n- Navigation GPS (turn-by-turn)  \n- Suivi automatique des trajets (arrière-plan)  \n- Planification d'itinéraires multi-points  \n- Entretien personnalisé basé sur l'IA (OpenAI)  \n- Statistiques avancées"
+        },
+        {
+          "heading": "Compte Utilisateur",
+          "text": "- Compte requis  \n- E‑mail valide obligatoire  \n- Vous êtes responsable de la confidentialité du mot de passe  \n- Âge minimum : 16 ans\n- Vous êtes responsable des activités liées au compte  \n- Prévenez-nous en cas d'usage non autorisé : support@odomate.net  \n- Sans responsabilité pour pertes causées par un usage non autorisé"
+        },
+        {
+          "heading": "Abonnements et Paiements",
+          "text": "**Premium** : 10,00 USD/mois – facturation mensuelle, résiliable à tout moment.  \nPaiement via Google Play (Android), App Store (iOS) ou RevenueCat. Les prix en USD peuvent varier selon pays/taxes.\nPeut être proposé. La carte sera débitée à la fin de l'essai sauf résiliation avant l'échéance.\nRésiliation possible à tout moment, effective à la fin de la période de facturation en cours. Pas de remboursement pour périodes partielles. Les demandes dans les 48 h peuvent être examinées au cas par cas.\nPréavis de 30 jours. Pas d'impact sur la période en cours. Résiliez si vous refusez le nouveau prix."
+        },
+        {
+          "heading": "Utilisation Acceptable",
+          "text": "- Usage illégal de l'application  \n- Piratage, rétro-ingénierie, atteinte à la sécurité  \n- Partage des identifiants  \n- Suivi d'autrui sans consentement  \n- Téléversement de code malveillant/virus  \n- Surcharge des serveurs par requêtes excessives  \n- Extraction/copie de données à des fins commerciales  \n- Violation des lois et règlements applicables\nRespectez le code de la route. La navigation est fournie « telle quelle » et peut contenir des erreurs. Vous êtes seul responsable de vos décisions de conduite. Nous déclinons toute responsabilité pour accidents/infractions/dommages liés à la navigation."
+        },
+        {
+          "heading": "Contenu Utilisateur",
+          "text": "Vous restez propriétaire de vos données. Vous nous accordez une licence de stockage/traitement/affichage pour fournir le service.\nSuppression du compte et des données possible à tout moment. Effacement côté serveur immédiat après suppression du compte. Certaines données d'analyse anonymisées peuvent être conservées selon la Politique de Confidentialité."
+        },
+        {
+          "heading": "Propriété Intellectuelle",
+          "text": "Odomate et les marques/logos/contenus associés appartiennent à Oleksandr Konovalov. Interdiction de copier, modifier, distribuer ou créer des œuvres dérivées.\nCartes  contributeurs OpenStreetMap. Navigation par Valhalla, Nominatim, Overpass (собственные серверы). IA par OpenAI."
+        },
+        {
+          "heading": "Confidentialité",
+          "text": "Consultez la [Politique de Confidentialité](PRIVACY_POLICY_FR.md) pour connaître nos pratiques de données."
+        },
+        {
+          "heading": "Garanties et Responsabilités",
+          "text": "Application fournie « telle quelle » et « selon disponibilité », sans garanties implicites/explicites (qualité marchande, adéquation, exactitude navigation, service ininterrompu…).\nDans la limite autorisée par la loi, aucune responsabilité pour dommages indirects/spéciaux/consécutifs, perte de profits/données/opportunités, blessures/dommages matériels, informations routières inexactes, interruptions/pertes de données."
+        },
+        {
+          "heading": "Services Tiers",
+          "text": "Supabase (auth/stockage), Mapbox (cartes/navigation), OSRM (itinéraires), Nominatim (géocodage), OpenAI (IA), Firebase (analyses/crash). Votre utilisation est soumise à leurs conditions/politiques."
+        },
+        {
+          "heading": "Résiliation",
+          "text": "Par vous : supprimer le compte dans l'app.  \nPar nous : en cas de violation, fraude, inactivité 24 mois, ou arrêt du service (préavis 30 jours). Conséquences : fin immédiate du Premium, suppression des données selon la Politique, pas de remboursement des périodes partielles."
+        },
+        {
+          "heading": "Modifications des Conditions",
+          "text": "La version à jour est publiée sur le site odomate.net, où la date « Dernière mise à jour » est tenue à jour. L'utilisation continue vaut acceptation des Conditions publiées sur le site."
+        },
+        {
+          "heading": "Droit Applicable et Litiges",
+          "text": "Droit ukrainien (sans conflit de lois). Litiges : négociation de bonne foi, puis arbitrage ou tribunaux compétents d'Ukraine. Droits des utilisateurs UE conservés."
+        },
+        {
+          "heading": "Divisibilité",
+          "text": "Si une disposition est invalide/inapplicable, les autres restent en vigueur."
+        },
+        {
+          "heading": "Contact",
+          "text": "support@odomate.net | odomate.net | Oleksandr Konovalov\n—"
+        }
+      ]
+    },
+    "userManual": "## Introduction\nOdomate est une application de gestion de véhicule, de navigation et de suivi des trajets avec recommandations d'entretien basées sur l'IA.\n## 1. Bien démarrer\n1. Installez et ouvrez l'app.  \n2. Créez un compte ou connectez‑vous (e‑mail).  \n3. Ajoutez votre premier véhicule (marque, modèle, année, VIN optionnel).  \n4. Réglez unités (km/mi) et langue dans les paramètres.\n## 2. Véhicules\n- Ajouter/modifier/supprimer un véhicule.  \n- Champs : marque, modèle, année, VIN, immatriculation (optionnel).  \n- Mettre à jour le kilométrage ; joindre documents/notes.  \n- Multi‑véhicules pris en charge.\n## 3. Trajets\n### 3.1 Saisie manuelle (Gratuit)\n- Créer un trajet : début/fin, distance, notes.  \n- Ajouter catégories et tags.\n### 3.2 Navigation et suivi automatique (Premium)\n1. Recherchez une destination (adresse/lieu/coordonnées).  \n2. Ajoutez des étapes (optionnel).  \n3. Lancez la navigation et suivez les instructions.  \n4. Le suivi automatique fonctionne pendant la navigation active : enregistre distance et itinéraire en arrière‑plan.  \n5. Recalcul automatique en cas de sortie d'itinéraire.\nNotes :  \n- Cartes : Mapbox.  \n- Navigation et itinéraires : Valhalla (auto-hébergé), Mapbox comme solution de secours.  \n- Recherche : Nominatim.  \n- Batterie : le GPS consomme davantage.  \n- Respectez toujours le code de la route.\n## 4. Entretien\n### 4.1 Plan IA\n- Basé sur les données véhicule et le kilométrage.  \n- Propose des échéances d'entretien et pièces à prévoir.\n### 4.2 Rappels\n- Les rappels sont envoyés automatiquement sur la base des plans d'entretien IA et des intervalles définis.  \n- Activez les notifications push dans les paramètres (autorisation d'appareil requise).\n## 5. Synchronisation\n- Compte via Supabase ; données synchronisées entre appareils.  \n- Offline‑first : les modifications sont envoyées à la reconnexion.  \n- Conflits : dernière modification prioritaire ; corriger manuellement si besoin.\n## 6. Paramètres\n- Unités (km/mi), langue, format de l'heure (12/24 heures), format de température (°C/°F).  \n- Notifications (entretien, suivi).  \n- Confidentialité : suppression du compte, opt‑out d'analyses.  \n- Options de carte : trafic, 3D, échelle, éviter les péages, éviter les autoroutes, éviter les ferries.\n## 7. Conseils de précision\n- Laissez le GPS activé ; ajustez l'économie d'énergie si nécessaire.  \n- La technologie movement‑bearing est toujours utilisée pour déterminer la direction du mouvement.  \n- Mettez l'app à jour.\n## 8. Dépannage\n- Pas de position : vérifiez autorisations et services de localisation.  \n- Navigation arrêtée : vérifiez Internet/GPS, redémarrez l'app.  \n- Sync bloquée : vérifiez la connexion et réessayez.  \n- Contactez le support (ci‑dessous).\n## 9. Confidentialité\n- Localisation uniquement en navigation/suivi actifs.  \n- Analyses anonymes pour améliorer l'app.  \n- Détails : `legal/PRIVACY_POLICY_FR.md`, `legal/GDPR_COMPLIANCE_FR.md`.\n## 10. Support\nE‑mail : support@odomate.net  \nSite : odomate.net",
+    "gdprCompliance": "## Responsable de traitement (Art. 4)\nOleksandr Konovalov  \nE‑mail : support@odomate.net  \nSite : odomate.net\n## Finalités du traitement (Art. 5)\n- Fourniture des fonctionnalités de l’app (gestion véhicule, maintenance, navigation, suivi de trajets)  \n- Synchronisation et gestion de compte  \n- Support client et communications de service  \n- Amélioration des performances, correction d’erreurs, sécurité (analyses/crashs anonymes)  \n- Recommandations de maintenance basées sur l’IA\n## Bases légales (Art. 6)\n- Exécution du contrat (Art. 6(1)(b)) : fonctionnalités essentielles, compte, synchronisation\n- Intérêt légitime (Art. 6(1)(f)) : sécurité, stabilité, statistiques d’utilisation anonymes\n- Consentement (Art. 6(1)(a)), si requis : notifications, fonctionnalités optionnelles\n## Catégories de données\n- Données de contact : e‑mail  \n- Données d’utilisation : interactions, vues d’écran (anonymes)  \n- Données techniques : modèle/appareil, OS, version app, diagnostics/crash  \n- Données de localisation : position précise/approximative pendant navigation/suivi  \n- Données véhicule : marque, modèle, VIN, kilométrage, historique d’entretien  \n- Données trajets : départ/arrivée, distance, itinéraire, notes\n## Destinataires (Art. 13)\n- Supabase (authentification/stockage)  \n- Mapbox (cartes/navigation), OSRM (itinéraires), Nominatim (géocodage) – traitement temporaire de la localisation pendant la navigation  \n- OpenAI (recommandations IA : données véhicule/kilométrage, sans identifiants personnels)  \n- Firebase (analyses/crashs anonymes)\n## Transferts hors UE (Art. 44 et s.)\nTraitements possibles en Amérique du Nord/Sud et dans l’UE. Des garanties appropriées (notamment Clauses Contractuelles Types) assurent un niveau de protection adéquat.\n## Durées de conservation (Art. 5)\n- Compte : pendant l’utilisation active  \n- Après suppression du compte : effacement côté serveur immédiat  \n- Historique de trajets : jusqu’à suppression manuelle par l’utilisateur  \n- Analyses/crashs anonymes : 26 mois (par défaut Firebase)\n## Droits des personnes (Art. 12–22)\nDroit d’accès, de rectification, d’effacement, de limitation, d’opposition, de portabilité.  \nDemandes : support@odomate.net.  \nPlainte : auprès de l’autorité de contrôle compétente (Art. 77).\n## Sécurité (Art. 32)\n- Chiffrement en transit (HTTPS/TLS) et au repos (stockage chiffré)  \n- Contrôles d’accès et journalisation  \n- Minimisation des données\n## Note sur la localisation\nLa localisation précise est traitée uniquement lors d’une navigation active ou du suivi automatique des trajets. Aucune communication durable à des tiers à des fins publicitaires/traçage. Pendant la navigation, les coordonnées peuvent être transmises temporairement à Mapbox/OSRM/Nominatim pour fournir l’itinéraire.\n## DPO et contact\nUn DPO n’est pas requis au vu de l’évaluation des risques actuelle.  \nContact : support@odomate.net\n—"
+  },
+  "de": {
+    "faq": {
+      "items": [
+        {
+          "question": "Was ist Odomate?",
+          "answer": "Odomate ist eine umfassende Fahrzeugverwaltungs-App, die Ihnen hilft, Wartungen zu verfolgen, Fahrten zu planen und mit Echtzeit-GPS-Navigation zu navigieren. Sie kombiniert KI-gestützte Wartungsempfehlungen mit erweiterten Navigationsfunktionen."
+        },
+        {
+          "question": "Ist Odomate kostenlos?",
+          "answer": "Ja! Odomate bietet eine kostenlose Version mit Fahrzeugverwaltung, manueller Fahrtenerfassung und KI-Wartungsempfehlungen. Premium-Funktionen wie GPS-Navigation, automatisches Fahrtentracking und Push-Benachrichtigungen erfordern ein Abonnement ($4.99/Monat oder $49.99/Jahr)."
+        },
+        {
+          "question": "Welche Plattformen unterstützt Odomate?",
+          "answer": "Odomate ist für Android- und iOS-Geräte verfügbar."
+        },
+        {
+          "question": "Welche Sprachen unterstützt Odomate?",
+          "answer": "Odomate unterstützt 7 Sprachen: Englisch, Spanisch, Deutsch, Französisch, Polnisch, Russisch und Ukrainisch."
+        },
+        {
+          "question": "Benötige ich eine Internetverbindung?",
+          "answer": "- **Offline:** Alle Funktionen arbeiten offline, außer Navigation, automatischem Fahrtentracking und KI-Analyse der Komponentenlebensdauer\n- **Für Navigation:** Internet erforderlich für Echtzeit-Routing und Kartenkacheln\n- **Für KI-Funktionen:** Internet erforderlich für OpenAI-Integration\n---"
+        },
+        {
+          "question": "Wie erstelle ich ein Konto?",
+          "answer": "1. Laden Sie Odomate aus Google Play oder App Store herunter\n2. Öffnen Sie die App und tippen Sie auf „Registrieren\"\n3. Geben Sie Ihre E-Mail ein und erstellen Sie ein Passwort\n4. Bestätigen Sie Ihre E-Mail-Adresse\n5. Beginnen Sie mit dem Hinzufügen von Fahrzeugen!"
+        },
+        {
+          "question": "Sind meine Daten sicher?",
+          "answer": "Ja! Wir verwenden branchenübliche Verschlüsselung für:\n- Alle Datenübertragungen (End-zu-End-Verschlüsselung)\n- Lokale Speicherung auf Ihrem Gerät\n- Cloud-Backups über Supabase"
+        },
+        {
+          "question": "Verkaufen Sie meine Daten?",
+          "answer": "**Nein.** Wir verkaufen niemals Ihre persönlichen Daten an Dritte. Wir sammeln anonyme Analysen zur Verbesserung der App, aber Ihre persönlichen Informationen, Fahrtrouten und Fahrzeugdaten bleiben privat."
+        },
+        {
+          "question": "Kann ich mein Konto löschen?",
+          "answer": "Ja! Gehen Sie zu Profil → Einstellungen → Konto löschen. Ihre Daten werden sofort serverseitig gelöscht."
+        },
+        {
+          "question": "Welche Daten sammeln Sie?",
+          "answer": "Wir sammeln:\n- E-Mail-Adresse (für Authentifizierung)\n- Fahrzeuginformationen (Marke, Modell, VIN, Wartungshistorie)\n- Fahrtdaten (Entfernung, Dauer, Routen - lokal und in Supabase gespeichert)\n- Anonyme Analysen (Gerätemodell, OS-Version, Funktionsnutzung)\nWir sammeln **KEINE** präzisen GPS-Koordinaten für Analysen oder geben sie weiter.\n---"
+        },
+        {
+          "question": "Was ist in der kostenlosen Version enthalten?",
+          "answer": "- 1 Fahrzeug verwalten\n- Manuelle Fahrtenerfassung\n- KI-Wartungsempfehlungen\n- In-App-Benachrichtigungen für Wartung\n- Wettervorhersage mit Empfehlungen für Fahrten\n- Parkmodus: Timer für bezahltes Parken und Parkplatzsuche\n- Fahrzeuginformationsspeicherung\n- Synchronisierung über Geräte hinweg"
+        },
+        {
+          "question": "Was ist in Premium enthalten?",
+          "answer": "- **Bis zu 2 Fahrzeuge verwalten**\n- **GPS-Navigation:** Turn-by-Turn-Anweisungen mit Valhalla (selbst gehostet)\n- **Automatisches Fahrtentracking:** Hintergrund-GPS-Aufzeichnung\n- **Push-Benachrichtigungen:** Wartungserinnerungen\n- **Servicebuch-Export:** Im PDF-Format\n- **Routenplanung:** Speichern und Teilen von Routen mit mehreren Wegpunkten"
+        },
+        {
+          "question": "Wie funktioniert die KI-Wartung?",
+          "answer": "Unsere KI (powered by OpenAI) analysiert Ihre Fahrzeugspezifikationen (Marke, Modell, Jahr, Motortyp, Laufleistung) und erstellt personalisierte Wartungsintervalle für:\n- Ölwechsel\n- Reifenwechsel\n- Bremsinspektion\n- Filterwechsel\n- Und mehr!"
+        },
+        {
+          "question": "Kann ich mehrere Fahrzeuge verfolgen?",
+          "answer": "Ja! In der kostenlosen Version können Sie 1 Fahrzeug verwalten. Premium-Abonnement ermöglicht die Verwaltung von bis zu 2 Fahrzeugen. Jedes Fahrzeug hat seinen eigenen Wartungsplan und Fahrtverlauf."
+        },
+        {
+          "question": "Entlädt automatisches Fahrtentracking den Akku?",
+          "answer": "Wir haben die Akkunutzung optimiert, aber Hintergrund-GPS-Tracking verbraucht mehr Energie als normal. Premium-Nutzer können automatisches Tracking bei Bedarf ein-/ausschalten."
+        },
+        {
+          "question": "Kann ich mein Servicebuch exportieren?",
+          "answer": "Ja! Premium-Nutzer können das Servicebuch im PDF-Format exportieren.\n---"
+        },
+        {
+          "question": "Wie genau ist die Navigation?",
+          "answer": "Odomate verwendet Valhalla (selbst gehostet) für Routing, die auf OpenStreetMap-Daten basieren. Die Genauigkeit hängt von der Kartenqualität in Ihrer Region ab. Befolgen Sie immer Verkehrszeichen und Gesetze."
+        },
+        {
+          "question": "Kann ich Navigation offline nutzen?",
+          "answer": "Nein, Navigation erfordert eine aktive Internetverbindung für Echtzeit-Routing und Kartenkacheln."
+        },
+        {
+          "question": "Zeigt die Navigation Verkehr an?",
+          "answer": "Ja! Premium-Nutzer können Verkehrsvisualisierung in den Navigationseinstellungen aktivieren."
+        },
+        {
+          "question": "Kann ich mehrere Wegpunkte hinzufügen?",
+          "answer": "Ja! Premium-Nutzer können Routen mit mehreren Stopps erstellen und für zukünftige Nutzung speichern."
+        },
+        {
+          "question": "Warum führt die Navigation manchmal Umleitungen durch?",
+          "answer": "Odomate leitet automatisch um, wenn:\n- Sie von der geplanten Route abweichen\n- Sich Verkehrsbedingungen ändern\n- Eine schnellere Route verfügbar wird\n---"
+        },
+        {
+          "question": "Was kostet Premium?",
+          "answer": "- **Premium:** $4.99/Monat oder $49.99/Jahr"
+        },
+        {
+          "question": "Wie abonniere ich Premium?",
+          "answer": "1. Öffnen Sie Odomate\n2. Gehen Sie zu Profil → Premium\n3. Wählen Sie Ihren Plan\n4. Zahlung über Google Play oder App Store abschließen"
+        },
+        {
+          "question": "Kann ich mein Abonnement kündigen?",
+          "answer": "Ja, jederzeit! Ihr Abonnement bleibt bis zum Ende des aktuellen Abrechnungszeitraums aktiv. Keine Rückerstattung für Teilmonate."
+        },
+        {
+          "question": "Gibt es eine kostenlose Testversion?",
+          "answer": "Ja! Neue Nutzer erhalten eine 3-tägige kostenlose Testversion der Premium-Funktionen (falls in Ihrer Region verfügbar)."
+        },
+        {
+          "question": "Welche Zahlungsmethoden akzeptieren Sie?",
+          "answer": "Zahlungen werden verarbeitet über:\n- **Android:** Google Play Billing\n- **iOS:** App Store In-App Purchase"
+        },
+        {
+          "question": "Was passiert, wenn ich Premium kündige?",
+          "answer": "- Sie behalten alle Ihre Fahrzeuge und Fahrtverläufe\n- Navigation und automatisches Fahrtentracking werden deaktiviert\n- Push-Benachrichtigungen für Wartung werden nicht verfügbar\n- KI-Wartungsempfehlungen bleiben verfügbar\n- Sie können jederzeit neu abonnieren, um Funktionen wiederherzustellen\n---"
+        },
+        {
+          "question": "Die App stürzt ab oder friert ein. Was soll ich tun?",
+          "answer": "1. Starten Sie die App neu\n2. Prüfen Sie auf App-Updates in Google Play/App Store\n3. Löschen Sie den App-Cache (Einstellungen → Apps → Odomate → Cache löschen)\n4. Wenn das Problem weiterhin besteht, kontaktieren Sie support@odomate.net mit:\n   - Gerätemodell\n   - OS-Version\n   - Beschreibung des Problems"
+        },
+        {
+          "question": "GPS-Standort ist ungenau. Wie behebe ich das?",
+          "answer": "- Aktivieren Sie „Hohe Genauigkeit\" im Standortmodus Ihres Geräts\n- Stellen Sie sicher, dass Odomate GPS-Berechtigung hat\n- Nutzen Sie die App im Freien mit freiem Blick zum Himmel\n- Starten Sie Ihr Gerät neu\n- Prüfen Sie, ob andere GPS-Apps korrekt funktionieren"
+        },
+        {
+          "question": "Meine Fahrt wurde nicht gespeichert. Warum?",
+          "answer": "Fahrten kürzer als 0,1 km (100 Meter) werden automatisch verworfen. Prüfen Sie auch:\n- GPS-Berechtigung ist aktiviert\n- Internetverbindung für Synchronisierung zu Supabase\n- Ausreichender Speicherplatz auf dem Gerät"
+        },
+        {
+          "question": "Synchronisierung funktioniert nicht. Was soll ich tun?",
+          "answer": "- Prüfen Sie Ihre Internetverbindung\n- Melden Sie sich ab und wieder an\n- Erzwingen Sie Synchronisierung von Profil → Jetzt synchronisieren\n- Kontaktieren Sie Support, wenn das Problem weiterhin besteht"
+        },
+        {
+          "question": "Ich habe mein Passwort vergessen. Wie setze ich es zurück?",
+          "answer": "1. Tippen Sie auf dem Login-Bildschirm auf „Passwort vergessen?\"\n2. Geben Sie Ihre E-Mail-Adresse ein\n3. Prüfen Sie Ihre E-Mail auf einen Reset-Link\n4. Folgen Sie dem Link, um ein neues Passwort zu erstellen\n---"
+        },
+        {
+          "question": "Wie füge ich einen Wartungseintrag hinzu?",
+          "answer": "1. Wählen Sie Ihr Fahrzeug\n2. Gehen Sie zum Wartungs-Tab\n3. Tippen Sie auf „+ Wartung hinzufügen\"\n4. Geben Sie Details ein (Typ, Datum, Laufleistung, Kosten, Notizen)\n5. Speichern"
+        },
+        {
+          "question": "Wie richte ich Wartungserinnerungen ein?",
+          "answer": "Alle Wartungserinnerungen werden automatisch basierend auf KI-generierten Plänen eingerichtet. Sie können Wartungsintervalle für jede Komponente nach Bedarf anpassen."
+        },
+        {
+          "question": "Kann ich Wartungsintervalle anpassen?",
+          "answer": "Ja! Bearbeiten Sie jeden Wartungsposten und passen Sie das Intervall an (nach Laufleistung oder Zeit)."
+        },
+        {
+          "question": "Erhalte ich Push-Benachrichtigungen für Wartung?",
+          "answer": "Push-Benachrichtigungen sind nur für Premium-Nutzer verfügbar. Aktivieren Sie Benachrichtigungen in den Geräteeinstellungen, und Odomate erinnert Sie, wenn Wartung fällig ist. Kostenlose Nutzer erhalten In-App-Benachrichtigungen.\n---"
+        },
+        {
+          "question": "Wo werden meine Daten gespeichert?",
+          "answer": "- **Lokal:** Verschlüsselte SQLite-Datenbank auf Ihrem Gerät\n- **Cloud:** Supabase-Server (Nordamerika, Mittelamerika, Europa)"
+        },
+        {
+          "question": "Kann ich Odomate ohne Cloud-Synchronisierung nutzen?",
+          "answer": "Nein, Supabase-Authentifizierung ist erforderlich. Jedoch werden alle Daten lokal gecacht, sodass Sie offline darauf zugreifen können."
+        },
+        {
+          "question": "Was passiert mit meinen Daten, wenn ich die App lösche?",
+          "answer": "- Lokale Daten werden sofort gelöscht\n- Cloud-Daten verbleiben in Supabase, bis Sie Ihr Konto löschen\n- Installieren Sie die App neu und melden Sie sich an, um Ihre Daten wiederherzustellen"
+        },
+        {
+          "question": "Verfolgt Odomate meinen Standort ständig?",
+          "answer": "Nein. Standortzugriff erfolgt nur während:\n- Aktiver Navigation\n- Automatischem Fahrtentracking (Premium, wenn aktiviert)\n- Speichern des Parkplatzes\n- Suchen eines Parkplatzes\n---"
+        },
+        {
+          "question": "Wie melde ich einen Fehler?",
+          "answer": "Schreiben Sie uns an support@odomate.net mit:\n- Beschreibung des Fehlers\n- Schritte zur Reproduktion\n- Screenshots (falls möglich)\n- Geräte- und OS-Informationen"
+        },
+        {
+          "question": "Wie kann ich eine Funktion vorschlagen?",
+          "answer": "Wir lieben Feedback! Schreiben Sie an support@odomate.net mit Ihrem Vorschlag."
+        },
+        {
+          "question": "Wie lange dauert die Support-Antwort?",
+          "answer": "Wir versuchen innerhalb von 48 Stunden zu antworten, typischerweise innerhalb von 24 Stunden an Werktagen."
+        },
+        {
+          "question": "Kann ich eine Rückerstattung erhalten?",
+          "answer": "Rückerstattungen werden von Google Play oder App Store gemäß deren Richtlinien bearbeitet. Kontaktieren Sie support@odomate.net innerhalb von 48 Stunden nach dem Kauf zur Prüfung.\n---\n**Website:** odomate.net  \n**E-Mail:** support@odomate.net  \n**Datenschutzrichtlinie:** [Ansehen](PRIVACY_POLICY_DE.md)  \n**Nutzungsbedingungen:** [Ansehen](TERMS_OF_SERVICE_DE.md)\n---\n**Ihre Frage nicht gefunden? Kontaktieren Sie support@odomate.net**"
+        }
+      ]
+    },
+    "privacy": {
+      "content": [
+        {
+          "heading": "Einleitung",
+          "text": "Willkommen bei Odomate! Diese Datenschutzerklärung erläutert, wie Oleksandr Konovalov (\"wir\"/\"uns\") Informationen erfasst, verwendet und schützt, wenn Sie die Odomate‑App (\"App\") nutzen. Wir legen großen Wert auf Transparenz und Datensicherheit.\nDurch die Nutzung von Odomate stimmen Sie der Erhebung und Verwendung Ihrer Informationen im Rahmen dieser Erklärung zu.\n**Kontakt:**  \nEntwickler: Oleksandr Konovalov  \nE‑Mail: support@odomate.net  \nWebsite: odomate.net"
+        },
+        {
+          "heading": "Welche Daten wir erheben",
+          "text": "- E‑Mail‑Adresse (Supabase‑Authentifizierung)  \n- Fahrzeuginformationen (Marke, Modell, Baujahr, VIN)  \n- Kilometerstände, Wartungshistorie, ausgetauschte Teile, Notizen  \n- Fahrtdaten (Zeitpunkte, Distanz, Route, Notizen)\n- Standortdaten (GPS) bei aktiver Navigation oder Fahrterfassung  \n  Lokal auf dem Gerät gespeichert und mit Supabase synchronisiert (Backup).  \n  Keine dauerhafte Weitergabe präziser GPS‑Daten an Dritte; temporäre Übermittlung nur zur Navigation (Valhalla, Nominatim, Overpass (selbst gehostet; Geschwindigkeitsbegrenzungen, POIs, Nominatim‑Suche), Mapbox (Fallback), Nominatim).\n- Geräteinformationen (Modell, Hersteller, OS‑Version, App‑Version, Sprache/Region)  \n- Anonyme Nutzungsanalysen (Screenviews, Feature‑Nutzung), Leistungs‑ und Crash‑Protokolle\n- OpenAI: ausschließlich Fahrzeugspezifikationen und Laufleistung zur KI‑Wartungsempfehlung; keine personenbezogenen Daten oder Routen"
+        },
+        {
+          "heading": "Verarbeitungszwecke",
+          "text": "- Fahrzeugverwaltung und Wartungsnachverfolgung  \n- Manuelles Erfassen und Speichern von Fahrten  \n- Personalisierte Wartungspläne per KI‑Analyse  \n- Synchronisierung zwischen Geräten  \n- Push‑Erinnerungen für Wartung\n- GPS‑Navigation mit Echtzeit‑Anweisungen  \n- Automatisches Fahrten‑Tracking (Hintergrund)  \n- Lebensdauer‑Prognosen für Komponenten basierend auf Fahrzeugspezifikationen\n- Qualität, Fehlerbehebung, Leistung, Sicherheit\n- Support, wichtige Mitteilungen"
+        },
+        {
+          "heading": "Rechtsgrundlagen (DSGVO)",
+          "text": "- Vertragserfüllung (Art. 6 Abs. 1 lit. b)  \n- Berechtigte Interessen (Art. 6 Abs. 1 lit. f): Sicherheit, Stabilität, anonyme Nutzungsmessung  \n- Einwilligung (Art. 6 Abs. 1 lit. a), falls erforderlich (Benachrichtigungen, optionale Features)"
+        },
+        {
+          "heading": "Speicherung, Sicherheit und Aufbewahrung",
+          "text": "- Lokal: verschlüsselte SQLite‑Datenbank  \n- Cloud (Supabase): Verschlüsselung at‑rest/in‑transit, DSGVO‑konform; Server in NA/SA/EU  \n- Transportverschlüsselung (HTTPS/TLS), Zugriffskontrollen  \n- Aufbewahrung: Kontodaten solange aktiv; bei Kontolöschung sofortige Löschung; anonyme Analytics 26 Monate (Firebase‑Standard)"
+        },
+        {
+          "heading": "Eingebundene Dienste und Weitergabe",
+          "text": "- Supabase (Auth/Speicher) – E‑Mail, Fahrzeug‑/Fahrtdaten  \n- Mapbox (Karten/Navi) – temporäre Koordinaten während Navigation  \n- OSRM (Routen) – Start/Zielkoordinaten  \n- Nominatim (Geokodierung) – Suchanfragen/Koordinaten  \n- OpenAI (KI‑Wartung) – Fahrzeugdaten, Laufleistung  \n- Firebase (Analytics/Crashlytics) – anonyme Nutzungs‑/Crashdaten  \nKeine Weitergabe zu Werbe‑/Trackingzwecken. Keine Nutzung von IDFA."
+        },
+        {
+          "heading": "Internationale Datenübermittlungen",
+          "text": "Übermittlung nach NA/SA/EU gemäß geltendem Datenschutzrecht; geeignete Garantien (u. a. Standardvertragsklauseln) gewährleisten ein angemessenes Schutzniveau."
+        },
+        {
+          "heading": "Ihre Rechte",
+          "text": "- Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch, Datenübertragbarkeit  \n- Kontolöschung in der App; serverseitige Daten werden umgehend gelöscht"
+        },
+        {
+          "heading": "Kinder",
+          "text": "Nicht für Nutzer unter 16 Jahren vorgesehen."
+        },
+        {
+          "heading": "Änderungen",
+          "text": "Wir informieren über wesentliche Änderungen in‑App; \"Zuletzt aktualisiert\" wird angepasst."
+        },
+        {
+          "heading": "Kontakt",
+          "text": "support@odomate.net | odomate.net | Oleksandr Konovalov"
+        }
+      ]
+    },
+    "terms": {
+      "content": [
+        {
+          "heading": "Zustimmung zu den Bedingungen",
+          "text": "Durch die Nutzung der Odomate-App stimmen Sie diesen Nutzungsbedingungen zu. Wenn Sie nicht einverstanden sind, nutzen Sie die App bitte nicht.\n**Kontakt:**\n- Entwickler: Oleksandr Konovalov\n- E-Mail: support@odomate.net\n- Website: odomate.net"
+        },
+        {
+          "heading": "Beschreibung des Dienstes",
+          "text": "Odomate ist eine Fahrzeugverwaltungs- und Navigations-App mit folgenden Funktionen:\n- Fahrzeugverwaltung (hinzufügen, bearbeiten, löschen)\n- Manuelle Fahrtenerfassung\n- Grundlegende Wartungserinnerungen\n- Fahrzeuginformationsspeicherung\n- **GPS-Navigation:** Echtzeit-Turn-by-Turn-Navigation mit Mapbox\n- **Automatische Fahrtenerfassung:** Hintergrund-GPS-Tracking\n- **Routenplanung:** Mehrpunkt-Routen erstellen und speichern\n- **KI-gestützte Wartung:** Personalisierte Wartungspläne powered by OpenAI\n- **Erweiterte Analysen:** Detaillierte Fahrtstatistiken"
+        },
+        {
+          "heading": "Kontoregistrierung",
+          "text": "- Sie müssen ein Konto erstellen, um Odomate zu nutzen\n- Sie müssen eine gültige E-Mail-Adresse angeben\n- Sie sind für die Vertraulichkeit Ihres Passworts verantwortlich\n- Sie müssen mindestens 16 Jahre alt sein\n- Sie sind für alle Aktivitäten unter Ihrem Konto verantwortlich\n- Benachrichtigen Sie uns umgehend bei unbefugter Nutzung: support@odomate.net\n- Wir haften nicht für Verluste durch unbefugte Nutzung"
+        },
+        {
+          "heading": "Abonnement und Zahlungen",
+          "text": "**Premium:**\n- Preis: 10,00 USD/Monat\n- Monatliche Abrechnung\n- Jederzeit kündbar\n- Enthält alle Premium-Funktionen für einen Benutzer\n- Abonnements werden monatlich im Voraus abgerechnet\n- Zahlung erfolgt über Google Play Billing (Android), App Store In-App-Käufe (iOS) \n- Preise in USD; können je nach Region durch Währungsumrechnung und lokale Steuern variieren\n- Neue Nutzer erhalten ggf. eine kostenlose Testphase\n- Ihre Zahlungsmethode wird am Ende der Testphase automatisch belastet, sofern Sie nicht kündigen\n- Kündigen Sie vor Testende, um Gebühren zu vermeiden\n- Sie können Ihr Abo jederzeit kündigen\n- Kündigung wird am Ende des aktuellen Abrechnungszeitraums wirksam\n- Keine Rückerstattung für Teilmonate\n- Rückerstattungsanfragen innerhalb von 48 Stunden nach Kauf werden von Fall zu Fall geprüft\n- Wir behalten uns vor, Abopreise mit 30 Tagen Vorlaufzeit zu ändern\n- Preisänderungen betreffen nicht Ihren aktuellen Abrechnungszeitraum\n- Sie können bei Ablehnung des neuen Preises kündigen"
+        },
+        {
+          "heading": "Akzeptable Nutzung",
+          "text": "- Die App für illegale Zwecke zu nutzen\n- Zu versuchen, die App zu hacken, zurückzuentwickeln oder zu kompromittieren\n- Kontoanmeldedaten mit anderen zu teilen\n- Die App zur Verfolgung Dritter ohne deren Zustimmung zu verwenden\n- Bösartigen Code oder Viren hochzuladen\n- Unsere Server durch übermäßige Anfragen zu belasten\n- Daten aus der App für kommerzielle Zwecke zu scrapen oder zu kopieren\n- Geltende Gesetze oder Vorschriften zu verletzen\n- Befolgen Sie stets Verkehrsregeln und Straßenschilder\n- Navigation wird „wie besehen\" bereitgestellt und kann Fehler enthalten\n- Sie sind allein für Ihre Fahrentscheidungen verantwortlich\n- Wir haften nicht für Unfälle, Verkehrsverstöße oder Schäden durch Nutzung der Navigationsfunktion"
+        },
+        {
+          "heading": "Benutzerinhalte",
+          "text": "- Sie behalten das Eigentum an allen Daten, die Sie in die App eingeben\n- Sie gewähren uns eine Lizenz zum Speichern, Verarbeiten und Anzeigen Ihrer Daten zur Bereitstellung des Dienstes\n- Sie sind für die Sicherung Ihrer Daten verantwortlich\n- Sie können Ihr Konto und alle Daten jederzeit löschen\n- Nach Kontolöschung werden Ihre Daten serverseitig sofort gelöscht\n- Einige anonymisierte Analysedaten können gemäß unserer Datenschutzrichtlinie aufbewahrt werden"
+        },
+        {
+          "heading": "Geistiges Eigentum",
+          "text": "- Odomate und alle zugehörigen Marken, Logos und Inhalte sind Eigentum von Oleksandr Konovalov\n- Sie dürfen die App nicht kopieren, modifizieren, verbreiten oder davon abgeleitete Werke erstellen\n- Kartendaten © OpenStreetMap-Mitwirkende\n- Navigation powered by Valhalla, Nominatim, Overpass (selbst gehostet; Geschwindigkeitsbegrenzungen, POIs, Nominatim‑Suche), Mapbox (Fallback) und Nominatim\n- KI-Funktionen powered by OpenAI"
+        },
+        {
+          "heading": "Datenschutz",
+          "text": "Ihre Privatsphäre ist uns wichtig. Bitte lesen Sie unsere [Datenschutzrichtlinie](PRIVACY_POLICY_DE.md), um zu verstehen, wie wir Ihre Daten erheben, verwenden und schützen."
+        },
+        {
+          "heading": "Haftungsausschlüsse und Haftungsbeschränkungen",
+          "text": "DIE APP WIRD „WIE BESEHEN\" UND „WIE VERFÜGBAR\" OHNE GARANTIEN JEGLICHER ART BEREITGESTELLT, AUSDRÜCKLICH ODER STILLSCHWEIGEND, EINSCHLIESSLICH, ABER NICHT BESCHRÄNKT AUF:\n- Garantien der Marktgängigkeit\n- Eignung für einen bestimmten Zweck\n- Nichtverletzung\n- Genauigkeit der Navigationsdaten\n- Ununterbrochenen oder fehlerfreien Service\nIM GESETZLICH MAXIMAL ZULÄSSIGEN UMFANG HAFTET OLEKSANDR KONOVALOV NICHT FÜR:\n- Indirekte, zufällige, besondere oder Folgeschäden\n- Verlust von Gewinnen, Daten oder Geschäftsmöglichkeiten\n- Personen- oder Sachschäden durch Nutzung der App\n- Ungenaue Navigations- oder Routeninformationen\n- Dienstunterbrechungen oder Datenverlust"
+        },
+        {
+          "heading": "Drittanbieterdienste",
+          "text": "Odomate integriert Drittanbieterdienste:\n- **Supabase:** Authentifizierung und Datenspeicherung\n- **Mapbox:** Karten und Navigation\n- **OSRM:** Routenberechnung\n- **Nominatim:** Geokodierung\n- **OpenAI:** KI-gestützte Empfehlungen\n- **Firebase:** Analysen und Crash-Reporting\nIhre Nutzung dieser Dienste unterliegt deren jeweiligen Bedingungen und Datenschutzrichtlinien."
+        },
+        {
+          "heading": "Kündigung",
+          "text": "- Sie können Ihr Konto jederzeit in den App-Einstellungen löschen\nWir können Ihr Konto aussetzen oder kündigen, wenn:\n- Sie diese Bedingungen verletzen\n- Sie betrügerische oder illegale Aktivitäten ausüben\n- Ihr Konto 24 Monate inaktiv ist\n- Wir den Dienst einstellen (mit 30 Tagen Vorlaufzeit)\n- Nach Kündigung endet Ihr Zugang zu Premium-Funktionen sofort\n- Ihre Daten werden gemäß unserer Datenschutzrichtlinie gelöscht\n- Keine Rückerstattung für Teilabonnementzeiträume"
+        },
+        {
+          "heading": "Änderungen der Bedingungen",
+          "text": "Wir können diese Bedingungen von Zeit zu Zeit aktualisieren. Die aktuelle Version wird stets auf unserer Website odomate.net veröffentlicht; dort wird auch das Datum „Zuletzt aktualisiert\" gepflegt. Ihre fortgesetzte Nutzung der App nach Inkrafttreten der Änderungen gilt als Zustimmung zu den auf der Website veröffentlichten Bedingungen."
+        },
+        {
+          "heading": "Anwendbares Recht und Streitbeilegung",
+          "text": "Diese Bedingungen unterliegen dem Recht der Ukraine, ohne Berücksichtigung von Kollisionsnormen.\n- Streitigkeiten aus diesen Bedingungen oder der App sollen durch gutgläubige Verhandlungen beigelegt werden\n- Bei Scheitern können Streitigkeiten einem verbindlichen Schiedsverfahren oder den zuständigen Gerichten der Ukraine unterworfen werden\nEU-Nutzer haben das Recht, eine Beschwerde bei ihrer lokalen Datenschutzbehörde einzureichen und rechtliche Schritte in ihrem Wohnsitzland einzuleiten."
+        },
+        {
+          "heading": "Salvatorische Klausel",
+          "text": "Sollte eine Bestimmung dieser Bedingungen für ungültig oder nicht durchsetzbar befunden werden, bleiben die übrigen Bestimmungen in vollem Umfang gültig und wirksam."
+        },
+        {
+          "heading": "Kontakt",
+          "text": "Bei Fragen zu diesen Bedingungen kontaktieren Sie uns bitte:\n**E-Mail:** support@odomate.net  \n**Website:** odomate.net  \n**Entwickler:** Oleksandr Konovalov\n**Durch die Nutzung von Odomate bestätigen Sie, dass Sie diese Nutzungsbedingungen gelesen, verstanden und ihnen zugestimmt haben.**"
+        }
+      ]
+    },
+    "userManual": "## Einleitung\nOdomate ist eine App zur Fahrzeugverwaltung, Navigation und Fahrtenaufzeichnung mit KI‑gestützten Wartungsempfehlungen.\n## 1. Erste Schritte\n1. App installieren und öffnen.  \n2. Konto erstellen oder anmelden (E‑Mail).  \n3. Erstes Fahrzeug hinzufügen (Marke, Modell, Baujahr, VIN optional).  \n4. Einheiten (km/mi) und Sprache in den Einstellungen festlegen.\n## 2. Fahrzeuge\n- Fahrzeug hinzufügen/bearbeiten/löschen.  \n- Felder: Marke, Modell, Baujahr, VIN, Kennzeichen (optional).  \n- Kilometerstand aktualisieren; Dokumente/Notizen anfügen.  \n- Mehrere Fahrzeuge werden unterstützt.\n## 3. Fahrten\n### 3.1 Manuelles Loggen (Kostenlos)\n- Neue Fahrt erstellen: Start/Ende, Distanz, Notizen.  \n- Kategorien und Tags zuweisen.\n### 3.2 Navigation und automatisches Tracking (Premium)\n1. Ziel suchen (Adresse/Ort/Koordinaten).  \n2. Wegpunkte hinzufügen (optional).  \n3. Navigation starten; Turn‑by‑Turn‑Anweisungen folgen.  \n4. Automatisches Tracking funktioniert während aktiver Navigation: zeichnet Distanz und Route im Hintergrund auf.  \n5. Rerouting bei Abweichung erfolgt automatisch.\nHinweise:  \n- Karten: Mapbox.  \n- Navigation und Routing: Valhalla (selbst gehostet), Mapbox als Fallback.  \n- Suche: Nominatim.  \n- Energiespar‑Hinweis: GPS benötigt mehr Akku.  \n- Beachten Sie stets Verkehrsregeln.\n## 4. Wartung\n### 4.1 KI‑Wartungspläne\n- Auf Basis von Fahrzeugdaten und Laufleistung.  \n- Vorschläge zu Serviceintervallen und Teilen.\n### 4.2 Erinnerungen\n- Erinnerungen werden automatisch auf Basis der KI‑Wartungspläne und eingestellten Intervalle gesendet.  \n- Push‑Benachrichtigungen in Einstellungen aktivieren (Geräteerlaubnis erforderlich).\n## 5. Synchronisierung\n- Konto via Supabase; Daten synchronisieren sich zwischen Geräten.  \n- Offline‑First: Änderungen werden bei Verbindung nachgereicht.  \n- Konfliktlösung: letzte Änderung gewinnt; manuelle Korrektur möglich.\n## 6. Einstellungen\n- Einheiten (km/mi), Sprache, Zeitformat (12/24 Stunden), Temperaturformat (°C/°F).  \n- Benachrichtigungen (Wartung, Tracking).  \n- Datenschutz: Konto löschen, Analytics‑Opt‑out.  \n- Kartenoptionen: Verkehr, 3D, Maßstab, Mautstraßen vermeiden, Autobahnen vermeiden, Fähren vermeiden.\n## 7. Tipps zur Genauigkeit\n- GPS aktiv lassen; Energiesparmodus ggf. anpassen.  \n- Zur Bestimmung der Bewegungsrichtung wird immer Movement‑Bearing‑Technologie verwendet.  \n- App aktuell halten.\n## 8. Fehlerbehebung\n- Keine GPS‑Position: Standortrechte prüfen, Standort aktivieren.  \n- Navigation stoppt: Internet/GPS prüfen, App neu starten.  \n- Synchronisierung hängt: Verbindung prüfen, später erneut.  \n- Support kontaktieren (s. unten).\n## 9. Datenschutz\n- Standort nur bei aktiver Navigation/Tracking.  \n- Anonyme Analytik zur Qualitätsverbesserung.  \n- Details: `legal/PRIVACY_POLICY_DE.md` und `legal/GDPR_COMPLIANCE_DE.md`.\n## 10. Support\nE‑Mail: support@odomate.net  \nWebsite: odomate.net",
+    "gdprCompliance": "**Stand:** 22. November 2024\n## Verantwortlicher (Art. 4 Nr. 7 DSGVO)\nOleksandr Konovalov  \nE‑Mail: support@odomate.net  \nWebsite: odomate.net\n## Zwecke der Verarbeitung (Art. 5 Abs. 1 b)\n- Bereitstellung von App‑Funktionen (Fahrzeugverwaltung, Wartung, Navigation, Fahrtenprotokoll)  \n- Synchronisierung und Kontoverwaltung  \n- Support‑Kommunikation  \n- Leistungsüberwachung, Fehlerbehebung, Sicherheit (anonyme Analysen/Crashlogs)  \n- KI‑gestützte Wartungsempfehlungen\n## Rechtsgrundlagen (Art. 6 Abs. 1)\n- Vertragserfüllung (Art. 6 Abs. 1 b): Kernfunktionen der App, Konto, Synchronisierung\n- Berechtigte Interessen (Art. 6 Abs. 1 f): App‑Sicherheit, Stabilität, anonyme Nutzungsstatistiken\n- Einwilligung (Art. 6 Abs. 1 a), soweit erforderlich: Benachrichtigungen, optionale Funktionen\n## Kategorien personenbezogener Daten\n- Kontaktdaten: E‑Mail  \n- Nutzungsdaten: Interaktionen, Bildschirmaufrufe (anonym)  \n- Technische Daten: Geräte‑/Betriebssysteminfo, App‑Version, Crash/Diagnose  \n- Standortdaten: präzise/ungefähre Position während Navigation/Tracking  \n- Fahrzeugdaten: Marke, Modell, VIN, Laufleistung, Wartungshistorie  \n- Fahrtdaten: Start/Ende, Distanz, Route, Notizen\n## Empfänger/Kategorien von Empfängern (Art. 13 Abs. 1 e)\n- Supabase (Auth/Storage)  \n- Mapbox (Karten/Navigation), OSRM (Routen), Nominatim (Geokodierung) – temporäre Standortverarbeitung während aktiver Navigation  \n- OpenAI (KI‑Empfehlungen; Fahrzeugdaten/Laufleistung, keine persönlichen Identifikatoren)  \n- Firebase (Analytics/Crashlytics; anonym)\n## Übermittlungen in Drittländer (Art. 44 ff.)\nVerarbeitung kann in Rechenzentren in Nord-/Mittelamerika und der EU erfolgen. Es werden angemessene Garantien angewandt (u. a. Standardvertragsklauseln), um ein angemessenes Datenschutzniveau zu gewährleisten.\n## Aufbewahrungsfristen (Art. 5 Abs. 1 e)\n- Kontodaten: während der aktiven Nutzung  \n- Nach Kontolöschung: serverseitige Löschung sofort nach Kontolöschung  \n- Fahrthistorie: bis zur manuellen Löschung durch Nutzer  \n- Anonyme Analysen/Crashlogs: 26 Monate (Firebase‑Standard)\n## Betroffenenrechte (Art. 12–22)\nSie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch sowie Datenübertragbarkeit.  \nAnfragen: support@odomate.net.  \nSie haben das Recht, Beschwerde bei einer Aufsichtsbehörde einzulegen (Art. 77).\n## Sicherheit (Art. 32)\n- Verschlüsselung in Transit (HTTPS/TLS) und at Rest (verschlüsselte Speicherung)  \n- Zugriffskontrollen und Protokollierung  \n- Prinzip der Datenminimierung\n## Spezielle Hinweise zur Standortverarbeitung\nPräzise Standortdaten werden nur bei aktiver Navigation oder aktiviertem Fahrten‑Tracking verarbeitet. Eine dauerhafte Weitergabe an Dritte zu Werbe‑ oder Trackingzwecken erfolgt nicht. Während der Navigation können Koordinaten temporär an Mapbox/OSRM/Nominatim gesendet werden, ausschließlich zur Bereitstellung der Route/Dienste.\n## Kontakt und DPO\nEin Datenschutzbeauftragter ist nach aktueller Risikobewertung nicht erforderlich.  \nKontakt: support@odomate.net\n—"
+  },
+  "pl": {
+    "faq": {
+      "items": [
+        {
+          "question": "Czym jest Odomate?",
+          "answer": "Odomate to kompleksowa aplikacja do zarządzania pojazdami, która pomaga śledzić konserwację, planować przejazdy i nawigować dzięki wskazówkom GPS w czasie rzeczywistym. Łączy rekomendacje serwisowe oparte na AI z zaawansowanymi funkcjami nawigacji."
+        },
+        {
+          "question": "Czy Odomate jest darmowe?",
+          "answer": "Tak! Odomate oferuje darmowy poziom z zarządzaniem pojazdami, ręcznym rejestrowaniem przejazdów i rekomendacjami serwisowymi AI. Funkcje Premium, takie jak nawigacja GPS, automatyczne śledzenie przejazdów i powiadomienia push, wymagają subskrypcji ($4.99/miesiąc lub $49.99/rok)."
+        },
+        {
+          "question": "Jakie platformy obsługuje Odomate?",
+          "answer": "Odomate jest dostępny na urządzenia Android i iOS."
+        },
+        {
+          "question": "Jakie języki obsługuje Odomate?",
+          "answer": "Odomate obsługuje 7 języków: Angielski, Hiszpański, Niemiecki, Francuski, Polski, Rosyjski i Ukraiński."
+        },
+        {
+          "question": "Czy potrzebuję połączenia z Internetem?",
+          "answer": "- **Offline:** Cała funkcjonalność działa offline poza nawigacją, automatycznym śledzeniem przejazdów i analizą AI żywotności komponentów\n- **Dla nawigacji:** Internet wymagany do wyznaczania tras w czasie rzeczywistym i kafelków map\n- **Dla funkcji AI:** Internet wymagany do integracji z OpenAI\n---"
+        },
+        {
+          "question": "Jak utworzyć konto?",
+          "answer": "1. Pobierz Odomate z Google Play lub App Store\n2. Otwórz aplikację i dotknij „Zarejestruj się\"\n3. Wprowadź swój email i utwórz hasło\n4. Zweryfikuj swój adres email\n5. Zacznij dodawać pojazdy!"
+        },
+        {
+          "question": "Czy moje dane są bezpieczne?",
+          "answer": "Tak! Używamy szyfrowania standardowego w branży dla:\n- Całej transmisji danych (szyfrowanie end-to-end)\n- Lokalnego przechowywania na twoim urządzeniu\n- Kopii zapasowych w chmurze przez Supabase"
+        },
+        {
+          "question": "Czy sprzedajecie moje dane?",
+          "answer": "**Nie.** Nigdy nie sprzedajemy twoich danych osobowych stronom trzecim. Zbieramy anonimowe analizy w celu ulepszenia aplikacji, ale twoje dane osobowe, trasy przejazdów i dane pojazdu pozostają prywatne."
+        },
+        {
+          "question": "Czy mogę usunąć swoje konto?",
+          "answer": "Tak! Przejdź do Profil → Ustawienia → Usuń konto. Twoje dane są natychmiast usuwane po stronie serwera."
+        },
+        {
+          "question": "Jakie dane zbieracie?",
+          "answer": "Zbieramy:\n- Adres email (do uwierzytelniania)\n- Informacje o pojeździe (marka, model, VIN, historia serwisowa)\n- Dane przejazdów (dystans, czas trwania, trasy - przechowywane lokalnie i w Supabase)\n- Anonimowe analizy (model urządzenia, wersja OS, korzystanie z funkcji)\n**NIE** zbieramy ani nie udostępniamy dokładnych współrzędnych GPS do analiz.\n---"
+        },
+        {
+          "question": "Co zawiera darmowa wersja?",
+          "answer": "- Zarządzanie 1 pojazdem\n- Ręczne rejestrowanie przejazdów\n- Rekomendacje serwisowe AI\n- Powiadomienia w aplikacji dla serwisu\n- Prognoza pogody z rekomendacjami dla przejazdów\n- Tryb parkowania: timer dla płatnego parkowania i wyszukiwanie miejsca\n- Przechowywanie informacji o pojazdach\n- Synchronizacja między urządzeniami"
+        },
+        {
+          "question": "Co zawiera Premium?",
+          "answer": "- **Zarządzanie do 2 pojazdami**\n- **Nawigacja GPS:** Wskazówki krok po kroku z Valhalla (samodzielnie hostowane)\n- **Automatyczne śledzenie przejazdów:** Nagrywanie GPS w tle\n- **Powiadomienia push:** Przypomnienia serwisowe\n- **Eksport książki serwisowej:** W formacie PDF\n- **Planowanie tras:** Zapisywanie i udostępnianie tras z wieloma punktami"
+        },
+        {
+          "question": "Jak działa serwis AI?",
+          "answer": "Nasza AI (powered by OpenAI) analizuje specyfikacje twojego pojazdu (marka, model, rok, typ silnika, przebieg) i generuje spersonalizowane interwały serwisowe dla:\n- Wymiany oleju\n- Rotacji opon\n- Kontroli hamulców\n- Wymiany filtrów\n- I więcej!"
+        },
+        {
+          "question": "Czy mogę śledzić wiele pojazdów?",
+          "answer": "Tak! W darmowej wersji możesz zarządzać 1 pojazdem. Subskrypcja Premium umożliwia zarządzanie do 2 pojazdami. Każdy pojazd ma swój własny harmonogram serwisowy i historię przejazdów."
+        },
+        {
+          "question": "Czy automatyczne śledzenie przejazdów rozładowuje baterię?",
+          "answer": "Zoptymalizowaliśmy zużycie baterii, ale śledzenie GPS w tle zużywa więcej energii niż normalnie. Użytkownicy Premium mogą włączać/wyłączać automatyczne śledzenie według potrzeb."
+        },
+        {
+          "question": "Czy mogę wyeksportować książkę serwisową?",
+          "answer": "Tak! Użytkownicy Premium mogą wyeksportować książkę serwisową w formacie PDF.\n---"
+        },
+        {
+          "question": "Jak dokładna jest nawigacja?",
+          "answer": "Odomate używa Valhalla (samodzielnie hostowane) do wyznaczania tras, które opierają się na danych OpenStreetMap. Dokładność zależy od jakości danych map w twoim regionie. Zawsze przestrzegaj znaków drogowych i przepisów."
+        },
+        {
+          "question": "Czy mogę używać nawigacji offline?",
+          "answer": "Nie, nawigacja wymaga aktywnego połączenia internetowego do wyznaczania tras w czasie rzeczywistym i kafelków map."
+        },
+        {
+          "question": "Czy nawigacja pokazuje ruch?",
+          "answer": "Tak! Użytkownicy Premium mogą włączyć wizualizację ruchu w ustawieniach nawigacji."
+        },
+        {
+          "question": "Czy mogę dodać wiele punktów pośrednich?",
+          "answer": "Tak! Użytkownicy Premium mogą tworzyć trasy z wieloma przystankami i zapisywać je do późniejszego wykorzystania."
+        },
+        {
+          "question": "Dlaczego nawigacja czasami przekierowuje?",
+          "answer": "Odomate automatycznie przekierowuje, jeśli:\n- Odbiegasz od zaplanowanej trasy\n- Zmieniają się warunki drogowe\n- Szybsza trasa staje się dostępna\n---"
+        },
+        {
+          "question": "Ile kosztuje Premium?",
+          "answer": "- **Premium:** $4.99/miesiąc lub $49.99/rok"
+        },
+        {
+          "question": "Jak subskrybować Premium?",
+          "answer": "1. Otwórz Odomate\n2. Przejdź do Profil → Premium\n3. Wybierz swój plan\n4. Dokończ płatność przez Google Play lub App Store"
+        },
+        {
+          "question": "Czy mogę anulować subskrypcję?",
+          "answer": "Tak, w dowolnym momencie! Twoja subskrypcja pozostaje aktywna do końca bieżącego okresu rozliczeniowego. Brak zwrotów za częściowe miesiące."
+        },
+        {
+          "question": "Czy jest darmowy okres próbny?",
+          "answer": "Tak! Nowi użytkownicy otrzymują 3-dniowy bezpłatny okres próbny funkcji Premium (jeśli dostępny w twoim regionie)."
+        },
+        {
+          "question": "Jakie metody płatności akceptujecie?",
+          "answer": "Płatności są przetwarzane przez:\n- **Android:** Google Play Billing\n- **iOS:** App Store In-App Purchase"
+        },
+        {
+          "question": "Co się stanie, jeśli anuluję Premium?",
+          "answer": "- Zachowasz wszystkie swoje pojazdy i historię przejazdów\n- Nawigacja i automatyczne śledzenie przejazdów zostaną wyłączone\n- Powiadomienia push dla serwisu staną się niedostępne\n- Rekomendacje serwisowe AI pozostaną dostępne\n- Możesz w każdej chwili ponownie subskrybować, aby przywrócić funkcje\n---"
+        },
+        {
+          "question": "Aplikacja się zawiesza lub zamraża. Co mam zrobić?",
+          "answer": "1. Uruchom ponownie aplikację\n2. Sprawdź aktualizacje aplikacji w Google Play/App Store\n3. Wyczyść pamięć podręczną aplikacji (Ustawienia → Aplikacje → Odomate → Wyczyść pamięć podręczną)\n4. Jeśli problem nadal występuje, skontaktuj się z support@odomate.net podając:\n   - Model urządzenia\n   - Wersję OS\n   - Opis problemu"
+        },
+        {
+          "question": "Lokalizacja GPS jest niedokładna. Jak to naprawić?",
+          "answer": "- Włącz tryb „Wysoka dokładność\" w ustawieniach lokalizacji urządzenia\n- Upewnij się, że Odomate ma uprawnienia GPS\n- Korzystaj z aplikacji na zewnątrz z czystym widokiem nieba\n- Uruchom ponownie urządzenie\n- Sprawdź, czy inne aplikacje GPS działają poprawnie"
+        },
+        {
+          "question": "Mój przejazd nie został zapisany. Dlaczego?",
+          "answer": "Przejazdy krótsze niż 0,1 km (100 metrów) są automatycznie odrzucane. Sprawdź również:\n- Uprawnienie GPS jest włączone\n- Połączenie internetowe do synchronizacji z Supabase\n- Wystarczające miejsce na urządzeniu"
+        },
+        {
+          "question": "Synchronizacja nie działa. Co mam zrobić?",
+          "answer": "- Sprawdź swoje połączenie internetowe\n- Wyloguj się i zaloguj ponownie\n- Wymuś synchronizację z Profil → Synchronizuj teraz\n- Skontaktuj się z pomocą techniczną, jeśli problem nadal występuje"
+        },
+        {
+          "question": "Zapomniałem hasła. Jak je zresetować?",
+          "answer": "1. Na ekranie logowania dotknij „Zapomniałeś hasła?\"\n2. Wprowadź swój adres email\n3. Sprawdź swoją pocztę pod kątem linku resetującego\n4. Postępuj zgodnie z linkiem, aby utworzyć nowe hasło\n---"
+        },
+        {
+          "question": "Jak dodać wpis serwisowy?",
+          "answer": "1. Wybierz swój pojazd\n2. Przejdź do zakładki Serwis\n3. Dotknij „+ Dodaj serwis\"\n4. Wprowadź szczegóły (typ, data, przebieg, koszt, notatki)\n5. Zapisz"
+        },
+        {
+          "question": "Jak skonfigurować przypomnienia serwisowe?",
+          "answer": "Wszystkie przypomnienia serwisowe są konfigurowane automatycznie na podstawie planów wygenerowanych przez AI. Możesz edytować interwały serwisowe dla każdego komponentu według potrzeb."
+        },
+        {
+          "question": "Czy mogę dostosować interwały serwisowe?",
+          "answer": "Tak! Edytuj dowolny element serwisowy i dostosuj interwał (według przebiegu lub czasu)."
+        },
+        {
+          "question": "Czy będę otrzymywać powiadomienia push o serwisie?",
+          "answer": "Powiadomienia push są dostępne tylko dla użytkowników Premium. Włącz powiadomienia w ustawieniach urządzenia, a Odomate przypomni ci, kiedy serwis jest wymagany. Darmowi użytkownicy otrzymują powiadomienia w aplikacji.\n---"
+        },
+        {
+          "question": "Gdzie są przechowywane moje dane?",
+          "answer": "- **Lokalnie:** Zaszyfrowana baza danych SQLite na twoim urządzeniu\n- **Chmura:** Serwery Supabase (Ameryka Północna, Ameryka Środkowa, Europa)"
+        },
+        {
+          "question": "Czy mogę używać Odomate bez synchronizacji w chmurze?",
+          "answer": "Nie, wymagane jest uwierzytelnienie Supabase. Jednak wszystkie dane są buforowane lokalnie, więc możesz uzyskać do nich dostęp offline."
+        },
+        {
+          "question": "Co dzieje się z moimi danymi, jeśli usunę aplikację?",
+          "answer": "- Dane lokalne są usuwane natychmiast\n- Dane w chmurze pozostają w Supabase, dopóki nie usuniesz swojego konta\n- Zainstaluj ponownie aplikację i zaloguj się, aby przywrócić swoje dane"
+        },
+        {
+          "question": "Czy Odomate śledzi moją lokalizację cały czas?",
+          "answer": "Nie. Dostęp do lokalizacji następuje tylko podczas:\n- Aktywnej nawigacji\n- Automatycznego śledzenia przejazdów (Premium, gdy włączone)\n- Zapisywania lokalizacji parkowania\n- Wyszukiwania miejsca parkowania\n---"
+        },
+        {
+          "question": "Jak zgłosić błąd?",
+          "answer": "Wyślij nam email na support@odomate.net z:\n- Opisem błędu\n- Krokami do odtworzenia\n- Zrzutami ekranu (jeśli możliwe)\n- Informacjami o urządzeniu i OS"
+        },
+        {
+          "question": "Jak poprosić o funkcję?",
+          "answer": "Uwielbiamy opinie! Wyślij email na support@odomate.net z twoją prośbą."
+        },
+        {
+          "question": "Jak długo trwa odpowiedź pomocy technicznej?",
+          "answer": "Staramy się odpowiadać w ciągu 48 godzin, typowo w ciągu 24 godzin w dni robocze."
+        },
+        {
+          "question": "Czy mogę otrzymać zwrot pieniędzy?",
+          "answer": "Zwroty są obsługiwane przez Google Play lub App Store zgodnie z ich politykami. Skontaktuj się z support@odomate.net w ciągu 48 godzin od zakupu w celu rozpatrzenia.\n---\n**Strona internetowa:** odomate.net  \n**Email:** support@odomate.net  \n**Polityka prywatności:** [Zobacz](PRIVACY_POLICY_PL.md)  \n**Regulamin:** [Zobacz](TERMS_OF_SERVICE_PL.md)\n---\n**Nie znalazłeś swojego pytania? Skontaktuj się z support@odomate.net**"
+        }
+      ]
+    },
+    "privacy": {
+      "content": [
+        {
+          "heading": "Wprowadzenie",
+          "text": "Niniejszy dokument wyjaśnia, jak Odomate (Oleksandr Konovalov) gromadzi, wykorzystuje i chroni informacje podczas korzystania z aplikacji Odomate (\"Aplikacja\"). Dbamy o przejrzystość i bezpieczeństwo danych.\nKontakt:  \nE‑mail: support@odomate.net  \nStrona: odomate.net"
+        },
+        {
+          "heading": "Zbierane dane",
+          "text": "- E‑mail (uwierzytelnianie Supabase)  \n- Dane pojazdu (marka, model, rok, VIN)  \n- Przebieg, historia serwisowa, wymienione części, notatki  \n- Dane przejazdów (czas, dystans, trasa, notatki)\n- Lokalizacja (GPS) podczas aktywnej nawigacji lub śledzenia przejazdów  \n  Zapisywana lokalnie i synchronizowana z Supabase (backup).  \n  Brak trwałego udostępniania precyzyjnej lokalizacji stronom trzecim; tymczasowe przekazywanie wyłącznie na potrzeby nawigacji (Valhalla, Nominatim, Overpass (samodzielnie hostowane; ograniczenia prędkości, POI i wyszukiwanie Nominatim), Mapbox (zapasowy), Nominatim).\n- Informacje o urządzeniu (model, producent, wersja systemu, wersja aplikacji, język/region)  \n- Anonimowa analityka użycia (widoki ekranów, korzystanie z funkcji), dane wydajności i awarii\nOpenAI – wyłącznie specyfikacja pojazdu i przebieg do rekomendacji serwisowych; brak danych osobowych i tras."
+        },
+        {
+          "heading": "Cele przetwarzania",
+          "text": "- Zarządzanie pojazdami i śledzenie serwisu  \n- Ręczne rejestrowanie przejazdów  \n- Generowanie spersonalizowanych planów serwisowych z użyciem analizy AI  \n- Synchronizacja między urządzeniami  \n- Powiadomienia o serwisie (push)\n- Nawigacja GPS z kierunkami w czasie rzeczywistym  \n- Automatyczne śledzenie przejazdów (w tle)  \n- Prognozy żywotności podzespołów na podstawie specyfikacji pojazdu\n- Stabilność, naprawa błędów, wydajność, bezpieczeństwo\n- Wsparcie, ważne ogłoszenia"
+        },
+        {
+          "heading": "Podstawy prawne (RODO)",
+          "text": "- Wykonanie umowy (art. 6 ust. 1 lit. b)  \n- Uzasadniony interes (art. 6 ust. 1 lit. f): bezpieczeństwo, stabilność, anonimowe statystyki  \n- Zgoda (art. 6 ust. 1 lit. a), jeśli wymagana (powiadomienia, opcje)"
+        },
+        {
+          "heading": "Przechowywanie, bezpieczeństwo i retencja",
+          "text": "- Lokalnie: szyfrowana baza SQLite  \n- Chmura (Supabase): szyfrowanie w spoczynku/w tranzycie, zgodność z RODO; serwery w NA/SA/UE  \n- Szyfrowanie transmisji (HTTPS/TLS), kontrola dostępu  \n- Retencja: dane konta przechowywane tak długo, jak konto jest aktywne; po usunięciu konta dane po stronie serwera są usuwane natychmiast; anonimowa analityka 26 miesięcy (domyślnie Firebase)"
+        },
+        {
+          "heading": "Udostępnianie danych i podmioty przetwarzające",
+          "text": "- Supabase (uwierzytelnianie/magazyn) – e‑mail, dane pojazdu/przejazdów  \n- Mapbox (mapy/nawigacja) – tymczasowe współrzędne podczas nawigacji  \n- OSRM (trasy) – współrzędne start/meta  \n- Nominatim (geokodowanie) – zapytania/współrzędne  \n- OpenAI (serwis AI) – dane pojazdu, przebieg  \n- Firebase (analityka/awarie) – anonimowe dane  \nBrak udostępniania do celów reklamowych/śledzących. Brak IDFA."
+        },
+        {
+          "heading": "Transfery międzynarodowe",
+          "text": "Przekazy do NA/SA/UE zgodnie z przepisami; stosowane są odpowiednie zabezpieczenia (m.in. standardowe klauzule umowne)."
+        },
+        {
+          "heading": "Prawa użytkownika",
+          "text": "- Dostęp, sprostowanie, usunięcie, ograniczenie, sprzeciw, przenoszenie danych  \n- Usunięcie konta w aplikacji; dane po stronie serwera usuwane natychmiast"
+        },
+        {
+          "heading": "Dzieci",
+          "text": "Aplikacja nie jest przeznaczona dla osób poniżej 16 lat."
+        },
+        {
+          "heading": "Zmiany",
+          "text": "Poinformujemy o istotnych zmianach w aplikacji."
+        },
+        {
+          "heading": "Kontakt",
+          "text": "support@odomate.net | odomate.net | Oleksandr Konovalov"
+        }
+      ]
+    },
+    "terms": {
+      "content": [
+        {
+          "heading": "Akceptacja Regulaminu",
+          "text": "Korzystając z aplikacji Odomate, akceptujesz niniejszy Regulamin. Jeśli nie zgadzasz się z warunkami, nie korzystaj z aplikacji.\n**Kontakt:**\n- Deweloper: Oleksandr Konovalov\n- E-mail: support@odomate.net\n- Strona: odomate.net"
+        },
+        {
+          "heading": "Opis Usługi",
+          "text": "Odomate to aplikacja do zarządzania pojazdami i nawigacji oferująca:\n- Zarządzanie pojazdami (dodawanie, edycja, usuwanie)\n- Ręczne śledzenie przejazdów\n- Podstawowe przypomnienia serwisowe\n- Przechowywanie informacji o pojazdach\n- **Nawigacja GPS:** Nawigacja turn-by-turn w czasie rzeczywistym z Mapbox\n- **Automatyczne Śledzenie Przejazdów:** Nagrywanie GPS w tle\n- **Planowanie Tras:** Tworzenie i zapisywanie tras z wieloma punktami\n- **Serwis AI:** Spersonalizowane harmonogramy serwisowe powered by OpenAI\n- **Zaawansowane Analizy:** Szczegółowe statystyki przejazdów"
+        },
+        {
+          "heading": "Rejestracja Konta",
+          "text": "- Musisz utworzyć konto, aby korzystać z Odomate\n- Musisz podać prawidłowy adres e-mail\n- Jesteś odpowiedzialny za zachowanie poufności hasła\n- Musisz mieć co najmniej 16 lat\n- Jesteś odpowiedzialny za wszystkie działania na swoim koncie\n- Natychmiast powiadom nas o nieautoryzowanym użyciu: support@odomate.net\n- Nie ponosimy odpowiedzialności za straty wynikające z nieautoryzowanego użycia"
+        },
+        {
+          "heading": "Subskrypcja i Płatności",
+          "text": "**Premium:**\n- Cena: $4.99/miesiąc lub $49.99/rok\n- Rozliczenia miesięczne\n- Anulowanie w dowolnym momencie\n- Wszystkie funkcje premium dla jednego użytkownika\n- Subskrypcje są rozliczane z góry miesięcznie\n- Płatność przetwarzana przez Google Play Billing (Android), App Store In-App Purchase (iOS) lub RevenueCat\n- Ceny w USD; mogą się różnić w zależności od regionu z powodu przeliczenia waluty i lokalnych podatków\n- Nowi użytkownicy mogą otrzymać darmowy okres próbny\n- Twoja metoda płatności zostanie automatycznie obciążona po zakończeniu okresu próbnego, chyba że anulujesz\n- Anuluj przed końcem okresu próbnego, aby uniknąć opłat\n- Możesz anulować subskrypcję w dowolnym momencie\n- Anulowanie staje się skuteczne pod koniec bieżącego okresu rozliczeniowego\n- Brak zwrotów za częściowe miesiące\n- Prośby o zwrot w ciągu 48 godzin od zakupu mogą być rozpatrywane indywidualnie\n- Zastrzegamy sobie prawo do zmiany cen subskrypcji z 30-dniowym wyprzedzeniem\n- Zmiany cen nie wpływają na bieżący okres rozliczeniowy\n- Możesz anulować subskrypcję, jeśli nie zgadzasz się z nową ceną"
+        },
+        {
+          "heading": "Dopuszczalne Użycie",
+          "text": "- Używać aplikacji do celów nielegalnych\n- Próbować hackować, dekompilować lub naruszać bezpieczeństwo aplikacji\n- Udostępniać poświadczeń konta innym osobom\n- Używać aplikacji do śledzenia innych bez ich zgody\n- Przesyłać złośliwego kodu lub wirusów\n- Nadużywać lub przeciążać naszych serwerów nadmiernymi żądaniami\n- Pobierać lub kopiować danych z aplikacji do celów komercyjnych\n- Naruszać jakichkolwiek obowiązujących przepisów lub regulacji\n- Zawsze przestrzegaj przepisów ruchu drogowego i znaków drogowych\n- Nawigacja jest dostarczana „tak jak jest\" i może zawierać błędy\n- Jesteś wyłącznie odpowiedzialny za swoje decyzje dotyczące jazdy\n- Nie ponosimy odpowiedzialności za wypadki, wykroczenia drogowe lub szkody wynikające z użycia funkcji nawigacji"
+        },
+        {
+          "heading": "Treści Użytkownika",
+          "text": "- Zachowujesz własność wszystkich danych wprowadzanych do aplikacji\n- Udzielasz nam licencji na przechowywanie, przetwarzanie i wyświetlanie Twoich danych w celu świadczenia usługi\n- Jesteś odpowiedzialny za tworzenie kopii zapasowych swoich danych\n- Możesz usunąć swoje konto i wszystkie dane w dowolnym momencie\n- Po usunięciu konta Twoje dane są natychmiast usuwane po stronie serwera\n- Niektóre zanonimizowane dane analityczne mogą być zachowane zgodnie z naszą Polityką Prywatności"
+        },
+        {
+          "heading": "Własność Intelektualna",
+          "text": "- Odomate i wszystkie powiązane znaki towarowe, logo i treści są własnością Oleksandr Konovalov\n- Nie możesz kopiować, modyfikować, dystrybuować ani tworzyć dzieł pochodnych z aplikacji\n- Dane map © współautorzy OpenStreetMap\n- Nawigacja napędzana przez Valhalla, Nominatim, Overpass (samodzielnie hostowane; ograniczenia prędkości, POI i wyszukiwanie Nominatim), Mapbox (zapasowy) i Nominatim\n- Funkcje AI napędzane przez OpenAI"
+        },
+        {
+          "heading": "Prywatność",
+          "text": "Twoja prywatność jest dla nas ważna. Przeczytaj naszą [Politykę Prywatności](PRIVACY_POLICY_PL.md), aby zrozumieć, jak zbieramy, używamy i chronimy Twoje dane."
+        },
+        {
+          "heading": "Wyłączenia Gwarancji i Ograniczenia Odpowiedzialności",
+          "text": "APLIKACJA JEST DOSTARCZANA „TAK JAK JEST\" I „WEDŁUG DOSTĘPNOŚCI\" BEZ JAKICHKOLWIEK GWARANCJI, WYRAŹNYCH LUB DOROZUMIANYCH, W TYM MIĘDZY INNYMI:\n- Gwarancji przydatności handlowej\n- Przydatności do określonego celu\n- Nienaruszalności\n- Dokładności danych nawigacyjnych\n- Nieprzerwanej lub bezbłędnej usługi\nW MAKSYMALNYM ZAKRESIE DOZWOLONYM PRZEZ PRAWO, OLEKSANDR KONOVALOV NIE PONOSI ODPOWIEDZIALNOŚCI ZA:\n- Szkody pośrednie, przypadkowe, specjalne lub wynikowe\n- Utratę zysków, danych lub możliwości biznesowych\n- Obrażenia ciała lub uszkodzenie mienia wynikające z korzystania z aplikacji\n- Niedokładne informacje nawigacyjne lub trasowe\n- Przerwy w świadczeniu usługi lub utratę danych"
+        },
+        {
+          "heading": "Usługi Trzecie",
+          "text": "Odomate integruje się z usługami stron trzecich:\n- **Supabase:** Uwierzytelnianie i przechowywanie danych\n- **Mapbox:** Mapy i nawigacja\n- **OSRM:** Obliczanie tras\n- **Nominatim:** Geokodowanie\n- **OpenAI:** Rekomendacje AI\n- **Firebase:** Analityka i raportowanie awarii\nKorzystanie z tych usług podlega ich odpowiednim warunkom i politykom prywatności."
+        },
+        {
+          "heading": "Rozwiązanie",
+          "text": "- Możesz usunąć swoje konto w dowolnym momencie w ustawieniach aplikacji\nMożemy zawiesić lub rozwiązać Twoje konto, jeśli:\n- Naruszysz niniejsze Warunki\n- Zaangażujesz się w oszukańczą lub nielegalną działalność\n- Twoje konto będzie nieaktywne przez 24 miesiące\n- Zakończymy świadczenie usługi (z 30-dniowym wyprzedzeniem)\n- Po rozwiązaniu Twój dostęp do funkcji premium natychmiast się kończy\n- Twoje dane zostaną usunięte zgodnie z naszą Polityką Prywatności\n- Brak zwrotów za częściowe okresy subskrypcji"
+        },
+        {
+          "heading": "Zmiany w Warunkach",
+          "text": "Możemy od czasu do czasu aktualizować niniejsze Warunki. Aktualna wersja jest zawsze publikowana na naszej stronie odomate.net, gdzie utrzymywana jest data „Ostatnia aktualizacja\". Dalsze korzystanie z aplikacji po wejściu zmian w życie stanowi akceptację Warunków opublikowanych na stronie."
+        },
+        {
+          "heading": "Prawo Właściwe i Rozstrzyganie Sporów",
+          "text": "Niniejsze Warunki podlegają prawu Ukrainy, bez względu na zasady kolizyjne.\n- Wszelkie spory wynikające z niniejszych Warunków lub aplikacji powinny być rozstrzygane w drodze negocjacji w dobrej wierze\n- Jeśli negocjacje zawiodą, spory mogą być przekazane do wiążącego arbitrażu lub właściwych sądów Ukrainy\nUżytkownicy z UE mają prawo złożyć skargę do lokalnego organu ochrony danych i wszcząć postępowanie sądowe w swoim kraju zamieszkania."
+        },
+        {
+          "heading": "Klauzula Rozdzielności",
+          "text": "Jeśli jakiekolwiek postanowienie niniejszych Warunków zostanie uznane za nieważne lub niemożliwe do wyegzekwowania, pozostałe postanowienia pozostają w pełni obowiązujące."
+        },
+        {
+          "heading": "Kontakt",
+          "text": "W przypadku pytań dotyczących niniejszych Warunków, skontaktuj się z nami:\n**E-mail:** support@odomate.net  \n**Strona:** odomate.net  \n**Deweloper:** Oleksandr Konovalov\n**Korzystając z Odomate, potwierdzasz, że przeczytałeś, zrozumiałeś i zaakceptowałeś niniejsze Warunki Użytkowania.**"
+        }
+      ]
+    },
+    "userManual": "## Wprowadzenie\nOdomate to aplikacja do zarządzania pojazdami, nawigacji i rejestrowania przejazdów z rekomendacjami serwisowymi opartymi na AI.\n## 1. Pierwsze kroki\n1. Zainstaluj i uruchom aplikację.  \n2. Utwórz konto lub zaloguj się (e‑mail).  \n3. Dodaj pierwszy pojazd (marka, model, rok, VIN opcjonalnie).  \n4. Ustaw jednostki (km/mi) i język w Ustawieniach.\n## 2. Pojazdy\n- Dodawanie/edycja/usuwanie pojazdów.  \n- Pola: marka, model, rok, VIN, numer rejestracyjny (opcjonalnie).  \n- Aktualizacja przebiegu; załączniki (dokumenty/notatki).  \n- Obsługa wielu pojazdów.\n## 3. Przejazdy\n### 3.1 Ręczne dodawanie (Darmowe)\n- Nowy przejazd: start/koniec, dystans, notatki.  \n- Kategorie i tagi.\n### 3.2 Nawigacja i automatyczne śledzenie (Premium)\n1. Wyszukaj cel (adres/miejsce/współrzędne).  \n2. Dodaj punkty pośrednie (opcjonalnie).  \n3. Rozpocznij nawigację i podążaj za wskazówkami.  \n4. Automatyczne śledzenie działa podczas aktywnej nawigacji: zapisuje dystans i trasę w tle.  \n5. Automatyczne przeobliczanie trasy przy zejściu z kursu.\nUwagi:  \n- Mapy: Mapbox.  \n- Nawigacja i trasy: Valhalla (samodzielnie hostowane), Mapbox jako zapasowy.  \n- Wyszukiwanie: Nominatim.  \n- Uwaga na baterię: GPS zwiększa zużycie energii.  \n- Zawsze przestrzegaj przepisów ruchu drogowego.\n## 4. Serwis\n### 4.1 Plany serwisowe AI\n- Na podstawie danych pojazdu i przebiegu.  \n- Propozycje interwałów i części serwisowych.\n### 4.2 Przypomnienia\n- Przypomnienia są wysyłane automatycznie na podstawie planów serwisowych AI i ustawionych interwałów.  \n- Włącz powiadomienia push w ustawieniach (wymagana zgoda urządzenia).\n## 5. Synchronizacja\n- Konto przez Supabase; dane synchronizują się między urządzeniami.  \n- Offline‑first: zmiany są wysyłane po odzyskaniu połączenia.  \n- Konflikty: ostatnia zmiana wygrywa; w razie potrzeby skoryguj ręcznie.\n## 6. Ustawienia\n- Jednostki (km/mi), język, format czasu (12/24 godziny), format temperatury (°C/°F).  \n- Powiadomienia (serwis, śledzenie).  \n- Prywatność: usunięcie konta, wyłączenie analityki.  \n- Opcje mapy: ruch drogowy, 3D, skala, unikaj płatnych dróg, unikaj autostrad, unikaj promów.\n## 7. Wskazówki dot. dokładności\n- Pozostaw włączony GPS; ewentualnie dostosuj oszczędzanie energii.  \n- Technologia movement‑bearing jest zawsze używana do określania kierunku ruchu.  \n- Aktualizuj aplikację.\n## 8. Rozwiązywanie problemów\n- Brak pozycji GPS: sprawdź uprawnienia i usługi lokalizacji.  \n- Nawigacja zatrzymuje się: sprawdź Internet/GPS, uruchom ponownie aplikację.  \n- Synchronizacja utknęła: sprawdź połączenie i spróbuj ponownie.  \n- Skontaktuj się z pomocą (poniżej).\n## 9. Prywatność\n- Lokalizacja tylko przy aktywnej nawigacji/śledzeniu.  \n- Anonimowa analityka w celu poprawy jakości.  \n- Szczegóły: `legal/PRIVACY_POLICY_PL.md`, `legal/GDPR_COMPLIANCE_PL.md`.\n## 10. Wsparcie\nE‑mail: support@odomate.net  \nStrona: odomate.net",
+    "gdprCompliance": "**Data:** 22 listopada 2024 r.\n## Administrator (art. 4)\nOleksandr Konovalov  \nE‑mail: support@odomate.net  \nStrona: odomate.net\n## Cele przetwarzania (art. 5)\n- Zapewnienie funkcji aplikacji (pojazdy, serwis, nawigacja, przejazdy)  \n- Synchronizacja i zarządzanie kontem  \n- Wsparcie i komunikacja serwisowa  \n- Poprawa wydajności, naprawa błędów, bezpieczeństwo (anonimowa analityka/awarie)  \n- Rekomendacje serwisowe oparte na AI\n## Podstawy prawne (art. 6)\n- Wykonanie umowy (art. 6 ust. 1 lit. b): podstawowe funkcje, konto, synchronizacja\n- Uzasadniony interes (art. 6 ust. 1 lit. f): bezpieczeństwo, stabilność, anonimowe statystyki\n- Zgoda (art. 6 ust. 1 lit. a), gdy wymagana: powiadomienia, funkcje opcjonalne\n## Kategorie danych\n- Dane kontaktowe: e‑mail  \n- Dane o korzystaniu: interakcje, widoki ekranów (anonimowe)  \n- Dane techniczne: urządzenie/OS, wersja aplikacji, diagnostyka/awarie  \n- Dane lokalizacyjne: dokładne/przybliżone podczas nawigacji/śledzenia  \n- Dane pojazdu: marka, model, VIN, przebieg, historia serwisowa  \n- Dane przejazdów: start/koniec, dystans, trasa, notatki\n## Odbiorcy (art. 13)\n- Supabase (uwierzytelnianie/magazyn)  \n- Mapbox (mapy/nawigacja), OSRM (trasy), Nominatim (geokodowanie) – tymczasowe przetwarzanie lokalizacji podczas aktywnej nawigacji  \n- OpenAI (rekomendacje AI: dane pojazdu/przebieg, bez identyfikatorów osobowych)  \n- Firebase (analityka/awarie – anonimowe)\n## Transfery poza EOG (art. 44 i nast.)\nPrzetwarzanie może mieć miejsce w Ameryce Północnej/Południowej oraz w UE. Stosujemy odpowiednie zabezpieczenia (w tym Standardowe Klauzule Umowne), aby zapewnić odpowiedni poziom ochrony.\n## Okresy przechowywania (art. 5)\n- Dane konta: przez okres aktywnego korzystania  \n- Po usunięciu konta: trwałe usunięcie w ciągu 30 dni  \n- Historia przejazdów: do czasu ręcznego usunięcia przez użytkownika  \n- Anonimowa analityka/awarie: 26 miesięcy (domyślnie Firebase)\n## Prawa osób (art. 12–22)\nPrawo dostępu, sprostowania, usunięcia, ograniczenia, sprzeciwu i przenoszenia danych.  \nWnioski: support@odomate.net.  \nSkarga: do właściwego organu nadzorczego (art. 77).\n## Bezpieczeństwo (art. 32)\n- Szyfrowanie w tranzycie (HTTPS/TLS) i w spoczynku (magazyn szyfrowany)  \n- Kontrole dostępu i rejestrowanie  \n- Minimalizacja danych\n## Uwaga dot. lokalizacji\nDokładna lokalizacja przetwarzana jest wyłącznie przy aktywnej nawigacji lub włączonym automatycznym śledzeniu przejazdów. Brak trwałego udostępniania stronom trzecim w celach reklamowych/śledzących. Podczas nawigacji współrzędne mogą być tymczasowo przekazywane do Mapbox/OSRM/Nominatim w celu wyznaczenia trasy.\n## Inspektor Ochrony Danych i kontakt\nIOD nie jest wymagany wg obecnej oceny ryzyka.  \nKontakt: support@odomate.net\n—"
+  },
+  "es": {
+    "faq": {
+      "items": [
+        {
+          "question": "¿Qué es Odomate?",
+          "answer": "Odomate es una aplicación completa de gestión de vehículos que te ayuda a realizar un seguimiento del mantenimiento, planificar viajes y navegar con guía GPS en tiempo real. Combina recomendaciones de mantenimiento impulsadas por IA con funciones de navegación avanzadas."
+        },
+        {
+          "question": "¿Es Odomate gratis?",
+          "answer": "¡Sí! Odomate ofrece un nivel gratuito con gestión de vehículos, seguimiento manual de viajes y recomendaciones de mantenimiento con IA. Las funciones Premium como navegación GPS, seguimiento automático de viajes y notificaciones push requieren una suscripción ($4.99/mes o $49.99/año)."
+        },
+        {
+          "question": "¿Qué plataformas admite Odomate?",
+          "answer": "Odomate está disponible para dispositivos Android e iOS."
+        },
+        {
+          "question": "¿Qué idiomas admite Odomate?",
+          "answer": "Odomate admite 7 idiomas: Inglés, Español, Alemán, Francés, Polaco, Ruso y Ucraniano."
+        },
+        {
+          "question": "¿Necesito conexión a Internet?",
+          "answer": "- **Sin conexión:** Toda la funcionalidad funciona sin conexión excepto navegación, seguimiento automático de viajes y análisis IA de vida útil de componentes\n- **Para navegación:** Se requiere Internet para enrutamiento en tiempo real y mosaicos de mapas\n- **Para funciones de IA:** Se requiere Internet para integración con OpenAI\n---"
+        },
+        {
+          "question": "¿Cómo creo una cuenta?",
+          "answer": "1. Descarga Odomate desde Google Play o App Store\n2. Abre la aplicación y toca \"Registrarse\"\n3. Ingresa tu email y crea una contraseña\n4. Verifica tu dirección de correo electrónico\n5. ¡Comienza a agregar vehículos!"
+        },
+        {
+          "question": "¿Mis datos están seguros?",
+          "answer": "¡Sí! Utilizamos cifrado estándar de la industria para:\n- Toda la transmisión de datos (cifrado de extremo a extremo)\n- Almacenamiento local en tu dispositivo\n- Copias de seguridad en la nube a través de Supabase"
+        },
+        {
+          "question": "¿Venden mis datos?",
+          "answer": "**No.** Nunca vendemos tus datos personales a terceros. Recopilamos análisis anónimos para mejorar la aplicación, pero tu información personal, rutas de viajes y datos del vehículo permanecen privados."
+        },
+        {
+          "question": "¿Puedo eliminar mi cuenta?",
+          "answer": "¡Sí! Ve a Perfil → Configuración → Eliminar cuenta. Tus datos se eliminan inmediatamente en el servidor."
+        },
+        {
+          "question": "¿Qué datos recopilan?",
+          "answer": "Recopilamos:\n- Dirección de correo electrónico (para autenticación)\n- Información del vehículo (marca, modelo, VIN, historial de mantenimiento)\n- Datos de viajes (distancia, duración, rutas - almacenados localmente y en Supabase)\n- Análisis anónimos (modelo del dispositivo, versión del SO, uso de funciones)\n**NO** recopilamos ni compartimos coordenadas GPS precisas para análisis.\n---"
+        },
+        {
+          "question": "¿Qué incluye la versión gratuita?",
+          "answer": "- Gestionar 1 vehículo\n- Seguimiento manual de viajes\n- Recomendaciones de mantenimiento con IA\n- Notificaciones en la aplicación para mantenimiento\n- Pronóstico del tiempo con recomendaciones para viajes\n- Modo de estacionamiento: temporizador para estacionamiento de pago y buscador de lugares\n- Almacenamiento de información del vehículo\n- Sincronización entre dispositivos"
+        },
+        {
+          "question": "¿Qué incluye Premium?",
+          "answer": "- **Gestionar hasta 2 vehículos**\n- **Navegación GPS:** Instrucciones paso a paso con Valhalla (auto-alojado)\n- **Seguimiento automático de viajes:** Grabación GPS en segundo plano\n- **Notificaciones push:** Recordatorios de mantenimiento\n- **Exportar libro de servicio:** En formato PDF\n- **Planificación de rutas:** Guardar y compartir rutas con múltiples waypoints"
+        },
+        {
+          "question": "¿Cómo funciona el mantenimiento con IA?",
+          "answer": "Nuestra IA (impulsada por OpenAI) analiza las especificaciones de tu vehículo (marca, modelo, año, tipo de motor, kilometraje) y genera intervalos de mantenimiento personalizados para:\n- Cambios de aceite\n- Rotación de neumáticos\n- Inspecciones de frenos\n- Reemplazos de filtros\n- ¡Y más!"
+        },
+        {
+          "question": "¿Puedo hacer seguimiento de múltiples vehículos?",
+          "answer": "¡Sí! En la versión gratuita puedes gestionar 1 vehículo. La suscripción Premium permite gestionar hasta 2 vehículos. Cada vehículo tiene su propio programa de mantenimiento e historial de viajes."
+        },
+        {
+          "question": "¿El seguimiento automático de viajes agota la batería?",
+          "answer": "Hemos optimizado el uso de la batería, pero el seguimiento GPS en segundo plano consume más energía de lo normal. Los usuarios Premium pueden activar/desactivar el seguimiento automático según sea necesario."
+        },
+        {
+          "question": "¿Puedo exportar mi libro de servicio?",
+          "answer": "¡Sí! Los usuarios Premium pueden exportar el libro de servicio en formato PDF.\n---"
+        },
+        {
+          "question": "¿Qué tan precisa es la navegación?",
+          "answer": "Odomate utiliza Valhalla (auto-alojado) para enrutamiento, que se basan en datos de OpenStreetMap. La precisión depende de la calidad de los datos del mapa en tu región. Siempre sigue las señales de tráfico y las leyes."
+        },
+        {
+          "question": "¿Puedo usar la navegación sin conexión?",
+          "answer": "No, la navegación requiere una conexión a Internet activa para enrutamiento en tiempo real y mosaicos de mapas."
+        },
+        {
+          "question": "¿La navegación muestra tráfico?",
+          "answer": "¡Sí! Los usuarios Premium pueden habilitar la visualización de tráfico en la configuración de navegación."
+        },
+        {
+          "question": "¿Puedo agregar múltiples waypoints?",
+          "answer": "¡Sí! Los usuarios Premium pueden crear rutas con múltiples paradas y guardarlas para uso futuro."
+        },
+        {
+          "question": "¿Por qué la navegación a veces me redirige?",
+          "answer": "Odomate redirige automáticamente si:\n- Te desvías de la ruta planificada\n- Las condiciones del tráfico cambian\n- Una ruta más rápida está disponible\n---"
+        },
+        {
+          "question": "¿Cuánto cuesta Premium?",
+          "answer": "- **Premium:** $4.99/mes o $49.99/año"
+        },
+        {
+          "question": "¿Cómo me suscribo a Premium?",
+          "answer": "1. Abre Odomate\n2. Ve a Perfil → Premium\n3. Selecciona tu plan\n4. Completa el pago a través de Google Play o App Store"
+        },
+        {
+          "question": "¿Puedo cancelar mi suscripción?",
+          "answer": "¡Sí, en cualquier momento! Tu suscripción permanece activa hasta el final del período de facturación actual. Sin reembolsos por meses parciales."
+        },
+        {
+          "question": "¿Hay una prueba gratuita?",
+          "answer": "¡Sí! Los nuevos usuarios reciben una prueba gratuita de 3 días de las funciones Premium (si está disponible en tu región)."
+        },
+        {
+          "question": "¿Qué métodos de pago aceptan?",
+          "answer": "Los pagos se procesan a través de:\n- **Android:** Google Play Billing\n- **iOS:** Compra dentro de la aplicación de App Store"
+        },
+        {
+          "question": "¿Qué sucede si cancelo Premium?",
+          "answer": "- Conservas todos tus vehículos e historial de viajes\n- La navegación y el seguimiento automático de viajes se deshabilitarán\n- Las notificaciones push para mantenimiento no estarán disponibles\n- Las recomendaciones de mantenimiento con IA permanecerán disponibles\n- Puedes volver a suscribirte en cualquier momento para restaurar las funciones\n---"
+        },
+        {
+          "question": "La aplicación se bloquea o congela. ¿Qué debo hacer?",
+          "answer": "1. Reinicia la aplicación\n2. Busca actualizaciones de la aplicación en Google Play/App Store\n3. Borra la caché de la aplicación (Configuración → Aplicaciones → Odomate → Borrar caché)\n4. Si el problema persiste, contacta a support@odomate.net con:\n   - Modelo del dispositivo\n   - Versión del SO\n   - Descripción del problema"
+        },
+        {
+          "question": "La ubicación GPS es inexacta. ¿Cómo lo soluciono?",
+          "answer": "- Habilita el modo de \"Alta precisión\" en la configuración de ubicación del dispositivo\n- Asegúrate de que Odomate tenga permiso GPS\n- Usa la aplicación al aire libre con vista clara del cielo\n- Reinicia tu dispositivo\n- Verifica si otras aplicaciones GPS funcionan correctamente"
+        },
+        {
+          "question": "Mi viaje no se guardó. ¿Por qué?",
+          "answer": "Los viajes de menos de 0,1 km (100 metros) se descartan automáticamente. También verifica:\n- El permiso GPS está habilitado\n- Conexión a Internet para sincronización con Supabase\n- Espacio de almacenamiento suficiente en el dispositivo"
+        },
+        {
+          "question": "La sincronización no funciona. ¿Qué debo hacer?",
+          "answer": "- Verifica tu conexión a Internet\n- Cierra sesión y vuelve a iniciar sesión\n- Fuerza la sincronización desde Perfil → Sincronizar ahora\n- Contacta al soporte si el problema persiste"
+        },
+        {
+          "question": "Olvidé mi contraseña. ¿Cómo la restablezco?",
+          "answer": "1. En la pantalla de inicio de sesión, toca \"¿Olvidaste la contraseña?\"\n2. Ingresa tu dirección de correo electrónico\n3. Revisa tu correo electrónico para un enlace de restablecimiento\n4. Sigue el enlace para crear una nueva contraseña\n---"
+        },
+        {
+          "question": "¿Cómo agrego un registro de mantenimiento?",
+          "answer": "1. Selecciona tu vehículo\n2. Ve a la pestaña Mantenimiento\n3. Toca \"+ Agregar mantenimiento\"\n4. Ingresa los detalles (tipo, fecha, kilometraje, costo, notas)\n5. Guardar"
+        },
+        {
+          "question": "¿Cómo configuro recordatorios de mantenimiento?",
+          "answer": "Todos los recordatorios de mantenimiento se configuran automáticamente basados en programas generados por IA. Puedes editar los intervalos de mantenimiento para cada componente según sea necesario."
+        },
+        {
+          "question": "¿Puedo personalizar los intervalos de mantenimiento?",
+          "answer": "¡Sí! Edita cualquier elemento de mantenimiento y ajusta el intervalo (por kilometraje o tiempo)."
+        },
+        {
+          "question": "¿Recibiré notificaciones push para el mantenimiento?",
+          "answer": "Las notificaciones push solo están disponibles para usuarios Premium. Habilita las notificaciones en la configuración del dispositivo y Odomate te recordará cuando el mantenimiento venza. Los usuarios gratuitos reciben notificaciones en la aplicación.\n---"
+        },
+        {
+          "question": "¿Dónde se almacenan mis datos?",
+          "answer": "- **Localmente:** Base de datos SQLite cifrada en tu dispositivo\n- **Nube:** Servidores Supabase (América del Norte, América Central, Europa)"
+        },
+        {
+          "question": "¿Puedo usar Odomate sin sincronización en la nube?",
+          "answer": "No, se requiere autenticación de Supabase. Sin embargo, todos los datos se almacenan en caché localmente para que puedas acceder a ellos sin conexión."
+        },
+        {
+          "question": "¿Qué sucede con mis datos si elimino la aplicación?",
+          "answer": "- Los datos locales se eliminan inmediatamente\n- Los datos en la nube permanecen en Supabase hasta que elimines tu cuenta\n- Reinstala la aplicación e inicia sesión para restaurar tus datos"
+        },
+        {
+          "question": "¿Odomate rastrea mi ubicación todo el tiempo?",
+          "answer": "No. El acceso a la ubicación solo ocurre durante:\n- Navegación activa\n- Seguimiento automático de viajes (Premium, cuando está habilitado)\n- Guardar ubicación de estacionamiento\n- Buscar lugar de estacionamiento\n---"
+        },
+        {
+          "question": "¿Cómo reporto un error?",
+          "answer": "Envíanos un correo electrónico a support@odomate.net con:\n- Descripción del error\n- Pasos para reproducir\n- Capturas de pantalla (si es posible)\n- Información del dispositivo y SO"
+        },
+        {
+          "question": "¿Cómo solicito una función?",
+          "answer": "¡Nos encanta recibir comentarios! Envía un correo electrónico a support@odomate.net con tu solicitud."
+        },
+        {
+          "question": "¿Cuánto tiempo tarda el soporte en responder?",
+          "answer": "Nuestro objetivo es responder en 48 horas, típicamente dentro de 24 horas en días laborables."
+        },
+        {
+          "question": "¿Puedo obtener un reembolso?",
+          "answer": "Los reembolsos son manejados por Google Play o App Store según sus políticas. Contacta a support@odomate.net dentro de las 48 horas posteriores a la compra para consideración.\n---\n**Sitio web:** odomate.net  \n**Email:** support@odomate.net  \n**Política de privacidad:** [Ver política](PRIVACY_POLICY_ES.md)  \n**Términos de servicio:** [Ver términos](TERMS_OF_SERVICE_ES.md)\n---\n**¿No encontraste tu pregunta? Contacta a support@odomate.net**"
+        }
+      ]
+    },
+    "privacy": {
+      "content": [
+        {
+          "heading": "Introducción",
+          "text": "¡Bienvenido a Odomate! Esta Política de Privacidad explica cómo Oleksandr Konovalov (\"nosotros\", \"nuestro\" o \"nos\") recopila, utiliza y protege su información cuando usa la aplicación móvil Odomate (\"Aplicación\"). Estamos comprometidos a proteger su privacidad y garantizar la transparencia sobre nuestras prácticas de datos.\nAl usar Odomate, acepta la recopilación y el uso de información de acuerdo con esta política.\n**Información de Contacto:**\n- Desarrollador: Oleksandr Konovalov\n- Correo electrónico: support@odomate.net\n- Sitio web: odomate.net"
+        },
+        {
+          "heading": "Información que Recopilamos",
+          "text": "**Información de la Cuenta:**\n- Dirección de correo electrónico (para autenticación a través de Supabase)\n- Contraseña (cifrada y almacenada de forma segura)\n**Información del Vehículo:**\n- Marca, modelo y año del vehículo\n- Número VIN\n- Lecturas del odómetro\n- Historial y programas de mantenimiento\n- Notas y datos personalizados que agregue\n**Datos del Viaje:**\n- Horas y ubicaciones de inicio/fin del viaje\n- Distancia recorrida\n- Información de la ruta\n- Notas y categorías del viaje\n**Datos de Ubicación:**\n- Coordenadas GPS durante la navegación activa o el seguimiento de viajes\n- Los datos de ubicación se almacenan localmente en su dispositivo y se sincronizan con Supabase para respaldo\n- **NO compartimos coordenadas GPS precisas con terceros** excepto con servicios de navegación (Valhalla, Nominatim, Overpass (auto-alojado; límites de velocidad, POI y búsqueda Nominatim), Mapbox (respaldo)) temporalmente durante la navegación activa\n- Se requiere permiso de ubicación para funciones de navegación y seguimiento de viajes\n**Información del Dispositivo:**\n- Modelo y fabricante del dispositivo\n- Versión del sistema operativo (Android/iOS)\n- Versión de la aplicación\n- Configuración de idioma y región del dispositivo\n**Análisis de Uso (Anónimos):**\n- Vistas de pantalla y uso de funciones\n- Estadísticas de uso de servicios (Nominatim, Valhalla, Nominatim, Overpass (auto-alojado; límites de velocidad, POI y búsqueda Nominatim), Mapbox (respaldo))\n- Métricas de rendimiento de la aplicación e informes de fallos\n- Registros de errores e información de depuración\n**Importante:** NO recopilamos ni almacenamos coordenadas GPS precisas para fines analíticos. Los datos de ubicación solo se utilizan para la funcionalidad principal de la aplicación (navegación, seguimiento de viajes) y nunca se comparten con servicios de análisis.\n**Integración de OpenAI:**\n- Marca, modelo, año y especificaciones del motor del vehículo (datos derivados del VIN)\n- Información de kilometraje\n- Utilizado SOLO para recomendaciones de intervalos de mantenimiento impulsadas por IA\n- **NO enviamos:** información personal, rutas de viaje o ubicaciones precisas a OpenAI"
+        },
+        {
+          "heading": "Cómo Usamos Su Información",
+          "text": "Utilizamos la información recopilada para los siguientes propósitos:\n- Proporcionar gestión de vehículos y seguimiento de mantenimiento\n- Registrar y guardar sus viajes manualmente\n- Generar horarios de mantenimiento personalizados utilizando análisis de IA\n- Sincronizar sus datos en todos los dispositivos\n- Enviar recordatorios de mantenimiento a través de notificaciones push\n- Habilitar navegación GPS con direcciones en tiempo real\n- Rastrear y guardar sus viajes automáticamente (seguimiento en segundo plano)\n- Proporcionar predicciones de vida útil de componentes basadas en las especificaciones de su vehículo\n- Analizar patrones de uso de la aplicación (de forma anónima) para mejorar la experiencia del usuario\n- Monitorear el rendimiento del servicio (Nominatim, Valhalla, Nominatim, Overpass (auto-alojado; límites de velocidad, POI y búsqueda Nominatim), Mapbox (respaldo))\n- Detectar y corregir errores, fallos y errores\n- Optimizar algoritmos de enrutamiento y precisión de navegación\n- Enviarle recordatorios de mantenimiento y notificaciones\n- Responder a sus solicitudes de soporte\n- Informarle sobre actualizaciones o cambios importantes de la aplicación"
+        },
+        {
+          "heading": "Almacenamiento y Seguridad de Datos",
+          "text": "**Almacenamiento Local:**\n- Todos los datos de viajes, información de vehículos y registros de mantenimiento se almacenan localmente en su dispositivo utilizando una base de datos SQLite cifrada\n**Respaldo en la Nube (Supabase):**\n- Sus datos se respaldan en servidores en la nube de Supabase para sincronización\n- Supabase cumple con GDPR y utiliza cifrado en tránsito y en reposo\n- Los servidores están ubicados en: América del Norte, América Central y Europa\n- **Cifrado de extremo a extremo** para transmisión de datos\n- **Almacenamiento local cifrado** utilizando cifrado estándar de la industria\n- **Autenticación segura** con Supabase Auth\n- **Auditorías y actualizaciones de seguridad regulares**\n- **Sin redes publicitarias de terceros** con acceso a sus datos\n- **Usuarios Activos:** Sus datos se retienen mientras mantenga una cuenta activa\n- **Cuentas Eliminadas:** Todos los datos personales se eliminan inmediatamente al eliminar la cuenta\n- **Historial de Viajes:** Almacenado indefinidamente a menos que elimine manualmente los viajes\n- **Datos de Análisis:** Los datos de análisis anónimos se retienen durante 26 meses (predeterminado de Firebase)"
+        },
+        {
+          "heading": "Servicios de Terceros",
+          "text": "Odomate se integra con los siguientes servicios de terceros:\n**Supabase** (supabase.com)\n- Propósito: Autenticación de usuarios, sincronización de datos y almacenamiento en la nube\n- Datos Compartidos: Correo electrónico, contraseña cifrada, datos de vehículos, datos de viajes\n- Política de Privacidad: https://supabase.com/privacy\n**Mapbox** (mapbox.com)\n- Propósito: Renderizado de mapas, navegación, enrutamiento\n- Datos Compartidos: Coordenadas GPS temporales durante la navegación, consultas de búsqueda\n- Política de Privacidad: https://www.mapbox.com/privacy\n**OpenStreetMap (OSRM)** (project-osrm.org)\n- Propósito: Cálculo de rutas\n- Datos Compartidos: Coordenadas de inicio/fin para solicitudes de ruta\n- Política de Privacidad: https://wiki.openstreetmap.org/wiki/Privacy_Policy\n**Nominatim** (nominatim.org)\n- Propósito: Geocodificación de direcciones y geocodificación inversa\n- Datos Compartidos: Consultas de búsqueda, coordenadas para geocodificación inversa\n- Política de Privacidad: https://operations.osmfoundation.org/policies/nominatim/\n**OpenAI** (openai.com)\n- Propósito: Recomendaciones de intervalos de mantenimiento impulsadas por IA\n- Datos Compartidos: Especificaciones del vehículo (marca, modelo, año, tipo de motor), kilometraje\n- **NO Compartidos:** Información personal, rutas de viaje, coordenadas GPS\n- Política de Privacidad: https://openai.com/privacy\n**Firebase Analytics & Crashlytics** (firebase.google.com)\n- Propósito: Análisis de uso anónimos, informes de fallos, monitoreo de rendimiento\n- Datos Compartidos: Modelo del dispositivo, versión del SO, versión de la aplicación, vistas de pantalla, uso de funciones, registros de fallos\n- **NO Compartidos:** Información personal, correo electrónico, coordenadas GPS, detalles de viajes\n- Política de Privacidad: https://firebase.google.com/support/privacy"
+        },
+        {
+          "heading": "Sus Derechos de Privacidad",
+          "text": "Tiene derecho a:\n- **Acceder a Sus Datos:** Ver toda su información almacenada en la aplicación\n- **Eliminar Sus Datos:** Eliminar permanentemente su cuenta y todos los datos asociados\n- **Corregir Sus Datos:** Editar información de vehículos, viajes y registros de mantenimiento en cualquier momento\nPara eliminar su cuenta y todos los datos:\n1. Abra la aplicación Odomate\n2. Vaya a Perfil → Configuración\n3. Seleccione \"Eliminar Cuenta\"\n4. Confirme la eliminación\n**Qué sucede:**\n- Eliminación inmediata del dispositivo local\n- Los datos del servidor se eliminan inmediatamente\n- No se puede deshacer\nSi se encuentra en la Unión Europea, tiene derechos adicionales:\n- Derecho a la portabilidad de datos\n- Derecho a restringir el procesamiento\n- Derecho a objetar el procesamiento\n- Derecho a presentar una queja ante una autoridad supervisora\nContáctenos en support@odomate.net para ejercer estos derechos."
+        },
+        {
+          "heading": "Privacidad de los Niños",
+          "text": "Odomate no está destinado a usuarios menores de 16 años. No recopilamos intencionalmente información personal de niños menores de 16 años. Si cree que hemos recopilado datos de un niño, contáctenos de inmediato y eliminaremos dicha información."
+        },
+        {
+          "heading": "Transferencias Internacionales de Datos",
+          "text": "Sus datos pueden transferirse y almacenarse en servidores ubicados en América del Norte, América Central o Europa. Al usar Odomate, acepta esta transferencia. Nos aseguramos de que todas las transferencias cumplan con las leyes de protección de datos aplicables, incluido el GDPR para usuarios de la UE."
+        },
+        {
+          "heading": "Cambios a Esta Política de Privacidad",
+          "text": "Podemos actualizar esta Política de Privacidad de vez en cuando. Le notificaremos de cualquier cambio significativo mediante:\n- Publicación de la nueva Política de Privacidad en la aplicación\n- Actualización de la fecha de \"Última Actualización\" en la parte superior\n- Envío de una notificación en la aplicación (para cambios importantes)\nSu uso continuo de Odomate después de que los cambios entren en vigencia constituye la aceptación de la política actualizada."
+        },
+        {
+          "heading": "Contáctenos",
+          "text": "Si tiene alguna pregunta, inquietud o solicitud sobre esta Política de Privacidad o sus datos, contáctenos:\n**Correo electrónico:** support@odomate.net  \n**Sitio web:** odomate.net  \n**Desarrollador:** Oleksandr Konovalov\nResponderemos a su consulta dentro de 30 días.\n**Resumen:** Odomate recopila solo los datos necesarios para proporcionar funciones de gestión de vehículos, navegación y seguimiento de mantenimiento. No vendemos sus datos a terceros y utilizamos medidas de seguridad estándar de la industria para proteger su información. Mantiene el control total sobre sus datos y puede eliminar su cuenta en cualquier momento."
+        }
+      ]
+    },
+    "terms": {
+      "content": [
+        {
+          "heading": "Aceptación de los Términos",
+          "text": "Al usar Odomate, aceptas estos Términos de Servicio. Si no estás de acuerdo, no uses la app.\nContacto: support@odomate.net | odomate.net"
+        },
+        {
+          "heading": "Servicio",
+          "text": "Funciones gratuitas: gestión de vehículos, seguimiento manual de viajes, recordatorios básicos, sincronización."
+        },
+        {
+          "heading": "Cuenta",
+          "text": "Debes tener 16+ años, usar un email válido y proteger tu contraseña. Notifícanos usos no autorizados."
+        },
+        {
+          "heading": "Suscripción y Pagos",
+          "text": "- Personal: $4.99/mes o $49.99/año.  \nFacturación mensual vía Google Play/App Store . Sin reembolsos parciales. Cambios de precio con 30 días de aviso. Prueba gratuita si está disponible."
+        },
+        {
+          "heading": "Uso Aceptable",
+          "text": "No usos ilegales, no ingeniería inversa, no compartir credenciales, no rastrear a terceros, no malware. Obedece las leyes de tránsito."
+        },
+        {
+          "heading": "Contenido del Usuario",
+          "text": "Eres dueño de tus datos. Nos concedes licencia para almacenar/procesar con el fin de prestar el servicio. Puedes borrar tu cuenta (datos eliminados inmediatamente en el servidor)."
+        },
+        {
+          "heading": "Propiedad Intelectual",
+          "text": "Odomate es propiedad de Oleksandr Konovalov. Mapas © OpenStreetMap; Valhalla, Nominatim, Overpass (собственные серверы); OpenAI para IA."
+        },
+        {
+          "heading": "Privacidad",
+          "text": "Consulta la Política de Privacidad."
+        },
+        {
+          "heading": "Descargos y Responsabilidad",
+          "text": "La app se ofrece “tal cual”. No garantizamos exactitud de navegación ni servicio ininterrumpido."
+        },
+        {
+          "heading": "Servicios de Terceros",
+          "text": "Supabase, Valhalla, Nominatim, Overpass (auto-alojado; límites de velocidad, POI y búsqueda Nominatim), Mapbox (respaldo), Nominatim, OpenAI, Firebase, sujetos a sus políticas."
+        },
+        {
+          "heading": "Terminación",
+          "text": "Podemos suspender si violas los términos; puedes borrar tu cuenta en cualquier momento."
+        },
+        {
+          "heading": "Cambios",
+          "text": "La versión vigente se publica en el sitio odomate.net, donde se actualiza la fecha de “Última actualización”. El uso continuado implica aceptación de los Términos publicados en el sitio."
+        },
+        {
+          "heading": "Ley Aplicable",
+          "text": "Leyes de Ucrania (sin conflicto de leyes). Los usuarios de la UE conservan derechos locales."
+        },
+        {
+          "heading": "Contacto",
+          "text": "support@odomate.net | odomate.net"
+        }
+      ]
+    },
+    "userManual": "## Introducción\nOdomate es una app para gestión de vehículos, navegación y registro de viajes con recomendaciones de mantenimiento basadas en IA.\n## 1. Primeros pasos\n1. Instala y abre la app.  \n2. Crea una cuenta o inicia sesión (correo).  \n3. Añade tu primer vehículo (marca, modelo, año, VIN opcional).  \n4. Define unidades (km/mi) e idioma en Ajustes.\n## 2. Vehículos\n- Añadir/editar/eliminar vehículos.  \n- Campos: marca, modelo, año, VIN, matrícula (opcional).  \n- Actualiza el odómetro; adjunta documentos/notas.  \n- Soporte multi‑vehículo.\n## 3. Viajes\n### 3.1 Registro manual (Gratis)\n- Crea un viaje: inicio/fin, distancia, notas.  \n- Asigna categorías y etiquetas.\n### 3.2 Navegación y seguimiento automático (Premium)\n1. Busca destino (dirección/lugar/coordenadas).  \n2. Añade paradas (opcional).  \n3. Inicia la navegación y sigue las indicaciones.  \n4. El seguimiento automático funciona durante la navegación activa: registra distancia y ruta en segundo plano.  \n5. Recalcula automáticamente si te desvías.\nNotas:  \n- Mapas: Mapbox.  \n- Navegación y rutas: Valhalla (auto-alojado), Mapbox como respaldo.  \n- Búsqueda: Nominatim.  \n- Batería: el GPS consume más energía.  \n- Respeta siempre las normas de tráfico.\n## 4. Mantenimiento\n### 4.1 Planes IA\n- Basados en datos del vehículo y kilometraje.  \n- Sugerencias de intervalos y componentes.\n### 4.2 Recordatorios\n- Los recordatorios se envían automáticamente basándose en los planes de mantenimiento IA y los intervalos establecidos.  \n- Activa notificaciones push en ajustes (requiere permiso del dispositivo).\n## 5. Sincronización\n- Cuenta mediante Supabase; sincroniza entre dispositivos.  \n- Offline‑first: cambios se envían al reconectar.  \n- Conflictos: prevalece el último cambio; corrige manualmente si es necesario.\n## 6. Ajustes\n- Unidades (km/mi), idioma, formato de hora (12/24 horas), formato de temperatura (°C/°F).  \n- Notificaciones (mantenimiento, seguimiento).  \n- Privacidad: borrar cuenta, desactivar analíticas.  \n- Opciones de mapa: tráfico, 3D, escala, evitar peajes, evitar autopistas, evitar ferries.\n## 7. Consejos de precisión\n- Mantén el GPS activo; ajusta ahorro de energía si hace falta.  \n- La tecnología movement‑bearing siempre se utiliza para determinar la dirección del movimiento.  \n- Mantén la app actualizada.\n## 8. Solución de problemas\n- Sin posición GPS: revisa permisos y servicios de ubicación.  \n- Navegación se detiene: revisa Internet/GPS, reinicia la app.  \n- Sincronización atascada: revisa conexión y reintenta.  \n- Contacta soporte (abajo).\n## 9. Privacidad\n- Ubicación solo con navegación/seguimiento activos.  \n- Analíticas anónimas para mejorar calidad.  \n- Detalles: `legal/PRIVACY_POLICY_ES.md`, `legal/GDPR_COMPLIANCE_ES.md`.\n## 10. Soporte\nCorreo: support@odomate.net  \nWeb: odomate.net",
+    "gdprCompliance": "**Fecha:** 22 de noviembre de 2024\n## Responsable del tratamiento (Art. 4)\nOleksandr Konovalov  \nCorreo: support@odomate.net  \nSitio: odomate.net\n## Finalidades del tratamiento (Art. 5)\n- Prestación de funcionalidades de la app (vehículos, mantenimiento, navegación, registro de viajes)  \n- Sincronización y gestión de cuenta  \n- Soporte y comunicaciones de servicio  \n- Mejora de rendimiento, resolución de errores, seguridad (analíticas/crashes anónimos)  \n- Recomendaciones de mantenimiento basadas en IA\n## Bases jurídicas (Art. 6)\n- Ejecución de contrato (Art. 6(1)(b)): funcionalidades esenciales, cuenta, sincronización\n- Intereses legítimos (Art. 6(1)(f)): seguridad, estabilidad, estadísticas de uso anónimas\n- Consentimiento (Art. 6(1)(a)), cuando proceda: notificaciones, funciones opcionales\n## Categorías de datos\n- Contacto: correo electrónico  \n- Uso: interacciones, vistas de pantalla (anónimo)  \n- Técnicos: dispositivo/SO, versión app, diagnósticos/crashes  \n- Ubicación: precisa/aproximada durante navegación/seguimiento  \n- Vehículo: marca, modelo, VIN, kilometraje, historial de mantenimiento  \n- Viajes: inicio/fin, distancia, ruta, notas\n## Destinatarios (Art. 13)\n- Supabase (autenticación/almacenamiento)  \n- Mapbox (mapas/navegación), OSRM (rutas), Nominatim (geocodificación) – tratamiento temporal de ubicación en navegación activa  \n- OpenAI (recomendaciones IA: datos de vehículo/kilometraje, sin identificadores personales)  \n- Firebase (analíticas/crashes anónimos)\n## Transferencias internacionales (Art. 44 y ss.)\nTratamiento posible en Norte/Centroamérica y la UE. Se aplican garantías adecuadas (Cláusulas Contractuales Tipo) para asegurar un nivel de protección adecuado.\n## Plazos de conservación (Art. 5)\n- Datos de cuenta: mientras esté activa  \n- Tras borrar la cuenta: eliminación inmediata en el servidor  \n- Historial de viajes: hasta borrado manual  \n- Analíticas/crashes anónimos: 26 meses (por defecto de Firebase)\n## Derechos de los interesados (Art. 12–22)\nAcceso, rectificación, supresión, limitación, oposición, portabilidad.  \nSolicitudes: support@odomate.net.  \nReclamación: ante la autoridad de control competente (Art. 77).\n## Seguridad (Art. 32)\n- Cifrado en tránsito (HTTPS/TLS) y en reposo (almacenamiento cifrado)  \n- Controles de acceso y registro de eventos  \n- Minimización de datos\n## Nota sobre la ubicación\nLa ubicación precisa se procesa solo con navegación activa o seguimiento automático de viajes. No hay compartición permanente a terceros con fines publicitarios/seguimiento. Durante la navegación, las coordenadas pueden enviarse temporalmente a Mapbox/OSRM/Nominatim para calcular rutas.\n## DPO y contacto\nNo se requiere DPO según la evaluación actual de riesgos.  \nContacto: support@odomate.net\n—"
+  }
+} as const;
