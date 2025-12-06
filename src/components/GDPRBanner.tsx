@@ -97,52 +97,58 @@ export const GDPRBanner = () => {
         {/* Main Banner */}
         {!showCustomize ? (
           <div className="max-w-6xl mx-auto">
-            <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6">
-              <div className="flex-1">
-                <h3 className="text-lg font-semibold text-foreground mb-2">
-                  {t.gdpr.title}
-                </h3>
-                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-                  {t.gdpr.text}
-                </p>
-                <div className="flex flex-wrap gap-4 text-sm">
-                  <Link 
-                    to="/privacy" 
-                    className="text-primary hover:underline flex items-center gap-1"
+            <div className="flex flex-col gap-4">
+              <div className="flex flex-col lg:flex-row items-start gap-6">
+                <div className="flex-1">
+                  <h3 className="text-lg font-semibold text-foreground mb-2">
+                    {t.gdpr.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {t.gdpr.text}
+                  </p>
+                </div>
+                
+                <div className="flex flex-row flex-wrap gap-2 lg:ml-auto lg:mt-8">
+                  <Button 
+                    variant="outline"
+                    onClick={() => setShowCustomize(true)}
+                    className="flex items-center gap-2 text-xs sm:text-sm px-3 py-2"
+                    size="sm"
                   >
-                    {t.gdpr.links.privacyPolicy}
-                  </Link>
-                  <Link 
-                    to="/terms" 
-                    className="text-primary hover:underline flex items-center gap-1"
+                    <Settings className="h-4 w-4" />
+                    {t.gdpr.buttons.customize}
+                  </Button>
+                  <Button 
+                    variant="outline"
+                    onClick={handleAcceptNecessary}
+                    className="text-xs sm:text-sm px-3 py-2"
+                    size="sm"
                   >
-                    {t.footer.terms}
-                  </Link>
+                    {t.gdpr.buttons.acceptNecessary}
+                  </Button>
+                  <Button 
+                    onClick={handleAcceptAll}
+                    className="flex items-center gap-2 text-xs sm:text-sm px-3 py-2"
+                    size="sm"
+                  >
+                    {t.gdpr.buttons.acceptAll}
+                  </Button>
                 </div>
               </div>
               
-              <div className="flex flex-col sm:flex-row gap-3 lg:ml-auto">
-                <Button 
-                  variant="outline"
-                  onClick={() => setShowCustomize(true)}
-                  className="flex items-center gap-2"
+              <div className="flex flex-wrap gap-4 text-sm border-t border-border/50 pt-3">
+                <Link 
+                  to="/privacy" 
+                  className="text-primary hover:underline flex items-center gap-1"
                 >
-                  <Settings className="h-4 w-4" />
-                  {t.gdpr.buttons.customize}
-                </Button>
-                <Button 
-                  variant="ghost"
-                  onClick={handleAcceptNecessary}
-                  className="text-sm"
+                  {t.gdpr.links.privacyPolicy}
+                </Link>
+                <Link 
+                  to="/terms" 
+                  className="text-primary hover:underline flex items-center gap-1"
                 >
-                  {t.gdpr.buttons.acceptNecessary}
-                </Button>
-                <Button 
-                  onClick={handleAcceptAll}
-                  className="flex items-center gap-2"
-                >
-                  {t.gdpr.buttons.acceptAll}
-                </Button>
+                  {t.footer.terms}
+                </Link>
               </div>
             </div>
           </div>
