@@ -7,7 +7,7 @@ import logo from '@/assets/logo.png';
 import { Link } from 'react-router-dom';
 
 export const Header = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -56,6 +56,14 @@ export const Header = () => {
           >
             {t.nav.faq}
           </Button>
+          <Link to={`/manual?lang=${language}`}>
+            <Button 
+              variant="ghost" 
+              className="hover:text-primary hover:bg-primary/10 transition-all font-medium"
+            >
+              {t.footer.manual}
+            </Button>
+          </Link>
           <Button 
             variant="ghost" 
             onClick={() => scrollToSection('contact')}
@@ -99,6 +107,14 @@ export const Header = () => {
               >
                 {t.nav.faq}
               </Button>
+              <Link to={`/manual?lang=${language}`} onClick={() => setIsOpen(false)}>
+                <Button 
+                  variant="ghost" 
+                  className="justify-start hover:text-primary w-full"
+                >
+                  {t.footer.manual}
+                </Button>
+              </Link>
               <Button 
                 variant="ghost" 
                 onClick={() => scrollToSection('contact')}

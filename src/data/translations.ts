@@ -11,6 +11,7 @@ export const translations: Record<Language, Translations> = {
       features: 'Features',
       faq: 'FAQ',
       contact: 'Contact',
+      backToHome: 'Back to Home',
     },
     hero: {
       title: 'Smart Car Care at Your Fingertips',
@@ -311,6 +312,7 @@ export const translations: Record<Language, Translations> = {
       features: 'Возможности',
       faq: 'Вопросы',
       contact: 'Контакты',
+      backToHome: 'Вернуться на главную',
     },
     hero: {
       title: 'Умный уход за автомобилем у вас под рукой',
@@ -611,6 +613,7 @@ export const translations: Record<Language, Translations> = {
       features: 'Fonctionnalités',
       faq: 'FAQ',
       contact: 'Contact',
+      backToHome: 'Retour à l\'accueil',
     },
     hero: {
       title: 'Soins automobiles intelligents à portée de main',
@@ -911,6 +914,7 @@ export const translations: Record<Language, Translations> = {
       features: 'Funktionen',
       faq: 'FAQ',
       contact: 'Kontakt',
+      backToHome: 'Zurück zur Startseite',
     },
     hero: {
       title: 'Intelligente Autopflege bei der Hand',
@@ -1199,6 +1203,7 @@ export const translations: Record<Language, Translations> = {
       features: 'Funkcje',
       faq: 'FAQ',
       contact: 'Kontakt',
+      backToHome: 'Powrót do strony głównej',
     },
     hero: {
       title: 'Inteligentna opieka nad samochodem na wyciągnięcie ręki',
@@ -1485,8 +1490,9 @@ export const translations: Record<Language, Translations> = {
     },
     nav: {
       features: 'Características',
-      faq: 'FAQ',
+      faq: 'Preguntas',
       contact: 'Contacto',
+      backToHome: 'Volver al inicio',
     },
     hero: {
       title: 'Cuidado inteligente del automóvil al alcance de tu mano',
@@ -1775,6 +1781,7 @@ export const translations: Record<Language, Translations> = {
       features: 'Можливості',
       faq: 'Питання',
       contact: 'Контакти',
+      backToHome: 'Повернутися на головну',
     },
     hero: {
       title: 'Розумний догляд за авто у ваших руках',

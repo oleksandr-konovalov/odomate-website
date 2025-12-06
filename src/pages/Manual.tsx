@@ -28,7 +28,7 @@ const manuals: Record<string, string> = {
 };
 
 export const Manual = () => {
-  const { language } = useLanguage();
+  const { language, t } = useLanguage();
   const navigate = useNavigate();
   const [htmlContent, setHtmlContent] = useState('');
 
@@ -37,20 +37,107 @@ export const Manual = () => {
     const parser = new DOMParser();
     const doc = parser.parseFromString(fullHtml, 'text/html');
 
-    // Normalize internal links to SPA routes
+    // Normalize internal links to SPA routes and fix text content
     doc.querySelectorAll('a[href]').forEach((a) => {
       const href = (a.getAttribute('href') || '').trim();
       const lower = href.toLowerCase();
       if (!href) return;
       if (lower.includes('privacy_policy')) {
         a.setAttribute('href', '/privacy');
+        if (a.textContent?.includes('.md')) {
+          a.textContent = 'Privacy Policy';
+        }
       } else if (lower.includes('terms_of_service')) {
         a.setAttribute('href', '/terms');
+        if (a.textContent?.includes('.md')) {
+          a.textContent = 'Terms of Service';
+        }
       } else if (lower.includes('gdpr')) {
         a.setAttribute('href', '/gdpr');
+        if (a.textContent?.includes('.md')) {
+          a.textContent = 'GDPR Compliance';
+        }
       } else if (lower.includes('faq')) {
         a.setAttribute('href', '/faq');
+        if (a.textContent?.includes('.md')) {
+          a.textContent = 'FAQ';
+        }
       }
+    });
+
+    // Replace .md references in <code> tags with links
+    doc.querySelectorAll('code').forEach((code) => {
+      const text = code.textContent || '';
+      if (text.includes('.md')) {
+        const link = document.createElement('a');
+        if (text.toLowerCase().includes('privacy_policy')) {
+          link.href = '/privacy';
+          link.textContent = 'Privacy Policy';
+        } else if (text.toLowerCase().includes('gdpr_compliance')) {
+          link.href = '/gdpr';
+          link.textContent = 'GDPR Compliance';
+        } else if (text.toLowerCase().includes('terms_of_service')) {
+          link.href = '/terms';
+          link.textContent = 'Terms of Service';
+        } else if (text.toLowerCase().includes('faq')) {
+          link.href = '/faq';
+          link.textContent = 'FAQ';
+        }
+        if (link.href) {
+          link.className = 'text-primary hover:underline';
+          code.replaceWith(link);
+        }
+      }
+    });
+
+    // Remove analytics opt-out line from all languages
+    doc.querySelectorAll('li').forEach((li) => {
+      const text = li.textContent || '';
+      if (
+        text.includes('Anonymous analytics') ||
+        text.includes('Анонимная аналитика') ||
+        text.includes('Анонімна аналітика') ||
+        text.includes('Anonyme Analytik') ||
+        text.includes('Analyses anonymes') ||
+        text.includes('Analíticas anónimas') ||
+        text.includes('Anonimowa analityka')
+      ) {
+        li.remove();
+      }
+    });
+
+    // Also replace plain text mentions of .md files (not in links or code)
+    const textNodes: Text[] = [];
+    const walker = document.createTreeWalker(doc.body, NodeFilter.SHOW_TEXT, null);
+    let node;
+    while ((node = walker.nextNode())) {
+      if (node.textContent?.includes('.md')) {
+        textNodes.push(node as Text);
+      }
+    }
+    textNodes.forEach((textNode) => {
+      let text = textNode.textContent || '';
+      text = text.replace(/legal\/PRIVACY_POLICY_\w+\.md/gi, 'Privacy Policy');
+      text = text.replace(/legal\/GDPR_COMPLIANCE_\w+\.md/gi, 'GDPR Compliance');
+      text = text.replace(/legal\/TERMS_OF_SERVICE_\w+\.md/gi, 'Terms of Service');
+      text = text.replace(/legal\/FAQ_\w+\.md/gi, 'FAQ');
+      textNode.textContent = text;
+    });
+
+    // Add links to email and website mentions
+    doc.querySelectorAll('p, li').forEach((el) => {
+      let html = el.innerHTML;
+      // First replace email with mailto link (must be before website replacement)
+      html = html.replace(
+        /support@odomate\.net/gi,
+        '<a href="mailto:support@odomate.net" class="text-primary hover:underline">support@odomate.net</a>'
+      );
+      // Replace standalone website mentions (not already in links or email)
+      html = html.replace(
+        /(?<![@\/"'>])\b(odomate\.net)(?!["'<])/gi,
+        '<a href="https://odomate.net" class="text-primary hover:underline" target="_blank" rel="noopener">$1</a>'
+      );
+      el.innerHTML = html;
     });
 
     const bodyContent = doc.body.innerHTML;
@@ -81,7 +168,7 @@ export const Manual = () => {
             className="mb-12 hover:text-foreground hover:bg-primary/10 transition-colors"
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to Home
+            {t.nav.backToHome}
           </Button>
 
           <div 

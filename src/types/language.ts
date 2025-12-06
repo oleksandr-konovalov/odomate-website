@@ -26,6 +26,7 @@ export interface Translations {
     features: string;
     faq: string;
     contact: string;
+    backToHome: string;
   };
   hero: {
     title: string;

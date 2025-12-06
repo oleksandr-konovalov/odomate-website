@@ -4,7 +4,7 @@ import appleBadge from '@/assets/apple-badge.svg';
 import googleBadge from '@/assets/google-badge.svg';
 import { StoreComingSoonDialog } from '@/components/StoreComingSoonDialog';
 import { Link } from 'react-router-dom';
-import { Mail, MapPin } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 export const Footer = () => {
   const { t } = useLanguage();
@@ -13,7 +13,7 @@ export const Footer = () => {
   return (
     <footer className="bg-card/30 border-t border-primary/20">
       <div className="container mx-auto px-6 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
           {/* Brand Section */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
@@ -28,25 +28,6 @@ export const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links */}
-          <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-foreground">{t.footer.quickLinks}</h3>
-            <div className="grid grid-cols-2 md:grid-cols-1 gap-x-6 gap-y-2">
-              <a href="#features" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                {t.nav.features}
-              </a>
-              <Link to="/faq" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                {t.nav.faq}
-              </Link>
-              <Link to="/manual" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                {t.footer.manual}
-              </Link>
-              <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                {t.nav.contact}
-              </a>
-            </div>
-          </div>
-
           {/* Legal */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-foreground">{t.footer.legal}</h3>
@@ -59,6 +40,9 @@ export const Footer = () => {
               </Link>
               <Link to="/gdpr" className="text-muted-foreground hover:text-primary transition-colors text-sm">
                 GDPR
+              </Link>
+              <Link to="/manual" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                {t.footer.manual}
               </Link>
             </div>
           </div>

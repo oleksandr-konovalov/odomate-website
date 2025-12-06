@@ -28,7 +28,7 @@ const faqDocs: Record<string, string> = {
 };
 
 export const FAQPage = () => {
-  const { language } = useLanguage();
+  const { language, t } = useLanguage();
   const navigate = useNavigate();
   const [htmlContent, setHtmlContent] = useState('');
 
@@ -84,7 +84,7 @@ export const FAQPage = () => {
             className="mb-12 hover:text-foreground hover:bg-primary/10 transition-colors"
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to Home
+            {t.nav.backToHome}
           </Button>
 
           <div 
