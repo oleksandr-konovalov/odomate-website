@@ -142,11 +142,11 @@
 - Versión del sistema operativo (Android/iOS)
 - Versión de la aplicación
 - Configuración de idioma y región del dispositivo</p>
-<p><strong>Análisis de Uso (Anónimos):</strong>
+<p><strong>Analítica de Uso y Diagnóstico:</strong>
 - Vistas de pantalla y uso de funciones
-- Estadísticas de uso de servicios (Nominatim, Valhalla, Nominatim, Overpass (auto-alojado; límites de velocidad, POI y búsqueda Nominatim), Mapbox (respaldo))
 - Métricas de rendimiento de la aplicación e informes de fallos
-- Registros de errores e información de depuración</p>
+- Identificadores técnicos como el ID de usuario, modelo del dispositivo, versión del SO y versión de la aplicación
+Estos datos se utilizan únicamente para el diagnóstico de la aplicación, el monitoreo del rendimiento y mejorar la estabilidad de la app.</p>
 <p><strong>Importante:</strong> NO recopilamos ni almacenamos coordenadas GPS precisas para fines analíticos. Los datos de ubicación solo se utilizan para la funcionalidad principal de la aplicación (navegación, seguimiento de viajes) y nunca se comparten con servicios de análisis.</p>
 <h3 id="23-integracion-de-servicios-de-terceros">2.3 Integración de Servicios de Terceros</h3>
 <p><strong>Integración de OpenAI:</strong>
@@ -172,7 +172,7 @@
 </ul>
 <h3 id="33-mejora-del-servicio">3.3 Mejora del Servicio</h3>
 <ul>
-<li>Analizar patrones de uso de la aplicación (de forma anónima) para mejorar la experiencia del usuario</li>
+<li>Analizar patrones de uso de la aplicación para mejorar la experiencia del usuario</li>
 <li>Monitorear el rendimiento del servicio (Nominatim, Valhalla, Nominatim, Overpass (auto-alojado; límites de velocidad, POI y búsqueda Nominatim), Mapbox (respaldo))</li>
 <li>Detectar y corregir errores, fallos y errores</li>
 <li>Optimizar algoritmos de enrutamiento y precisión de navegación</li>
@@ -204,7 +204,7 @@
 <li><strong>Usuarios Activos:</strong> Sus datos se retienen mientras mantenga una cuenta activa</li>
 <li><strong>Cuentas Eliminadas:</strong> Todos los datos personales se eliminan inmediatamente al eliminar la cuenta</li>
 <li><strong>Historial de Viajes:</strong> Almacenado indefinidamente a menos que elimine manualmente los viajes</li>
-<li><strong>Datos de Análisis:</strong> Los datos de análisis anónimos se retienen durante 26 meses (predeterminado de Firebase)</li>
+<li><strong>Datos de Análisis:</strong> Los datos de análisis se retienen durante 26 meses (predeterminado de Firebase)</li>
 </ul>
 <h2 id="5-servicios-de-terceros">5. Servicios de Terceros</h2>
 <p>Odomate se integra con los siguientes servicios de terceros:</p>
@@ -232,12 +232,18 @@
 - Datos Compartidos: Especificaciones del vehículo (marca, modelo, año, tipo de motor), kilometraje
 - <strong>NO Compartidos:</strong> Información personal, rutas de viaje, coordenadas GPS
 - Política de Privacidad: <a href="https://openai.com/privacy">https://openai.com/privacy</a></p>
-<h3 id="54-analisis-e-informes-de-fallos">5.4 Análisis e Informes de Fallos</h3>
+<h3 id="54-analytics-crash-reporting">5.4 Análisis e Informes de Fallos</h3>
 <p><strong>Firebase Analytics &amp; Crashlytics</strong> (firebase.google.com)
-- Propósito: Análisis de uso anónimos, informes de fallos, monitoreo de rendimiento
-- Datos Compartidos: Modelo del dispositivo, versión del SO, versión de la aplicación, vistas de pantalla, uso de funciones, registros de fallos
-- <strong>NO Compartidos:</strong> Información personal, correo electrónico, coordenadas GPS, detalles de viajes
+- Propósito: Diagnóstico de la aplicación, informes de fallos, monitoreo de rendimiento y análisis de uso
+- Datos Compartidos:
+  - ID de usuario (identificador interno de la cuenta)
+  - Modelo del dispositivo y versión del SO
+  - Versión de la aplicación
+  - Vistas de pantalla y uso de funciones
+  - Registros de fallos y métricas de rendimiento
+- Estos datos se utilizan exclusivamente para diagnosticar problemas, mejorar la estabilidad de la app y brindar soporte al usuario.
 - Política de Privacidad: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
+<p>La analítica y los informes de fallos están habilitados de forma predeterminada para garantizar la estabilidad de la aplicación, detectar errores y mejorar la calidad del servicio.</p>
 <h2 id="6-sus-derechos-de-privacidad">6. Sus Derechos de Privacidad</h2>
 <h3 id="61-acceso-y-control">6.1 Acceso y Control</h3>
 <p>Tiene derecho a:</p>

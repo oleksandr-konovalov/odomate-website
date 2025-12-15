@@ -142,11 +142,11 @@
 - Operating system version (Android/iOS)
 - App version
 - Device language and region settings</p>
-<p><strong>Usage Analytics (Anonymous):</strong>
+<p><strong>Usage Analytics and Diagnostics:</strong>
 - Screen views and feature usage
-- Service usage statistics (Nominatim, Valhalla, Nominatim, Overpass (self-hosted; speed limit data, POI, Nominatim search support), Mapbox (fallback))
 - App performance metrics and crash reports
-- Error logs and debugging information</p>
+- Technical identifiers such as user ID, device model, OS version, and app version
+These data are used solely for application diagnostics, performance monitoring, and improving app stability.</p>
 <p><strong>Important:</strong> We do NOT collect or store precise GPS coordinates for analytics purposes. Location data is only used for core app functionality (navigation, trip tracking) and is never shared with analytics services.</p>
 <h3 id="23-third-party-services-integration">2.3 Third-Party Services Integration</h3>
 <p><strong>OpenAI Integration:</strong>
@@ -172,7 +172,7 @@
 </ul>
 <h3 id="33-service-improvement">3.3 Service Improvement</h3>
 <ul>
-<li>Analyze app usage patterns (anonymously) to improve user experience</li>
+<li>Analyze app usage patterns to improve user experience</li>
 <li>Monitor service performance (Nominatim, Valhalla, Nominatim, Overpass (self-hosted; speed limit data, POI, Nominatim search support), Mapbox (fallback))</li>
 <li>Detect and fix bugs, crashes, and errors</li>
 <li>Optimize routing algorithms and navigation accuracy</li>
@@ -207,7 +207,7 @@
 <li><strong>Active Users:</strong> Your data is retained as long as you maintain an active account</li>
 <li><strong>Deleted Accounts:</strong> All personal data is deleted immediately upon account deletion</li>
 <li><strong>Trip History:</strong> Stored indefinitely unless you manually delete trips</li>
-<li><strong>Analytics Data:</strong> Anonymous analytics data is retained for 26 months (Firebase default)</li>
+<li><strong>Analytics Data:</strong> Analytics data is retained for 26 months (Firebase default)</li>
 </ul>
 <h2 id="5-third-party-services">5. Third-Party Services</h2>
 <p>Odomate integrates with the following third-party services:</p>
@@ -237,10 +237,16 @@
 - Privacy Policy: <a href="https://openai.com/privacy">https://openai.com/privacy</a></p>
 <h3 id="54-analytics-crash-reporting">5.4 Analytics &amp; Crash Reporting</h3>
 <p><strong>Firebase Analytics &amp; Crashlytics</strong> (firebase.google.com)
-- Purpose: Anonymous usage analytics, crash reports, performance monitoring
-- Data Shared: Device model, OS version, app version, screen views, feature usage, crash logs
-- <strong>NOT Shared:</strong> Personal information, email, GPS coordinates, trip details
+- Purpose: Application diagnostics, crash reporting, performance monitoring, and usage analysis
+- Data Shared:
+  - User ID (internal account identifier)
+  - Device model and OS version
+  - App version
+  - Screen views and feature usage
+  - Crash logs and performance metrics
+- These data are used exclusively to diagnose issues, improve app stability, and provide user support.
 - Privacy Policy: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
+<p>Analytics and crash reporting are enabled by default to ensure application stability, detect errors, and improve the quality of the service.</p>
 <h2 id="6-your-privacy-rights">6. Your Privacy Rights</h2>
 <h3 id="61-access-and-control">6.1 Access and Control</h3>
 <p>You have the right to:</p>

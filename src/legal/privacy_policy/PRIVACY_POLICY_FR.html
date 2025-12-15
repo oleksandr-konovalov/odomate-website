@@ -127,7 +127,8 @@ Site : <a href="https://odomate.net">odomate.net</a></p>
   Stockée localement et synchronisée avec Supabase pour sauvegarde.<br />
   Aucune communication de localisation précise à des tiers sauf temporairement pour la navigation (Valhalla, Nominatim, Overpass (auto-hébergé ; limites de vitesse, POI, recherche Nominatim), Mapbox (secours), Nominatim).</li>
 <li>Informations appareil (modèle, fabricant, version OS, version app, langue/région)</li>
-<li>Analyses anonymes d’utilisation (vues d’écran, fonctionnalités), performances et journaux de plantage</li>
+<li><strong>Analyses d’utilisation et diagnostic :</strong><br />
+  Vues d’écran et utilisation des fonctionnalités ; métriques de performance de l’app et rapports de plantage ; identifiants techniques tels que l’ID utilisateur, le modèle d’appareil, la version OS et la version de l’app. Ces données sont utilisées uniquement pour le diagnostic de l’application, le suivi des performances et l’amélioration de la stabilité.</li>
 </ul>
 <h3 id="23-donnees-traitees-par-des-services-tiers">2.3 Données traitées par des services tiers</h3>
 <ul>
@@ -159,7 +160,7 @@ Site : <a href="https://odomate.net">odomate.net</a></p>
 <h2 id="4-fondements-juridiques-rgpd">4. Fondements juridiques (RGPD)</h2>
 <ul>
 <li>Exécution du contrat (Art. 6(1)(b))  </li>
-<li>Intérêt légitime (Art. 6(1)(f)) : sécurité, stabilité, statistiques anonymes  </li>
+<li>Intérêt légitime (Art. 6(1)(f)) : sécurité, stabilité, statistiques d’utilisation  </li>
 <li>Consentement (Art. 6(1)(a)) si requis (notifications, options)</li>
 </ul>
 <h2 id="5-stockage-securite-et-conservation">5. Stockage, sécurité et conservation</h2>
@@ -167,8 +168,20 @@ Site : <a href="https://odomate.net">odomate.net</a></p>
 <li>Local : base SQLite chiffrée  </li>
 <li>Cloud (Supabase) : chiffrement au repos/en transit, conformité RGPD (serveurs en NA/SA/UE)  </li>
 <li>Chiffrement transport (HTTPS/TLS), contrôle d’accès  </li>
-<li>Durées : données de compte tant que le compte est actif ; en cas de suppression du compte, suppression immédiate côté serveur ; analyses anonymes 26 mois (par défaut Firebase)</li>
+<li>Durées : données de compte tant que le compte est actif ; en cas de suppression du compte, suppression immédiate côté serveur ; analyses 26 mois (par défaut Firebase)</li>
 </ul>
+<h3 id="54-analytics-crash-reporting">5.4 Analyses &amp; rapports de plantage</h3>
+<p><strong>Firebase Analytics &amp; Crashlytics</strong> (firebase.google.com)
+- Finalité : diagnostic de l’application, rapports de plantage, suivi des performances et analyse d’utilisation
+- Données partagées :
+  - ID utilisateur (identifiant interne du compte)
+  - Modèle d’appareil et version OS
+  - Version de l’application
+  - Vues d’écran et utilisation des fonctionnalités
+  - Journaux de plantage et métriques de performance
+- Ces données sont utilisées exclusivement pour diagnostiquer les problèmes, améliorer la stabilité de l’app et fournir une assistance aux utilisateurs.
+- Politique de confidentialité : <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
+<p>Les analyses et les rapports de plantage sont activés par défaut afin d’assurer la stabilité de l’application, détecter les erreurs et améliorer la qualité du service.</p>
 <h2 id="6-partage-et-soustraitants">6. Partage et sous‑traitants</h2>
 <p>Sous‑traitants essentiels : Supabase, Valhalla, Nominatim, Overpass (auto-hébergé ; limites de vitesse, POI, recherche Nominatim), Mapbox (secours), Nominatim, OpenAI, Firebase.<br />
 Pas de vente de données. Pas d’utilisation à des fins publicitaires. Pas d’IDFA.</p>

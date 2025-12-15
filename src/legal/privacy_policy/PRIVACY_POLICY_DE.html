@@ -129,7 +129,8 @@ Website: <a href="https://odomate.net">odomate.net</a></p>
   Lokal auf dem Gerät gespeichert und mit Supabase synchronisiert (Backup).<br />
   Keine dauerhafte Weitergabe präziser GPS‑Daten an Dritte; temporäre Übermittlung nur zur Navigation (Valhalla, Nominatim, Overpass (selbst gehostet; Geschwindigkeitsbegrenzungen, POIs, Nominatim‑Suche), Mapbox (Fallback), Nominatim).</li>
 <li>Geräteinformationen (Modell, Hersteller, OS‑Version, App‑Version, Sprache/Region)  </li>
-<li>Anonyme Nutzungsanalysen (Screenviews, Feature‑Nutzung), Leistungs‑ und Crash‑Protokolle</li>
+<li><strong>Nutzungsanalyse und Diagnostik:</strong><br />
+  Screenviews und Feature‑Nutzung; App‑Performance‑Metriken und Crash‑Berichte; technische Kennungen wie User‑ID, Gerätemodell, OS‑Version und App‑Version. Diese Daten werden ausschließlich zur App‑Diagnose, Performance‑Überwachung und zur Verbesserung der Stabilität verwendet.</li>
 </ul>
 <h3 id="23-drittdienste">2.3 Drittdienste</h3>
 <ul>
@@ -161,7 +162,7 @@ Website: <a href="https://odomate.net">odomate.net</a></p>
 <h2 id="4-rechtsgrundlagen-dsgvo">4. Rechtsgrundlagen (DSGVO)</h2>
 <ul>
 <li>Vertragserfüllung (Art. 6 Abs. 1 lit. b)  </li>
-<li>Berechtigte Interessen (Art. 6 Abs. 1 lit. f): Sicherheit, Stabilität, anonyme Nutzungsmessung  </li>
+<li>Berechtigte Interessen (Art. 6 Abs. 1 lit. f): Sicherheit, Stabilität, Nutzungsmessung  </li>
 <li>Einwilligung (Art. 6 Abs. 1 lit. a), falls erforderlich (Benachrichtigungen, optionale Features)</li>
 </ul>
 <h2 id="5-speicherung-sicherheit-und-aufbewahrung">5. Speicherung, Sicherheit und Aufbewahrung</h2>
@@ -169,8 +170,20 @@ Website: <a href="https://odomate.net">odomate.net</a></p>
 <li>Lokal: verschlüsselte SQLite‑Datenbank  </li>
 <li>Cloud (Supabase): Verschlüsselung at‑rest/in‑transit, DSGVO‑konform; Server in NA/SA/EU  </li>
 <li>Transportverschlüsselung (HTTPS/TLS), Zugriffskontrollen  </li>
-<li>Aufbewahrung: Kontodaten solange aktiv; bei Kontolöschung sofortige Löschung; anonyme Analytics 26 Monate (Firebase‑Standard)</li>
+<li>Aufbewahrung: Kontodaten solange aktiv; bei Kontolöschung sofortige Löschung; Analytics 26 Monate (Firebase‑Standard)</li>
 </ul>
+<h3 id="54-analytics-crash-reporting">5.4 Crash-Berichte und Performance-Monitoring</h3>
+<p><strong>Firebase Analytics &amp; Crashlytics</strong> (firebase.google.com)
+- Zweck: App‑Diagnose, Crash‑Berichte, Performance‑Monitoring und Nutzungsanalyse
+- Übermittelte Daten:
+  - User‑ID (interner Konto‑Identifikator)
+  - Gerätemodell und OS‑Version
+  - App‑Version
+  - Screenviews und Feature‑Nutzung
+  - Crash‑Logs und Performance‑Metriken
+- Diese Daten werden ausschließlich verwendet, um Probleme zu diagnostizieren, die App‑Stabilität zu verbessern und Support zu leisten.
+- Datenschutzerklärung: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
+<p>Analytics und Crash‑Berichte sind standardmäßig aktiviert, um die Stabilität der Anwendung sicherzustellen, Fehler zu erkennen und die Servicequalität zu verbessern.</p>
 <h2 id="6-eingebundene-dienste-und-weitergabe">6. Eingebundene Dienste und Weitergabe</h2>
 <ul>
 <li>Supabase (Auth/Speicher) – E‑Mail, Fahrzeug‑/Fahrtdaten  </li>
@@ -178,7 +191,7 @@ Website: <a href="https://odomate.net">odomate.net</a></p>
 <li>Valhalla (Routen) – Start/Zielkoordinaten  </li>
 <li>Nominatim (Geokodierung) – Suchanfragen/Koordinaten  </li>
 <li>OpenAI (KI‑Wartung) – Fahrzeugdaten, Laufleistung  </li>
-<li>Firebase (Analytics/Crashlytics) – anonyme Nutzungs‑/Crashdaten<br />
+<li>Firebase (Analytics/Crashlytics) – Nutzungs‑/Crashdaten<br />
 Keine Weitergabe zu Werbe‑/Trackingzwecken. Keine Nutzung von IDFA.</li>
 </ul>
 <h2 id="7-internationale-datenubermittlungen">7. Internationale Datenübermittlungen</h2>
