@@ -64,14 +64,14 @@ export const Privacy = () => {
     // Add links to email and website mentions
     doc.querySelectorAll('p, li').forEach((el) => {
       let html = el.innerHTML;
-      // First replace email with mailto link
+      // First replace email with mailto link (only if not already in an anchor tag)
       html = html.replace(
-        /support@odomate\.net/gi,
+        /(?<!<a[^>]*>)(?<!href=["'])support@odomate\.net(?![^<]*<\/a>)/gi,
         '<a href="mailto:support@odomate.net" class="text-primary hover:underline">support@odomate.net</a>'
       );
-      // Replace standalone website mentions
+      // Replace standalone website mentions (only if not already in an anchor tag)
       html = html.replace(
-        /(?<![@\/"'>])\b(odomate\.net)(?!["'<])/gi,
+        /(?<!<a[^>]*>)(?<![@\/"'>])\b(odomate\.net)(?!["'<])(?![^<]*<\/a>)/gi,
         '<a href="https://odomate.net" class="text-primary hover:underline" target="_blank" rel="noopener">$1</a>'
       );
       el.innerHTML = html;

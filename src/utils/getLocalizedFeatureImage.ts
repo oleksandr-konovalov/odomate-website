@@ -65,11 +65,6 @@ interface FeatureImages {
   };
 }
 
-// Type for parking feature with animated pairs
-export interface ParkingImageSet {
-  pairs: string[][]; // Array of image pairs for animation
-}
-
 const featureImages: FeatureImages = {
   gps: {
     en: [gpsUs, gpsUk], // Two screenshots side by side
@@ -231,7 +226,13 @@ export function getLocalizedFeatureImages(
     return result[0] as string[];
   }
   
-  return Array.isArray(result) ? result : [result];
+  // Handle regular arrays
+  if (Array.isArray(result)) {
+    return result as string[];
+  }
+  
+  // Handle single string
+  return [result];
 }
 
 /**
@@ -261,25 +262,4 @@ export function getAnimatedPairs(
   // If not animated, return single pair
   const images = getLocalizedFeatureImages(featureKey, language);
   return [images];
-}
-
-/**
- * Get all available languages for a specific feature
- */
-export function getAvailableLanguagesForFeature(featureKey: FeatureKey | string): Language[] {
-  const images = featureImages[featureKey];
-  
-  if (!images) {
-    return [];
-  }
-
-  return Object.keys(images) as Language[];
-}
-
-/**
- * Check if a feature has a localized image for a specific language
- */
-export function hasLocalizedImage(featureKey: FeatureKey | string, language: Language): boolean {
-  const images = featureImages[featureKey];
-  return images ? language in images : false;
 }
