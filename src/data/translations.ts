@@ -52,7 +52,7 @@ export const translations: Record<Language, Translations> = {
       items: [
         {
           title: 'Live Navigation',
-          description: 'Real-time GPS navigation with traffic updates and route optimization for your daily drives.',
+          description: 'Real-time GPS navigation with route optimization for your daily drives.',
         },
         {
           title: 'Automatic Mileage Logging',
@@ -353,7 +353,7 @@ export const translations: Record<Language, Translations> = {
       items: [
         {
           title: 'Живая навигация',
-          description: 'GPS-навигация в реальном времени с обновлениями трафика и оптимизацией маршрута.',
+          description: 'GPS-навигация в реальном времени с оптимизацией маршрута.',
         },
         {
           title: 'Автоматический учет пробега',
@@ -654,7 +654,7 @@ export const translations: Record<Language, Translations> = {
       items: [
         {
           title: 'Navigation en direct',
-          description: 'Navigation GPS en temps réel avec mises à jour du trafic et optimisation d\'itinéraire.',
+          description: 'Navigation GPS en temps réel avec optimisation d\'itinéraire.',
         },
         {
           title: 'Enregistrement automatique du kilométrage',
@@ -943,7 +943,7 @@ export const translations: Record<Language, Translations> = {
       items: [
         {
           title: 'Live-Navigation',
-          description: 'Echtzeit-GPS-Navigation mit Verkehrsupdates und Routenoptimierung für Ihre täglichen Fahrten.',
+          description: 'Echtzeit-GPS-Navigation mit Routenoptimierung für Ihre täglichen Fahrten.',
         },
         {
           title: 'Automatische Kilometerstand-Erfassung',
@@ -1232,7 +1232,7 @@ export const translations: Record<Language, Translations> = {
       items: [
         {
           title: 'Nawigacja na żywo',
-          description: 'Nawigacja GPS w czasie rzeczywistym z aktualizacjami ruchu i optymalizacją trasy.',
+          description: 'Nawigacja GPS w czasie rzeczywistym z optymalizacją trasy.',
         },
         {
           title: 'Automatyczne rejestrowanie przebiegu',
@@ -1521,7 +1521,7 @@ export const translations: Record<Language, Translations> = {
       items: [
         {
           title: 'Navegación en vivo',
-          description: 'Navegación GPS en tiempo real con actualizaciones de tráfico y optimización de rutas.',
+          description: 'Navegación GPS en tiempo real con optimización de rutas.',
         },
         {
           title: 'Registro automático de kilometraje',
@@ -1822,7 +1822,7 @@ export const translations: Record<Language, Translations> = {
       items: [
         {
           title: 'Жива навігація',
-          description: 'GPS-навігація в реальному часі з трафіком та оптимізацією маршрутів для щоденних поїздок.',
+          description: 'GPS-навігація в реальному часі з оптимізацією маршрутів для щоденних поїздок.',
         },
         {
           title: 'Автоматичний облік пробігу',
