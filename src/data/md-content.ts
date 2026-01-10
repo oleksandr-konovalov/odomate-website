@@ -84,7 +84,7 @@ export const mdContent = {
         },
         {
           "question": "How much does Premium cost?",
-          "answer": "- **Premium:** $10/month"
+          "answer": "- **Premium:** $4.99/month or $49.99/year"
         },
         {
           "question": "How do I subscribe to Premium?",
