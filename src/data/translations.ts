@@ -15,7 +15,7 @@ export const translations: Record<Language, Translations> = {
     },
     hero: {
       title: 'Smart Car Care at Your Fingertips',
-      subtitle: 'Track maintenance, predict service needs, and keep your vehicle in perfect condition with AI-powered insights.',
+      subtitle: 'Track maintenance, predict service needs with personalized driving style analysis, and forecast maintenance costs or savings. Keep your vehicle in perfect condition with AI-powered insights tailored to your unique driving behavior.',
     },
     benefits: {
       title: 'Why choose Odomate',
@@ -51,12 +51,12 @@ export const translations: Record<Language, Translations> = {
       subtitle: 'Powerful features designed to make car maintenance simple and stress-free',
       items: [
         {
-          title: 'Live Navigation',
-          description: 'Real-time GPS navigation with route optimization for your daily drives.',
+          title: 'AI Driving Style Analysis',
+          description: 'Intelligent analysis of your driving behavior with personalized scoring. Adjusts component lifespan predictions and forecasts future maintenance costs based on your unique driving style, tailored to your specific vehicle configuration.',
         },
         {
-          title: 'Automatic Mileage Logging',
-          description: 'Effortlessly track your vehicle\'s mileage automatically without manual input.',
+          title: 'Live Navigation',
+          description: 'Real-time GPS navigation with route optimization for your daily drives.',
         },
         {
           title: 'Component Life Notifications',
@@ -65,6 +65,10 @@ export const translations: Record<Language, Translations> = {
         {
           title: 'AI-Based Lifetime Prediction',
           description: 'Advanced AI algorithms predict when your car parts will need attention or replacement.',
+        },
+        {
+          title: 'Automatic Mileage Logging',
+          description: 'Effortlessly track your vehicle\'s mileage automatically without manual input.',
         },
         {
           title: 'Digital Service Book',
@@ -316,7 +320,7 @@ export const translations: Record<Language, Translations> = {
     },
     hero: {
       title: 'Умный уход за автомобилем у вас под рукой',
-      subtitle: 'Отслеживайте обслуживание, прогнозируйте потребности в сервисе и поддерживайте автомобиль в идеальном состоянии с помощью ИИ.',
+      subtitle: 'Отслеживайте обслуживание, прогнозируйте потребности в сервисе с персонализированным анализом стиля вождения и предсказывайте расходы или экономию на обслуживание. Поддерживайте ваш автомобиль в идеальном состоянии с помощью ИИ, адаптированного под ваш уникальный стиль вождения.',
     },
     benefits: {
       title: 'Почему выбирают Odomate',
@@ -352,12 +356,12 @@ export const translations: Record<Language, Translations> = {
       subtitle: 'Мощные функции, разработанные для простого и беззаботного обслуживания автомобиля',
       items: [
         {
-          title: 'Живая навигация',
-          description: 'GPS-навигация в реальном времени с оптимизацией маршрута.',
+          title: 'ИИ-анализ стиля вождения',
+          description: 'Интеллектуальный анализ вашего стиля вождения с персонализированной оценкой. Корректирует прогнозы срока службы компонентов и предсказывает будущие расходы на обслуживание на основе вашего уникального стиля вождения, адаптированного под конкретную конфигурацию вашего автомобиля.',
         },
         {
-          title: 'Автоматический учет пробега',
-          description: 'Без усилий отслеживайте пробег вашего автомобиля автоматически без ручного ввода.',
+          title: 'Живая навигация',
+          description: 'GPS-навигация в реальном времени с оптимизацией маршрута.',
         },
         {
           title: 'Уведомления о сроке службы компонентов',
@@ -366,6 +370,10 @@ export const translations: Record<Language, Translations> = {
         {
           title: 'ИИ-прогнозирование срока службы',
           description: 'Продвинутые алгоритмы ИИ предсказывают, когда детали вашего автомобиля потребуют внимания.',
+        },
+        {
+          title: 'Автоматический учет пробега',
+          description: 'Без усилий отслеживайте пробег вашего автомобиля автоматически без ручного ввода.',
         },
         {
           title: 'Цифровая сервисная книжка',
@@ -617,7 +625,7 @@ export const translations: Record<Language, Translations> = {
     },
     hero: {
       title: 'Soins automobiles intelligents à portée de main',
-      subtitle: 'Suivez l\'entretien, prédisez les besoins de service et maintenez votre véhicule en parfait état avec l\'IA.',
+      subtitle: 'Suivez l\'entretien, prédisez les besoins de service avec une analyse personnalisée du style de conduite et prévoyez les coûts ou économies d\'entretien. Maintenez votre véhicule en parfait état avec des informations basées sur l\'IA adaptées à votre comportement de conduite unique.',
     },
     benefits: {
       title: 'Pourquoi choisir Odomate',
@@ -653,12 +661,12 @@ export const translations: Record<Language, Translations> = {
       subtitle: 'Fonctionnalités puissantes conçues pour rendre l\'entretien automobile simple et sans stress',
       items: [
         {
-          title: 'Navigation en direct',
-          description: 'Navigation GPS en temps réel avec optimisation d\'itinéraire.',
+          title: 'Analyse IA du style de conduite',
+          description: 'Analyse intelligente de votre comportement de conduite avec notation personnalisée. Ajuste les prévisions de durée de vie des composants et prédit les coûts d\'entretien futurs en fonction de votre style de conduite unique, adapté à la configuration spécifique de votre véhicule.',
         },
         {
-          title: 'Enregistrement automatique du kilométrage',
-          description: 'Suivez sans effort le kilométrage de votre véhicule automatiquement sans saisie manuelle.',
+          title: 'Navigation en direct',
+          description: 'Navigation GPS en temps réel avec optimisation d\'itinéraire.',
         },
         {
           title: 'Notifications de durée de vie des composants',
@@ -667,6 +675,10 @@ export const translations: Record<Language, Translations> = {
         {
           title: 'Prédiction de durée de vie basée sur l\'IA',
           description: 'Les algorithmes d\'IA avancés prédisent quand vos pièces auto auront besoin d\'attention.',
+        },
+        {
+          title: 'Enregistrement automatique du kilométrage',
+          description: 'Suivez sans effort le kilométrage de votre véhicule automatiquement sans saisie manuelle.',
         },
         {
           title: 'Carnet de service numérique',
@@ -918,7 +930,7 @@ export const translations: Record<Language, Translations> = {
     },
     hero: {
       title: 'Intelligente Autopflege bei der Hand',
-      subtitle: 'Verfolgen Sie Wartung, prognostizieren Sie Servicebedarf und halten Sie Ihr Fahrzeug mit KI in perfektem Zustand.',
+      subtitle: 'Verfolgen Sie Wartung, prognostizieren Sie Servicebedarf mit personalisierter Fahrstilanalyse und sagen Sie Wartungskosten oder Einsparungen voraus. Halten Sie Ihr Fahrzeug in perfektem Zustand mit KI-gestützten Erkenntnissen, die auf Ihr einzigartiges Fahrverhalten zugeschnitten sind.',
     },
     benefits: {
       title: 'Warum Autobesitzer Odomate lieben',
@@ -942,12 +954,12 @@ export const translations: Record<Language, Translations> = {
       subtitle: 'Erweiterte Funktionen für intelligente Fahrzeugwartung und Verwaltung',
       items: [
         {
-          title: 'Live-Navigation',
-          description: 'Echtzeit-GPS-Navigation mit Routenoptimierung für Ihre täglichen Fahrten.',
+          title: 'KI-Fahrstilanalyse',
+          description: 'Intelligente Analyse Ihres Fahrverhaltens mit personalisierter Bewertung. Passt Lebensdauerprognosen von Komponenten an und prognostiziert zukünftige Wartungskosten basierend auf Ihrem einzigartigen Fahrstil, angepasst an die spezifische Konfiguration Ihres Fahrzeugs.',
         },
         {
-          title: 'Automatische Kilometerstand-Erfassung',
-          description: 'Verfolgen Sie mühelos den Kilometerstand Ihres Fahrzeugs automatisch ohne manuelle Eingabe.',
+          title: 'Live-Navigation',
+          description: 'Echtzeit-GPS-Navigation mit Routenoptimierung für Ihre täglichen Fahrten.',
         },
         {
           title: 'Komponenten-Lebensdauer-Benachrichtigungen',
@@ -956,6 +968,10 @@ export const translations: Record<Language, Translations> = {
         {
           title: 'KI-basierte Lebensdauer-Vorhersage',
           description: 'Fortgeschrittene KI-Algorithmen prognostizieren, wann Ihre Autoteile Aufmerksamkeit benötigen.',
+        },
+        {
+          title: 'Automatische Kilometerstand-Erfassung',
+          description: 'Verfolgen Sie mühelos den Kilometerstand Ihres Fahrzeugs automatisch ohne manuelle Eingabe.',
         },
         {
           title: 'Digitales Serviceheft',
@@ -1207,7 +1223,7 @@ export const translations: Record<Language, Translations> = {
     },
     hero: {
       title: 'Inteligentna opieka nad samochodem na wyciągnięcie ręki',
-      subtitle: 'Śledź konserwację, przewiduj potrzeby serwisowe i utrzymuj pojazd w idealnym stanie dzięki AI.',
+      subtitle: 'Śledź konserwację, przewiduj potrzeby serwisowe z personalizowaną analizą stylu jazdy i prognozuj koszty lub oszczędności konserwacji. Utrzymuj swój pojazd w doskonałym stanie dzięki spostrzeżeniom opartym na AI dostosowanym do Twojego unikalnego stylu jazdy.',
     },
     benefits: {
       title: 'Dlaczego właściciele samochodów kochają Odomate',
@@ -1231,12 +1247,12 @@ export const translations: Record<Language, Translations> = {
       subtitle: 'Zaawansowane funkcje do inteligentnej konserwacji i zarządzania pojazdem',
       items: [
         {
-          title: 'Nawigacja na żywo',
-          description: 'Nawigacja GPS w czasie rzeczywistym z optymalizacją trasy.',
+          title: 'Analiza stylu jazdy AI',
+          description: 'Inteligentna analiza Twojego zachowania za kierownicą z personalizowaną oceną. Dostosowuje prognozy żywotności komponentów i przewiduje przyszłe koszty konserwacji na podstawie Twojego unikalnego stylu jazdy, dostosowanego do konkretnej konfiguracji Twojego pojazdu.',
         },
         {
-          title: 'Automatyczne rejestrowanie przebiegu',
-          description: 'Bez wysiłku śledź przebieg swojego pojazdu automatycznie bez ręcznego wprowadzania.',
+          title: 'Nawigacja na żywo',
+          description: 'GPS-nawigacja w czasie rzeczywistym z optymalizacją trasy.',
         },
         {
           title: 'Powiadomienia o żywotności komponentów',
@@ -1245,6 +1261,10 @@ export const translations: Record<Language, Translations> = {
         {
           title: 'Przewidywanie żywotności oparte na AI',
           description: 'Zaawansowane algorytmy AI przewidują, kiedy części samochodu będą wymagały uwagi.',
+        },
+        {
+          title: 'Automatyczne rejestrowanie przebiegu',
+          description: 'Bez wysiłku śledz przebieg swojego pojazdu automatycznie bez ręcznego wprowadzania.',
         },
         {
           title: 'Cyfrowa książka serwisowa',
@@ -1311,7 +1331,7 @@ export const translations: Record<Language, Translations> = {
           name: 'Jan Nowak',
           role: 'Kierowca weekendowy',
           avatar: 'JN',
-          content: 'Proste, intuicyjne i niewiarygodnie pomocne. Sam inteligentny asystent parkowania uratował mnie od niezliczonych mandatów za parkowanie.',
+          content: 'Proste, intuicyjne i niewiarygodnie pomocne. Pomocnik parkowania już nie raz uratował mnie od niezliczonych mandatów za parkowanie.',
           rating: 5
         },
         {
@@ -1496,7 +1516,7 @@ export const translations: Record<Language, Translations> = {
     },
     hero: {
       title: 'Cuidado inteligente del automóvil al alcance de tu mano',
-      subtitle: 'Rastrea el mantenimiento, predice las necesidades de servicio y mantén tu vehículo en perfectas condiciones con IA.',
+      subtitle: 'Rastrea el mantenimiento, predice las necesidades de servicio con análisis personalizado del estilo de conducción y pronostica costos o ahorros de mantenimiento. Mantén tu vehículo en perfectas condiciones con información basada en IA adaptada a tu estilo de conducción único.',
     },
     benefits: {
       title: 'Por qué los propietarios de autos aman Odomate',
@@ -1520,12 +1540,12 @@ export const translations: Record<Language, Translations> = {
       subtitle: 'Funciones avanzadas para mantenimiento inteligente de vehículos y gestión',
       items: [
         {
-          title: 'Navegación en vivo',
-          description: 'Navegación GPS en tiempo real con optimización de rutas.',
+          title: 'Análisis IA del estilo de conducción',
+          description: 'Análisis inteligente de tu comportamiento al volante con puntuación personalizada. Ajusta las predicciones de vida útil de componentes y pronostica costos futuros de mantenimiento basados en tu estilo único de conducción, adaptado a la configuración específica de tu vehículo.',
         },
         {
-          title: 'Registro automático de kilometraje',
-          description: 'Rastrea sin esfuerzo el kilometraje de tu vehículo automáticamente sin entrada manual.',
+          title: 'Navegación en vivo',
+          description: 'Navegación GPS en tiempo real con optimización de rutas.',
         },
         {
           title: 'Notificaciones de vida útil de componentes',
@@ -1534,6 +1554,10 @@ export const translations: Record<Language, Translations> = {
         {
           title: 'Predicción de vida útil basada en IA',
           description: 'Algoritmos avanzados de IA predicen cuándo las partes de tu automóvil necesitarán atención.',
+        },
+        {
+          title: 'Registro automático de kilometraje',
+          description: 'Rastrea sin esfuerzo el kilometraje de tu vehículo automáticamente sin entrada manual.',
         },
         {
           title: 'Libro de servicio digital',
@@ -1642,7 +1666,7 @@ export const translations: Record<Language, Translations> = {
           name: 'Diego Ramírez',
           role: 'Mecánico aficionado',
           avatar: 'DR',
-          content: 'El historial de servicio detallado me ayuda a rastrear lo que he hecho yo mismo. Perfecto para cualquiera que trabaja en su propio auto.',
+          content: 'El historial de servicio detallado me ayuda a rastrear lo que he hecho yo mismo. Perfecto para cualquiera que trabaje en su propio auto.',
           rating: 5
         }
       ],
@@ -1785,7 +1809,7 @@ export const translations: Record<Language, Translations> = {
     },
     hero: {
       title: 'Розумний догляд за авто у ваших руках',
-      subtitle: 'Відстежуйте техобслуговування, прогнозуйте потреби сервісу та підтримуйте ідеальний стан авто завдяки інсайтам ШІ.',
+      subtitle: 'Відстежуйте обслуговування, прогнозуйте потреби сервісу з персоналізованим аналізом стилю водіння та передбачайте витрати або економію на обслуговування. Підтримуйте ваш автомобіль у ідеальному стані за допомогою ШІ, адаптованого під ваш унікальний стиль водіння.',
     },
     benefits: {
       title: 'Чому обирають Odomate',
@@ -1821,12 +1845,12 @@ export const translations: Record<Language, Translations> = {
       subtitle: 'Потужні можливості, створені для простого та безстресового техобслуговування',
       items: [
         {
-          title: 'Жива навігація',
-          description: 'GPS-навігація в реальному часі з оптимізацією маршрутів для щоденних поїздок.',
+          title: 'ШІ-аналіз стилю водіння',
+          description: 'Інтелектуальний аналіз вашого стилю водіння з персоналізованою оцінкою. Коригує прогнози ресурсу компонентів та передбачає майбутні витрати на обслуговування на основі вашого унікального стилю водіння, адаптованого під конкретну конфігурацію вашого автомобіля.',
         },
         {
-          title: 'Автоматичний облік пробігу',
-          description: 'Відстежуйте пробіг автомобіля без ручного введення — система робить це за вас.',
+          title: 'Жива навігація',
+          description: 'GPS-навігація в реальному часі з оптимізацією маршрутів для щоденних поїздок.',
         },
         {
           title: 'Сповіщення про ресурс вузлів',
@@ -1835,6 +1859,10 @@ export const translations: Record<Language, Translations> = {
         {
           title: 'Прогноз ресурсу від ШІ',
           description: 'Алгоритми штучного інтелекту передбачають, коли деталі потребуватимуть уваги чи заміни.',
+        },
+        {
+          title: 'Автоматичний облік пробігу',
+          description: 'Відстежуйте пробіг автомобіля без ручного введення — система робить це за вас.',
         },
         {
           title: 'Цифрова сервісна книжка',
@@ -1846,7 +1874,7 @@ export const translations: Record<Language, Translations> = {
         },
         {
           title: 'Розумний помічник паркування',
-          description: 'Запам’ятовуйте місце стоянки, контролюйте платну парковку та отримуйте нагадування.',
+          description: `Запам'ятовуйте місце стоянки, контролюйте платну парковку та отримуйте нагадування.`,
         },
         {
           title: 'Головні пристрої Android і синхронізація',

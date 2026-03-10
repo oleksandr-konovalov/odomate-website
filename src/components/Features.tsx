@@ -10,20 +10,21 @@ import {
   MapPin,
   Smartphone,
   Play,
+  Gauge,
 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 import { getLocalizedFeatureImages, hasAnimatedPairs, getAnimatedPairs } from '@/utils/getLocalizedFeatureImage';
 import { FEATURE_IMAGE_KEYS } from '@/config/featureImageMapping';
 
 const featureIcons = [
-  Navigation,
-  BarChart3,
-  Bell,
-  Brain,
-  BookOpen,
-  Sun,
-  MapPin,
-  Smartphone,
+  Gauge,        // AI Driving Style Analysis
+  Navigation,   // Live Navigation
+  Bell,         // Component Life Notifications
+  Brain,        // AI-Based Lifetime Prediction
+  BarChart3,    // Automatic Mileage Logging
+  BookOpen,     // Digital Service Book
+  Sun,          // Weather Intelligence
+  MapPin,       // Smart Parking Assistant
+  Smartphone,   // Android Head Units
 ];
 
 const ImageSlider = ({ images, featureTitle, showDots = true, autoAdvance = true, intervalMs = 5000 }: { images: string[], featureTitle: string, showDots?: boolean, autoAdvance?: boolean, intervalMs?: number }) => {
@@ -155,7 +156,6 @@ const AnimatedImagePairs = ({ pairs, featureTitle }: { pairs: string[][], featur
   };
 
   const currentPair = pairs[currentPairIndex];
-  const hasMultipleImages = currentPair.length > 1;
 
   return (
     <div className="relative">
@@ -214,11 +214,11 @@ export const Features = () => {
             return (
               <div
                 key={index}
-                className={index === 7 ? 'flex flex-col items-center gap-6' : `grid lg:grid-cols-2 gap-4 items-center ${
+                className={index === 8 ? 'flex flex-col items-center gap-6' : `grid lg:grid-cols-2 gap-4 items-center ${
                   isEven ? '' : 'lg:grid-flow-dense'
                 }`}
               >
-                {index === 7 ? (
+                {index === 8 ? (
                   // Android Head Units: Description first, image below (centered)
                   <>
                     <div className="text-center space-y-4 max-w-2xl">

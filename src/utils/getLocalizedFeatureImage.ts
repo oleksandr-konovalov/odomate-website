@@ -45,6 +45,10 @@ import weatherUs from '/assets/images/weather/weather_us.png';
 import weatherUk from '/assets/images/weather/weather_uk.png';
 import weatherDe from '/assets/images/weather/weather_de.png';
 
+// Driving Style
+import drivingStyleEn from '/assets/images/driving_style/driving_style_en.png';
+import drivingStyleUs from '/assets/images/driving_style/driving_style_us.png';
+
 // Head device
 import androidHeadDeviceDe from '/assets/images/android_head_device_de.png';
 import androidHeadDeviceUk from '/assets/images/android_head_device_uk.png';
@@ -57,7 +61,8 @@ export type FeatureKey =
   | 'service_book'
   | 'trips_list'
   | 'weather'
-  | 'android_head';
+  | 'android_head'
+  | 'driving_style';
 
 interface FeatureImages {
   [key: string]: {
@@ -179,6 +184,15 @@ const featureImages: FeatureImages = {
     fr: androidHeadDeviceUk,
     es: androidHeadDeviceUk,
     pl: androidHeadDeviceUk,
+  },
+  driving_style: {
+    en: [drivingStyleEn, drivingStyleUs], // Two screenshots side by side
+    de: [drivingStyleEn, drivingStyleUs],
+    ru: [drivingStyleEn, drivingStyleUs],
+    uk: [drivingStyleEn, drivingStyleUs],
+    fr: [drivingStyleEn, drivingStyleUs],
+    es: [drivingStyleEn, drivingStyleUs],
+    pl: [drivingStyleEn, drivingStyleUs],
   },
 };
 
