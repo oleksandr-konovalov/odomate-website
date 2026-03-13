@@ -95,7 +95,7 @@ export const SoftwareApplicationSchema = () => (
       description: 'Track maintenance, predict service needs, and keep your vehicle in perfect condition with AI-powered insights.',
       screenshot: 'https://odomate.net/app-screenshot.jpg',
       downloadUrl: [
-        'https://apps.apple.com/app/odomate',
+        'https://apps.apple.com/ua/app/odomate/id6754283341',
         'https://play.google.com/store/apps/details?id=com.odomate',
       ],
       author: {

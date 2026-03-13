@@ -3,6 +3,8 @@ import appleBadge from '@/assets/apple-badge.svg';
 import googleBadge from '@/assets/google-badge.svg';
 import { StoreComingSoonDialog } from '@/components/StoreComingSoonDialog';
 
+const APP_STORE_URL = 'https://apps.apple.com/ua/app/odomate/id6754283341';
+
 export const Hero = () => {
   const { t } = useLanguage();
 
@@ -34,13 +36,13 @@ export const Hero = () => {
 
         {/* App Store Badges */}
         <div className="flex flex-row gap-2 justify-center pt-4 max-w-5xl mx-auto">
-          <StoreComingSoonDialog>
+          <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">
             <img 
               src={appleBadge}
               alt="Download on App Store" 
               className="h-10 md:h-14 w-auto hover:opacity-90 transition-opacity"
             />
-          </StoreComingSoonDialog>
+          </a>
           <StoreComingSoonDialog>
             <img 
               src={googleBadge} 

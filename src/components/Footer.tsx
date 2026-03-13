@@ -6,6 +6,8 @@ import { StoreComingSoonDialog } from '@/components/StoreComingSoonDialog';
 import { Link } from 'react-router-dom';
 import { Mail } from 'lucide-react';
 
+const APP_STORE_URL = 'https://apps.apple.com/ua/app/odomate/id6754283341';
+
 export const Footer = () => {
   const { t } = useLanguage();
   const currentYear = new Date().getFullYear();
@@ -51,13 +53,13 @@ export const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-foreground">{t.footer.download}</h3>
             <div className="flex flex-row gap-3">
-              <StoreComingSoonDialog>
+              <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">
                 <img 
                   src={appleBadge}
                   alt="Download on App Store" 
                   className="h-10 w-auto hover:opacity-90 transition-opacity"
                 />
-              </StoreComingSoonDialog>
+              </a>
               <StoreComingSoonDialog>
                 <img 
                   src={googleBadge} 
