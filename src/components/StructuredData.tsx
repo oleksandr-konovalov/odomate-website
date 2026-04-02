@@ -36,7 +36,7 @@ export const OrganizationSchema = () => (
         '@type': 'ContactPoint',
         telephone: '+1-XXX-XXX-XXXX',
         contactType: 'customer service',
-        email: 'support@odomate.net',
+        email: 'app@odomate.net',
         availableLanguage: ['English', 'Russian', 'French', 'German', 'Polish', 'Spanish'],
       },
       sameAs: [

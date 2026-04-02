@@ -130,7 +130,7 @@ export const Manual = () => {
       // First replace email with mailto link (must be before website replacement)
       html = html.replace(
         /support@odomate\.net/gi,
-        '<a href="mailto:support@odomate.net" class="text-primary hover:underline">support@odomate.net</a>'
+        '<a href="mailto:app@odomate.net" class="text-primary hover:underline">app@odomate.net</a>'
       );
       // Replace standalone website mentions (not already in links or email)
       html = html.replace(

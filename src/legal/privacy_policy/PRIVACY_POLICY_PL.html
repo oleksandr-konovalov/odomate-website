@@ -111,7 +111,7 @@
 <h2 id="1-wprowadzenie">1. Wprowadzenie</h2>
 <p>Niniejszy dokument wyjaśnia, jak Odomate (Oleksandr Konovalov) gromadzi, wykorzystuje i chroni informacje podczas korzystania z aplikacji Odomate ("Aplikacja"). Dbamy o przejrzystość i bezpieczeństwo danych.</p>
 <p>Kontakt:<br />
-E‑mail: <a href="mailto:support@odomate.net">support@odomate.net</a><br />
+E‑mail: <a href="mailto:app@odomate.net">app@odomate.net</a><br />
 Strona: <a href="https://odomate.net">odomate.net</a></p>
 <h2 id="2-zbierane-dane">2. Zbierane dane</h2>
 <h3 id="21-dane-podawane-przez-uzytkownika">2.1 Dane podawane przez użytkownika</h3>
@@ -167,6 +167,10 @@ Strona: <a href="https://odomate.net">odomate.net</a></p>
 <li>Chmura (Supabase): szyfrowanie w spoczynku/w tranzycie, zgodność z RODO; serwery w NA/SA/UE  </li>
 <li>Szyfrowanie transmisji (HTTPS/TLS), kontrola dostępu  </li>
 <li>Retencja: dane konta przechowywane tak długo, jak konto jest aktywne; po usunięciu konta dane po stronie serwera są usuwane natychmiast; analityka 26 miesięcy (domyślnie Firebase)</li>
+<li><strong>Dane AppsFlyer:</strong> Dane atrybucji i analityki zebrane przez AppsFlyer są przechowywane przez:
+  - 24 miesiące dla danych atrybucji
+  - 12 miesięcy dla danych zdarzeń
+  - Po tym okresie dane są automatycznie usuwane lub anonimizowane</li>
 </ul>
 <h3 id="54-analytics-crash-reporting">5.4 Analizy i raporty o awariach</h3>
 <p><strong>Firebase Analytics &amp; Crashlytics</strong> (firebase.google.com)
@@ -180,6 +184,18 @@ Strona: <a href="https://odomate.net">odomate.net</a></p>
 - Dane te są wykorzystywane wyłącznie do diagnozowania problemów, poprawy stabilności aplikacji oraz zapewnienia wsparcia użytkownikom.
 - Polityka prywatności: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
 <p>Analityka oraz raportowanie awarii są domyślnie włączone, aby zapewnić stabilność aplikacji, wykrywać błędy i poprawiać jakość usługi.</p>
+<h3 id="55-third-party-analytics-attribution">5.5 Analityka i Atrybucja Stron Trzecich</h3>
+<p><strong>AppsFlyer</strong> (appsflyer.com)
+- Cel: Mobilna atrybucja i analityka w celu zrozumienia, jak użytkownicy znajdują i wchodzą w interakcję z naszą aplikacją
+- Informacje zbierane przez AppsFlyer:
+  - Identyfikatory urządzenia (IDFA na iOS, jeśli użytkownik wyrazi zgodę poprzez App Tracking Transparency)
+  - Dane instalacji i użytkowania aplikacji
+  - Zdarzenia w aplikacji (rejestracja, zakupy subskrypcji)
+  - Dane atrybucji (źródło kampanii reklamowej)
+- Polityka prywatności: <a href="https://www.appsflyer.com/legal/privacy-policy/">https://www.appsflyer.com/legal/privacy-policy/</a></p>
+<p><strong>Możesz zrezygnować ze śledzenia poprzez:</strong>
+- Odrzucenie prośby App Tracking Transparency (ATT) na iOS
+- Wyłączenie "Zezwalaj aplikacjom na prośby o śledzenie" w Ustawienia iOS → Prywatność → Śledzenie</p>
 <h2 id="6-udostepnianie-danych-i-podmioty-przetwarzajace">6. Udostępnianie danych i podmioty przetwarzające</h2>
 <ul>
 <li>Supabase (uwierzytelnianie/magazyn) – e‑mail, dane pojazdu/przejazdów  </li>
@@ -188,21 +204,42 @@ Strona: <a href="https://odomate.net">odomate.net</a></p>
 <li>Nominatim (geokodowanie) – zapytania/współrzędne  </li>
 <li>OpenAI (serwis AI) – dane pojazdu, przebieg  </li>
 <li>Firebase (analityka/awarie) – dane analityczne i o awariach<br />
-Brak udostępniania do celów reklamowych/śledzących. Brak IDFA.</li>
+Brak udostępniania do celów reklamowych/śledzących z wyjątkiem AppsFlyer (patrz 5.5).</li>
 </ul>
-<h2 id="7-transfery-miedzynarodowe">7. Transfery międzynarodowe</h2>
+<h3 id="61-gdpr-rights">6.1 Prawa RODO (Użytkownicy EOG)</h3>
+<p>Jeśli znajdujesz się w Europejskim Obszarze Gospodarczym, masz prawo do:</p>
+<ul>
+<li>Dostępu do swoich danych zebranych przez AppsFlyer</li>
+<li>Żądania usunięcia swoich danych</li>
+<li>Rezygnacji ze śledzenia</li>
+</ul>
+<p>Aby skorzystać z tych praw:
+- Wyślij nam e‑mail: <a href="mailto:app@odomate.net">app@odomate.net</a>
+- Lub skontaktuj się bezpośrednio z AppsFlyer: <a href="mailto:privacy@appsflyer.com">privacy@appsflyer.com</a></p>
+<h2 id="7-advertising-marketing">7. Reklama i Marketing</h2>
+<h3 id="71-advertising-attribution">7.1 Atrybucja Reklamowa</h3>
+<p>Używamy AppsFlyer do pomiaru skuteczności naszych kampanii reklamowych. Pomaga nam to zrozumieć, które kanały marketingowe przyciągają użytkowników do naszej aplikacji.</p>
+<p><strong>Jeśli wyrazisz zgodę na śledzenie poprzez prośbę App Tracking Transparency:</strong>
+- Zbieramy identyfikator reklamowy Twojego urządzenia (IDFA)
+- Łączymy instalacje aplikacji z kampaniami reklamowymi
+- Mierzymy zdarzenia w aplikacji w celu optymalizacji reklam</p>
+<p><strong>Te dane są udostępniane:</strong>
+- AppsFlyer (platforma atrybucji)
+- Platformom reklamowym (TikTok, Facebook, Google Ads) - tylko dane zagregowane</p>
+<p>Możesz wycofać zgodę w dowolnym momencie poprzez Ustawienia iOS.</p>
+<h2 id="8-transfery-miedzynarodowe">8. Transfery międzynarodowe</h2>
 <p>Przekazy do NA/SA/UE zgodnie z przepisami; stosowane są odpowiednie zabezpieczenia (m.in. standardowe klauzule umowne).</p>
-<h2 id="8-prawa-uzytkownika">8. Prawa użytkownika</h2>
+<h2 id="9-prawa-uzytkownika">9. Prawa użytkownika</h2>
 <ul>
 <li>Dostęp, sprostowanie, usunięcie, ograniczenie, sprzeciw, przenoszenie danych  </li>
 <li>Usunięcie konta w aplikacji; dane po stronie serwera usuwane natychmiast</li>
 </ul>
-<h2 id="7-dzieci">7. Dzieci</h2>
+<h2 id="10-dzieci">10. Dzieci</h2>
 <p>Odomate jest przeznaczony dla użytkowników w wieku 18 lat i starszych. Nie zbieramy świadomie danych osobowych osób poniżej 18 roku życia.</p>
-<h2 id="9-zmiany">9. Zmiany</h2>
+<h2 id="11-zmiany">11. Zmiany</h2>
 <p>Poinformujemy o istotnych zmianach w aplikacji.</p>
-<h2 id="10-kontakt">10. Kontakt</h2>
-<p><a href="mailto:support@odomate.net">support@odomate.net</a> | <a href="https://odomate.net">odomate.net</a> | Oleksandr Konovalov</p>
+<h2 id="12-kontakt">12. Kontakt</h2>
+<p><a href="mailto:app@odomate.net">app@odomate.net</a> | <a href="https://odomate.net">odomate.net</a> | Oleksandr Konovalov</p>
 
 </body>
 </html>

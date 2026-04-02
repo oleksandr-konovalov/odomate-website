@@ -76,9 +76,9 @@ export const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
             <p>© {currentYear} Odomate. {t.footer.rights}</p>
             <div className="flex items-center gap-6">
-              <a href="mailto:support@odomate.net" className="flex items-center gap-2 hover:text-primary transition-colors">
+              <a href="mailto:app@odomate.net" className="flex items-center gap-2 hover:text-primary transition-colors">
                 <Mail className="h-4 w-4" />
-                support@odomate.net
+                app@odomate.net
               </a>
             </div>
           </div>

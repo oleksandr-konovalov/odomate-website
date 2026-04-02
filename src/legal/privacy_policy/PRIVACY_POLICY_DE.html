@@ -113,7 +113,7 @@
 <p>Durch die Nutzung von Odomate stimmen Sie der Erhebung und Verwendung Ihrer Informationen im Rahmen dieser Erklärung zu.</p>
 <p><strong>Kontakt:</strong><br />
 Entwickler: Oleksandr Konovalov<br />
-E‑Mail: <a href="mailto:support@odomate.net">support@odomate.net</a><br />
+E‑Mail: <a href="mailto:app@odomate.net">app@odomate.net</a><br />
 Website: <a href="https://odomate.net">odomate.net</a></p>
 <h2 id="2-welche-daten-wir-erheben">2. Welche Daten wir erheben</h2>
 <h3 id="21-von-ihnen-bereitgestellte-daten">2.1 Von Ihnen bereitgestellte Daten</h3>
@@ -171,6 +171,10 @@ Website: <a href="https://odomate.net">odomate.net</a></p>
 <li>Cloud (Supabase): Verschlüsselung at‑rest/in‑transit, DSGVO‑konform; Server in NA/SA/EU  </li>
 <li>Transportverschlüsselung (HTTPS/TLS), Zugriffskontrollen  </li>
 <li>Aufbewahrung: Kontodaten solange aktiv; bei Kontolöschung sofortige Löschung; Analytics 26 Monate (Firebase‑Standard)</li>
+<li><strong>AppsFlyer‑Daten:</strong> Attributions‑ und Analysedaten von AppsFlyer werden gespeichert für:
+  - 24 Monate für Attributionsdaten
+  - 12 Monate für Ereignisdaten
+  - Nach diesem Zeitraum werden Daten automatisch gelöscht oder anonymisiert</li>
 </ul>
 <h3 id="54-analytics-crash-reporting">5.4 Crash-Berichte und Performance-Monitoring</h3>
 <p><strong>Firebase Analytics &amp; Crashlytics</strong> (firebase.google.com)
@@ -184,6 +188,18 @@ Website: <a href="https://odomate.net">odomate.net</a></p>
 - Diese Daten werden ausschließlich verwendet, um Probleme zu diagnostizieren, die App‑Stabilität zu verbessern und Support zu leisten.
 - Datenschutzerklärung: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
 <p>Analytics und Crash‑Berichte sind standardmäßig aktiviert, um die Stabilität der Anwendung sicherzustellen, Fehler zu erkennen und die Servicequalität zu verbessern.</p>
+<h3 id="55-third-party-analytics-attribution">5.5 Drittanbieter‑Analyse und Attribution</h3>
+<p><strong>AppsFlyer</strong> (appsflyer.com)
+- Zweck: Mobile Attribution und Analyse, um zu verstehen, wie Nutzer unsere App finden und nutzen
+- Von AppsFlyer erfasste Informationen:
+  - Gerätekennungen (IDFA auf iOS, wenn Nutzer über App Tracking Transparency zustimmt)
+  - App‑Installations‑ und Nutzungsdaten
+  - In‑App‑Ereignisse (Registrierung, Abonnementkäufe)
+  - Attributionsdaten (Quelle der Werbekampagne)
+- Datenschutzerklärung: <a href="https://www.appsflyer.com/legal/privacy-policy/">https://www.appsflyer.com/legal/privacy-policy/</a></p>
+<p><strong>Sie können das Tracking ablehnen durch:</strong>
+- Ablehnung der App Tracking Transparency (ATT)‑Anfrage auf iOS
+- Deaktivierung von "Apps erlauben, Tracking anzufordern" in iOS Einstellungen → Datenschutz → Tracking</p>
 <h2 id="6-eingebundene-dienste-und-weitergabe">6. Eingebundene Dienste und Weitergabe</h2>
 <ul>
 <li>Supabase (Auth/Speicher) – E‑Mail, Fahrzeug‑/Fahrtdaten  </li>
@@ -192,20 +208,41 @@ Website: <a href="https://odomate.net">odomate.net</a></p>
 <li>Nominatim (Geokodierung) – Suchanfragen/Koordinaten  </li>
 <li>OpenAI (KI‑Wartung) – Fahrzeugdaten, Laufleistung  </li>
 <li>Firebase (Analytics/Crashlytics) – Nutzungs‑/Crashdaten<br />
-Keine Weitergabe zu Werbe‑/Trackingzwecken. Keine Nutzung von IDFA.</li>
+Keine Weitergabe zu Werbe‑/Trackingzwecken außer AppsFlyer (siehe 5.5).</li>
 </ul>
-<h2 id="7-internationale-datenubermittlungen">7. Internationale Datenübermittlungen</h2>
+<h3 id="61-gdpr-rights">6.1 GDPR‑Rechte (EWR‑Nutzer)</h3>
+<p>Wenn Sie sich im Europäischen Wirtschaftsraum befinden, haben Sie das Recht:</p>
+<ul>
+<li>Auf Ihre von AppsFlyer erfassten Daten zuzugreifen</li>
+<li>Die Löschung Ihrer Daten zu verlangen</li>
+<li>Das Tracking abzulehnen</li>
+</ul>
+<p>Um diese Rechte auszuüben:
+- E‑Mail an uns: <a href="mailto:app@odomate.net">app@odomate.net</a>
+- Oder direkt an AppsFlyer: <a href="mailto:privacy@appsflyer.com">privacy@appsflyer.com</a></p>
+<h2 id="7-advertising-marketing">7. Werbung und Marketing</h2>
+<h3 id="71-advertising-attribution">7.1 Werbe‑Attribution</h3>
+<p>Wir verwenden AppsFlyer, um die Wirksamkeit unserer Werbekampagnen zu messen. Dies hilft uns zu verstehen, welche Marketingkanäle Nutzer zu unserer App führen.</p>
+<p><strong>Wenn Sie über die App Tracking Transparency‑Anfrage zustimmen:</strong>
+- Wir erfassen die Werbekennung Ihres Geräts (IDFA)
+- Wir verknüpfen App‑Installationen mit Werbekampagnen
+- Wir messen In‑App‑Ereignisse zur Werbeoptimierung</p>
+<p><strong>Diese Daten werden geteilt mit:</strong>
+- AppsFlyer (Attributionsplattform)
+- Werbeplattformen (TikTok, Facebook, Google Ads) - nur aggregierte Daten</p>
+<p>Sie können Ihre Zustimmung jederzeit über die iOS‑Einstellungen widerrufen.</p>
+<h2 id="8-internationale-datenubermittlungen">8. Internationale Datenübermittlungen</h2>
 <p>Übermittlung nach NA/SA/EU gemäß geltendem Datenschutzrecht; geeignete Garantien (u. a. Standardvertragsklauseln) gewährleisten ein angemessenes Schutzniveau.</p>
-<h2 id="8-ihre-rechte">8. Ihre Rechte</h2>
+<h2 id="9-ihre-rechte">9. Ihre Rechte</h2>
 <ul>
 <li>Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch, Datenübertragbarkeit  </li>
 <li>Kontolöschung in der App; serverseitige Daten werden umgehend gelöscht</li>
 </ul>
-<h2 id="7-kinder">7. Kinder</h2>
+<h2 id="10-kinder">10. Kinder</h2>
 <p>Odomate ist für Nutzer ab 18 Jahren bestimmt. Wir erfassen wissentlich keine personenbezogenen Daten von Personen unter 18 Jahren.</p>
-<h2 id="9-anderungen">9. Änderungen</h2>
+<h2 id="11-anderungen">11. Änderungen</h2>
 <p>Wir informieren über wesentliche Änderungen in‑App; "Zuletzt aktualisiert" wird angepasst.</p>
-<h2 id="10-kontakt">10. Kontakt</h2>
-<p><a href="mailto:support@odomate.net">support@odomate.net</a> | <a href="https://odomate.net">odomate.net</a> | Oleksandr Konovalov</p>
+<h2 id="12-kontakt">12. Kontakt</h2>
+<p><a href="mailto:app@odomate.net">app@odomate.net</a> | <a href="https://odomate.net">odomate.net</a> | Oleksandr Konovalov</p>
 </body>
 </html>

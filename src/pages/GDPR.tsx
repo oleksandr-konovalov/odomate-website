@@ -66,7 +66,7 @@ export const GDPR = () => {
       // First replace email with mailto link (only if not already in an anchor tag)
       html = html.replace(
         /(?<!<a[^>]*>)(?<!href=["'])support@odomate\.net(?![^<]*<\/a>)/gi,
-        '<a href="mailto:support@odomate.net" class="text-primary hover:underline">support@odomate.net</a>'
+        '<a href="mailto:app@odomate.net" class="text-primary hover:underline">app@odomate.net</a>'
       );
       // Replace standalone website mentions (only if not already in an anchor tag)
       html = html.replace(
