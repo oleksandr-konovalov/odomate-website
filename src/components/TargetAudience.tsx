@@ -1,21 +1,21 @@
 import { useLanguage } from '@/hooks/useLanguage';
-import { Users, Car } from 'lucide-react';
+import { Users, Car, Heart, Building2 } from 'lucide-react';
 
-const audienceIcons = [Users, Car];
+const audienceIcons = [Users, Car, Heart, Building2];
 
 export const TargetAudience = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="py-24 px-4 bg-card/30">
+    <section className="py-12 md:py-16 px-4 bg-card/30">
       <div className="container mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="brand-gradient">{t.audience.title}</span>
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {t.audience.items.map((item, index) => {
             const Icon = audienceIcons[index];
             return (

@@ -10,9 +10,9 @@ export const FAQ = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="faq" className="py-24 px-4 bg-card/30">
+    <section id="faq" className="py-12 md:py-16 px-4 bg-card/30">
       <div className="container mx-auto max-w-4xl">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="brand-gradient">{t.faq.title}</span>
           </h2>

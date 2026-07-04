@@ -1,15 +1,14 @@
 import { useLanguage } from '@/hooks/useLanguage';
 import appleBadge from '@/assets/apple-badge.svg';
 import googleBadge from '@/assets/google-badge.svg';
-import { StoreComingSoonDialog } from '@/components/StoreComingSoonDialog';
-
 const APP_STORE_URL = 'https://apps.apple.com/ua/app/odomate/id6754283341';
+const GOOGLE_PLAY_URL = 'https://play.google.com/store/apps/details?id=com.aleksandrkonovalov.odomate';
 
 export const CTABanner = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="py-20 px-4">
+    <section className="py-12 md:py-16 px-4">
       <div className="container mx-auto">
         <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary/20 via-primary/10 to-transparent border border-primary/20 p-12 md:p-16 text-center">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent"></div>
@@ -28,13 +27,13 @@ export const CTABanner = () => {
                   className="h-10 md:h-14 w-auto hover:opacity-90 transition-opacity"
                 />
               </a>
-              <StoreComingSoonDialog>
+              <a href={GOOGLE_PLAY_URL} target="_blank" rel="noopener noreferrer">
                 <img 
                   src={googleBadge} 
                   alt="Get it on Google Play" 
                   className="h-10 md:h-14 w-auto hover:opacity-90 transition-opacity"
                 />
-              </StoreComingSoonDialog>
+              </a>
             </div>
           </div>
         </div>

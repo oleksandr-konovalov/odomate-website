@@ -1,6 +1,24 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { Language, Translations } from '@/types/language';
 import { translations } from '@/data/translations';
+import { newTranslations } from '@/data/newTranslations';
+
+function deepMerge<T>(base: T, override: Partial<T>): T {
+  const result: any = Array.isArray(base) ? [...(base as any)] : { ...(base as any) };
+  for (const key in override) {
+    if (override[key] && typeof override[key] === 'object' && !Array.isArray(override[key])) {
+      result[key] = deepMerge((base as any)[key] ?? {}, override[key] as any);
+    } else if (override[key] !== undefined) {
+      result[key] = override[key];
+    }
+  }
+  return result as T;
+}
+
+const mergedTranslations: Record<Language, Translations> = {} as any;
+(Object.keys(translations) as Language[]).forEach((lang) => {
+  mergedTranslations[lang] = deepMerge(translations[lang], newTranslations[lang] as any);
+});
 
 interface LanguageContextType {
   language: Language;
@@ -15,12 +33,12 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
 
   useEffect(() => {
     const savedLanguage = localStorage.getItem('odomate-language') as Language;
-    if (savedLanguage && translations[savedLanguage]) {
+    if (savedLanguage && mergedTranslations[savedLanguage]) {
       setLanguage(savedLanguage);
     } else {
       // Detect browser language
       const browserLang = navigator.language.split('-')[0] as Language;
-      if (translations[browserLang]) {
+      if (mergedTranslations[browserLang]) {
         setLanguage(browserLang);
       }
     }
@@ -32,7 +50,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     
     // Update document attributes for SEO
     document.documentElement.lang = lang;
-    const t = translations[lang];
+    const t = mergedTranslations[lang];
     document.title = t.meta.title;
     
     // Update meta tags
@@ -58,7 +76,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   const value = {
     language,
     setLanguage: handleSetLanguage,
-    t: translations[language],
+    t: mergedTranslations[language],
   };
 
   return (

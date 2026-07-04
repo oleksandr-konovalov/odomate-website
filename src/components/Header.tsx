@@ -67,6 +67,20 @@ export const Header = () => {
           </Button>
           <Button 
             variant="ghost" 
+            onClick={() => scrollToSection('pricing')}
+            className="hover:text-primary hover:bg-primary/10 transition-all font-medium"
+          >
+            {t.nav.pricing}
+          </Button>
+          <Button 
+            variant="ghost" 
+            onClick={() => scrollToSection('b2b')}
+            className="hover:text-primary hover:bg-primary/10 transition-all font-medium"
+          >
+            {t.nav.b2b}
+          </Button>
+          <Button 
+            variant="ghost" 
             onClick={() => scrollToSection('faq')}
             className="hover:text-primary hover:bg-primary/10 transition-all font-medium"
           >
@@ -115,6 +129,20 @@ export const Header = () => {
                 className="justify-start hover:text-primary"
               >
                 {t.nav.features}
+              </Button>
+              <Button 
+                variant="ghost" 
+                onClick={() => scrollToSection('pricing')}
+                className="justify-start hover:text-primary"
+              >
+                {t.nav.pricing}
+              </Button>
+              <Button 
+                variant="ghost" 
+                onClick={() => scrollToSection('b2b')}
+                className="justify-start hover:text-primary"
+              >
+                {t.nav.b2b}
               </Button>
               <Button 
                 variant="ghost" 

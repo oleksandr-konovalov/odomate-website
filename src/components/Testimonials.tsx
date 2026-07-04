@@ -127,10 +127,10 @@ export const Testimonials = () => {
   };
 
   return (
-    <section className="py-24 px-4 bg-gradient-to-b from-background to-muted/30">
+    <section className="py-12 md:py-16 px-4 bg-gradient-to-b from-background to-muted/30">
       <div className="container mx-auto">
         {/* Header */}
-        <div className="text-left md:text-center max-w-3xl mx-auto mb-16">
+        <div className="text-left md:text-center max-w-3xl mx-auto mb-8">
           <div className="flex items-center md:justify-center mb-4">
             <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-3">
               <MessageCircle className="h-6 w-6 text-primary" />

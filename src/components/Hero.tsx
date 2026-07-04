@@ -1,15 +1,15 @@
 import { useLanguage } from '@/hooks/useLanguage';
+import { Star } from 'lucide-react';
 import appleBadge from '@/assets/apple-badge.svg';
 import googleBadge from '@/assets/google-badge.svg';
-import { StoreComingSoonDialog } from '@/components/StoreComingSoonDialog';
-
 const APP_STORE_URL = 'https://apps.apple.com/ua/app/odomate/id6754283341';
+const GOOGLE_PLAY_URL = 'https://play.google.com/store/apps/details?id=com.aleksandrkonovalov.odomate';
 
 export const Hero = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="px-4 pt-20 pb-2">
+    <section className="px-4 pt-24 pb-8">
       <div className="container mx-auto">
         <div className="text-center max-w-4xl mx-auto space-y-5 mb-6">
           {/* Brand Line */}
@@ -32,24 +32,29 @@ export const Hero = () => {
             </p>
           </div>
 
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
+            <Star className="h-4 w-4 fill-primary text-primary" />
+            <span className="text-sm font-medium text-foreground">{t.hero.badge}</span>
           </div>
+        </div>
 
         {/* App Store Badges */}
         <div className="flex flex-row gap-2 justify-center pt-4 max-w-5xl mx-auto">
           <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">
-            <img 
+            <img
               src={appleBadge}
-              alt="Download on App Store" 
+              alt="Download on App Store"
               className="h-10 md:h-14 w-auto hover:opacity-90 transition-opacity"
             />
           </a>
-          <StoreComingSoonDialog>
-            <img 
-              src={googleBadge} 
-              alt="Get it on Google Play" 
+          <a href={GOOGLE_PLAY_URL} target="_blank" rel="noopener noreferrer">
+            <img
+              src={googleBadge}
+              alt="Get it on Google Play"
               className="h-10 md:h-14 w-auto hover:opacity-90 transition-opacity"
             />
-          </StoreComingSoonDialog>
+          </a>
         </div>
       </div>
     </section>

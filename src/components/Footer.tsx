@@ -2,11 +2,11 @@ import { useLanguage } from '@/hooks/useLanguage';
 import logo from '@/assets/logo.png';
 import appleBadge from '@/assets/apple-badge.svg';
 import googleBadge from '@/assets/google-badge.svg';
-import { StoreComingSoonDialog } from '@/components/StoreComingSoonDialog';
 import { Link } from 'react-router-dom';
 import { Mail } from 'lucide-react';
 
 const APP_STORE_URL = 'https://apps.apple.com/ua/app/odomate/id6754283341';
+const GOOGLE_PLAY_URL = 'https://play.google.com/store/apps/details?id=com.aleksandrkonovalov.odomate';
 
 export const Footer = () => {
   const { t } = useLanguage();
@@ -60,13 +60,13 @@ export const Footer = () => {
                   className="h-10 w-auto hover:opacity-90 transition-opacity"
                 />
               </a>
-              <StoreComingSoonDialog>
+              <a href={GOOGLE_PLAY_URL} target="_blank" rel="noopener noreferrer">
                 <img 
                   src={googleBadge} 
                   alt="Get it on Google Play" 
                   className="h-10 w-auto hover:opacity-90 transition-opacity"
                 />
-              </StoreComingSoonDialog>
+              </a>
             </div>
           </div>
         </div>

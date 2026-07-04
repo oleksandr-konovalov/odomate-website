@@ -24,6 +24,8 @@ export interface Translations {
   };
   nav: {
     features: string;
+    pricing: string;
+    b2b: string;
     faq: string;
     contact: string;
     backToHome: string;
@@ -31,6 +33,89 @@ export interface Translations {
   hero: {
     title: string;
     subtitle: string;
+    badge: string;
+  };
+  socialProof: {
+    rating: string;
+    downloads: string;
+    languages: string;
+    vehicles: string;
+  };
+  howItWorks: {
+    title: string;
+    subtitle: string;
+    steps: {
+      title: string;
+      description: string;
+    }[];
+  };
+  pricing: {
+    title: string;
+    subtitle: string;
+    monthly: string;
+    yearly: string;
+    perMonth: string;
+    perYear: string;
+    or: string;
+    save: string;
+    mostPopular: string;
+    download: string;
+    plans: {
+      free: {
+        name: string;
+        price: string;
+        period: string;
+        description: string;
+        features: string[];
+      };
+      premium: {
+        name: string;
+        priceMonthly: string;
+        priceYearly: string;
+        description: string;
+        features: string[];
+      };
+      family: {
+        name: string;
+        priceMonthly: string;
+        priceYearly: string;
+        description: string;
+        features: string[];
+      };
+      b2b: {
+        name: string;
+        tiers: {
+          name: string;
+          drivers: string;
+          price: string;
+          period: string;
+        }[];
+        description: string;
+        features: string[];
+        contactUs: string;
+      };
+    };
+  };
+  b2b: {
+    title: string;
+    subtitle: string;
+    features: {
+      title: string;
+      description: string;
+    }[];
+    cta: string;
+  };
+  comparison: {
+    title: string;
+    subtitle: string;
+    feature: string;
+    odomate: string;
+    others: string;
+    rows: {
+      feature: string;
+      odomate: string;
+      others: string;
+    }[];
   };
   benefits: {
     title: string;

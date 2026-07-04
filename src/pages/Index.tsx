@@ -1,11 +1,16 @@
 import { LanguageProvider } from '@/hooks/useLanguage';
 import { Header } from '@/components/Header';
 import { Hero } from '@/components/Hero';
-import { Benefits } from '@/components/Benefits';
-import { CTABanner } from '@/components/CTABanner';
+import { SocialProof } from '@/components/SocialProof';
 import { Features } from '@/components/Features';
-import { TargetAudience } from '@/components/TargetAudience';
+import { HowItWorks } from '@/components/HowItWorks';
+import { Pricing } from '@/components/Pricing';
+import { B2BSection } from '@/components/B2BSection';
+import { Benefits } from '@/components/Benefits';
 import { Testimonials } from '@/components/Testimonials';
+import { CTABanner } from '@/components/CTABanner';
+import { ComparisonTable } from '@/components/ComparisonTable';
+import { TargetAudience } from '@/components/TargetAudience';
 import { FAQ } from '@/components/FAQ';
 import { Contact } from '@/components/Contact';
 import { Footer } from '@/components/Footer';
@@ -32,10 +37,14 @@ const IndexContent = () => {
         <Header />
         <main>
           <Hero />
+          <SocialProof />
           <Features />
+          <HowItWorks />
+          <Pricing />
+          <B2BSection />
           <Benefits />
           <Testimonials />
-          <CTABanner />
+          <ComparisonTable />
           <TargetAudience />
           <FAQ />
           <CTABanner />
