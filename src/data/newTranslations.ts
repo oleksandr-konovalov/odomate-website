@@ -70,15 +70,14 @@ export const newTranslations: Record<Language, NewTranslations> = {
         },
         premium: {
           name: 'Personal',
-          priceMonthly: '$5.99',
-          priceYearly: '$59.99',
+          priceMonthly: '$1.99',
+          priceYearly: '$19.99',
           description: 'For car owners who want the full experience',
           features: [
             '2 vehicles',
             'AI driving style analysis',
             'AI lifetime predictions',
             'Weather intelligence',
-            'Live navigation',
             'Component life notifications',
             'Multi-device sync',
             'Priority support',
@@ -86,8 +85,8 @@ export const newTranslations: Record<Language, NewTranslations> = {
         },
         family: {
           name: 'Family',
-          priceMonthly: '$5.99',
-          priceYearly: '$59.99',
+          priceMonthly: '$1.99',
+          priceYearly: '$19.99',
           description: 'Share the experience with your family (up to 5 members)',
           features: [
             'Everything in Personal',
@@ -100,10 +99,10 @@ export const newTranslations: Record<Language, NewTranslations> = {
         b2b: {
           name: 'Business',
           tiers: [
-            { name: 'Starter', drivers: '10 drivers', price: '$59.99', period: '/mo' },
-            { name: 'Growth', drivers: '25 drivers', price: '$149.99', period: '/mo' },
-            { name: 'Pro', drivers: '50 drivers', price: '$299.99', period: '/mo' },
-            { name: 'Enterprise', drivers: '100 drivers', price: '$599.99', period: '/mo' },
+            { name: 'Starter', drivers: '10 drivers', price: '$22.99', period: '/mo' },
+            { name: 'Growth', drivers: '25 drivers', price: '$59.99', period: '/mo' },
+            { name: 'Pro', drivers: '50 drivers', price: '$119.99', period: '/mo' },
+            { name: 'Enterprise', drivers: '100 drivers', price: '$229.99', period: '/mo' },
           ],
           description: 'Fleet management with live GPS tracking',
           features: [
@@ -247,15 +246,14 @@ export const newTranslations: Record<Language, NewTranslations> = {
         },
         premium: {
           name: 'Personal',
-          priceMonthly: '$5.99',
-          priceYearly: '$59.99',
+          priceMonthly: '$1.99',
+          priceYearly: '$19.99',
           description: 'Для владельцев, которым нужен полный функционал',
           features: [
             '2 автомобиля',
             'ИИ-анализ стиля вождения',
             'ИИ-прогнозы срока службы',
             'Умная погода',
-            'Живая навигация',
             'Уведомления о замене деталей',
             'Синхронизация между устройствами',
             'Приоритетная поддержка',
@@ -263,8 +261,8 @@ export const newTranslations: Record<Language, NewTranslations> = {
         },
         family: {
           name: 'Family',
-          priceMonthly: '$5.99',
-          priceYearly: '$59.99',
+          priceMonthly: '$1.99',
+          priceYearly: '$19.99',
           description: 'Поделитесь с семьёй (до 5 участников)',
           features: [
             'Всё из Personal',
@@ -277,10 +275,10 @@ export const newTranslations: Record<Language, NewTranslations> = {
         b2b: {
           name: 'Business',
           tiers: [
-            { name: 'Starter', drivers: '10 водителей', price: '$59.99', period: '/мес' },
-            { name: 'Growth', drivers: '25 водителей', price: '$149.99', period: '/мес' },
-            { name: 'Pro', drivers: '50 водителей', price: '$299.99', period: '/мес' },
-            { name: 'Enterprise', drivers: '100 водителей', price: '$599.99', period: '/мес' },
+            { name: 'Starter', drivers: '10 водителей', price: '$22.99', period: '/мес' },
+            { name: 'Growth', drivers: '25 водителей', price: '$59.99', period: '/мес' },
+            { name: 'Pro', drivers: '50 водителей', price: '$119.99', period: '/мес' },
+            { name: 'Enterprise', drivers: '100 водителей', price: '$229.99', period: '/мес' },
           ],
           description: 'Управление парком с GPS-отслеживанием',
           features: [
@@ -424,15 +422,14 @@ export const newTranslations: Record<Language, NewTranslations> = {
         },
         premium: {
           name: 'Personal',
-          priceMonthly: '$5.99',
-          priceYearly: '$59.99',
+          priceMonthly: '$1.99',
+          priceYearly: '$19.99',
           description: 'Для власників, яким потрібен повний функціонал',
           features: [
             '2 автомобілі',
             'ШІ-аналіз стилю водіння',
             'ШІ-прогнози терміну служби',
             'Розумна погода',
-            'Жива навігація',
             'Сповіщення про заміну деталей',
             'Синхронізація між пристроями',
             'Пріоритетна підтримка',
@@ -440,8 +437,8 @@ export const newTranslations: Record<Language, NewTranslations> = {
         },
         family: {
           name: 'Family',
-          priceMonthly: '$5.99',
-          priceYearly: '$59.99',
+          priceMonthly: '$1.99',
+          priceYearly: '$19.99',
           description: 'Поділіться з сім\'єю (до 5 учасників)',
           features: [
             'Усе з Personal',
@@ -454,10 +451,10 @@ export const newTranslations: Record<Language, NewTranslations> = {
         b2b: {
           name: 'Business',
           tiers: [
-            { name: 'Starter', drivers: '10 водіїв', price: '$59.99', period: '/міс' },
-            { name: 'Growth', drivers: '25 водіїв', price: '$149.99', period: '/міс' },
-            { name: 'Pro', drivers: '50 водіїв', price: '$299.99', period: '/міс' },
-            { name: 'Enterprise', drivers: '100 водіїв', price: '$599.99', period: '/міс' },
+            { name: 'Starter', drivers: '10 водіїв', price: '$22.99', period: '/міс' },
+            { name: 'Growth', drivers: '25 водіїв', price: '$59.99', period: '/міс' },
+            { name: 'Pro', drivers: '50 водіїв', price: '$119.99', period: '/міс' },
+            { name: 'Enterprise', drivers: '100 водіїв', price: '$229.99', period: '/міс' },
           ],
           description: 'Управління парком з GPS-відстеженням',
           features: [
@@ -601,15 +598,14 @@ export const newTranslations: Record<Language, NewTranslations> = {
         },
         premium: {
           name: 'Personal',
-          priceMonthly: '$5.99',
-          priceYearly: '$59.99',
+          priceMonthly: '$1.99',
+          priceYearly: '$19.99',
           description: 'Für Autobesitzer, die das volle Erlebnis wollen',
           features: [
             '2 Fahrzeuge',
             'KI-Fahrstilanalyse',
             'KI-Lebensdauervorhersagen',
             'Wetter-Intelligenz',
-            'Live-Navigation',
             'Komponenten-Lebensdauer-Benachrichtigungen',
             'Geräteübergreifende Synchronisierung',
             'Priority-Support',
@@ -617,8 +613,8 @@ export const newTranslations: Record<Language, NewTranslations> = {
         },
         family: {
           name: 'Family',
-          priceMonthly: '$5.99',
-          priceYearly: '$59.99',
+          priceMonthly: '$1.99',
+          priceYearly: '$19.99',
           description: 'Teilen Sie die Erfahrung mit Ihrer Familie (bis zu 5 Mitglieder)',
           features: [
             'Alles aus Personal',
@@ -631,10 +627,10 @@ export const newTranslations: Record<Language, NewTranslations> = {
         b2b: {
           name: 'Business',
           tiers: [
-            { name: 'Starter', drivers: '10 Fahrer', price: '$59.99', period: '/Monat' },
-            { name: 'Growth', drivers: '25 Fahrer', price: '$149.99', period: '/Monat' },
-            { name: 'Pro', drivers: '50 Fahrer', price: '$299.99', period: '/Monat' },
-            { name: 'Enterprise', drivers: '100 Fahrer', price: '$599.99', period: '/Monat' },
+            { name: 'Starter', drivers: '10 Fahrer', price: '$22.99', period: '/Monat' },
+            { name: 'Growth', drivers: '25 Fahrer', price: '$59.99', period: '/Monat' },
+            { name: 'Pro', drivers: '50 Fahrer', price: '$119.99', period: '/Monat' },
+            { name: 'Enterprise', drivers: '100 Fahrer', price: '$229.99', period: '/Monat' },
           ],
           description: 'Flottenmanagement mit GPS-Tracking',
           features: [
@@ -778,15 +774,14 @@ export const newTranslations: Record<Language, NewTranslations> = {
         },
         premium: {
           name: 'Personal',
-          priceMonthly: '$5.99',
-          priceYearly: '$59.99',
+          priceMonthly: '$1.99',
+          priceYearly: '$19.99',
           description: 'Pour les propriétaires qui veulent l\'expérience complète',
           features: [
             '2 véhicules',
             'Analyse IA du style de conduite',
             'Prédictions IA de durée de vie',
             'Intelligence météo',
-            'Navigation en direct',
             'Notifications de durée de vie des composants',
             'Sync multi-appareils',
             'Support prioritaire',
@@ -794,8 +789,8 @@ export const newTranslations: Record<Language, NewTranslations> = {
         },
         family: {
           name: 'Family',
-          priceMonthly: '$5.99',
-          priceYearly: '$59.99',
+          priceMonthly: '$1.99',
+          priceYearly: '$19.99',
           description: 'Partagez l\'expérience avec votre famille (jusqu\'à 5 membres)',
           features: [
             'Tout de Personal',
@@ -808,10 +803,10 @@ export const newTranslations: Record<Language, NewTranslations> = {
         b2b: {
           name: 'Business',
           tiers: [
-            { name: 'Starter', drivers: '10 conducteurs', price: '$59.99', period: '/mois' },
-            { name: 'Growth', drivers: '25 conducteurs', price: '$149.99', period: '/mois' },
-            { name: 'Pro', drivers: '50 conducteurs', price: '$299.99', period: '/mois' },
-            { name: 'Enterprise', drivers: '100 conducteurs', price: '$599.99', period: '/mois' },
+            { name: 'Starter', drivers: '10 conducteurs', price: '$22.99', period: '/mois' },
+            { name: 'Growth', drivers: '25 conducteurs', price: '$59.99', period: '/mois' },
+            { name: 'Pro', drivers: '50 conducteurs', price: '$119.99', period: '/mois' },
+            { name: 'Enterprise', drivers: '100 conducteurs', price: '$229.99', period: '/mois' },
           ],
           description: 'Gestion de flotte avec suivi GPS',
           features: [
@@ -955,15 +950,14 @@ export const newTranslations: Record<Language, NewTranslations> = {
         },
         premium: {
           name: 'Personal',
-          priceMonthly: '$5.99',
-          priceYearly: '$59.99',
+          priceMonthly: '$1.99',
+          priceYearly: '$19.99',
           description: 'Para quienes quieren la experiencia completa',
           features: [
             '2 vehículos',
             'Análisis IA del estilo de conducción',
             'Predicciones IA de vida útil',
             'Inteligencia meteorológica',
-            'Navegación en vivo',
             'Notificaciones de vida de componentes',
             'Sincronización multidispositivo',
             'Soporte prioritario',
@@ -971,8 +965,8 @@ export const newTranslations: Record<Language, NewTranslations> = {
         },
         family: {
           name: 'Family',
-          priceMonthly: '$5.99',
-          priceYearly: '$59.99',
+          priceMonthly: '$1.99',
+          priceYearly: '$19.99',
           description: 'Comparte con tu familia (hasta 5 miembros)',
           features: [
             'Todo de Personal',
@@ -985,10 +979,10 @@ export const newTranslations: Record<Language, NewTranslations> = {
         b2b: {
           name: 'Business',
           tiers: [
-            { name: 'Starter', drivers: '10 conductores', price: '$59.99', period: '/mes' },
-            { name: 'Growth', drivers: '25 conductores', price: '$149.99', period: '/mes' },
-            { name: 'Pro', drivers: '50 conductores', price: '$299.99', period: '/mes' },
-            { name: 'Enterprise', drivers: '100 conductores', price: '$599.99', period: '/mes' },
+            { name: 'Starter', drivers: '10 conductores', price: '$22.99', period: '/mes' },
+            { name: 'Growth', drivers: '25 conductores', price: '$59.99', period: '/mes' },
+            { name: 'Pro', drivers: '50 conductores', price: '$119.99', period: '/mes' },
+            { name: 'Enterprise', drivers: '100 conductores', price: '$229.99', period: '/mes' },
           ],
           description: 'Gestión de flota con seguimiento GPS',
           features: [
@@ -1132,15 +1126,14 @@ export const newTranslations: Record<Language, NewTranslations> = {
         },
         premium: {
           name: 'Personal',
-          priceMonthly: '$5.99',
-          priceYearly: '$59.99',
+          priceMonthly: '$1.99',
+          priceYearly: '$19.99',
           description: 'Dla właścicieli, którzy chcą pełnego doświadczenia',
           features: [
             '2 pojazdy',
             'Analiza AI stylu jazdy',
             'Prognozy AI żywotności',
             'Inteligentna pogoda',
-            'Nawigacja na żywo',
             'Powiadomienia o żywotności komponentów',
             'Synchronizacja między urządzeniami',
             'Priorytetowe wsparcie',
@@ -1148,8 +1141,8 @@ export const newTranslations: Record<Language, NewTranslations> = {
         },
         family: {
           name: 'Family',
-          priceMonthly: '$5.99',
-          priceYearly: '$59.99',
+          priceMonthly: '$1.99',
+          priceYearly: '$19.99',
           description: 'Podziel się z rodziną (do 5 członków)',
           features: [
             'Wszystko z Personal',
@@ -1162,10 +1155,10 @@ export const newTranslations: Record<Language, NewTranslations> = {
         b2b: {
           name: 'Business',
           tiers: [
-            { name: 'Starter', drivers: '10 kierowców', price: '$59.99', period: '/mies' },
-            { name: 'Growth', drivers: '25 kierowców', price: '$149.99', period: '/mies' },
-            { name: 'Pro', drivers: '50 kierowców', price: '$299.99', period: '/mies' },
-            { name: 'Enterprise', drivers: '100 kierowców', price: '$599.99', period: '/mies' },
+            { name: 'Starter', drivers: '10 kierowców', price: '$22.99', period: '/mies' },
+            { name: 'Growth', drivers: '25 kierowców', price: '$59.99', period: '/mies' },
+            { name: 'Pro', drivers: '50 kierowców', price: '$119.99', period: '/mies' },
+            { name: 'Enterprise', drivers: '100 kierowców', price: '$229.99', period: '/mies' },
           ],
           description: 'Zarządzanie flotą z śledzeniem GPS',
           features: [

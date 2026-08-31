@@ -109,17 +109,16 @@
 <p><strong>Last Updated:</strong> November 22, 2024</p>
 <h2 id="general-questions">General Questions</h2>
 <h3 id="what-is-odomate">What is Odomate?</h3>
-<p>Odomate is a comprehensive vehicle management app that helps you track maintenance, plan trips, and navigate with real-time GPS guidance. It combines AI-powered maintenance recommendations with advanced navigation features.</p>
+<p>Odomate is a comprehensive vehicle management app that helps you track maintenance, plan trips, and track them automatically in the background. It combines AI-powered maintenance recommendations with automatic trip tracking.</p>
 <h3 id="is-odomate-free">Is Odomate free?</h3>
-<p>Yes! Odomate offers a free tier with vehicle management, manual trip tracking, and AI maintenance recommendations. Premium features like GPS navigation, automatic trip tracking, and push notifications require a subscription ($4.99/month or $49.99/year).</p>
+<p>Yes! Odomate offers a free tier with vehicle management, manual trip tracking, and AI maintenance recommendations. Premium features like automatic trip tracking and push notifications require a subscription ($4.99/month or $49.99/year).</p>
 <h3 id="what-platforms-does-odomate-support">What platforms does Odomate support?</h3>
 <p>Odomate is available for Android and iOS devices.</p>
 <h3 id="what-languages-does-odomate-support">What languages does Odomate support?</h3>
 <p>Odomate supports 7 languages: English, Spanish, German, French, Polish, Russian, and Ukrainian.</p>
 <h3 id="do-i-need-an-internet-connection">Do I need an internet connection?</h3>
 <ul>
-<li><strong>Offline:</strong> All functionality works offline except navigation, automatic trip tracking, and AI component-life analysis</li>
-<li><strong>Navigation:</strong> Requires internet for real-time routing and map tiles</li>
+<li><strong>Offline:</strong> All functionality works offline except automatic trip tracking and AI component-life analysis</li>
 <li><strong>AI features:</strong> Requires internet for OpenAI integration</li>
 </ul>
 <hr />
@@ -164,11 +163,9 @@
 <h3 id="whats-included-in-premium">What's included in Premium?</h3>
 <ul>
 <li><strong>Manage up to 2 vehicles</strong></li>
-<li><strong>GPS Navigation:</strong> Turn-by-turn directions with Valhalla (self-hosted)</li>
 <li><strong>Automatic Trip Tracking:</strong> Background GPS recording</li>
 <li><strong>Push Notifications:</strong> Maintenance reminders</li>
 <li><strong>Service Book Export:</strong> In PDF format</li>
-<li><strong>Route Planning:</strong> Save and share multi-waypoint routes</li>
 </ul>
 <h3 id="how-does-ai-maintenance-work">How does AI maintenance work?</h3>
 <p>Our AI (powered by OpenAI) analyzes your vehicle specifications (make, model, year, engine type, mileage) and generates personalized maintenance intervals for:
@@ -183,18 +180,6 @@
 <p>We've optimized battery usage, but background GPS tracking does consume more power than normal. Premium users can toggle automatic tracking on/off as needed.</p>
 <h3 id="can-i-export-my-service-book">Can I export my service book?</h3>
 <p>Yes! Premium users can export the service book in PDF format.</p>
-<hr />
-<h2 id="navigation">Navigation</h2>
-<h3 id="how-accurate-is-the-navigation">How accurate is the navigation?</h3>
-<p>Odomate uses Valhalla (self-hosted) for routing, which rely on Mapbox data. Accuracy depends on map data quality in your region. Always follow traffic signs and laws.</p>
-<h3 id="can-i-use-navigation-offline">Can I use navigation offline?</h3>
-<p>No, navigation requires an active internet connection for real-time routing and map tiles.</p>
-<h3 id="can-i-add-multiple-waypoints">Can I add multiple waypoints?</h3>
-<p>Yes! Premium users can create routes with multiple stops and save them for future use.</p>
-<h3 id="why-does-navigation-sometimes-reroute-me">Why does navigation sometimes reroute me?</h3>
-<p>Odomate automatically reroutes if:
-- You deviate from the planned route
-- A faster route becomes available</p>
 <hr />
 <h2 id="subscription-billing">Subscription &amp; Billing</h2>
 <h3 id="how-much-does-premium-cost">How much does Premium cost?</h3>
@@ -219,7 +204,7 @@
 <h3 id="what-happens-if-i-cancel-premium">What happens if I cancel Premium?</h3>
 <ul>
 <li>You keep all your vehicles and trip history</li>
-<li>Navigation and automatic trip tracking will be disabled</li>
+<li>Automatic trip tracking will be disabled</li>
 <li>Push notifications for maintenance become unavailable</li>
 <li>AI maintenance recommendations remain available</li>
 <li>You can resubscribe anytime to restore features</li>
@@ -296,7 +281,6 @@
 </ul>
 <h3 id="does-odomate-track-my-location-all-the-time">Does Odomate track my location all the time?</h3>
 <p>No. Location is only accessed during:
-- Active navigation
 - Automatic trip tracking (Premium, when enabled)
 - Saving parking location
 - Finding parking spot</p>

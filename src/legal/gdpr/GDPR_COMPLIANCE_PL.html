@@ -113,7 +113,7 @@ E‑mail: app@odomate.net<br />
 Strona: odomate.net</p>
 <h2 id="cele-przetwarzania-art-5">Cele przetwarzania (art. 5)</h2>
 <ul>
-<li>Zapewnienie funkcji aplikacji (pojazdy, serwis, nawigacja, przejazdy)  </li>
+<li>Zapewnienie funkcji aplikacji (pojazdy, serwis, śledzenie przejazdów GPS w tle, rejestr przejazdów)  </li>
 <li>Synchronizacja i zarządzanie kontem  </li>
 <li>Wsparcie i komunikacja serwisowa  </li>
 <li>Poprawa wydajności, naprawa błędów, bezpieczeństwo (anonimowa analityka/awarie)  </li>
@@ -130,14 +130,14 @@ Strona: odomate.net</p>
 <li>Dane kontaktowe: e‑mail  </li>
 <li>Dane o korzystaniu: interakcje, widoki ekranów (anonimowe)  </li>
 <li>Dane techniczne: urządzenie/OS, wersja aplikacji, diagnostyka/awarie  </li>
-<li>Dane lokalizacyjne: dokładne/przybliżone podczas nawigacji/śledzenia  </li>
+<li>Dane lokalizacyjne: dokładne/przybliżone podczas aktywnego śledzenia przejazdów  </li>
 <li>Dane pojazdu: marka, model, VIN, przebieg, historia serwisowa  </li>
 <li>Dane przejazdów: start/koniec, dystans, trasa, notatki</li>
 </ul>
 <h2 id="odbiorcy-art-13">Odbiorcy (art. 13)</h2>
 <ul>
 <li>Supabase (uwierzytelnianie/magazyn)  </li>
-<li>Mapbox (mapy/nawigacja), Valhalla (trasy), Nominatim (geokodowanie) – tymczasowe przetwarzanie lokalizacji podczas aktywnej nawigacji  </li>
+<li>Mapbox (mapy i geokodowanie) – przetwarzanie lokalizacji podczas aktywnego śledzenia przejazdów  </li>
 <li>OpenAI (rekomendacje AI: dane pojazdu/przebieg, bez identyfikatorów osobowych)  </li>
 <li>Firebase (anonimowa analityka/raporty awarii)  </li>
 <li>AppsFlyer (mobilna atrybucja i analityka: identyfikatory urządzenia (IDFA na iOS za zgodą użytkownika), dane instalacji/użytkowania, wydarzenia w aplikacji, dane atrybucji)</li>
@@ -163,7 +163,7 @@ Skarga: do właściwego organu nadzorczego (art. 77).</p>
 <li>Minimalizacja danych</li>
 </ul>
 <h2 id="uwaga-dot-lokalizacji">Uwaga dot. lokalizacji</h2>
-<p>Dokładna lokalizacja przetwarzana jest wyłącznie przy aktywnej nawigacji lub włączonym automatycznym śledzeniu przejazdów. Brak trwałego udostępniania stronom trzecim w celach reklamowych/śledzących. Podczas nawigacji współrzędne mogą być tymczasowo przekazywane do Mapbox/Valhalla/Nominatim w celu wyznaczenia trasy.</p>
+<p>Dokładna lokalizacja przetwarzana jest wyłącznie przy włączonym automatycznym śledzeniu przejazdów. Brak trwałego udostępniania stronom trzecim w celach reklamowych/śledzących. Podczas aktywnego śledzenia przejazdów współrzędne mogą być przekazywane do Mapbox w celu wyświetlania map i geokodowania.</p>
 <h2 id="inspektor-ochrony-danych-i-kontakt">Inspektor Ochrony Danych i kontakt</h2>
 <p>IOD nie jest wymagany wg obecnej oceny ryzyka.<br />
 Kontakt: app@odomate.net</p>

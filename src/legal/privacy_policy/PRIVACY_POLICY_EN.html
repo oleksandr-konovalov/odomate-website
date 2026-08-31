@@ -133,10 +133,10 @@
 - Trip notes and categories</p>
 <h3 id="22-automatically-collected-information">2.2 Automatically Collected Information</h3>
 <p><strong>Location Data:</strong>
-- GPS coordinates during active navigation or trip tracking
+- GPS coordinates while a trip is being tracked in the background
 - Location data is stored locally on your device and synced to Supabase for backup
-- <strong>We do NOT share precise GPS coordinates with third parties</strong> except for navigation services (Valhalla, Nominatim, Overpass (self-hosted; speed limit data, POI, Nominatim search support), Mapbox (fallback)) temporarily during active navigation
-- Location permission is required for navigation and trip tracking features</p>
+- <strong>We do NOT share precise GPS coordinates with third parties</strong> except for our mapping provider (Mapbox) when displaying maps or looking up addresses (e.g. when adding a vehicle's location)
+- Location permission is required for trip tracking features</p>
 <p><strong>Device Information:</strong>
 - Device model and manufacturer
 - Operating system version (Android/iOS)
@@ -147,7 +147,7 @@
 - App performance metrics and crash reports
 - Technical identifiers such as user ID, device model, OS version, and app version
 These data are used solely for application diagnostics, performance monitoring, and improving app stability.</p>
-<p><strong>Important:</strong> We do NOT collect or store precise GPS coordinates for analytics purposes. Location data is only used for core app functionality (navigation, trip tracking) and is never shared with analytics services.</p>
+<p><strong>Important:</strong> We do NOT collect or store precise GPS coordinates for analytics purposes. Location data is only used for core app functionality (background trip tracking) and is never shared with analytics services.</p>
 <h3 id="23-third-party-services-integration">2.3 Third-Party Services Integration</h3>
 <p><strong>OpenAI Integration:</strong>
 - Vehicle make, model, year, and engine specifications (VIN-derived data)
@@ -166,16 +166,15 @@ These data are used solely for application diagnostics, performance monitoring, 
 </ul>
 <h3 id="32-premium-features">3.2 Premium Features</h3>
 <ul>
-<li>Enable GPS navigation with real-time directions</li>
 <li>Track and save your trips automatically (background tracking)</li>
 <li>Provide component lifespan predictions based on your vehicle specifications</li>
 </ul>
 <h3 id="33-service-improvement">3.3 Service Improvement</h3>
 <ul>
 <li>Analyze app usage patterns to improve user experience</li>
-<li>Monitor service performance (Nominatim, Valhalla, Nominatim, Overpass (self-hosted; speed limit data, POI, Nominatim search support), Mapbox (fallback))</li>
+<li>Monitor service performance (Mapbox)</li>
 <li>Detect and fix bugs, crashes, and errors</li>
-<li>Optimize routing algorithms and navigation accuracy</li>
+<li>Optimize background trip tracking accuracy</li>
 </ul>
 <h3 id="34-communication">3.4 Communication</h3>
 <ul>
@@ -189,9 +188,9 @@ These data are used solely for application diagnostics, performance monitoring, 
 - User account data, vehicle information, and backups are stored on cloud servers operated by Supabase
 - Server locations depend on the selected Supabase region and may be located outside your country of residence
 - Supabase applies appropriate safeguards for international data transfers in accordance with GDPR</p>
-<p><strong>Navigation Services:</strong>
-- Navigation and routing services operated by Odomate are hosted on servers located in Germany
-- Location data is processed only temporarily during active navigation sessions and is not stored after the session ends</p>
+<p><strong>Trip Tracking Location Data:</strong>
+- Location data recorded during background trip tracking is stored locally on your device and synced to Supabase as described above
+- Map rendering and address geocoding are handled by our mapping provider, Mapbox (see Section 5.2)</p>
 <h3 id="42-data-security">4.2 Data Security</h3>
 <p>We protect your data using the following measures:</p>
 <ul>
@@ -220,19 +219,11 @@ These data are used solely for application diagnostics, performance monitoring, 
 - Purpose: User authentication, data synchronization, and cloud storage
 - Data Shared: Email, encrypted password, vehicle data, trip data
 - Privacy Policy: <a href="https://supabase.com/privacy">https://supabase.com/privacy</a></p>
-<h3 id="52-mapping-navigation">5.2 Mapping &amp; Navigation</h3>
+<h3 id="52-mapping-location-services">5.2 Mapping &amp; Location Services</h3>
 <p><strong>Mapbox</strong> (mapbox.com)
-- Purpose: Map rendering, navigation, routing
-- Data Shared: Temporary GPS coordinates during navigation, search queries
+- Purpose: Map rendering and address geocoding (e.g. displaying maps and looking up addresses when adding a vehicle or reviewing a tracked trip)
+- Data Shared: GPS coordinates and search queries when using map display or address lookup features
 - Privacy Policy: <a href="https://www.mapbox.com/privacy">https://www.mapbox.com/privacy</a></p>
-<p><strong>Valhalla</strong> (project-osrm.org)
-- Purpose: Route calculation
-- Data Shared: Start/end coordinates for route requests
-- Privacy Policy: <a href="https://github.com/valhalla/valhalla">https://github.com/valhalla/valhalla</a></p>
-<p><strong>Nominatim</strong> (nominatim.org)
-- Purpose: Address geocoding and reverse geocoding
-- Data Shared: Search queries, coordinates for reverse geocoding
-- Privacy Policy: <a href="https://operations.osmfoundation.org/policies/nominatim/">https://operations.osmfoundation.org/policies/nominatim/</a></p>
 <h3 id="53-ai-services">5.3 AI Services</h3>
 <p><strong>OpenAI</strong> (openai.com)
 - Purpose: AI-powered maintenance interval recommendations
@@ -314,7 +305,7 @@ These data are used solely for application diagnostics, performance monitoring, 
 <h2 id="8-childrens-privacy">8. Children's Privacy</h2>
 <p>Odomate is intended for users aged 18 and older. We do not knowingly collect personal information from individuals under the age of 18. If we become aware that data from a minor has been collected, we will delete such data immediately.</p>
 <h2 id="9-international-data-transfers">9. International Data Transfers</h2>
-<p>Your data is stored on servers operated by Supabase. Server locations depend on the selected Supabase region and may be located outside your country of residence. Navigation services are hosted on servers located in Germany. We ensure that all data transfers comply with applicable data protection laws, including GDPR for EU users.</p>
+<p>Your data is stored on servers operated by Supabase. Server locations depend on the selected Supabase region and may be located outside your country of residence. We ensure that all data transfers comply with applicable data protection laws, including GDPR for EU users.</p>
 <h2 id="10-changes-to-this-privacy-policy">10. Changes to This Privacy Policy</h2>
 <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by:
 - Posting the new Privacy Policy in the app
@@ -328,7 +319,7 @@ These data are used solely for application diagnostics, performance monitoring, 
 <strong>Developer:</strong> Oleksandr Konovalov</p>
 <p>We will respond to your inquiry within 30 days.</p>
 <hr />
-<p><strong>Summary:</strong> Odomate collects only the data necessary to provide vehicle management, navigation, and maintenance tracking features. We do not sell your data to third parties, and we use industry-standard security measures to protect your information. You maintain full control over your data and can delete your account at any time.</p>
+<p><strong>Summary:</strong> Odomate collects only the data necessary to provide vehicle management, trip tracking, and maintenance tracking features. We do not sell your data to third parties, and we use industry-standard security measures to protect your information. You maintain full control over your data and can delete your account at any time.</p>
 
 </body>
 </html>

@@ -30,7 +30,7 @@ export const translations: Record<Language, Translations> = {
         },
         {
           title: 'Multiple tools',
-          description: 'All-in-one platform with navigation, tracking, and smart predictions.',
+          description: 'All-in-one platform with trip tracking, maintenance, and smart predictions.',
         },
         {
           title: 'Precise, not generic',
@@ -55,8 +55,8 @@ export const translations: Record<Language, Translations> = {
           description: 'Intelligent analysis of your driving behavior with personalized scoring. Adjusts component lifespan predictions and forecasts future maintenance costs based on your unique driving style, tailored to your specific vehicle configuration.',
         },
         {
-          title: 'Live Navigation',
-          description: 'Real-time GPS navigation with route optimization for your daily drives.',
+          title: 'Background GPS Tracking',
+          description: 'Start tracking and drive with your favorite navigation app — Odomate silently records your distance, driving style, and odometer in the background, then stops with one tap.',
         },
         {
           title: 'Component Life Notifications',
@@ -335,7 +335,7 @@ export const translations: Record<Language, Translations> = {
         },
         {
           title: 'Множество инструментов',
-          description: 'Универсальная платформа с навигацией, отслеживанием и умными прогнозами.',
+          description: 'Универсальная платформа с отслеживанием поездок, обслуживанием и умными прогнозами.',
         },
         {
           title: 'Точно, а не обобщенно',
@@ -360,8 +360,8 @@ export const translations: Record<Language, Translations> = {
           description: 'Интеллектуальный анализ вашего стиля вождения с персонализированной оценкой. Корректирует прогнозы срока службы компонентов и предсказывает будущие расходы на обслуживание на основе вашего уникального стиля вождения, адаптированного под конкретную конфигурацию вашего автомобиля.',
         },
         {
-          title: 'Живая навигация',
-          description: 'GPS-навигация в реальном времени с оптимизацией маршрута.',
+          title: 'Фоновый GPS-трекинг',
+          description: 'Начните трекинг и пользуйтесь любимым навигатором — Odomate незаметно записывает пройденное расстояние, стиль вождения и пробег в фоновом режиме, а завершить можно одним нажатием.',
         },
         {
           title: 'Уведомления о сроке службы компонентов',
@@ -640,7 +640,7 @@ export const translations: Record<Language, Translations> = {
         },
         {
           title: 'Plusieurs outils',
-          description: 'Plateforme tout-en-un avec navigation, suivi et prédictions intelligentes.',
+          description: 'Plateforme tout-en-un avec suivi des trajets, entretien et prédictions intelligentes.',
         },
         {
           title: 'Précis, pas générique',
@@ -665,8 +665,8 @@ export const translations: Record<Language, Translations> = {
           description: 'Analyse intelligente de votre comportement de conduite avec notation personnalisée. Ajuste les prévisions de durée de vie des composants et prédit les coûts d\'entretien futurs en fonction de votre style de conduite unique, adapté à la configuration spécifique de votre véhicule.',
         },
         {
-          title: 'Navigation en direct',
-          description: 'Navigation GPS en temps réel avec optimisation d\'itinéraire.',
+          title: 'Suivi GPS en arrière-plan',
+          description: 'Lancez le suivi et utilisez votre application de navigation préférée — Odomate enregistre discrètement votre distance, votre style de conduite et votre kilométrage en arrière-plan, puis s\'arrête en un geste.',
         },
         {
           title: 'Notifications de durée de vie des composants',
@@ -958,8 +958,8 @@ export const translations: Record<Language, Translations> = {
           description: 'Intelligente Analyse Ihres Fahrverhaltens mit personalisierter Bewertung. Passt Lebensdauerprognosen von Komponenten an und prognostiziert zukünftige Wartungskosten basierend auf Ihrem einzigartigen Fahrstil, angepasst an die spezifische Konfiguration Ihres Fahrzeugs.',
         },
         {
-          title: 'Live-Navigation',
-          description: 'Echtzeit-GPS-Navigation mit Routenoptimierung für Ihre täglichen Fahrten.',
+          title: 'GPS-Tracking im Hintergrund',
+          description: 'Starten Sie das Tracking und nutzen Sie Ihre bevorzugte Navigations-App — Odomate zeichnet Distanz, Fahrstil und Kilometerstand still im Hintergrund auf und lässt sich mit einem Tipp beenden.',
         },
         {
           title: 'Komponenten-Lebensdauer-Benachrichtigungen',
@@ -1251,8 +1251,8 @@ export const translations: Record<Language, Translations> = {
           description: 'Inteligentna analiza Twojego zachowania za kierownicą z personalizowaną oceną. Dostosowuje prognozy żywotności komponentów i przewiduje przyszłe koszty konserwacji na podstawie Twojego unikalnego stylu jazdy, dostosowanego do konkretnej konfiguracji Twojego pojazdu.',
         },
         {
-          title: 'Nawigacja na żywo',
-          description: 'GPS-nawigacja w czasie rzeczywistym z optymalizacją trasy.',
+          title: 'Śledzenie GPS w tle',
+          description: 'Uruchom śledzenie i korzystaj z ulubionej aplikacji nawigacyjnej — Odomate po cichu rejestruje w tle przebyty dystans, styl jazdy i przebieg, a zakończysz je jednym dotknięciem.',
         },
         {
           title: 'Powiadomienia o żywotności komponentów',
@@ -1544,8 +1544,8 @@ export const translations: Record<Language, Translations> = {
           description: 'Análisis inteligente de tu comportamiento al volante con puntuación personalizada. Ajusta las predicciones de vida útil de componentes y pronostica costos futuros de mantenimiento basados en tu estilo único de conducción, adaptado a la configuración específica de tu vehículo.',
         },
         {
-          title: 'Navegación en vivo',
-          description: 'Navegación GPS en tiempo real con optimización de rutas.',
+          title: 'Seguimiento GPS en segundo plano',
+          description: 'Inicia el seguimiento y usa tu app de navegación favorita — Odomate registra en silencio tu distancia, estilo de conducción y kilometraje en segundo plano, y se detiene con un toque.',
         },
         {
           title: 'Notificaciones de vida útil de componentes',
@@ -1824,7 +1824,7 @@ export const translations: Record<Language, Translations> = {
         },
         {
           title: 'Багато інструментів',
-          description: 'Усе в одному місці: навігація, облік та розумні прогнози.',
+          description: 'Усе в одному місці: відстеження поїздок, обслуговування та розумні прогнози.',
         },
         {
           title: 'Точність замість шаблонів',
@@ -1849,8 +1849,8 @@ export const translations: Record<Language, Translations> = {
           description: 'Інтелектуальний аналіз вашого стилю водіння з персоналізованою оцінкою. Коригує прогнози ресурсу компонентів та передбачає майбутні витрати на обслуговування на основі вашого унікального стилю водіння, адаптованого під конкретну конфігурацію вашого автомобіля.',
         },
         {
-          title: 'Жива навігація',
-          description: 'GPS-навігація в реальному часі з оптимізацією маршрутів для щоденних поїздок.',
+          title: 'Фоновий GPS-трекінг',
+          description: 'Запустіть трекінг і користуйтеся улюбленим навігатором — Odomate непомітно записує пройдену відстань, стиль водіння та пробіг у фоновому режимі, а завершити можна одним дотиком.',
         },
         {
           title: 'Сповіщення про ресурс вузлів',

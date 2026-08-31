@@ -1,16 +1,16 @@
 import { useLanguage } from '@/hooks/useLanguage';
 import { useState, useEffect } from 'react';
-import { 
-  Navigation, 
-  BarChart3, 
-  Bell, 
-  Brain, 
-  BookOpen, 
+import {
+  BarChart3,
+  Bell,
+  Brain,
+  BookOpen,
   Sun,
   MapPin,
   Smartphone,
   Play,
   Gauge,
+  Locate,
   ChevronLeft,
   ChevronRight,
 } from 'lucide-react';
@@ -20,7 +20,7 @@ import { PhoneMockup, CarDisplayMockup } from './PhoneMockup';
 
 const featureIcons = [
   Gauge,        // AI Driving Style Analysis
-  Navigation,   // Live Navigation
+  Locate,       // Background GPS Tracking
   Bell,         // Component Life Notifications
   Brain,        // AI-Based Lifetime Prediction
   BarChart3,    // Automatic Mileage Logging

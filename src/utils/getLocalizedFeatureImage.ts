@@ -1,11 +1,8 @@
 import { Language } from '@/types/language';
 
 // Import all feature images
-// GPS
-import gpsUs from '/assets/images/gps/gps_us.png';
-import gpsUk from '/assets/images/gps/gps_uk.png';
-import gpsDe2d from '/assets/images/gps/gpd_de_2d.png';
-import gpsDe3d from '/assets/images/gps/gps_de_3d.png';
+// Background Tracking
+import backgroundTrackingEn from '/assets/images/background_tracking/background_tracking_en.png';
 
 // Maintenance
 import maintenanceAndroidEn from '/assets/images/maintenance/maintenance_android_en.png';
@@ -25,10 +22,6 @@ import paidParkingDe from '/assets/images/parking/paid_parking_de.png';
 import setPaidParkingUs from '/assets/images/parking/set_paid_parking_us.png';
 import setPaidParkingUk from '/assets/images/parking/set_paid_parking_uk.png';
 import setPaidParkingDe from '/assets/images/parking/set_paid_parking_de.png';
-
-// Saved Routes
-import savedRoutesEn from '/assets/images/saved_routes/saved_routes_en.png';
-import savedRoutesDe from '/assets/images/saved_routes/saved_routes_de.png';
 
 // Service Book
 import serviceBookUs from '/assets/images/service_book/serviсe_book_us.png';
@@ -53,11 +46,10 @@ import drivingStyleUs from '/assets/images/driving_style/driving_style_us.png';
 import androidHeadDeviceDe from '/assets/images/android_head_device_de.png';
 import androidHeadDeviceUk from '/assets/images/android_head_device_uk.png';
 
-export type FeatureKey = 
-  | 'gps'
+export type FeatureKey =
+  | 'background_tracking'
   | 'maintenance'
   | 'parking' // Combined parking with animation
-  | 'saved_routes'
   | 'service_book'
   | 'trips_list'
   | 'weather'
@@ -71,17 +63,14 @@ interface FeatureImages {
 }
 
 const featureImages: FeatureImages = {
-  gps: {
-    en: [gpsUs, gpsUk], // Two screenshots side by side
-    ru: [gpsUs, gpsUk],
-    uk: [gpsUs, gpsUk],
-    de: gpsDe3d, // Single for German
-    fr: [gpsUs, gpsUk],
-    es: [gpsUs, gpsUk],
-    pl: [gpsUs, gpsUk],
-  },
-  gps_2d: {
-    de: gpsDe2d,
+  background_tracking: {
+    en: backgroundTrackingEn,
+    ru: backgroundTrackingEn,
+    uk: backgroundTrackingEn,
+    de: backgroundTrackingEn,
+    fr: backgroundTrackingEn,
+    es: backgroundTrackingEn,
+    pl: backgroundTrackingEn,
   },
   maintenance_android: {
     // iOS first everywhere
@@ -139,15 +128,6 @@ const featureImages: FeatureImages = {
       [paidParkingUs, paidParkingUk],
       [setPaidParkingUs, setPaidParkingUk],
     ],
-  },
-  saved_routes: {
-    en: savedRoutesEn,
-    de: savedRoutesDe,
-    ru: savedRoutesEn,
-    uk: savedRoutesEn,
-    fr: savedRoutesEn,
-    es: savedRoutesEn,
-    pl: savedRoutesEn,
   },
   service_book: {
     en: [serviceBookUs, serviceBookUk], // Two screenshots side by side

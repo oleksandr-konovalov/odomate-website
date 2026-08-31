@@ -125,9 +125,9 @@ Website: <a href="https://odomate.net">odomate.net</a></p>
 </ul>
 <h3 id="22-automatisch-erfasste-daten">2.2 Automatisch erfasste Daten</h3>
 <ul>
-<li>Standortdaten (GPS) bei aktiver Navigation oder Fahrterfassung<br />
+<li>Standortdaten (GPS) während einer im Hintergrund erfassten Fahrt<br />
   Lokal auf dem Gerät gespeichert und mit Supabase synchronisiert (Backup).<br />
-  Keine dauerhafte Weitergabe präziser GPS‑Daten an Dritte; temporäre Übermittlung nur zur Navigation (Valhalla, Nominatim, Overpass (selbst gehostet; Geschwindigkeitsbegrenzungen, POIs, Nominatim‑Suche), Mapbox (Fallback), Nominatim).</li>
+  Keine dauerhafte Weitergabe präziser GPS‑Daten an Dritte; Übermittlung nur an unseren Kartenanbieter (Mapbox) zur Kartendarstellung und Adresssuche.</li>
 <li>Geräteinformationen (Modell, Hersteller, OS‑Version, App‑Version, Sprache/Region)  </li>
 <li><strong>Nutzungsanalyse und Diagnostik:</strong><br />
   Screenviews und Feature‑Nutzung; App‑Performance‑Metriken und Crash‑Berichte; technische Kennungen wie User‑ID, Gerätemodell, OS‑Version und App‑Version. Diese Daten werden ausschließlich zur App‑Diagnose, Performance‑Überwachung und zur Verbesserung der Stabilität verwendet.</li>
@@ -147,7 +147,6 @@ Website: <a href="https://odomate.net">odomate.net</a></p>
 </ul>
 <h3 id="32-premiumfunktionen">3.2 Premium‑Funktionen</h3>
 <ul>
-<li>GPS‑Navigation mit Echtzeit‑Anweisungen  </li>
 <li>Automatisches Fahrten‑Tracking (Hintergrund)  </li>
 <li>Lebensdauer‑Prognosen für Komponenten basierend auf Fahrzeugspezifikationen</li>
 </ul>
@@ -203,9 +202,7 @@ Website: <a href="https://odomate.net">odomate.net</a></p>
 <h2 id="6-eingebundene-dienste-und-weitergabe">6. Eingebundene Dienste und Weitergabe</h2>
 <ul>
 <li>Supabase (Auth/Speicher) – E‑Mail, Fahrzeug‑/Fahrtdaten  </li>
-<li>Mapbox (Karten/Navi) – temporäre Koordinaten während Navigation  </li>
-<li>Valhalla (Routen) – Start/Zielkoordinaten  </li>
-<li>Nominatim (Geokodierung) – Suchanfragen/Koordinaten  </li>
+<li>Mapbox (Kartendarstellung/Geokodierung) – GPS‑Koordinaten und Suchanfragen bei Kartenanzeige und Adresssuche  </li>
 <li>OpenAI (KI‑Wartung) – Fahrzeugdaten, Laufleistung  </li>
 <li>Firebase (Analytics/Crashlytics) – Nutzungs‑/Crashdaten<br />
 Keine Weitergabe zu Werbe‑/Trackingzwecken außer AppsFlyer (siehe 5.5).</li>

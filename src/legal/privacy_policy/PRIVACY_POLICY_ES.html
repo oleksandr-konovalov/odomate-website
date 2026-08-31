@@ -133,10 +133,10 @@
 - Notas y categorías del viaje</p>
 <h3 id="22-informacion-recopilada-automaticamente">2.2 Información Recopilada Automáticamente</h3>
 <p><strong>Datos de Ubicación:</strong>
-- Coordenadas GPS durante la navegación activa o el seguimiento de viajes
+- Coordenadas GPS mientras se está registrando un viaje en segundo plano
 - Los datos de ubicación se almacenan localmente en su dispositivo y se sincronizan con Supabase para respaldo
-- <strong>NO compartimos coordenadas GPS precisas con terceros</strong> excepto con servicios de navegación (Valhalla, Nominatim, Overpass (auto-alojado; límites de velocidad, POI y búsqueda Nominatim), Mapbox (respaldo)) temporalmente durante la navegación activa
-- Se requiere permiso de ubicación para funciones de navegación y seguimiento de viajes</p>
+- <strong>NO compartimos coordenadas GPS precisas con terceros</strong> excepto con nuestro proveedor de mapas (Mapbox) al mostrar mapas o buscar direcciones (por ejemplo, al agregar la ubicación de un vehículo)
+- Se requiere permiso de ubicación para las funciones de seguimiento de viajes</p>
 <p><strong>Información del Dispositivo:</strong>
 - Modelo y fabricante del dispositivo
 - Versión del sistema operativo (Android/iOS)
@@ -147,7 +147,7 @@
 - Métricas de rendimiento de la aplicación e informes de fallos
 - Identificadores técnicos como el ID de usuario, modelo del dispositivo, versión del SO y versión de la aplicación
 Estos datos se utilizan únicamente para el diagnóstico de la aplicación, el monitoreo del rendimiento y mejorar la estabilidad de la app.</p>
-<p><strong>Importante:</strong> NO recopilamos ni almacenamos coordenadas GPS precisas para fines analíticos. Los datos de ubicación solo se utilizan para la funcionalidad principal de la aplicación (navegación, seguimiento de viajes) y nunca se comparten con servicios de análisis.</p>
+<p><strong>Importante:</strong> NO recopilamos ni almacenamos coordenadas GPS precisas para fines analíticos. Los datos de ubicación solo se utilizan para la funcionalidad principal de la aplicación (seguimiento de viajes) y nunca se comparten con servicios de análisis.</p>
 <h3 id="23-integracion-de-servicios-de-terceros">2.3 Integración de Servicios de Terceros</h3>
 <p><strong>Integración de OpenAI:</strong>
 - Marca, modelo, año y especificaciones del motor del vehículo (datos derivados del VIN)
@@ -166,16 +166,15 @@ Estos datos se utilizan únicamente para el diagnóstico de la aplicación, el m
 </ul>
 <h3 id="32-funciones-premium">3.2 Funciones Premium</h3>
 <ul>
-<li>Habilitar navegación GPS con direcciones en tiempo real</li>
 <li>Rastrear y guardar sus viajes automáticamente (seguimiento en segundo plano)</li>
 <li>Proporcionar predicciones de vida útil de componentes basadas en las especificaciones de su vehículo</li>
 </ul>
 <h3 id="33-mejora-del-servicio">3.3 Mejora del Servicio</h3>
 <ul>
 <li>Analizar patrones de uso de la aplicación para mejorar la experiencia del usuario</li>
-<li>Monitorear el rendimiento del servicio (Nominatim, Valhalla, Nominatim, Overpass (auto-alojado; límites de velocidad, POI y búsqueda Nominatim), Mapbox (respaldo))</li>
+<li>Monitorear el rendimiento del servicio (Mapbox)</li>
 <li>Detectar y corregir errores, fallos y errores</li>
-<li>Optimizar algoritmos de enrutamiento y precisión de navegación</li>
+<li>Optimizar la precisión del seguimiento de viajes en segundo plano</li>
 </ul>
 <h3 id="34-comunicacion">3.4 Comunicación</h3>
 <ul>
@@ -217,19 +216,11 @@ Estos datos se utilizan únicamente para el diagnóstico de la aplicación, el m
 - Propósito: Autenticación de usuarios, sincronización de datos y almacenamiento en la nube
 - Datos Compartidos: Correo electrónico, contraseña cifrada, datos de vehículos, datos de viajes
 - Política de Privacidad: <a href="https://supabase.com/privacy">https://supabase.com/privacy</a></p>
-<h3 id="52-mapas-y-navegacion">5.2 Mapas y Navegación</h3>
+<h3 id="52-mapas-y-servicios-de-ubicacion">5.2 Mapas y Servicios de Ubicación</h3>
 <p><strong>Mapbox</strong> (mapbox.com)
-- Propósito: Renderizado de mapas, navegación, enrutamiento
-- Datos Compartidos: Coordenadas GPS temporales durante la navegación, consultas de búsqueda
+- Propósito: Renderizado de mapas y geocodificación de direcciones (utilizado para mostrar mapas y buscar direcciones, por ejemplo al agregar un vehículo o ver un viaje registrado)
+- Datos Compartidos: Coordenadas GPS y consultas de búsqueda necesarias para mostrar mapas o resolver direcciones
 - Política de Privacidad: <a href="https://www.mapbox.com/privacy">https://www.mapbox.com/privacy</a></p>
-<p><strong>Valhalla</strong> (project-osrm.org)
-- Propósito: Cálculo de rutas
-- Datos Compartidos: Coordenadas de inicio/fin para solicitudes de ruta
-- Política de Privacidad: https://wiki.openstreetmap.org/wiki/Privacy_Policy</p>
-<p><strong>Nominatim</strong> (nominatim.org)
-- Propósito: Geocodificación de direcciones y geocodificación inversa
-- Datos Compartidos: Consultas de búsqueda, coordenadas para geocodificación inversa
-- Política de Privacidad: https://operations.osmfoundation.org/policies/nominatim/</p>
 <h3 id="53-servicios-de-ia">5.3 Servicios de IA</h3>
 <p><strong>OpenAI</strong> (openai.com)
 - Propósito: Recomendaciones de intervalos de mantenimiento impulsadas por IA
@@ -325,7 +316,7 @@ Estos datos se utilizan únicamente para el diagnóstico de la aplicación, el m
 <strong>Desarrollador:</strong> Oleksandr Konovalov</p>
 <p>Responderemos a su consulta dentro de 30 días.</p>
 <hr />
-<p><strong>Resumen:</strong> Odomate recopila solo los datos necesarios para proporcionar funciones de gestión de vehículos, navegación y seguimiento de mantenimiento. No vendemos sus datos a terceros y utilizamos medidas de seguridad estándar de la industria para proteger su información. Mantiene el control total sobre sus datos y puede eliminar su cuenta en cualquier momento.</p>
+<p><strong>Resumen:</strong> Odomate recopila solo los datos necesarios para proporcionar funciones de gestión de vehículos, seguimiento de viajes y seguimiento de mantenimiento. No vendemos sus datos a terceros y utilizamos medidas de seguridad estándar de la industria para proteger su información. Mantiene el control total sobre sus datos y puede eliminar su cuenta en cualquier momento.</p>
 
 </body>
 </html>

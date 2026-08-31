@@ -113,7 +113,7 @@ E‑Mail: app@odomate.net<br />
 Website: odomate.net</p>
 <h2 id="zwecke-der-verarbeitung-art-5-abs-1-b">Zwecke der Verarbeitung (Art. 5 Abs. 1 b)</h2>
 <ul>
-<li>Bereitstellung von App‑Funktionen (Fahrzeugverwaltung, Wartung, Navigation, Fahrtenprotokoll)  </li>
+<li>Bereitstellung von App‑Funktionen (Fahrzeugverwaltung, Wartung, GPS‑Fahrtenverfolgung im Hintergrund, Fahrtenprotokoll)  </li>
 <li>Synchronisierung und Kontoverwaltung  </li>
 <li>Support‑Kommunikation  </li>
 <li>Leistungsüberwachung, Fehlerbehebung, Sicherheit (anonyme Analysen/Crashlogs)  </li>
@@ -132,14 +132,14 @@ Website: odomate.net</p>
 <li>Kontaktdaten: E‑Mail  </li>
 <li>Nutzungsdaten: Interaktionen, Bildschirmaufrufe (anonym)  </li>
 <li>Technische Daten: Geräte‑/Betriebssysteminfo, App‑Version, Crash/Diagnose  </li>
-<li>Standortdaten: präzise/ungefähre Position während Navigation/Tracking  </li>
+<li>Standortdaten: präzise/ungefähre Position bei aktivem Fahrten‑Tracking  </li>
 <li>Fahrzeugdaten: Marke, Modell, VIN, Laufleistung, Wartungshistorie  </li>
 <li>Fahrtdaten: Start/Ende, Distanz, Route, Notizen</li>
 </ul>
 <h2 id="empfangerkategorien-von-empfangern-art-13-abs-1-e">Empfänger/Kategorien von Empfängern (Art. 13 Abs. 1 e)</h2>
 <ul>
 <li>Supabase (Auth/Storage)  </li>
-<li>Mapbox (Karten/Navigation), Valhalla (Routen), Nominatim (Geokodierung) – temporäre Standortverarbeitung während aktiver Navigation  </li>
+<li>Mapbox (Kartendarstellung und Geokodierung) – Standortverarbeitung bei aktivem Fahrten‑Tracking  </li>
 <li>OpenAI (KI‑Empfehlungen; Fahrzeugdaten/Laufleistung, keine persönlichen Identifikatoren)  </li>
 <li>Firebase (Analytics/Crashlytics; anonym)</li>
 <li>AppsFlyer (mobile Attribution und Analyse)</li>
@@ -165,7 +165,7 @@ Sie haben das Recht, Beschwerde bei einer Aufsichtsbehörde einzulegen (Art. 77)
 <li>Prinzip der Datenminimierung</li>
 </ul>
 <h2 id="spezielle-hinweise-zur-standortverarbeitung">Spezielle Hinweise zur Standortverarbeitung</h2>
-<p>Präzise Standortdaten werden nur bei aktiver Navigation oder aktiviertem Fahrten‑Tracking verarbeitet. Eine dauerhafte Weitergabe an Dritte zu Werbe‑ oder Trackingzwecken erfolgt nicht. Während der Navigation können Koordinaten temporär an Mapbox/Valhalla/Nominatim gesendet werden, ausschließlich zur Bereitstellung der Route/Dienste.</p>
+<p>Präzise Standortdaten werden nur bei aktiviertem Fahrten‑Tracking verarbeitet. Eine dauerhafte Weitergabe an Dritte zu Werbe‑ oder Trackingzwecken erfolgt nicht. Bei aktivem Fahrten‑Tracking können Koordinaten an Mapbox gesendet werden, ausschließlich zur Kartendarstellung und Geokodierung.</p>
 <h2 id="kontakt-und-dpo">Kontakt und DPO</h2>
 <p>Ein Datenschutzbeauftragter ist nach aktueller Risikobewertung nicht erforderlich.<br />
 Kontakt: app@odomate.net</p>

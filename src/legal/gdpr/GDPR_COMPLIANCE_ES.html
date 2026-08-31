@@ -113,7 +113,7 @@ Correo: app@odomate.net<br />
 Sitio: odomate.net</p>
 <h2 id="finalidades-del-tratamiento-art-5">Finalidades del tratamiento (Art. 5)</h2>
 <ul>
-<li>Prestación de funcionalidades de la app (vehículos, mantenimiento, navegación, registro de viajes)  </li>
+<li>Prestación de funcionalidades de la app (vehículos, mantenimiento, seguimiento de viajes por GPS en segundo plano, registro de viajes)  </li>
 <li>Sincronización y gestión de cuenta  </li>
 <li>Soporte y comunicaciones de servicio  </li>
 <li>Mejora de rendimiento, resolución de errores, seguridad (analíticas/crashes anónimos)  </li>
@@ -130,14 +130,14 @@ Sitio: odomate.net</p>
 <li>Contacto: correo electrónico  </li>
 <li>Uso: interacciones, vistas de pantalla (anónimo)  </li>
 <li>Técnicos: dispositivo/SO, versión app, diagnósticos/crashes  </li>
-<li>Ubicación: precisa/aproximada durante navegación/seguimiento  </li>
+<li>Ubicación: precisa/aproximada mientras el seguimiento de viajes está activo  </li>
 <li>Vehículo: marca, modelo, VIN, kilometraje, historial de mantenimiento  </li>
 <li>Viajes: inicio/fin, distancia, ruta, notas</li>
 </ul>
 <h2 id="destinatarios-art-13">Destinatarios (Art. 13)</h2>
 <ul>
 <li>Supabase (autenticación/almacenamiento)  </li>
-<li>Mapbox (mapas/navegación), OSRM (rutas), Nominatim (geocodificación) – tratamiento temporal de ubicación en navegación activa  </li>
+<li>Mapbox (mapas y geocodificación) – tratamiento de ubicación mientras el seguimiento de viajes está activo  </li>
 <li>OpenAI (recomendaciones IA: datos de vehículo/kilometraje, sin identificadores personales)  </li>
 <li>Firebase (analítica anónima/informes de fallos)  </li>
 <li>AppsFlyer (atribución móvil y analítica: identificadores de dispositivo (IDFA en iOS con consentimiento del usuario), datos de instalación/uso, eventos en la app, datos de atribución)</li>
@@ -163,7 +163,7 @@ Reclamación: ante la autoridad de control competente (Art. 77).</p>
 <li>Minimización de datos</li>
 </ul>
 <h2 id="nota-sobre-la-ubicacion">Nota sobre la ubicación</h2>
-<p>La ubicación precisa se procesa solo con navegación activa o seguimiento automático de viajes. No hay compartición permanente a terceros con fines publicitarios/seguimiento. Durante la navegación, las coordenadas pueden enviarse temporalmente a Mapbox/Valhalla/Nominatim para calcular rutas.</p>
+<p>La ubicación precisa se procesa solo cuando el seguimiento automático de viajes está activado. No hay compartición permanente a terceros con fines publicitarios/seguimiento. Mientras el seguimiento de viajes está activo, las coordenadas pueden enviarse a Mapbox para mostrar mapas y geocodificación.</p>
 <h2 id="dpo-y-contacto">DPO y contacto</h2>
 <p>No se requiere DPO según la evaluación actual de riesgos.<br />
 Contacto: app@odomate.net</p>

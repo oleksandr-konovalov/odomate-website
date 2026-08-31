@@ -123,9 +123,9 @@ Strona: <a href="https://odomate.net">odomate.net</a></p>
 </ul>
 <h3 id="22-dane-zbierane-automatycznie">2.2 Dane zbierane automatycznie</h3>
 <ul>
-<li>Lokalizacja (GPS) podczas aktywnej nawigacji lub śledzenia przejazdów<br />
+<li>Lokalizacja (GPS) podczas śledzenia przejazdów w tle<br />
   Zapisywana lokalnie i synchronizowana z Supabase (backup).<br />
-  Brak trwałego udostępniania precyzyjnej lokalizacji stronom trzecim; tymczasowe przekazywanie wyłącznie na potrzeby nawigacji (Valhalla, Nominatim, Overpass (samodzielnie hostowane; ograniczenia prędkości, POI i wyszukiwanie Nominatim), Mapbox (zapasowy), Nominatim).</li>
+  Brak udostępniania precyzyjnej lokalizacji stronom trzecim, z wyjątkiem naszego dostawcy map (Mapbox) przy wyświetlaniu map lub wyszukiwaniu adresów (np. podczas dodawania lokalizacji pojazdu).</li>
 <li>Informacje o urządzeniu (model, producent, wersja systemu, wersja aplikacji, język/region)  </li>
 <li><strong>Analityka użycia i diagnostyka:</strong><br />
   Widoki ekranów i korzystanie z funkcji; metryki wydajności aplikacji i raporty awarii; identyfikatory techniczne takie jak ID użytkownika, model urządzenia, wersja systemu i wersja aplikacji. Dane te są wykorzystywane wyłącznie do diagnostyki aplikacji, monitorowania wydajności i poprawy stabilności.</li>
@@ -143,7 +143,6 @@ Strona: <a href="https://odomate.net">odomate.net</a></p>
 </ul>
 <h3 id="32-funkcje-premium">3.2 Funkcje Premium</h3>
 <ul>
-<li>Nawigacja GPS z kierunkami w czasie rzeczywistym  </li>
 <li>Automatyczne śledzenie przejazdów (w tle)  </li>
 <li>Prognozy żywotności podzespołów na podstawie specyfikacji pojazdu</li>
 </ul>
@@ -199,9 +198,7 @@ Strona: <a href="https://odomate.net">odomate.net</a></p>
 <h2 id="6-udostepnianie-danych-i-podmioty-przetwarzajace">6. Udostępnianie danych i podmioty przetwarzające</h2>
 <ul>
 <li>Supabase (uwierzytelnianie/magazyn) – e‑mail, dane pojazdu/przejazdów  </li>
-<li>Mapbox (mapy/nawigacja) – tymczasowe współrzędne podczas nawigacji  </li>
-<li>Valhalla (trasy) – współrzędne start/meta  </li>
-<li>Nominatim (geokodowanie) – zapytania/współrzędne  </li>
+<li>Mapbox (mapy/geokodowanie) – renderowanie map i wyszukiwanie adresów (np. przy dodawaniu pojazdu lub przeglądaniu zarejestrowanego przejazdu)  </li>
 <li>OpenAI (serwis AI) – dane pojazdu, przebieg  </li>
 <li>Firebase (analityka/awarie) – dane analityczne i o awariach<br />
 Brak udostępniania do celów reklamowych/śledzących z wyjątkiem AppsFlyer (patrz 5.5).</li>

@@ -123,9 +123,9 @@ Site : <a href="https://odomate.net">odomate.net</a></p>
 </ul>
 <h3 id="22-donnees-collectees-automatiquement">2.2 Données collectées automatiquement</h3>
 <ul>
-<li>Localisation (GPS) lors de la navigation ou du suivi de trajets<br />
+<li>Localisation (GPS) pendant le suivi de trajet en arrière-plan<br />
   Stockée localement et synchronisée avec Supabase pour sauvegarde.<br />
-  Aucune communication de localisation précise à des tiers sauf temporairement pour la navigation (Valhalla, Nominatim, Overpass (auto-hébergé ; limites de vitesse, POI, recherche Nominatim), Mapbox (secours), Nominatim).</li>
+  Aucune communication de localisation précise à des tiers, sauf à notre fournisseur de cartographie (Mapbox) pour l’affichage des cartes et la recherche d’adresses (par exemple lors de l’ajout d’un véhicule).</li>
 <li>Informations appareil (modèle, fabricant, version OS, version app, langue/région)</li>
 <li><strong>Analyses d’utilisation et diagnostic :</strong><br />
   Vues d’écran et utilisation des fonctionnalités ; métriques de performance de l’app et rapports de plantage ; identifiants techniques tels que l’ID utilisateur, le modèle d’appareil, la version OS et la version de l’app. Ces données sont utilisées uniquement pour le diagnostic de l’application, le suivi des performances et l’amélioration de la stabilité.</li>
@@ -145,7 +145,6 @@ Site : <a href="https://odomate.net">odomate.net</a></p>
 </ul>
 <h3 id="32-fonctionnalites-premium">3.2 Fonctionnalités Premium</h3>
 <ul>
-<li>Navigation GPS avec instructions en temps réel  </li>
 <li>Suivi automatique des trajets (arrière‑plan)  </li>
 <li>Prévisions de durée de vie des composants selon les spécifications du véhicule</li>
 </ul>
@@ -199,7 +198,7 @@ Site : <a href="https://odomate.net">odomate.net</a></p>
 - Refusant la demande App Tracking Transparency (ATT) sur iOS
 - Désactivant "Autoriser les apps à demander le suivi" dans Réglages iOS → Confidentialité → Suivi</p>
 <h2 id="6-partage-et-soustraitants">6. Partage et sous‑traitants</h2>
-<p>Sous‑traitants essentiels : Supabase, Valhalla, Nominatim, Overpass (auto-hébergé ; limites de vitesse, POI, recherche Nominatim), Mapbox (secours), Nominatim, OpenAI, Firebase.<br />
+<p>Sous‑traitants essentiels : Supabase, Mapbox, OpenAI, Firebase.<br />
 Pas de vente de données. Pas d'utilisation à des fins publicitaires sauf AppsFlyer (voir 5.5).</p>
 <h3 id="61-gdpr-rights">6.1 Droits RGPD (Utilisateurs EEE)</h3>
 <p>Si vous êtes situé dans l'Espace économique européen, vous avez le droit de :</p>
@@ -228,7 +227,7 @@ Effacement du compte dans l'app ; les données côté serveur sont supprimées i
 <h2 id="9-enfants">9. Enfants</h2>
 <p>L’app n’est pas destinée aux moins de 16 ans.</p>
 <h2 id="10-transferts-internationaux">10. Transferts internationaux</h2>
-<p>Vos données sont stockées sur serveurs Supabase. La localisation dépend de la région sélectionnée et peut être hors de votre pays. Les services de navigation sont hébergés en Allemagne. Nous assurons la conformité RGPD pour tous les transferts internationaux.</p>
+<p>Vos données sont stockées sur serveurs Supabase. La localisation dépend de la région sélectionnée et peut être hors de votre pays. Nous assurons la conformité RGPD pour tous les transferts internationaux.</p>
 <h2 id="11-modifications-de-la-politique">11. Modifications de la politique</h2>
 <p>Nous informerons en cas de changements matériels dans l’app et mettrons à jour la date « Dernière mise à jour ».</p>
 <h2 id="12-contact">12. Contact</h2>

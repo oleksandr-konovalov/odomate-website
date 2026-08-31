@@ -4,7 +4,7 @@
  */
 export const FEATURE_IMAGE_KEYS = [
   'driving_style',          // 0: AI Driving Style Analysis
-  'gps',                    // 1: Live Navigation
+  'background_tracking',    // 1: Background GPS Tracking
   'maintenance_android',    // 2: Component Life Notifications
   'maintenance_ios',        // 3: AI-Based Lifetime Prediction
   'trips_list',             // 4: Automatic Mileage Logging

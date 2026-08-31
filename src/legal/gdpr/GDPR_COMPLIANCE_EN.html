@@ -113,7 +113,7 @@ Email: app@odomate.net<br />
 Website: odomate.net</p>
 <h2 id="purposes-of-processing-art-5">Purposes of Processing (Art. 5)</h2>
 <ul>
-<li>Provide app functionality (vehicle management, maintenance tracking, navigation, trip logging)  </li>
+<li>Provide app functionality (vehicle management, maintenance tracking, background GPS trip tracking, trip logging)  </li>
 <li>Account management and synchronization  </li>
 <li>Support and service notifications  </li>
 <li>Stability, troubleshooting, and security (anonymous analytics/crash reports)  </li>
@@ -130,14 +130,14 @@ Website: odomate.net</p>
 <li>Contact: email  </li>
 <li>Usage: interactions, screen views (anonymous)  </li>
 <li>Technical: device/OS, app version, diagnostics/crash data  </li>
-<li>Geolocation: precise/approximate during navigation/trip tracking  </li>
+<li>Geolocation: precise/approximate while trip tracking is active  </li>
 <li>Vehicle data: make, model, VIN, odometer, service history  </li>
 <li>Trip data: start/finish, distance, route geometry, notes</li>
 </ul>
 <h2 id="recipients-art-13">Recipients (Art. 13)</h2>
 <ul>
 <li>Supabase (authentication/storage)  </li>
-<li>Mapbox (maps/navigation), Valhalla (routing), Nominatim (geocoding) – temporary processing of coordinates during active navigation  </li>
+<li>Mapbox (map rendering and geocoding) – processing of coordinates while trip tracking is active  </li>
 <li>OpenAI (AI recommendations: vehicle/odometer context, without personal identifiers)  </li>
 <li>Firebase (anonymous analytics/crash reporting)  </li>
 <li>AppsFlyer (mobile attribution and analytics: device identifiers (IDFA on iOS with user consent), installation/usage data, in-app events, attribution data)</li>
@@ -163,7 +163,7 @@ Complaints: competent supervisory authority (Art. 77).</p>
 <li>Data minimization</li>
 </ul>
 <h2 id="note-on-location-data">Note on Location Data</h2>
-<p>Precise location is processed only during active navigation or when automatic trip tracking is enabled. No continuous sharing with third parties for advertising/tracking. During navigation, coordinates may be temporarily sent to Mapbox/Valhalla/Nominatim for routing.</p>
+<p>Precise location is processed only when automatic trip tracking is enabled. No continuous sharing with third parties for advertising/tracking. While trip tracking is active, coordinates may be sent to Mapbox for map rendering and geocoding.</p>
 <h2 id="dpo-and-contact">DPO and Contact</h2>
 <p>A DPO is not required based on current risk assessment.<br />
 Contact: app@odomate.net</p>
