@@ -107,7 +107,7 @@
 <body>
 <h1 id="politica-de-privacidad-de-odomate">Política de Privacidad de Odomate</h1>
 <p><strong>Fecha de Entrada en Vigor:</strong> 22 de noviembre de 2024<br />
-<strong>Última Actualización:</strong> 22 de noviembre de 2024</p>
+<strong>Última Actualización:</strong> 28 de septiembre de 2026</p>
 <h2 id="1-introduccion">1. Introducción</h2>
 <p>¡Bienvenido a Odomate! Esta Política de Privacidad explica cómo Oleksandr Konovalov ("nosotros", "nuestro" o "nos") recopila, utiliza y protege su información cuando usa la aplicación móvil Odomate ("Aplicación"). Estamos comprometidos a proteger su privacidad y garantizar la transparencia sobre nuestras prácticas de datos.</p>
 <p>Al usar Odomate, acepta la recopilación y el uso de información de acuerdo con esta política.</p>
@@ -133,10 +133,11 @@
 - Notas y categorías del viaje</p>
 <h3 id="22-informacion-recopilada-automaticamente">2.2 Información Recopilada Automáticamente</h3>
 <p><strong>Datos de Ubicación:</strong>
-- Coordenadas GPS mientras se está registrando un viaje en segundo plano
+- Coordenadas GPS mientras se está registrando un viaje en segundo plano o mientras la navegación está activa
 - Los datos de ubicación se almacenan localmente en su dispositivo y se sincronizan con Supabase para respaldo
-- <strong>NO compartimos coordenadas GPS precisas con terceros</strong> excepto con nuestro proveedor de mapas (Mapbox) al mostrar mapas o buscar direcciones (por ejemplo, al agregar la ubicación de un vehículo)
-- Se requiere permiso de ubicación para las funciones de seguimiento de viajes</p>
+- <strong>NO compartimos coordenadas GPS precisas con terceros</strong> excepto con nuestro proveedor de mapas (Mapbox) al mostrar mapas, buscar direcciones (por ejemplo, al agregar la ubicación de un vehículo) o calcular rutas para la navegación paso a paso (punto de partida, destino y coordenadas de la ruta)
+- Se requiere permiso de ubicación para las funciones de seguimiento de viajes y navegación
+- Cuando la señal de satélite (GPS) está bloqueada o falsificada, la aplicación puede usar la ubicación aproximada basada en la red que proporciona el sistema operativo de su dispositivo (Wi-Fi y antenas de telefonía móvil, a través de los servicios de Google Play en Android o Apple Core Location en iOS) para estimar su posición y detectar la suplantación de GPS. Este procesamiento se realiza en su dispositivo; la aplicación no recopila ni sube listas de antenas de telefonía móvil ni de redes Wi-Fi</p>
 <p><strong>Información del Dispositivo:</strong>
 - Modelo y fabricante del dispositivo
 - Versión del sistema operativo (Android/iOS)
@@ -147,7 +148,7 @@
 - Métricas de rendimiento de la aplicación e informes de fallos
 - Identificadores técnicos como el ID de usuario, modelo del dispositivo, versión del SO y versión de la aplicación
 Estos datos se utilizan únicamente para el diagnóstico de la aplicación, el monitoreo del rendimiento y mejorar la estabilidad de la app.</p>
-<p><strong>Importante:</strong> NO recopilamos ni almacenamos coordenadas GPS precisas para fines analíticos. Los datos de ubicación solo se utilizan para la funcionalidad principal de la aplicación (seguimiento de viajes) y nunca se comparten con servicios de análisis.</p>
+<p><strong>Importante:</strong> NO recopilamos ni almacenamos coordenadas GPS precisas para fines analíticos. Los datos de ubicación solo se utilizan para la funcionalidad principal de la aplicación (seguimiento de viajes y navegación) y nunca se comparten con servicios de análisis.</p>
 <h3 id="23-integracion-de-servicios-de-terceros">2.3 Integración de Servicios de Terceros</h3>
 <p><strong>Integración de OpenAI:</strong>
 - Marca, modelo, año y especificaciones del motor del vehículo (datos derivados del VIN)
@@ -163,6 +164,7 @@ Estos datos se utilizan únicamente para el diagnóstico de la aplicación, el m
 <li>Generar horarios de mantenimiento personalizados utilizando análisis de IA</li>
 <li>Sincronizar sus datos en todos los dispositivos</li>
 <li>Enviar recordatorios de mantenimiento a través de notificaciones push</li>
+<li>Proporcionar navegación paso a paso dentro de la aplicación</li>
 </ul>
 <h3 id="32-funciones-premium">3.2 Funciones Premium</h3>
 <ul>
@@ -218,8 +220,8 @@ Estos datos se utilizan únicamente para el diagnóstico de la aplicación, el m
 - Política de Privacidad: <a href="https://supabase.com/privacy">https://supabase.com/privacy</a></p>
 <h3 id="52-mapas-y-servicios-de-ubicacion">5.2 Mapas y Servicios de Ubicación</h3>
 <p><strong>Mapbox</strong> (mapbox.com)
-- Propósito: Renderizado de mapas y geocodificación de direcciones (utilizado para mostrar mapas y buscar direcciones, por ejemplo al agregar un vehículo o ver un viaje registrado)
-- Datos Compartidos: Coordenadas GPS y consultas de búsqueda necesarias para mostrar mapas o resolver direcciones
+- Propósito: Renderizado de mapas, geocodificación de direcciones, cálculo de rutas y navegación paso a paso (Mapbox Directions API) (utilizado para mostrar mapas y buscar direcciones, por ejemplo al agregar un vehículo o ver un viaje registrado, y para calcular la ruta al iniciar la navegación)
+- Datos Compartidos: Coordenadas GPS y consultas de búsqueda necesarias para mostrar mapas o resolver direcciones; punto de partida (ubicación actual), destino y coordenadas intermedias de la ruta al calcular una ruta de navegación
 - Política de Privacidad: <a href="https://www.mapbox.com/privacy">https://www.mapbox.com/privacy</a></p>
 <h3 id="53-servicios-de-ia">5.3 Servicios de IA</h3>
 <p><strong>OpenAI</strong> (openai.com)

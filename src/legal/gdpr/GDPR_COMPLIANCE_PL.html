@@ -106,14 +106,14 @@
 </head>
 <body>
 <h1 id="odomate-oswiadczenie-o-zgodnosci-z-rodo">Odomate – Oświadczenie o Zgodności z RODO</h1>
-<p><strong>Data:</strong> 22 listopada 2024 r.</p>
+<p><strong>Data:</strong> 28 września 2026 r.</p>
 <h2 id="administrator-art-4">Administrator (art. 4)</h2>
 <p>Oleksandr Konovalov<br />
 E‑mail: app@odomate.net<br />
 Strona: odomate.net</p>
 <h2 id="cele-przetwarzania-art-5">Cele przetwarzania (art. 5)</h2>
 <ul>
-<li>Zapewnienie funkcji aplikacji (pojazdy, serwis, śledzenie przejazdów GPS w tle, rejestr przejazdów)  </li>
+<li>Zapewnienie funkcji aplikacji (pojazdy, serwis, śledzenie przejazdów GPS w tle, nawigacja zakręt po zakręcie, rejestr przejazdów)  </li>
 <li>Synchronizacja i zarządzanie kontem  </li>
 <li>Wsparcie i komunikacja serwisowa  </li>
 <li>Poprawa wydajności, naprawa błędów, bezpieczeństwo (anonimowa analityka/awarie)  </li>
@@ -130,14 +130,14 @@ Strona: odomate.net</p>
 <li>Dane kontaktowe: e‑mail  </li>
 <li>Dane o korzystaniu: interakcje, widoki ekranów (anonimowe)  </li>
 <li>Dane techniczne: urządzenie/OS, wersja aplikacji, diagnostyka/awarie  </li>
-<li>Dane lokalizacyjne: dokładne/przybliżone podczas aktywnego śledzenia przejazdów  </li>
+<li>Dane lokalizacyjne: dokładne/przybliżone podczas aktywnego śledzenia przejazdów lub nawigacji  </li>
 <li>Dane pojazdu: marka, model, VIN, przebieg, historia serwisowa  </li>
 <li>Dane przejazdów: start/koniec, dystans, trasa, notatki</li>
 </ul>
 <h2 id="odbiorcy-art-13">Odbiorcy (art. 13)</h2>
 <ul>
 <li>Supabase (uwierzytelnianie/magazyn)  </li>
-<li>Mapbox (mapy i geokodowanie) – przetwarzanie lokalizacji podczas aktywnego śledzenia przejazdów  </li>
+<li>Mapbox (mapy, geokodowanie, wyznaczanie tras i nawigacja zakręt po zakręcie) – przetwarzanie lokalizacji podczas aktywnego śledzenia przejazdów lub nawigacji (przy nawigacji: punkt początkowy, cel i współrzędne trasy)  </li>
 <li>OpenAI (rekomendacje AI: dane pojazdu/przebieg, bez identyfikatorów osobowych)  </li>
 <li>Firebase (anonimowa analityka/raporty awarii)  </li>
 <li>AppsFlyer (mobilna atrybucja i analityka: identyfikatory urządzenia (IDFA na iOS za zgodą użytkownika), dane instalacji/użytkowania, wydarzenia w aplikacji, dane atrybucji)</li>
@@ -163,7 +163,7 @@ Skarga: do właściwego organu nadzorczego (art. 77).</p>
 <li>Minimalizacja danych</li>
 </ul>
 <h2 id="uwaga-dot-lokalizacji">Uwaga dot. lokalizacji</h2>
-<p>Dokładna lokalizacja przetwarzana jest wyłącznie przy włączonym automatycznym śledzeniu przejazdów. Brak trwałego udostępniania stronom trzecim w celach reklamowych/śledzących. Podczas aktywnego śledzenia przejazdów współrzędne mogą być przekazywane do Mapbox w celu wyświetlania map i geokodowania.</p>
+<p>Dokładna lokalizacja przetwarzana jest wyłącznie przy włączonym automatycznym śledzeniu przejazdów lub aktywnej nawigacji. Brak trwałego udostępniania stronom trzecim w celach reklamowych/śledzących. Podczas aktywnego śledzenia przejazdów lub nawigacji współrzędne mogą być przekazywane do Mapbox w celu wyświetlania map, geokodowania i wyznaczania tras. Gdy sygnał satelitarny (GPS) jest zagłuszany lub fałszowany, aplikacja może korzystać z przybliżonej lokalizacji sieciowej (Wi‑Fi i stacje bazowe) dostarczanej przez system operacyjny urządzenia (usługi Google Play na Androidzie, Apple Core Location na iOS), aby oszacować pozycję i wykryć fałszowanie GPS; przetwarzanie odbywa się na urządzeniu, a aplikacja nie zbiera ani nie przesyła list stacji bazowych ani sieci Wi‑Fi.</p>
 <h2 id="inspektor-ochrony-danych-i-kontakt">Inspektor Ochrony Danych i kontakt</h2>
 <p>IOD nie jest wymagany wg obecnej oceny ryzyka.<br />
 Kontakt: app@odomate.net</p>

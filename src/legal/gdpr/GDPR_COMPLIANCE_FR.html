@@ -106,14 +106,14 @@
 </head>
 <body>
 <h1 id="odomate-declaration-de-conformite-rgpd">Odomate – Déclaration de Conformité RGPD</h1>
-<p><strong>Date:</strong> 22 novembre 2024</p>
+<p><strong>Date:</strong> 28 septembre 2026</p>
 <h2 id="responsable-de-traitement-art-4">Responsable de traitement (Art. 4)</h2>
 <p>Oleksandr Konovalov<br />
 E‑mail : app@odomate.net<br />
 Site : odomate.net</p>
 <h2 id="finalites-du-traitement-art-5">Finalités du traitement (Art. 5)</h2>
 <ul>
-<li>Fourniture des fonctionnalités de l’app (gestion véhicule, maintenance, suivi de trajets GPS en arrière‑plan, journal de trajets)  </li>
+<li>Fourniture des fonctionnalités de l’app (gestion véhicule, maintenance, suivi de trajets GPS en arrière‑plan, navigation guidée, journal de trajets)  </li>
 <li>Synchronisation et gestion de compte  </li>
 <li>Support client et communications de service  </li>
 <li>Amélioration des performances, correction d’erreurs, sécurité (analyses/crashs anonymes)  </li>
@@ -130,14 +130,14 @@ Site : odomate.net</p>
 <li>Données de contact : e‑mail  </li>
 <li>Données d’utilisation : interactions, vues d’écran (anonymes)  </li>
 <li>Données techniques : modèle/appareil, OS, version app, diagnostics/crash  </li>
-<li>Données de localisation : position précise/approximative lorsque le suivi de trajet est actif  </li>
+<li>Données de localisation : position précise/approximative lorsque le suivi de trajet ou la navigation est actif  </li>
 <li>Données véhicule : marque, modèle, VIN, kilométrage, historique d’entretien  </li>
 <li>Données trajets : départ/arrivée, distance, itinéraire, notes</li>
 </ul>
 <h2 id="destinataires-art-13">Destinataires (Art. 13)</h2>
 <ul>
 <li>Supabase (authentification/stockage)  </li>
-<li>Mapbox (cartographie et géocodage) – traitement de la localisation lorsque le suivi de trajet est actif  </li>
+<li>Mapbox (cartographie, géocodage, calcul d’itinéraire et navigation guidée) – traitement de la localisation lorsque le suivi de trajet ou la navigation est actif (pour la navigation : départ, destination et coordonnées de l’itinéraire)  </li>
 <li>OpenAI (recommandations IA : données véhicule/kilométrage, sans identifiants personnels)  </li>
 <li>Firebase (analyse anonyme/rapports de plantage)  </li>
 <li>AppsFlyer (attribution mobile et analyse : identifiants d'appareil (IDFA sur iOS avec consentement de l'utilisateur), données d'installation/utilisation, événements dans l'app, données d'attribution)</li>
@@ -163,7 +163,7 @@ Plainte : auprès de l’autorité de contrôle compétente (Art. 77).</p>
 <li>Minimisation des données</li>
 </ul>
 <h2 id="note-sur-la-localisation">Note sur la localisation</h2>
-<p>La localisation précise est traitée uniquement lorsque le suivi automatique des trajets est activé. Aucune communication durable à des tiers à des fins publicitaires/traçage. Lorsque le suivi de trajet est actif, les coordonnées peuvent être transmises à Mapbox pour la cartographie et le géocodage.</p>
+<p>La localisation précise est traitée uniquement lorsque le suivi automatique des trajets est activé ou que la navigation est active. Aucune communication durable à des tiers à des fins publicitaires/traçage. Lorsque le suivi de trajet ou la navigation est actif, les coordonnées peuvent être transmises à Mapbox pour la cartographie, le géocodage et le calcul d’itinéraire. Si le signal satellite (GPS) est brouillé ou falsifié, l’app peut utiliser la position approximative basée sur le réseau (Wi‑Fi et antennes relais) fournie par le système d’exploitation de l’appareil (services Google Play sur Android, Apple Core Location sur iOS) pour estimer la position et détecter l’usurpation GPS ; ce traitement a lieu sur l’appareil et l’app ne collecte ni ne transmet de listes d’antennes relais ou de réseaux Wi‑Fi.</p>
 <h2 id="dpo-et-contact">DPO et contact</h2>
 <p>Un DPO n'est pas requis au vu de l'évaluation des risques actuelle.<br />
 Contact : app@odomate.net</p>

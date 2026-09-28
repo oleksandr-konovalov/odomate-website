@@ -107,7 +107,7 @@
 <body>
 <h1 id="polityka-prywatnosci-odomate">Polityka Prywatności Odomate</h1>
 <p><strong>Data obowiązywania:</strong> 22 listopada 2024 r.<br />
-<strong>Ostatnia aktualizacja:</strong> 22 listopada 2024 r.</p>
+<strong>Ostatnia aktualizacja:</strong> 28 września 2026 r.</p>
 <h2 id="1-wprowadzenie">1. Wprowadzenie</h2>
 <p>Niniejszy dokument wyjaśnia, jak Odomate (Oleksandr Konovalov) gromadzi, wykorzystuje i chroni informacje podczas korzystania z aplikacji Odomate ("Aplikacja"). Dbamy o przejrzystość i bezpieczeństwo danych.</p>
 <p>Kontakt:<br />
@@ -123,9 +123,10 @@ Strona: <a href="https://odomate.net">odomate.net</a></p>
 </ul>
 <h3 id="22-dane-zbierane-automatycznie">2.2 Dane zbierane automatycznie</h3>
 <ul>
-<li>Lokalizacja (GPS) podczas śledzenia przejazdów w tle<br />
+<li>Lokalizacja (GPS) podczas śledzenia przejazdów w tle lub podczas aktywnej nawigacji<br />
   Zapisywana lokalnie i synchronizowana z Supabase (backup).<br />
-  Brak udostępniania precyzyjnej lokalizacji stronom trzecim, z wyjątkiem naszego dostawcy map (Mapbox) przy wyświetlaniu map lub wyszukiwaniu adresów (np. podczas dodawania lokalizacji pojazdu).</li>
+  Brak udostępniania precyzyjnej lokalizacji stronom trzecim, z wyjątkiem naszego dostawcy map (Mapbox) przy wyświetlaniu map, wyszukiwaniu adresów (np. podczas dodawania lokalizacji pojazdu) lub wyznaczaniu trasy do nawigacji zakręt po zakręcie (punkt początkowy, cel i współrzędne trasy).</li>
+<li>Lokalizacja sieciowa przy zakłóceniach GPS: gdy sygnał satelitarny jest zagłuszany lub fałszowany, aplikacja może korzystać z przybliżonej lokalizacji sieciowej dostarczanej przez system operacyjny (Wi‑Fi i stacje bazowe, poprzez usługi Google Play na Androidzie lub Apple Core Location na iOS), aby oszacować pozycję i wykryć fałszowanie GPS (spoofing). Przetwarzanie odbywa się na urządzeniu; aplikacja nie zbiera ani nie przesyła list stacji bazowych ani sieci Wi‑Fi.  </li>
 <li>Informacje o urządzeniu (model, producent, wersja systemu, wersja aplikacji, język/region)  </li>
 <li><strong>Analityka użycia i diagnostyka:</strong><br />
   Widoki ekranów i korzystanie z funkcji; metryki wydajności aplikacji i raporty awarii; identyfikatory techniczne takie jak ID użytkownika, model urządzenia, wersja systemu i wersja aplikacji. Dane te są wykorzystywane wyłącznie do diagnostyki aplikacji, monitorowania wydajności i poprawy stabilności.</li>
@@ -139,6 +140,7 @@ Strona: <a href="https://odomate.net">odomate.net</a></p>
 <li>Ręczne rejestrowanie przejazdów  </li>
 <li>Generowanie spersonalizowanych planów serwisowych z użyciem analizy AI  </li>
 <li>Synchronizacja między urządzeniami  </li>
+<li>Nawigacja zakręt po zakręcie w aplikacji  </li>
 <li>Powiadomienia o serwisie (push)</li>
 </ul>
 <h3 id="32-funkcje-premium">3.2 Funkcje Premium</h3>
@@ -198,7 +200,7 @@ Strona: <a href="https://odomate.net">odomate.net</a></p>
 <h2 id="6-udostepnianie-danych-i-podmioty-przetwarzajace">6. Udostępnianie danych i podmioty przetwarzające</h2>
 <ul>
 <li>Supabase (uwierzytelnianie/magazyn) – e‑mail, dane pojazdu/przejazdów  </li>
-<li>Mapbox (mapy/geokodowanie) – renderowanie map i wyszukiwanie adresów (np. przy dodawaniu pojazdu lub przeglądaniu zarejestrowanego przejazdu)  </li>
+<li>Mapbox (mapy/geokodowanie/wyznaczanie tras) – renderowanie map, wyszukiwanie adresów (np. przy dodawaniu pojazdu lub przeglądaniu zarejestrowanego przejazdu) oraz wyznaczanie trasy do nawigacji (punkt początkowy, cel i współrzędne trasy)  </li>
 <li>OpenAI (serwis AI) – dane pojazdu, przebieg  </li>
 <li>Firebase (analityka/awarie) – dane analityczne i o awariach<br />
 Brak udostępniania do celów reklamowych/śledzących z wyjątkiem AppsFlyer (patrz 5.5).</li>

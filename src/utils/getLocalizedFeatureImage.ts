@@ -1,6 +1,9 @@
 import { Language } from '@/types/language';
 
 // Import all feature images
+// Navigation
+import navigationJamming from '/assets/images/navigation/navigation_jamming.webp';
+
 // Background Tracking
 import backgroundTrackingEn from '/assets/images/background_tracking/background_tracking_en.png';
 
@@ -47,6 +50,7 @@ import androidHeadDeviceDe from '/assets/images/android_head_device_de.png';
 import androidHeadDeviceUk from '/assets/images/android_head_device_uk.png';
 
 export type FeatureKey =
+  | 'navigation'
   | 'background_tracking'
   | 'maintenance'
   | 'parking' // Combined parking with animation
@@ -63,6 +67,15 @@ interface FeatureImages {
 }
 
 const featureImages: FeatureImages = {
+  navigation: {
+    en: navigationJamming,
+    ru: navigationJamming,
+    uk: navigationJamming,
+    de: navigationJamming,
+    fr: navigationJamming,
+    es: navigationJamming,
+    pl: navigationJamming,
+  },
   background_tracking: {
     en: backgroundTrackingEn,
     ru: backgroundTrackingEn,

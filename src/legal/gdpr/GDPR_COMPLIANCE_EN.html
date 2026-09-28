@@ -106,14 +106,14 @@
 </head>
 <body>
 <h1 id="odomate-gdpr-compliance-statement">Odomate – GDPR Compliance Statement</h1>
-<p><strong>Date:</strong> November 22, 2024</p>
+<p><strong>Date:</strong> September 28, 2026</p>
 <h2 id="controller-art-4">Controller (Art. 4)</h2>
 <p>Oleksandr Konovalov<br />
 Email: app@odomate.net<br />
 Website: odomate.net</p>
 <h2 id="purposes-of-processing-art-5">Purposes of Processing (Art. 5)</h2>
 <ul>
-<li>Provide app functionality (vehicle management, maintenance tracking, background GPS trip tracking, trip logging)  </li>
+<li>Provide app functionality (vehicle management, maintenance tracking, background GPS trip tracking, turn-by-turn navigation, trip logging)  </li>
 <li>Account management and synchronization  </li>
 <li>Support and service notifications  </li>
 <li>Stability, troubleshooting, and security (anonymous analytics/crash reports)  </li>
@@ -130,14 +130,14 @@ Website: odomate.net</p>
 <li>Contact: email  </li>
 <li>Usage: interactions, screen views (anonymous)  </li>
 <li>Technical: device/OS, app version, diagnostics/crash data  </li>
-<li>Geolocation: precise/approximate while trip tracking is active  </li>
+<li>Geolocation: precise/approximate while trip tracking or navigation is active  </li>
 <li>Vehicle data: make, model, VIN, odometer, service history  </li>
 <li>Trip data: start/finish, distance, route geometry, notes</li>
 </ul>
 <h2 id="recipients-art-13">Recipients (Art. 13)</h2>
 <ul>
 <li>Supabase (authentication/storage)  </li>
-<li>Mapbox (map rendering and geocoding) – processing of coordinates while trip tracking is active  </li>
+<li>Mapbox (map rendering, geocoding, route calculation and turn-by-turn navigation) – processing of coordinates while trip tracking or navigation is active (for navigation: origin, destination and route coordinates)  </li>
 <li>OpenAI (AI recommendations: vehicle/odometer context, without personal identifiers)  </li>
 <li>Firebase (anonymous analytics/crash reporting)  </li>
 <li>AppsFlyer (mobile attribution and analytics: device identifiers (IDFA on iOS with user consent), installation/usage data, in-app events, attribution data)</li>
@@ -163,7 +163,7 @@ Complaints: competent supervisory authority (Art. 77).</p>
 <li>Data minimization</li>
 </ul>
 <h2 id="note-on-location-data">Note on Location Data</h2>
-<p>Precise location is processed only when automatic trip tracking is enabled. No continuous sharing with third parties for advertising/tracking. While trip tracking is active, coordinates may be sent to Mapbox for map rendering and geocoding.</p>
+<p>Precise location is processed only when automatic trip tracking is enabled or navigation is active. No continuous sharing with third parties for advertising/tracking. While trip tracking or navigation is active, coordinates may be sent to Mapbox for map rendering, geocoding and route calculation. If the satellite (GPS) signal is jammed or spoofed, the app may use the approximate network-based location (Wi-Fi and cell towers) provided by the device's operating system (Google Play services on Android, Apple Core Location on iOS) to estimate position and detect GPS spoofing; this is processed on-device, and the app does not collect or upload lists of cell towers or Wi-Fi networks.</p>
 <h2 id="dpo-and-contact">DPO and Contact</h2>
 <p>A DPO is not required based on current risk assessment.<br />
 Contact: app@odomate.net</p>

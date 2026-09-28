@@ -13,12 +13,14 @@ import {
   Locate,
   ChevronLeft,
   ChevronRight,
+  Navigation,
 } from 'lucide-react';
 import { getLocalizedFeatureImages, hasAnimatedPairs, getAnimatedPairs } from '@/utils/getLocalizedFeatureImage';
 import { FEATURE_IMAGE_KEYS } from '@/config/featureImageMapping';
 import { PhoneMockup, CarDisplayMockup } from './PhoneMockup';
 
 const featureIcons = [
+  Navigation,   // Navigation Under GPS Jamming
   Gauge,        // AI Driving Style Analysis
   Locate,       // Background GPS Tracking
   Bell,         // Component Life Notifications
@@ -165,7 +167,7 @@ export const Features = () => {
   const isAnimated = hasAnimatedPairs(imageKey, language);
   const localizedImages = getLocalizedFeatureImages(imageKey, language);
   const hasMultipleImages = localizedImages.length > 1;
-  const isHeadUnit = currentFeature === 8;
+  const isHeadUnit = imageKey === 'android_head';
 
   return (
     <section id="features" className="py-12 md:py-16 px-4 bg-background/50">

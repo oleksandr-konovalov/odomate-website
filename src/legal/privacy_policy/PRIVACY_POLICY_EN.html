@@ -107,7 +107,7 @@
 <body>
 <h1 id="privacy-policy-for-odomate">Privacy Policy for Odomate</h1>
 <p><strong>Effective Date:</strong> November 22, 2024<br />
-<strong>Last Updated:</strong> November 22, 2024</p>
+<strong>Last Updated:</strong> September 28, 2026</p>
 <h2 id="1-introduction">1. Introduction</h2>
 <p>Welcome to Odomate! This Privacy Policy explains how Oleksandr Konovalov ("we," "us," or "our") collects, uses, and protects your information when you use the Odomate mobile application ("App"). We are committed to protecting your privacy and ensuring transparency about our data practices.</p>
 <p>By using Odomate, you agree to the collection and use of information in accordance with this policy.</p>
@@ -133,10 +133,11 @@
 - Trip notes and categories</p>
 <h3 id="22-automatically-collected-information">2.2 Automatically Collected Information</h3>
 <p><strong>Location Data:</strong>
-- GPS coordinates while a trip is being tracked in the background
+- GPS coordinates while a trip is being tracked in the background or while in-app navigation is active
 - Location data is stored locally on your device and synced to Supabase for backup
-- <strong>We do NOT share precise GPS coordinates with third parties</strong> except for our mapping provider (Mapbox) when displaying maps or looking up addresses (e.g. when adding a vehicle's location)
-- Location permission is required for trip tracking features</p>
+- <strong>We do NOT share precise GPS coordinates with third parties</strong> except for our mapping provider (Mapbox) when displaying maps, looking up addresses (e.g. when adding a vehicle's location) or calculating routes for turn-by-turn navigation (start point, destination and route coordinates)
+- Location permission is required for trip tracking and navigation features
+- When the satellite (GPS) signal is jammed or spoofed, the app may use the approximate network-based location provided by your device's operating system (Wi-Fi and cell towers, via Google Play services on Android or Apple Core Location on iOS) to estimate your position and detect GPS spoofing. This is processed on your device; the app does not collect or upload lists of cell towers or Wi-Fi networks</p>
 <p><strong>Device Information:</strong>
 - Device model and manufacturer
 - Operating system version (Android/iOS)
@@ -147,7 +148,7 @@
 - App performance metrics and crash reports
 - Technical identifiers such as user ID, device model, OS version, and app version
 These data are used solely for application diagnostics, performance monitoring, and improving app stability.</p>
-<p><strong>Important:</strong> We do NOT collect or store precise GPS coordinates for analytics purposes. Location data is only used for core app functionality (background trip tracking) and is never shared with analytics services.</p>
+<p><strong>Important:</strong> We do NOT collect or store precise GPS coordinates for analytics purposes. Location data is only used for core app functionality (background trip tracking and navigation) and is never shared with analytics services.</p>
 <h3 id="23-third-party-services-integration">2.3 Third-Party Services Integration</h3>
 <p><strong>OpenAI Integration:</strong>
 - Vehicle make, model, year, and engine specifications (VIN-derived data)
@@ -163,6 +164,7 @@ These data are used solely for application diagnostics, performance monitoring, 
 <li>Generate personalized maintenance schedules using AI analysis</li>
 <li>Sync your data across devices</li>
 <li>Send maintenance reminders via push notifications</li>
+<li>Provide in-app turn-by-turn navigation</li>
 </ul>
 <h3 id="32-premium-features">3.2 Premium Features</h3>
 <ul>
@@ -190,7 +192,7 @@ These data are used solely for application diagnostics, performance monitoring, 
 - Supabase applies appropriate safeguards for international data transfers in accordance with GDPR</p>
 <p><strong>Trip Tracking Location Data:</strong>
 - Location data recorded during background trip tracking is stored locally on your device and synced to Supabase as described above
-- Map rendering and address geocoding are handled by our mapping provider, Mapbox (see Section 5.2)</p>
+- Map rendering, address geocoding and route calculation for navigation are handled by our mapping provider, Mapbox (see Section 5.2)</p>
 <h3 id="42-data-security">4.2 Data Security</h3>
 <p>We protect your data using the following measures:</p>
 <ul>
@@ -221,8 +223,8 @@ These data are used solely for application diagnostics, performance monitoring, 
 - Privacy Policy: <a href="https://supabase.com/privacy">https://supabase.com/privacy</a></p>
 <h3 id="52-mapping-location-services">5.2 Mapping &amp; Location Services</h3>
 <p><strong>Mapbox</strong> (mapbox.com)
-- Purpose: Map rendering and address geocoding (e.g. displaying maps and looking up addresses when adding a vehicle or reviewing a tracked trip)
-- Data Shared: GPS coordinates and search queries when using map display or address lookup features
+- Purpose: Map rendering, address geocoding, route calculation and turn-by-turn navigation (Mapbox Directions API) (e.g. displaying maps and looking up addresses when adding a vehicle or reviewing a tracked trip, and calculating a route when you start navigation)
+- Data Shared: GPS coordinates and search queries when using map display or address lookup features; start point (current location), destination and intermediate route coordinates when calculating a navigation route
 - Privacy Policy: <a href="https://www.mapbox.com/privacy">https://www.mapbox.com/privacy</a></p>
 <h3 id="53-ai-services">5.3 AI Services</h3>
 <p><strong>OpenAI</strong> (openai.com)

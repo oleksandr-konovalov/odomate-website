@@ -107,7 +107,7 @@
 <body>
 <h1 id="datenschutzerklarung-fur-odomate">Datenschutzerklärung für Odomate</h1>
 <p><strong>Gültig ab:</strong> 22. November 2024<br />
-<strong>Zuletzt aktualisiert:</strong> 22. November 2024</p>
+<strong>Zuletzt aktualisiert:</strong> 28. September 2026</p>
 <h2 id="1-einleitung">1. Einleitung</h2>
 <p>Willkommen bei Odomate! Diese Datenschutzerklärung erläutert, wie Oleksandr Konovalov ("wir"/"uns") Informationen erfasst, verwendet und schützt, wenn Sie die Odomate‑App ("App") nutzen. Wir legen großen Wert auf Transparenz und Datensicherheit.</p>
 <p>Durch die Nutzung von Odomate stimmen Sie der Erhebung und Verwendung Ihrer Informationen im Rahmen dieser Erklärung zu.</p>
@@ -125,9 +125,10 @@ Website: <a href="https://odomate.net">odomate.net</a></p>
 </ul>
 <h3 id="22-automatisch-erfasste-daten">2.2 Automatisch erfasste Daten</h3>
 <ul>
-<li>Standortdaten (GPS) während einer im Hintergrund erfassten Fahrt<br />
+<li>Standortdaten (GPS) während einer im Hintergrund erfassten Fahrt oder bei aktiver Navigation<br />
   Lokal auf dem Gerät gespeichert und mit Supabase synchronisiert (Backup).<br />
-  Keine dauerhafte Weitergabe präziser GPS‑Daten an Dritte; Übermittlung nur an unseren Kartenanbieter (Mapbox) zur Kartendarstellung und Adresssuche.</li>
+  Keine dauerhafte Weitergabe präziser GPS‑Daten an Dritte; Übermittlung nur an unseren Kartenanbieter (Mapbox) zur Kartendarstellung, Adresssuche und Routenberechnung für die Turn‑by‑Turn‑Navigation (Start‑, Ziel‑ und Routenkoordinaten).</li>
+<li>Netzwerkbasierte Ortung bei GPS‑Störungen: Wird das Satellitensignal gestört oder gefälscht (Jamming/Spoofing), kann die App die ungefähre, netzwerkbasierte Position des Betriebssystems (WLAN und Mobilfunkmasten, über Google Play‑Dienste auf Android bzw. Apple Core Location auf iOS) nutzen, um die Position zu schätzen und GPS‑Spoofing zu erkennen. Die Verarbeitung erfolgt auf dem Gerät; die App erfasst oder überträgt keine Listen von Mobilfunkmasten oder WLAN‑Netzen.  </li>
 <li>Geräteinformationen (Modell, Hersteller, OS‑Version, App‑Version, Sprache/Region)  </li>
 <li><strong>Nutzungsanalyse und Diagnostik:</strong><br />
   Screenviews und Feature‑Nutzung; App‑Performance‑Metriken und Crash‑Berichte; technische Kennungen wie User‑ID, Gerätemodell, OS‑Version und App‑Version. Diese Daten werden ausschließlich zur App‑Diagnose, Performance‑Überwachung und zur Verbesserung der Stabilität verwendet.</li>
@@ -143,6 +144,7 @@ Website: <a href="https://odomate.net">odomate.net</a></p>
 <li>Manuelles Erfassen und Speichern von Fahrten  </li>
 <li>Personalisierte Wartungspläne per KI‑Analyse  </li>
 <li>Synchronisierung zwischen Geräten  </li>
+<li>Turn‑by‑Turn‑Navigation in der App  </li>
 <li>Push‑Erinnerungen für Wartung</li>
 </ul>
 <h3 id="32-premiumfunktionen">3.2 Premium‑Funktionen</h3>
@@ -202,7 +204,7 @@ Website: <a href="https://odomate.net">odomate.net</a></p>
 <h2 id="6-eingebundene-dienste-und-weitergabe">6. Eingebundene Dienste und Weitergabe</h2>
 <ul>
 <li>Supabase (Auth/Speicher) – E‑Mail, Fahrzeug‑/Fahrtdaten  </li>
-<li>Mapbox (Kartendarstellung/Geokodierung) – GPS‑Koordinaten und Suchanfragen bei Kartenanzeige und Adresssuche  </li>
+<li>Mapbox (Kartendarstellung/Geokodierung/Routenberechnung) – GPS‑Koordinaten und Suchanfragen bei Kartenanzeige und Adresssuche; Start‑, Ziel‑ und Routenkoordinaten bei der Routenberechnung für die Navigation  </li>
 <li>OpenAI (KI‑Wartung) – Fahrzeugdaten, Laufleistung  </li>
 <li>Firebase (Analytics/Crashlytics) – Nutzungs‑/Crashdaten<br />
 Keine Weitergabe zu Werbe‑/Trackingzwecken außer AppsFlyer (siehe 5.5).</li>

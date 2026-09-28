@@ -106,14 +106,14 @@
 </head>
 <body>
 <h1 id="odomate-declaracion-de-cumplimiento-gdpr">Odomate – Declaración de Cumplimiento GDPR</h1>
-<p><strong>Fecha:</strong> 22 de noviembre de 2024</p>
+<p><strong>Fecha:</strong> 28 de septiembre de 2026</p>
 <h2 id="responsable-del-tratamiento-art-4">Responsable del tratamiento (Art. 4)</h2>
 <p>Oleksandr Konovalov<br />
 Correo: app@odomate.net<br />
 Sitio: odomate.net</p>
 <h2 id="finalidades-del-tratamiento-art-5">Finalidades del tratamiento (Art. 5)</h2>
 <ul>
-<li>Prestación de funcionalidades de la app (vehículos, mantenimiento, seguimiento de viajes por GPS en segundo plano, registro de viajes)  </li>
+<li>Prestación de funcionalidades de la app (vehículos, mantenimiento, seguimiento de viajes por GPS en segundo plano, navegación paso a paso, registro de viajes)  </li>
 <li>Sincronización y gestión de cuenta  </li>
 <li>Soporte y comunicaciones de servicio  </li>
 <li>Mejora de rendimiento, resolución de errores, seguridad (analíticas/crashes anónimos)  </li>
@@ -130,14 +130,14 @@ Sitio: odomate.net</p>
 <li>Contacto: correo electrónico  </li>
 <li>Uso: interacciones, vistas de pantalla (anónimo)  </li>
 <li>Técnicos: dispositivo/SO, versión app, diagnósticos/crashes  </li>
-<li>Ubicación: precisa/aproximada mientras el seguimiento de viajes está activo  </li>
+<li>Ubicación: precisa/aproximada mientras el seguimiento de viajes o la navegación están activos  </li>
 <li>Vehículo: marca, modelo, VIN, kilometraje, historial de mantenimiento  </li>
 <li>Viajes: inicio/fin, distancia, ruta, notas</li>
 </ul>
 <h2 id="destinatarios-art-13">Destinatarios (Art. 13)</h2>
 <ul>
 <li>Supabase (autenticación/almacenamiento)  </li>
-<li>Mapbox (mapas y geocodificación) – tratamiento de ubicación mientras el seguimiento de viajes está activo  </li>
+<li>Mapbox (mapas, geocodificación, cálculo de rutas y navegación paso a paso) – tratamiento de ubicación mientras el seguimiento de viajes o la navegación están activos (en la navegación: origen, destino y coordenadas de la ruta)  </li>
 <li>OpenAI (recomendaciones IA: datos de vehículo/kilometraje, sin identificadores personales)  </li>
 <li>Firebase (analítica anónima/informes de fallos)  </li>
 <li>AppsFlyer (atribución móvil y analítica: identificadores de dispositivo (IDFA en iOS con consentimiento del usuario), datos de instalación/uso, eventos en la app, datos de atribución)</li>
@@ -163,7 +163,7 @@ Reclamación: ante la autoridad de control competente (Art. 77).</p>
 <li>Minimización de datos</li>
 </ul>
 <h2 id="nota-sobre-la-ubicacion">Nota sobre la ubicación</h2>
-<p>La ubicación precisa se procesa solo cuando el seguimiento automático de viajes está activado. No hay compartición permanente a terceros con fines publicitarios/seguimiento. Mientras el seguimiento de viajes está activo, las coordenadas pueden enviarse a Mapbox para mostrar mapas y geocodificación.</p>
+<p>La ubicación precisa se procesa solo cuando el seguimiento automático de viajes está activado o la navegación está activa. No hay compartición permanente a terceros con fines publicitarios/seguimiento. Mientras el seguimiento de viajes o la navegación están activos, las coordenadas pueden enviarse a Mapbox para mostrar mapas, geocodificación y cálculo de rutas. Si la señal de satélite (GPS) está bloqueada o falsificada, la app puede usar la ubicación aproximada basada en la red (Wi-Fi y antenas de telefonía móvil) que proporciona el sistema operativo del dispositivo (servicios de Google Play en Android, Apple Core Location en iOS) para estimar la posición y detectar la suplantación de GPS; este procesamiento se realiza en el dispositivo y la app no recopila ni sube listas de antenas de telefonía móvil ni de redes Wi-Fi.</p>
 <h2 id="dpo-y-contacto">DPO y contacto</h2>
 <p>No se requiere DPO según la evaluación actual de riesgos.<br />
 Contacto: app@odomate.net</p>

@@ -107,7 +107,7 @@
 <body>
 <h1 id="politique-de-confidentialite-dodomate">Politique de Confidentialité d’Odomate</h1>
 <p><strong>Date d’entrée en vigueur :</strong> 22 novembre 2024<br />
-<strong>Dernière mise à jour :</strong> 22 novembre 2024</p>
+<strong>Dernière mise à jour :</strong> 28 septembre 2026</p>
 <h2 id="1-introduction">1. Introduction</h2>
 <p>Bienvenue sur Odomate ! Cette politique décrit comment Oleksandr Konovalov (« nous ») collecte, utilise et protège vos informations lorsque vous utilisez l’application Odomate (« App »).</p>
 <p><strong>Contact :</strong><br />
@@ -123,9 +123,10 @@ Site : <a href="https://odomate.net">odomate.net</a></p>
 </ul>
 <h3 id="22-donnees-collectees-automatiquement">2.2 Données collectées automatiquement</h3>
 <ul>
-<li>Localisation (GPS) pendant le suivi de trajet en arrière-plan<br />
+<li>Localisation (GPS) pendant le suivi de trajet en arrière-plan ou pendant la navigation<br />
   Stockée localement et synchronisée avec Supabase pour sauvegarde.<br />
-  Aucune communication de localisation précise à des tiers, sauf à notre fournisseur de cartographie (Mapbox) pour l’affichage des cartes et la recherche d’adresses (par exemple lors de l’ajout d’un véhicule).</li>
+  Aucune communication de localisation précise à des tiers, sauf à notre fournisseur de cartographie (Mapbox) pour l’affichage des cartes, la recherche d’adresses (par exemple lors de l’ajout d’un véhicule) et le calcul d’itinéraire pour la navigation guidée (point de départ, destination et coordonnées de l’itinéraire).</li>
+<li>Localisation réseau en cas de brouillage GPS : lorsque le signal satellite est brouillé ou falsifié, l’app peut utiliser la position approximative basée sur le réseau fournie par le système d’exploitation (Wi‑Fi et antennes relais, via les services Google Play sur Android ou Apple Core Location sur iOS) pour estimer la position et détecter l’usurpation GPS (spoofing). Ce traitement a lieu sur l’appareil ; l’app ne collecte ni ne transmet de listes d’antennes relais ou de réseaux Wi‑Fi.</li>
 <li>Informations appareil (modèle, fabricant, version OS, version app, langue/région)</li>
 <li><strong>Analyses d’utilisation et diagnostic :</strong><br />
   Vues d’écran et utilisation des fonctionnalités ; métriques de performance de l’app et rapports de plantage ; identifiants techniques tels que l’ID utilisateur, le modèle d’appareil, la version OS et la version de l’app. Ces données sont utilisées uniquement pour le diagnostic de l’application, le suivi des performances et l’amélioration de la stabilité.</li>
@@ -141,6 +142,7 @@ Site : <a href="https://odomate.net">odomate.net</a></p>
 <li>Saisie manuelle des trajets  </li>
 <li>Génération de plannings d’entretien personnalisés via IA  </li>
 <li>Synchronisation multi‑appareils  </li>
+<li>Navigation guidée dans l’app  </li>
 <li>Notifications de rappel entretien</li>
 </ul>
 <h3 id="32-fonctionnalites-premium">3.2 Fonctionnalités Premium</h3>
@@ -198,7 +200,7 @@ Site : <a href="https://odomate.net">odomate.net</a></p>
 - Refusant la demande App Tracking Transparency (ATT) sur iOS
 - Désactivant "Autoriser les apps à demander le suivi" dans Réglages iOS → Confidentialité → Suivi</p>
 <h2 id="6-partage-et-soustraitants">6. Partage et sous‑traitants</h2>
-<p>Sous‑traitants essentiels : Supabase, Mapbox, OpenAI, Firebase.<br />
+<p>Sous‑traitants essentiels : Supabase, Mapbox (cartographie, géocodage et calcul d’itinéraire pour la navigation), OpenAI, Firebase.<br />
 Pas de vente de données. Pas d'utilisation à des fins publicitaires sauf AppsFlyer (voir 5.5).</p>
 <h3 id="61-gdpr-rights">6.1 Droits RGPD (Utilisateurs EEE)</h3>
 <p>Si vous êtes situé dans l'Espace économique européen, vous avez le droit de :</p>

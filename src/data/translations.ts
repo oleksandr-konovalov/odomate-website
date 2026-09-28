@@ -51,6 +51,10 @@ export const translations: Record<Language, Translations> = {
       subtitle: 'Powerful features designed to make car maintenance simple and stress-free',
       items: [
         {
+          title: 'Navigation That Works Under GPS Jamming',
+          description: 'Built-in turn-by-turn navigation that keeps guiding you even when the GPS signal is jammed or spoofed. Odomate detects the interference and follows your position along the route using cell towers and Wi-Fi, so you never lose your way.',
+        },
+        {
           title: 'AI Driving Style Analysis',
           description: 'Intelligent analysis of your driving behavior with personalized scoring. Adjusts component lifespan predictions and forecasts future maintenance costs based on your unique driving style, tailored to your specific vehicle configuration.',
         },
@@ -355,6 +359,10 @@ export const translations: Record<Language, Translations> = {
       title: 'Всё необходимое для идеального ухода за автомобилем',
       subtitle: 'Мощные функции, разработанные для простого и беззаботного обслуживания автомобиля',
       items: [
+        {
+          title: 'Навигация, которая работает при глушении GPS',
+          description: 'Встроенная пошаговая навигация продолжает вести вас, даже когда GPS-сигнал заглушён или подменён. Odomate распознаёт помехи и отслеживает ваше положение на маршруте по мобильным вышкам и Wi-Fi — вы не собьётесь с пути.',
+        },
         {
           title: 'ИИ-анализ стиля вождения',
           description: 'Интеллектуальный анализ вашего стиля вождения с персонализированной оценкой. Корректирует прогнозы срока службы компонентов и предсказывает будущие расходы на обслуживание на основе вашего уникального стиля вождения, адаптированного под конкретную конфигурацию вашего автомобиля.',
@@ -661,6 +669,10 @@ export const translations: Record<Language, Translations> = {
       subtitle: 'Fonctionnalités puissantes conçues pour rendre l\'entretien automobile simple et sans stress',
       items: [
         {
+          title: 'Une navigation qui fonctionne malgré le brouillage GPS',
+          description: 'Navigation guidée intégrée qui continue de vous guider même lorsque le signal GPS est brouillé ou falsifié. Odomate détecte les interférences et suit votre position sur l\'itinéraire grâce aux antennes relais et au Wi-Fi, pour ne jamais vous perdre.',
+        },
+        {
           title: 'Analyse IA du style de conduite',
           description: 'Analyse intelligente de votre comportement de conduite avec notation personnalisée. Ajuste les prévisions de durée de vie des composants et prédit les coûts d\'entretien futurs en fonction de votre style de conduite unique, adapté à la configuration spécifique de votre véhicule.',
         },
@@ -953,6 +965,10 @@ export const translations: Record<Language, Translations> = {
       title: 'Alles was Sie für perfekte Autopflege brauchen',
       subtitle: 'Erweiterte Funktionen für intelligente Fahrzeugwartung und Verwaltung',
       items: [
+        {
+          title: 'Navigation, die auch bei GPS-Störungen funktioniert',
+          description: 'Integrierte Turn-by-Turn-Navigation, die Sie weiterführt, selbst wenn das GPS-Signal gestört oder gefälscht wird. Odomate erkennt die Störung und verfolgt Ihre Position auf der Route über Mobilfunkmasten und WLAN – so kommen Sie immer ans Ziel.',
+        },
         {
           title: 'KI-Fahrstilanalyse',
           description: 'Intelligente Analyse Ihres Fahrverhaltens mit personalisierter Bewertung. Passt Lebensdauerprognosen von Komponenten an und prognostiziert zukünftige Wartungskosten basierend auf Ihrem einzigartigen Fahrstil, angepasst an die spezifische Konfiguration Ihres Fahrzeugs.',
@@ -1247,6 +1263,10 @@ export const translations: Record<Language, Translations> = {
       subtitle: 'Zaawansowane funkcje do inteligentnej konserwacji i zarządzania pojazdem',
       items: [
         {
+          title: 'Nawigacja działająca mimo zagłuszania GPS',
+          description: 'Wbudowana nawigacja zakręt po zakręcie prowadzi Cię dalej, nawet gdy sygnał GPS jest zagłuszany lub fałszowany. Odomate wykrywa zakłócenia i śledzi Twoją pozycję na trasie za pomocą stacji bazowych i Wi-Fi, więc nie zgubisz drogi.',
+        },
+        {
           title: 'Analiza stylu jazdy AI',
           description: 'Inteligentna analiza Twojego zachowania za kierownicą z personalizowaną oceną. Dostosowuje prognozy żywotności komponentów i przewiduje przyszłe koszty konserwacji na podstawie Twojego unikalnego stylu jazdy, dostosowanego do konkretnej konfiguracji Twojego pojazdu.',
         },
@@ -1539,6 +1559,10 @@ export const translations: Record<Language, Translations> = {
       title: 'Todo lo que necesitas para el cuidado perfecto del automóvil',
       subtitle: 'Funciones avanzadas para mantenimiento inteligente de vehículos y gestión',
       items: [
+        {
+          title: 'Navegación que funciona con interferencias GPS',
+          description: 'Navegación paso a paso integrada que sigue guiándote incluso cuando la señal GPS está bloqueada o falsificada. Odomate detecta la interferencia y sigue tu posición en la ruta mediante antenas de telefonía y Wi-Fi, para que nunca te pierdas.',
+        },
         {
           title: 'Análisis IA del estilo de conducción',
           description: 'Análisis inteligente de tu comportamiento al volante con puntuación personalizada. Ajusta las predicciones de vida útil de componentes y pronostica costos futuros de mantenimiento basados en tu estilo único de conducción, adaptado a la configuración específica de tu vehículo.',
@@ -1844,6 +1868,10 @@ export const translations: Record<Language, Translations> = {
       title: 'Все, що потрібно для ідеального догляду',
       subtitle: 'Потужні можливості, створені для простого та безстресового техобслуговування',
       items: [
+        {
+          title: 'Навігація, що працює під час глушіння GPS',
+          description: 'Вбудована покрокова навігація продовжує вести вас, навіть коли GPS-сигнал заглушено чи підмінено. Odomate розпізнає перешкоди та відстежує ваше положення на маршруті за мобільними вежами й Wi-Fi — ви не зіб\'єтеся з дороги.',
+        },
         {
           title: 'ШІ-аналіз стилю водіння',
           description: 'Інтелектуальний аналіз вашого стилю водіння з персоналізованою оцінкою. Коригує прогнози ресурсу компонентів та передбачає майбутні витрати на обслуговування на основі вашого унікального стилю водіння, адаптованого під конкретну конфігурацію вашого автомобіля.',
