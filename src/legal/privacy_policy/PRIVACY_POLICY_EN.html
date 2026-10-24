@@ -107,7 +107,7 @@
 <body>
 <h1 id="privacy-policy-for-odomate">Privacy Policy for Odomate</h1>
 <p><strong>Effective Date:</strong> November 22, 2024<br />
-<strong>Last Updated:</strong> September 28, 2026</p>
+<strong>Last Updated:</strong> October 24, 2026</p>
 <h2 id="1-introduction">1. Introduction</h2>
 <p>Welcome to Odomate! This Privacy Policy explains how Oleksandr Konovalov ("we," "us," or "our") collects, uses, and protects your information when you use the Odomate mobile application ("App"). We are committed to protecting your privacy and ensuring transparency about our data practices.</p>
 <p>By using Odomate, you agree to the collection and use of information in accordance with this policy.</p>
@@ -209,10 +209,7 @@ These data are used solely for application diagnostics, performance monitoring, 
 <li><strong>Deleted Accounts:</strong> All personal data is deleted immediately upon account deletion</li>
 <li><strong>Trip History:</strong> Stored indefinitely unless you manually delete trips</li>
 <li><strong>Analytics Data:</strong> Analytics data is retained for 26 months (Firebase default)</li>
-<li><strong>AppsFlyer Data:</strong> Attribution and analytics data collected by AppsFlyer is retained for:
-  - 24 months for attribution data
-  - 12 months for event data
-  - After this period, data is automatically deleted or anonymized</li>
+<li><strong>Advertising Measurement Data:</strong> Data sent to Meta for measuring our ads is retained by Meta under its own privacy policy; we do not keep a separate copy of it</li>
 </ul>
 <h2 id="5-third-party-services">5. Third-Party Services</h2>
 <p>Odomate integrates with the following third-party services:</p>
@@ -244,18 +241,27 @@ These data are used solely for application diagnostics, performance monitoring, 
 - These data are used exclusively to diagnose issues, improve app stability, and provide user support.
 - Privacy Policy: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
 <p>Analytics and crash reporting are enabled by default to ensure application stability, detect errors, and improve the quality of the service.</p>
-<h3 id="55-third-party-analytics-attribution">5.5 Third-Party Analytics and Attribution</h3>
-<p><strong>AppsFlyer</strong> (appsflyer.com)
-- Purpose: Mobile attribution and analytics to understand how users find and interact with our app
-- Information Collected by AppsFlyer:
-  - Device identifiers (IDFA on iOS, if user consents via App Tracking Transparency)
-  - App installation and usage data
-  - In-app events (registration, subscription purchases)
-  - Attribution data (advertising campaign source)
-- Privacy Policy: <a href="https://www.appsflyer.com/legal/privacy-policy/">https://www.appsflyer.com/legal/privacy-policy/</a></p>
-<p><strong>You can opt out of tracking by:</strong>
-- Declining the App Tracking Transparency (ATT) prompt on iOS
-- Disabling "Allow Apps to Request to Track" in iOS Settings → Privacy → Tracking</p>
+<h3 id="55-third-party-analytics-attribution">5.5 Subscriptions and Advertising Measurement</h3>
+<p><strong>RevenueCat</strong> (revenuecat.com)
+- Purpose: Processing and verifying in-app subscriptions purchased through the App Store or Google Play
+- Data Shared: Account ID, purchase and subscription history, device identifiers listed below for advertising measurement
+- Privacy Policy: <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a></p>
+<p><strong>Meta</strong> (Meta Platforms Ireland Ltd. / Meta Platforms, Inc.)
+- Purpose: Measuring the effectiveness of our ads on Facebook and Instagram (which ad led to an app install, a free trial or a subscription) and optimizing the delivery of those ads
+- How: the Meta SDK in the app, and subscription events sent by RevenueCat's servers to Meta (Meta Conversions API)
+- Data Shared:
+  - Advertising identifier: Google Advertising ID on Android; IDFA on iOS only if you allow tracking via App Tracking Transparency
+  - Meta's anonymous app identifier and, on iOS, the identifier for vendor (IDFV)
+  - IP address, device model, operating system and app version, language
+  - App install and app launch events
+  - Subscription events: trial start, purchase, renewal (product, price, currency)
+  - A pseudonymous (hashed) account ID
+- <strong>NOT Shared:</strong> Your name, email address, GPS coordinates, trips or vehicle data
+- Privacy Policy: <a href="https://www.facebook.com/privacy/policy/">https://www.facebook.com/privacy/policy/</a></p>
+<p><strong>You can limit advertising measurement by:</strong>
+- Declining the App Tracking Transparency (ATT) prompt on iOS, or turning off tracking for Odomate in iOS Settings → Privacy &amp; Security → Tracking
+- Deleting or resetting your advertising ID on Android in Settings → Google → Ads
+- Managing your ad preferences on Facebook and Instagram: <a href="https://www.facebook.com/adpreferences">https://www.facebook.com/adpreferences</a></p>
 <h2 id="6-your-privacy-rights">6. Your Privacy Rights</h2>
 <h3 id="61-access-and-control">6.1 Access and Control</h3>
 <p>You have the right to:</p>
@@ -274,6 +280,7 @@ These data are used solely for application diagnostics, performance monitoring, 
 - Immediate deletion from local device
 - Server-side data is deleted immediately
 - Cannot be undone</p>
+<p><strong>Without the app:</strong> If you no longer have the app installed, email <a href="mailto:app@odomate.net">app@odomate.net</a> from the email address of your Odomate account with the subject "Delete my account". We will delete your account and all associated data within 30 days and confirm by email.</p>
 <h3 id="63-gdpr-rights-eu-users">6.3 GDPR Rights (EU Users)</h3>
 <p>If you are located in the European Union, you have additional rights:</p>
 <ul>
@@ -283,27 +290,28 @@ These data are used solely for application diagnostics, performance monitoring, 
 <li>Right to lodge a complaint with a supervisory authority</li>
 </ul>
 <p>Contact us at <a href="mailto:app@odomate.net">app@odomate.net</a> to exercise these rights.</p>
-<h3 id="64-appsflyer-data-rights">6.4 AppsFlyer Data Rights (GDPR)</h3>
+<h3 id="64-advertising-data-rights">6.4 Advertising Data Rights (GDPR)</h3>
 <p>If you are located in the European Economic Area, you have the right to:</p>
 <ul>
-<li>Access your data collected by AppsFlyer</li>
+<li>Access the data we send to Meta for advertising measurement</li>
 <li>Request deletion of your data</li>
-<li>Opt out of tracking</li>
+<li>Object to or withdraw consent for advertising measurement</li>
 </ul>
 <p>To exercise these rights:
 - Email us at: <a href="mailto:app@odomate.net">app@odomate.net</a>
-- Or contact AppsFlyer directly: <a href="mailto:privacy@appsflyer.com">privacy@appsflyer.com</a></p>
+- For data held by Meta, use Meta's Privacy Center: <a href="https://www.facebook.com/privacy/center/">https://www.facebook.com/privacy/center/</a></p>
 <h2 id="7-advertising-marketing">7. Advertising and Marketing</h2>
 <h3 id="71-advertising-attribution">7.1 Advertising Attribution</h3>
-<p>We use AppsFlyer to measure the effectiveness of our advertising campaigns. This helps us understand which marketing channels bring users to our app.</p>
-<p><strong>If you consent to tracking via the App Tracking Transparency prompt:</strong>
-- We collect your device's advertising identifier (IDFA)
-- We link app installs to advertising campaigns
-- We measure in-app events for advertising optimization</p>
+<p>We use Meta (the Meta SDK and RevenueCat's integration with the Meta Conversions API) to measure the effectiveness of our ads on Facebook and Instagram. This helps us understand which ads bring users to our app and lead to trials and subscriptions.</p>
+<p><strong>If you allow tracking via the App Tracking Transparency prompt (iOS), or on Android unless you delete your advertising ID:</strong>
+- We share your device's advertising identifier (IDFA / Google Advertising ID) with Meta
+- Meta links app installs, trials and subscriptions to its ad campaigns
+- Meta uses these events to optimize the delivery of our ads</p>
+<p><strong>If you do not allow tracking on iOS:</strong> the IDFA is not collected or shared. Install and subscription events may still be sent to Meta without it, together with the other data listed in section 5.5, and are used only for aggregated measurement of our campaigns.</p>
 <p><strong>This data is shared with:</strong>
-- AppsFlyer (attribution platform)
-- Advertising platforms (TikTok, Facebook, Google Ads) - only aggregated data</p>
-<p>You can withdraw consent at any time through iOS Settings.</p>
+- Meta (Facebook and Instagram ads)
+- RevenueCat (sends subscription events to Meta on our behalf)</p>
+<p>You can withdraw consent at any time through iOS Settings, Android Settings, or by contacting us.</p>
 <h2 id="8-childrens-privacy">8. Children's Privacy</h2>
 <p>Odomate is intended for users aged 18 and older. We do not knowingly collect personal information from individuals under the age of 18. If we become aware that data from a minor has been collected, we will delete such data immediately.</p>
 <h2 id="9-international-data-transfers">9. International Data Transfers</h2>

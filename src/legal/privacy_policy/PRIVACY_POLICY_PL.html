@@ -107,7 +107,7 @@
 <body>
 <h1 id="polityka-prywatnosci-odomate">Polityka Prywatności Odomate</h1>
 <p><strong>Data obowiązywania:</strong> 22 listopada 2024 r.<br />
-<strong>Ostatnia aktualizacja:</strong> 28 września 2026 r.</p>
+<strong>Ostatnia aktualizacja:</strong> 24 października 2026 r.</p>
 <h2 id="1-wprowadzenie">1. Wprowadzenie</h2>
 <p>Niniejszy dokument wyjaśnia, jak Odomate (Oleksandr Konovalov) gromadzi, wykorzystuje i chroni informacje podczas korzystania z aplikacji Odomate ("Aplikacja"). Dbamy o przejrzystość i bezpieczeństwo danych.</p>
 <p>Kontakt:<br />
@@ -168,10 +168,7 @@ Strona: <a href="https://odomate.net">odomate.net</a></p>
 <li>Chmura (Supabase): szyfrowanie w spoczynku/w tranzycie, zgodność z RODO; serwery w NA/SA/UE  </li>
 <li>Szyfrowanie transmisji (HTTPS/TLS), kontrola dostępu  </li>
 <li>Retencja: dane konta przechowywane tak długo, jak konto jest aktywne; po usunięciu konta dane po stronie serwera są usuwane natychmiast; analityka 26 miesięcy (domyślnie Firebase)</li>
-<li><strong>Dane AppsFlyer:</strong> Dane atrybucji i analityki zebrane przez AppsFlyer są przechowywane przez:
-  - 24 miesiące dla danych atrybucji
-  - 12 miesięcy dla danych zdarzeń
-  - Po tym okresie dane są automatycznie usuwane lub anonimizowane</li>
+<li><strong>Dane pomiaru reklam:</strong> Dane przekazywane do Meta w celu pomiaru skuteczności naszych reklam są przechowywane przez Meta zgodnie z jej własną polityką prywatności; nie przechowujemy ich osobnej kopii</li>
 </ul>
 <h3 id="54-analytics-crash-reporting">5.4 Analizy i raporty o awariach</h3>
 <p><strong>Firebase Analytics &amp; Crashlytics</strong> (firebase.google.com)
@@ -185,47 +182,57 @@ Strona: <a href="https://odomate.net">odomate.net</a></p>
 - Dane te są wykorzystywane wyłącznie do diagnozowania problemów, poprawy stabilności aplikacji oraz zapewnienia wsparcia użytkownikom.
 - Polityka prywatności: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
 <p>Analityka oraz raportowanie awarii są domyślnie włączone, aby zapewnić stabilność aplikacji, wykrywać błędy i poprawiać jakość usługi.</p>
-<h3 id="55-third-party-analytics-attribution">5.5 Analityka i Atrybucja Stron Trzecich</h3>
-<p><strong>AppsFlyer</strong> (appsflyer.com)
-- Cel: Mobilna atrybucja i analityka w celu zrozumienia, jak użytkownicy znajdują i wchodzą w interakcję z naszą aplikacją
-- Informacje zbierane przez AppsFlyer:
-  - Identyfikatory urządzenia (IDFA na iOS, jeśli użytkownik wyrazi zgodę poprzez App Tracking Transparency)
-  - Dane instalacji i użytkowania aplikacji
-  - Zdarzenia w aplikacji (rejestracja, zakupy subskrypcji)
-  - Dane atrybucji (źródło kampanii reklamowej)
-- Polityka prywatności: <a href="https://www.appsflyer.com/legal/privacy-policy/">https://www.appsflyer.com/legal/privacy-policy/</a></p>
-<p><strong>Możesz zrezygnować ze śledzenia poprzez:</strong>
-- Odrzucenie prośby App Tracking Transparency (ATT) na iOS
-- Wyłączenie "Zezwalaj aplikacjom na prośby o śledzenie" w Ustawienia iOS → Prywatność → Śledzenie</p>
+<h3 id="55-third-party-analytics-attribution">5.5 Subskrypcje i pomiar reklam</h3>
+<p><strong>RevenueCat</strong> (revenuecat.com)
+- Cel: Obsługa i weryfikacja subskrypcji w aplikacji zakupionych w App Store lub Google Play
+- Udostępniane dane: ID konta, historia zakupów i subskrypcji, wymienione poniżej identyfikatory urządzenia służące do pomiaru reklam
+- Polityka prywatności: <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a></p>
+<p><strong>Meta</strong> (Meta Platforms Ireland Ltd. / Meta Platforms, Inc.)
+- Cel: Pomiar skuteczności naszych reklam na Facebooku i Instagramie (która reklama doprowadziła do instalacji aplikacji, rozpoczęcia bezpłatnego okresu próbnego lub wykupienia subskrypcji) oraz optymalizacja wyświetlania tych reklam
+- Sposób: Meta SDK w aplikacji oraz zdarzenia subskrypcji wysyłane do Meta przez serwery RevenueCat (Meta Conversions API)
+- Udostępniane dane:
+  - Identyfikator reklamowy: Google Advertising ID na Androidzie; IDFA na iOS wyłącznie, jeśli zezwolisz na śledzenie poprzez App Tracking Transparency
+  - Anonimowy identyfikator aplikacji nadawany przez Meta oraz, na iOS, identyfikator dostawcy (IDFV)
+  - Adres IP, model urządzenia, wersja systemu operacyjnego i aplikacji, język
+  - Zdarzenia instalacji i uruchomienia aplikacji
+  - Zdarzenia subskrypcji: rozpoczęcie okresu próbnego, zakup, odnowienie (produkt, cena, waluta)
+  - Pseudonimowy (zahaszowany) identyfikator konta
+- <strong>NIE są udostępniane:</strong> Twoje imię i nazwisko, adres e‑mail, współrzędne GPS, przejazdy ani dane pojazdu
+- Polityka prywatności: <a href="https://www.facebook.com/privacy/policy/">https://www.facebook.com/privacy/policy/</a></p>
+<p><strong>Możesz ograniczyć pomiar reklam poprzez:</strong>
+- Odrzucenie prośby App Tracking Transparency (ATT) na iOS lub wyłączenie śledzenia dla Odomate w Ustawienia iOS → Prywatność i ochrona → Śledzenie
+- Usunięcie lub zresetowanie identyfikatora reklamowego na Androidzie w Ustawienia → Google → Reklamy
+- Zarządzanie preferencjami reklamowymi na Facebooku i Instagramie: <a href="https://www.facebook.com/adpreferences">https://www.facebook.com/adpreferences</a></p>
 <h2 id="6-udostepnianie-danych-i-podmioty-przetwarzajace">6. Udostępnianie danych i podmioty przetwarzające</h2>
 <ul>
 <li>Supabase (uwierzytelnianie/magazyn) – e‑mail, dane pojazdu/przejazdów  </li>
 <li>Mapbox (mapy/geokodowanie/wyznaczanie tras) – renderowanie map, wyszukiwanie adresów (np. przy dodawaniu pojazdu lub przeglądaniu zarejestrowanego przejazdu) oraz wyznaczanie trasy do nawigacji (punkt początkowy, cel i współrzędne trasy)  </li>
 <li>OpenAI (serwis AI) – dane pojazdu, przebieg  </li>
 <li>Firebase (analityka/awarie) – dane analityczne i o awariach<br />
-Brak udostępniania do celów reklamowych/śledzących z wyjątkiem AppsFlyer (patrz 5.5).</li>
+Brak udostępniania do celów reklamowych/śledzących z wyjątkiem Meta i RevenueCat w celu pomiaru reklam (patrz 5.5).</li>
 </ul>
 <h3 id="61-gdpr-rights">6.1 Prawa RODO (Użytkownicy EOG)</h3>
 <p>Jeśli znajdujesz się w Europejskim Obszarze Gospodarczym, masz prawo do:</p>
 <ul>
-<li>Dostępu do swoich danych zebranych przez AppsFlyer</li>
+<li>Dostępu do danych, które przekazujemy do Meta w celu pomiaru reklam</li>
 <li>Żądania usunięcia swoich danych</li>
-<li>Rezygnacji ze śledzenia</li>
+<li>Sprzeciwu wobec pomiaru reklam lub wycofania zgody na niego</li>
 </ul>
 <p>Aby skorzystać z tych praw:
 - Wyślij nam e‑mail: <a href="mailto:app@odomate.net">app@odomate.net</a>
-- Lub skontaktuj się bezpośrednio z AppsFlyer: <a href="mailto:privacy@appsflyer.com">privacy@appsflyer.com</a></p>
+- W przypadku danych przechowywanych przez Meta skorzystaj z Centrum prywatności Meta: <a href="https://www.facebook.com/privacy/center/">https://www.facebook.com/privacy/center/</a></p>
 <h2 id="7-advertising-marketing">7. Reklama i Marketing</h2>
 <h3 id="71-advertising-attribution">7.1 Atrybucja Reklamowa</h3>
-<p>Używamy AppsFlyer do pomiaru skuteczności naszych kampanii reklamowych. Pomaga nam to zrozumieć, które kanały marketingowe przyciągają użytkowników do naszej aplikacji.</p>
-<p><strong>Jeśli wyrazisz zgodę na śledzenie poprzez prośbę App Tracking Transparency:</strong>
-- Zbieramy identyfikator reklamowy Twojego urządzenia (IDFA)
-- Łączymy instalacje aplikacji z kampaniami reklamowymi
-- Mierzymy zdarzenia w aplikacji w celu optymalizacji reklam</p>
+<p>Korzystamy z Meta (Meta SDK oraz integracji RevenueCat z Meta Conversions API) do pomiaru skuteczności naszych reklam na Facebooku i Instagramie. Pomaga nam to zrozumieć, które reklamy przyciągają użytkowników do naszej aplikacji i prowadzą do rozpoczęcia okresów próbnych oraz wykupienia subskrypcji.</p>
+<p><strong>Jeśli zezwolisz na śledzenie poprzez prośbę App Tracking Transparency (iOS) lub na Androidzie, o ile nie usuniesz identyfikatora reklamowego:</strong>
+- Udostępniamy Meta identyfikator reklamowy Twojego urządzenia (IDFA / Google Advertising ID)
+- Meta łączy instalacje aplikacji, okresy próbne i subskrypcje ze swoimi kampaniami reklamowymi
+- Meta wykorzystuje te zdarzenia do optymalizacji wyświetlania naszych reklam</p>
+<p><strong>Jeśli nie zezwolisz na śledzenie na iOS:</strong> IDFA nie jest zbierany ani udostępniany. Zdarzenia instalacji i subskrypcji mogą nadal być wysyłane do Meta bez niego, wraz z pozostałymi danymi wymienionymi w sekcji 5.5, i są wykorzystywane wyłącznie do zagregowanego pomiaru naszych kampanii.</p>
 <p><strong>Te dane są udostępniane:</strong>
-- AppsFlyer (platforma atrybucji)
-- Platformom reklamowym (TikTok, Facebook, Google Ads) - tylko dane zagregowane</p>
-<p>Możesz wycofać zgodę w dowolnym momencie poprzez Ustawienia iOS.</p>
+- Meta (reklamy na Facebooku i Instagramie)
+- RevenueCat (przesyła w naszym imieniu zdarzenia subskrypcji do Meta)</p>
+<p>Możesz wycofać zgodę w dowolnym momencie poprzez Ustawienia iOS, Ustawienia Androida lub kontaktując się z nami.</p>
 <h2 id="8-transfery-miedzynarodowe">8. Transfery międzynarodowe</h2>
 <p>Przekazy do NA/SA/UE zgodnie z przepisami; stosowane są odpowiednie zabezpieczenia (m.in. standardowe klauzule umowne).</p>
 <h2 id="9-prawa-uzytkownika">9. Prawa użytkownika</h2>
@@ -233,6 +240,7 @@ Brak udostępniania do celów reklamowych/śledzących z wyjątkiem AppsFlyer (p
 <li>Dostęp, sprostowanie, usunięcie, ograniczenie, sprzeciw, przenoszenie danych  </li>
 <li>Usunięcie konta w aplikacji; dane po stronie serwera usuwane natychmiast</li>
 </ul>
+<p><strong>Bez aplikacji:</strong> Jeśli nie masz już zainstalowanej aplikacji, wyślij wiadomość na adres <a href="mailto:app@odomate.net">app@odomate.net</a> z adresu e‑mail powiązanego z Twoim kontem Odomate, z tematem "Delete my account" („Usuń moje konto”). Usuniemy Twoje konto i wszystkie powiązane z nim dane w ciągu 30 dni i potwierdzimy to e‑mailem.</p>
 <h2 id="10-dzieci">10. Dzieci</h2>
 <p>Odomate jest przeznaczony dla użytkowników w wieku 18 lat i starszych. Nie zbieramy świadomie danych osobowych osób poniżej 18 roku życia.</p>
 <h2 id="11-zmiany">11. Zmiany</h2>
