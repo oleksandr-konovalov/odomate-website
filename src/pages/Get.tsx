@@ -1,7 +1,7 @@
 import { useEffect, useMemo } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { ChevronRight, Globe, Gauge, Navigation, Wrench } from 'lucide-react';
+import { ChevronRight, Globe, Gauge, Navigation, RadioTower } from 'lucide-react';
 import { useLanguage } from '@/hooks/useLanguage';
 import { Language } from '@/types/language';
 import logo from '@/assets/logo-256.png';
@@ -10,6 +10,9 @@ import logo from '@/assets/logo-256.png';
 // apps.apple.com without a country code opens the visitor's own storefront.
 const APP_STORE_URL = 'https://apps.apple.com/app/odomate/id6754283341';
 const GOOGLE_PLAY_URL = 'https://play.google.com/store/apps/details?id=com.aleksandrkonovalov.odomate';
+
+// Brand slogan, the same in every language.
+const TAGLINE = 'Your car. Your buddy.';
 
 const UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
 
@@ -24,7 +27,6 @@ const detectPlatform = (): Platform => {
 };
 
 interface GetTexts {
-  tagline: string;
   title: string;
   features: [string, string, string];
   appStoreTop: string;
@@ -35,63 +37,56 @@ interface GetTexts {
 
 const texts: Record<Language, GetTexts> = {
   en: {
-    tagline: 'Your car. Your buddy.',
-    title: 'Mileage, service and navigation in one app',
-    features: ['Auto mileage', 'Service reminders', 'Navigation'],
+    title: 'Navigation That Works Under GPS Jamming',
+    features: ['Cell towers + Wi-Fi', 'Turn-by-turn', 'Auto mileage'],
     appStoreTop: 'Download on the',
     googlePlayTop: 'Get it on',
     free: 'Free to download',
     website: 'Visit website',
   },
   uk: {
-    tagline: 'Твоє авто. Твій друг.',
-    title: 'Пробіг, обслуговування і навігація в одному застосунку',
-    features: ['Автопробіг', 'Нагадування про ТО', 'Навігація'],
+    title: 'Навігація, що працює під час глушіння GPS',
+    features: ['Вежі + Wi-Fi', 'Покрокові підказки', 'Автопробіг'],
     appStoreTop: 'Завантажити в',
     googlePlayTop: 'Доступно в',
     free: 'Завантаження безкоштовне',
     website: 'Перейти на сайт',
   },
   ru: {
-    tagline: 'Твоё авто. Твой друг.',
-    title: 'Пробег, обслуживание и навигация в одном приложении',
-    features: ['Автопробег', 'Напоминания о ТО', 'Навигация'],
+    title: 'Навигация, которая работает при глушении GPS',
+    features: ['Вышки + Wi-Fi', 'Пошаговые подсказки', 'Автопробег'],
     appStoreTop: 'Загрузите в',
     googlePlayTop: 'Доступно в',
     free: 'Скачать бесплатно',
     website: 'Перейти на сайт',
   },
   de: {
-    tagline: 'Dein Auto. Dein Buddy.',
-    title: 'Kilometer, Wartung und Navigation in einer App',
-    features: ['Auto-Kilometer', 'Wartungserinnerungen', 'Navigation'],
+    title: 'Navigation, die auch bei GPS-Störungen funktioniert',
+    features: ['Funkmasten + WLAN', 'Turn-by-Turn', 'Auto-Kilometer'],
     appStoreTop: 'Laden im',
     googlePlayTop: 'Jetzt bei',
     free: 'Kostenlos herunterladen',
     website: 'Zur Website',
   },
   fr: {
-    tagline: 'Ta voiture. Ton copilote.',
-    title: 'Kilométrage, entretien et navigation dans une seule app',
-    features: ['Kilométrage auto', 'Rappels d’entretien', 'Navigation'],
+    title: 'Une navigation qui fonctionne malgré le brouillage GPS',
+    features: ['Antennes + Wi-Fi', 'Guidage pas à pas', 'Kilométrage auto'],
     appStoreTop: 'Télécharger dans',
     googlePlayTop: 'Disponible sur',
     free: 'Téléchargement gratuit',
     website: 'Voir le site',
   },
   es: {
-    tagline: 'Tu coche. Tu colega.',
-    title: 'Kilometraje, mantenimiento y navegación en una sola app',
-    features: ['Kilometraje auto', 'Avisos de servicio', 'Navegación'],
+    title: 'Navegación que funciona con interferencias GPS',
+    features: ['Antenas + Wi-Fi', 'Paso a paso', 'Kilometraje auto'],
     appStoreTop: 'Descárgalo en',
     googlePlayTop: 'Disponible en',
     free: 'Descarga gratuita',
     website: 'Ir al sitio web',
   },
   pl: {
-    tagline: 'Twoje auto. Twój kumpel.',
-    title: 'Przebieg, serwis i nawigacja w jednej aplikacji',
-    features: ['Auto przebieg', 'Przypomnienia o serwisie', 'Nawigacja'],
+    title: 'Nawigacja działająca mimo zagłuszania GPS',
+    features: ['Stacje bazowe + Wi-Fi', 'Zakręt po zakręcie', 'Auto przebieg'],
     appStoreTop: 'Pobierz z',
     googlePlayTop: 'Pobierz z',
     free: 'Pobierz za darmo',
@@ -193,15 +188,15 @@ const Get = () => {
     />
   );
   const buttons = platform === 'android' ? [googlePlay, appStore] : [appStore, googlePlay];
-  const featureIcons = [Gauge, Wrench, Navigation];
+  const featureIcons = [RadioTower, Navigation, Gauge];
 
   return (
     <>
       <Helmet>
         <html lang={language} />
-        <title>Odomate — {tx.tagline}</title>
+        <title>Odomate — {TAGLINE}</title>
         <meta name="description" content={tx.title} />
-        <meta property="og:title" content={`Odomate — ${tx.tagline}`} />
+        <meta property="og:title" content={`Odomate — ${TAGLINE}`} />
         <meta property="og:description" content={tx.title} />
         <meta property="og:url" content="https://odomate.net/get" />
         <link rel="canonical" href="https://odomate.net/get" />
@@ -238,7 +233,7 @@ const Get = () => {
               />
             </div>
             <h1 className="mt-5 text-[2.75rem] font-bold leading-none tracking-tight brand-gradient [@media(max-height:700px)]:mt-3 [@media(max-height:700px)]:text-4xl">Odomate</h1>
-            <p className="mt-2 text-lg font-light text-muted-foreground">{tx.tagline}</p>
+            <p className="mt-2 text-lg font-light text-muted-foreground">{TAGLINE}</p>
             <p className="mt-5 text-balance text-xl font-semibold leading-snug text-foreground [@media(max-height:700px)]:mt-3 [@media(max-height:700px)]:text-lg">{tx.title}</p>
           </header>
 
