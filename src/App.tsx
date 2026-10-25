@@ -12,6 +12,7 @@ import NotFound from "./pages/NotFound";
 import { FAQPage } from "./pages/FAQPage";
 import { GDPR } from "./pages/GDPR";
 import { Manual } from "./pages/Manual";
+import Get from "./pages/Get";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +31,7 @@ const App = () => (
               <Route path="/gdpr" element={<GDPR />} />
               <Route path="/faq" element={<FAQPage />} />
               <Route path="/manual" element={<Manual />} />
+              <Route path="/get" element={<Get />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

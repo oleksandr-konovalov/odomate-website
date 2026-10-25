@@ -30,7 +30,7 @@ jobs:
       # and Google Play rejected the privacy policy and deletion links.
       - run: |
           cp dist/index.html dist/404.html
-          for page in privacy terms gdpr faq manual; do
+          for page in privacy terms gdpr faq manual get; do
             cp dist/index.html "dist/$page.html"
           done
       - uses: actions/upload-pages-artifact@v3
