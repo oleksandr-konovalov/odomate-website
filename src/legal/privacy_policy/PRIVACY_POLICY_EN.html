@@ -107,7 +107,7 @@
 <body>
 <h1 id="privacy-policy-for-odomate">Privacy Policy for Odomate</h1>
 <p><strong>Effective Date:</strong> November 22, 2024<br />
-<strong>Last Updated:</strong> October 24, 2026</p>
+<strong>Last Updated:</strong> October 27, 2026</p>
 <h2 id="1-introduction">1. Introduction</h2>
 <p>Welcome to Odomate! This Privacy Policy explains how Oleksandr Konovalov ("we," "us," or "our") collects, uses, and protects your information when you use the Odomate mobile application ("App"). We are committed to protecting your privacy and ensuring transparency about our data practices.</p>
 <p>By using Odomate, you agree to the collection and use of information in accordance with this policy.</p>
@@ -209,7 +209,7 @@ These data are used solely for application diagnostics, performance monitoring, 
 <li><strong>Deleted Accounts:</strong> All personal data is deleted immediately upon account deletion</li>
 <li><strong>Trip History:</strong> Stored indefinitely unless you manually delete trips</li>
 <li><strong>Analytics Data:</strong> Analytics data is retained for 26 months (Firebase default)</li>
-<li><strong>Advertising Measurement Data:</strong> Data sent to Meta for measuring our ads is retained by Meta under its own privacy policy; we do not keep a separate copy of it</li>
+<li><strong>Advertising Measurement Data:</strong> Data sent to Airbridge and Meta for measuring our ads is retained by them under their own privacy policies; we do not keep a separate copy of it</li>
 </ul>
 <h2 id="5-third-party-services">5. Third-Party Services</h2>
 <p>Odomate integrates with the following third-party services:</p>
@@ -246,9 +246,22 @@ These data are used solely for application diagnostics, performance monitoring, 
 - Purpose: Processing and verifying in-app subscriptions purchased through the App Store or Google Play
 - Data Shared: Account ID, purchase and subscription history, device identifiers listed below for advertising measurement
 - Privacy Policy: <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a></p>
+<p><strong>Airbridge</strong> (AB180 Inc., South Korea; airbridge.io)
+- Purpose: Mobile measurement partner: attributing app installs, free trials and subscriptions to the ad campaigns that led to them, and passing these events on to the ad networks we advertise on (currently Meta)
+- How: the Airbridge SDK in the app
+- Data Shared:
+  - Advertising identifier: Google Advertising ID on Android; IDFA on iOS only if you allow tracking via App Tracking Transparency
+  - On iOS, the identifier for vendor (IDFV); on Android, the install referrer from Google Play and Meta
+  - IP address, device model, operating system and app version, language
+  - App install and app launch events
+  - Trial start and subscription purchases made in the app (product, price, currency)
+  - A pseudonymous account ID (our subscription provider's customer ID)
+- On iOS, Apple's SKAdNetwork reports installs and trials to ad networks without any identifier
+- <strong>NOT Shared:</strong> Your name, email address, GPS coordinates, trips or vehicle data
+- Privacy and GDPR: <a href="https://airbridge.io/en/gdpr">https://airbridge.io/en/gdpr</a></p>
 <p><strong>Meta</strong> (Meta Platforms Ireland Ltd. / Meta Platforms, Inc.)
 - Purpose: Measuring the effectiveness of our ads on Facebook and Instagram (which ad led to an app install, a free trial or a subscription) and optimizing the delivery of those ads
-- How: the Meta SDK in the app, and subscription events sent by RevenueCat's servers to Meta (Meta Conversions API)
+- How: the Meta SDK in the app, and events passed on to Meta by Airbridge
 - Data Shared:
   - Advertising identifier: Google Advertising ID on Android; IDFA on iOS only if you allow tracking via App Tracking Transparency
   - Meta's anonymous app identifier and, on iOS, the identifier for vendor (IDFV)
@@ -293,24 +306,25 @@ These data are used solely for application diagnostics, performance monitoring, 
 <h3 id="64-advertising-data-rights">6.4 Advertising Data Rights (GDPR)</h3>
 <p>If you are located in the European Economic Area, you have the right to:</p>
 <ul>
-<li>Access the data we send to Meta for advertising measurement</li>
+<li>Access the data we send to Airbridge and Meta for advertising measurement</li>
 <li>Request deletion of your data</li>
 <li>Object to or withdraw consent for advertising measurement</li>
 </ul>
 <p>To exercise these rights:
 - Email us at: <a href="mailto:app@odomate.net">app@odomate.net</a>
-- For data held by Meta, use Meta's Privacy Center: <a href="https://www.facebook.com/privacy/center/">https://www.facebook.com/privacy/center/</a></p>
+- For data held by Meta, use Meta's Privacy Center: <a href="https://www.facebook.com/privacy/center/">https://www.facebook.com/privacy/center/</a>
+- For data held by Airbridge: <a href="mailto:compliance@ab180.co">compliance@ab180.co</a></p>
 <h2 id="7-advertising-marketing">7. Advertising and Marketing</h2>
 <h3 id="71-advertising-attribution">7.1 Advertising Attribution</h3>
-<p>We use Meta (the Meta SDK and RevenueCat's integration with the Meta Conversions API) to measure the effectiveness of our ads on Facebook and Instagram. This helps us understand which ads bring users to our app and lead to trials and subscriptions.</p>
+<p>We use Airbridge and Meta (the Airbridge SDK and the Meta SDK) to measure the effectiveness of our ads on Facebook and Instagram. This helps us understand which ads bring users to our app and lead to trials and subscriptions.</p>
 <p><strong>If you allow tracking via the App Tracking Transparency prompt (iOS), or on Android unless you delete your advertising ID:</strong>
-- We share your device's advertising identifier (IDFA / Google Advertising ID) with Meta
+- We share your device's advertising identifier (IDFA / Google Advertising ID) with Airbridge and Meta
 - Meta links app installs, trials and subscriptions to its ad campaigns
 - Meta uses these events to optimize the delivery of our ads</p>
-<p><strong>If you do not allow tracking on iOS:</strong> the IDFA is not collected or shared. Install and subscription events may still be sent to Meta without it, together with the other data listed in section 5.5, and are used only for aggregated measurement of our campaigns.</p>
+<p><strong>If you do not allow tracking on iOS:</strong> the IDFA is not collected or shared. Install and subscription events may still be sent to Airbridge and Meta without it, together with the other data listed in section 5.5, and are used only for aggregated measurement of our campaigns (including Apple's SKAdNetwork and Meta's Aggregated Event Measurement).</p>
 <p><strong>This data is shared with:</strong>
-- Meta (Facebook and Instagram ads)
-- RevenueCat (sends subscription events to Meta on our behalf)</p>
+- Airbridge (AB180 Inc.), our mobile measurement partner
+- Meta (Facebook and Instagram ads)</p>
 <p>You can withdraw consent at any time through iOS Settings, Android Settings, or by contacting us.</p>
 <h2 id="8-childrens-privacy">8. Children's Privacy</h2>
 <p>Odomate is intended for users aged 18 and older. We do not knowingly collect personal information from individuals under the age of 18. If we become aware that data from a minor has been collected, we will delete such data immediately.</p>

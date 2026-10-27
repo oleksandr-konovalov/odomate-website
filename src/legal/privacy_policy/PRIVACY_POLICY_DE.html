@@ -107,7 +107,7 @@
 <body>
 <h1 id="datenschutzerklarung-fur-odomate">Datenschutzerklärung für Odomate</h1>
 <p><strong>Gültig ab:</strong> 22. November 2024<br />
-<strong>Zuletzt aktualisiert:</strong> 24. Oktober 2026</p>
+<strong>Zuletzt aktualisiert:</strong> 27. Oktober 2026</p>
 <h2 id="1-einleitung">1. Einleitung</h2>
 <p>Willkommen bei Odomate! Diese Datenschutzerklärung erläutert, wie Oleksandr Konovalov ("wir"/"uns") Informationen erfasst, verwendet und schützt, wenn Sie die Odomate‑App ("App") nutzen. Wir legen großen Wert auf Transparenz und Datensicherheit.</p>
 <p>Durch die Nutzung von Odomate stimmen Sie der Erhebung und Verwendung Ihrer Informationen im Rahmen dieser Erklärung zu.</p>
@@ -172,7 +172,7 @@ Website: <a href="https://odomate.net">odomate.net</a></p>
 <li>Cloud (Supabase): Verschlüsselung at‑rest/in‑transit, DSGVO‑konform; Server in NA/SA/EU  </li>
 <li>Transportverschlüsselung (HTTPS/TLS), Zugriffskontrollen  </li>
 <li>Aufbewahrung: Kontodaten solange aktiv; bei Kontolöschung sofortige Löschung; Analytics 26 Monate (Firebase‑Standard)</li>
-<li><strong>Daten zur Werbemessung:</strong> Daten, die zur Messung unserer Werbung an Meta übermittelt werden, speichert Meta gemäß seiner eigenen Datenschutzrichtlinie; wir bewahren keine eigene Kopie davon auf</li>
+<li><strong>Daten zur Werbemessung:</strong> Daten, die zur Messung unserer Werbung an Airbridge und Meta übermittelt werden, speichern diese gemäß ihren eigenen Datenschutzrichtlinien; wir bewahren keine eigene Kopie davon auf</li>
 </ul>
 <h3 id="54-analytics-crash-reporting">5.4 Crash-Berichte und Performance-Monitoring</h3>
 <p><strong>Firebase Analytics &amp; Crashlytics</strong> (firebase.google.com)
@@ -191,9 +191,22 @@ Website: <a href="https://odomate.net">odomate.net</a></p>
 - Zweck: Abwicklung und Prüfung von In‑App‑Abonnements, die über den App Store oder Google Play erworben wurden
 - Übermittelte Daten: Konto‑ID, Kauf‑ und Abonnementverlauf, die unten genannten Gerätekennungen zur Werbemessung
 - Datenschutzerklärung: <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a></p>
+<p><strong>Airbridge</strong> (AB180 Inc., Südkorea; airbridge.io)
+- Zweck: Mobile‑Measurement‑Partner: Zuordnung von App‑Installationen, kostenlosen Testzeiträumen und Abonnements zu den Werbekampagnen, die zu ihnen geführt haben, sowie Weitergabe dieser Ereignisse an die Werbenetzwerke, in denen wir werben (derzeit Meta)
+- Wie: über das Airbridge SDK in der App
+- Übermittelte Daten:
+  - Werbekennung: Google Advertising ID auf Android; IDFA auf iOS nur, wenn Sie das Tracking über App Tracking Transparency erlauben
+  - Auf iOS die Kennung für Anbieter (Identifier for Vendor, IDFV); auf Android der Installations‑Referrer von Google Play und Meta
+  - IP‑Adresse, Gerätemodell, Betriebssystem‑ und App‑Version, Sprache
+  - Ereignisse zur App‑Installation und zum App‑Start
+  - Beginn des Testzeitraums und in der App abgeschlossene Abonnements (Produkt, Preis, Währung)
+  - Eine pseudonymisierte Konto‑ID (die Kunden‑ID unseres Abonnementanbieters)
+- Auf iOS meldet Apples SKAdNetwork Installationen und Testzeiträume ohne jegliche Kennung an Werbenetzwerke
+- <strong>NICHT übermittelt:</strong> Ihr Name, Ihre E‑Mail‑Adresse, GPS‑Koordinaten, Fahrten oder Fahrzeugdaten
+- Datenschutz und DSGVO: <a href="https://airbridge.io/en/gdpr">https://airbridge.io/en/gdpr</a></p>
 <p><strong>Meta</strong> (Meta Platforms Ireland Ltd. / Meta Platforms, Inc.)
 - Zweck: Messung der Wirksamkeit unserer Werbung auf Facebook und Instagram (welche Anzeige zu einer App‑Installation, einem kostenlosen Testzeitraum oder einem Abonnement geführt hat) und Optimierung der Ausspielung dieser Anzeigen
-- Wie: über das Meta SDK in der App sowie über Abonnementereignisse, die die Server von RevenueCat an Meta senden (Meta Conversions API)
+- Wie: über das Meta SDK in der App sowie über Ereignisse, die Airbridge an Meta weitergibt
 - Übermittelte Daten:
   - Werbekennung: Google Advertising ID auf Android; IDFA auf iOS nur, wenn Sie das Tracking über App Tracking Transparency erlauben
   - Anonyme App‑Kennung von Meta und auf iOS die Kennung für Anbieter (Identifier for Vendor, IDFV)
@@ -213,29 +226,30 @@ Website: <a href="https://odomate.net">odomate.net</a></p>
 <li>Mapbox (Kartendarstellung/Geokodierung/Routenberechnung) – GPS‑Koordinaten und Suchanfragen bei Kartenanzeige und Adresssuche; Start‑, Ziel‑ und Routenkoordinaten bei der Routenberechnung für die Navigation  </li>
 <li>OpenAI (KI‑Wartung) – Fahrzeugdaten, Laufleistung  </li>
 <li>Firebase (Analytics/Crashlytics) – Nutzungs‑/Crashdaten<br />
-Keine Weitergabe zu Werbe‑/Trackingzwecken außer an Meta und RevenueCat zur Werbemessung (siehe 5.5).</li>
+Keine Weitergabe zu Werbe‑/Trackingzwecken außer an Airbridge und Meta zur Werbemessung (siehe 5.5).</li>
 </ul>
 <h3 id="61-gdpr-rights">6.1 GDPR‑Rechte (EWR‑Nutzer)</h3>
 <p>Wenn Sie sich im Europäischen Wirtschaftsraum befinden, haben Sie das Recht:</p>
 <ul>
-<li>Auf die Daten zuzugreifen, die wir zur Werbemessung an Meta übermitteln</li>
+<li>Auf die Daten zuzugreifen, die wir zur Werbemessung an Airbridge und Meta übermitteln</li>
 <li>Die Löschung Ihrer Daten zu verlangen</li>
 <li>Der Werbemessung zu widersprechen oder Ihre Einwilligung dazu zu widerrufen</li>
 </ul>
 <p>Um diese Rechte auszuüben:
 - E‑Mail an uns: <a href="mailto:app@odomate.net">app@odomate.net</a>
-- Für bei Meta gespeicherte Daten nutzen Sie das Datenschutzcenter von Meta: <a href="https://www.facebook.com/privacy/center/">https://www.facebook.com/privacy/center/</a></p>
+- Für bei Meta gespeicherte Daten nutzen Sie das Datenschutzcenter von Meta: <a href="https://www.facebook.com/privacy/center/">https://www.facebook.com/privacy/center/</a>
+- Für bei Airbridge gespeicherte Daten: <a href="mailto:compliance@ab180.co">compliance@ab180.co</a></p>
 <h2 id="7-advertising-marketing">7. Werbung und Marketing</h2>
 <h3 id="71-advertising-attribution">7.1 Werbe‑Attribution</h3>
-<p>Wir verwenden Meta (das Meta SDK und die Integration von RevenueCat mit der Meta Conversions API), um die Wirksamkeit unserer Werbung auf Facebook und Instagram zu messen. Dies hilft uns zu verstehen, welche Anzeigen Nutzer zu unserer App bringen und zu Testzeiträumen und Abonnements führen.</p>
+<p>Wir verwenden Airbridge und Meta (das Airbridge SDK und das Meta SDK), um die Wirksamkeit unserer Werbung auf Facebook und Instagram zu messen. Dies hilft uns zu verstehen, welche Anzeigen Nutzer zu unserer App bringen und zu Testzeiträumen und Abonnements führen.</p>
 <p><strong>Wenn Sie das Tracking über die App Tracking Transparency‑Anfrage (iOS) erlauben oder auf Android, sofern Sie Ihre Werbe‑ID nicht löschen:</strong>
-- Wir übermitteln die Werbekennung Ihres Geräts (IDFA / Google Advertising ID) an Meta
+- Wir übermitteln die Werbekennung Ihres Geräts (IDFA / Google Advertising ID) an Airbridge und Meta
 - Meta verknüpft App‑Installationen, Testzeiträume und Abonnements mit seinen Werbekampagnen
 - Meta nutzt diese Ereignisse, um die Ausspielung unserer Anzeigen zu optimieren</p>
-<p><strong>Wenn Sie das Tracking auf iOS nicht erlauben:</strong> Die IDFA wird weder erfasst noch übermittelt. Installations‑ und Abonnementereignisse können auch ohne sie zusammen mit den übrigen in Abschnitt 5.5 genannten Daten an Meta gesendet werden und werden ausschließlich zur aggregierten Messung unserer Kampagnen verwendet.</p>
+<p><strong>Wenn Sie das Tracking auf iOS nicht erlauben:</strong> Die IDFA wird weder erfasst noch übermittelt. Installations‑ und Abonnementereignisse können auch ohne sie zusammen mit den übrigen in Abschnitt 5.5 genannten Daten an Airbridge und Meta gesendet werden und werden ausschließlich zur aggregierten Messung unserer Kampagnen verwendet (einschließlich Apples SKAdNetwork und Aggregated Event Measurement von Meta).</p>
 <p><strong>Diese Daten werden geteilt mit:</strong>
-- Meta (Werbung auf Facebook und Instagram)
-- RevenueCat (sendet Abonnementereignisse in unserem Auftrag an Meta)</p>
+- Airbridge (AB180 Inc.), unser Mobile‑Measurement‑Partner
+- Meta (Werbung auf Facebook und Instagram)</p>
 <p>Sie können Ihre Einwilligung jederzeit über die iOS‑Einstellungen, die Android‑Einstellungen oder durch Kontaktaufnahme mit uns widerrufen.</p>
 <h2 id="8-internationale-datenubermittlungen">8. Internationale Datenübermittlungen</h2>
 <p>Übermittlung nach NA/SA/EU gemäß geltendem Datenschutzrecht; geeignete Garantien (u. a. Standardvertragsklauseln) gewährleisten ein angemessenes Schutzniveau.</p>

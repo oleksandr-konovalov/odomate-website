@@ -107,7 +107,7 @@
 <body>
 <h1 id="polityka-prywatnosci-odomate">Polityka Prywatności Odomate</h1>
 <p><strong>Data obowiązywania:</strong> 22 listopada 2024 r.<br />
-<strong>Ostatnia aktualizacja:</strong> 24 października 2026 r.</p>
+<strong>Ostatnia aktualizacja:</strong> 27 października 2026 r.</p>
 <h2 id="1-wprowadzenie">1. Wprowadzenie</h2>
 <p>Niniejszy dokument wyjaśnia, jak Odomate (Oleksandr Konovalov) gromadzi, wykorzystuje i chroni informacje podczas korzystania z aplikacji Odomate ("Aplikacja"). Dbamy o przejrzystość i bezpieczeństwo danych.</p>
 <p>Kontakt:<br />
@@ -168,7 +168,7 @@ Strona: <a href="https://odomate.net">odomate.net</a></p>
 <li>Chmura (Supabase): szyfrowanie w spoczynku/w tranzycie, zgodność z RODO; serwery w NA/SA/UE  </li>
 <li>Szyfrowanie transmisji (HTTPS/TLS), kontrola dostępu  </li>
 <li>Retencja: dane konta przechowywane tak długo, jak konto jest aktywne; po usunięciu konta dane po stronie serwera są usuwane natychmiast; analityka 26 miesięcy (domyślnie Firebase)</li>
-<li><strong>Dane pomiaru reklam:</strong> Dane przekazywane do Meta w celu pomiaru skuteczności naszych reklam są przechowywane przez Meta zgodnie z jej własną polityką prywatności; nie przechowujemy ich osobnej kopii</li>
+<li><strong>Dane pomiaru reklam:</strong> Dane przekazywane do Airbridge i Meta w celu pomiaru skuteczności naszych reklam są przechowywane przez te podmioty zgodnie z ich własnymi politykami prywatności; nie przechowujemy ich osobnej kopii</li>
 </ul>
 <h3 id="54-analytics-crash-reporting">5.4 Analizy i raporty o awariach</h3>
 <p><strong>Firebase Analytics &amp; Crashlytics</strong> (firebase.google.com)
@@ -187,9 +187,22 @@ Strona: <a href="https://odomate.net">odomate.net</a></p>
 - Cel: Obsługa i weryfikacja subskrypcji w aplikacji zakupionych w App Store lub Google Play
 - Udostępniane dane: ID konta, historia zakupów i subskrypcji, wymienione poniżej identyfikatory urządzenia służące do pomiaru reklam
 - Polityka prywatności: <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a></p>
+<p><strong>Airbridge</strong> (AB180 Inc., Korea Południowa; airbridge.io)
+- Cel: Partner pomiaru mobilnego (mobile measurement partner): przypisywanie instalacji aplikacji, bezpłatnych okresów próbnych i subskrypcji do kampanii reklamowych, które do nich doprowadziły, oraz przekazywanie tych zdarzeń do sieci reklamowych, w których się reklamujemy (obecnie Meta)
+- Sposób: Airbridge SDK w aplikacji
+- Udostępniane dane:
+  - Identyfikator reklamowy: Google Advertising ID na Androidzie; IDFA na iOS wyłącznie, jeśli zezwolisz na śledzenie poprzez App Tracking Transparency
+  - Na iOS identyfikator dostawcy (IDFV); na Androidzie referrer instalacji (install referrer) z Google Play i Meta
+  - Adres IP, model urządzenia, wersja systemu operacyjnego i aplikacji, język
+  - Zdarzenia instalacji i uruchomienia aplikacji
+  - Rozpoczęcie okresu próbnego i zakupy subskrypcji w aplikacji (produkt, cena, waluta)
+  - Pseudonimowy identyfikator konta (identyfikator klienta u naszego dostawcy obsługi subskrypcji)
+- Na iOS SKAdNetwork firmy Apple raportuje instalacje i okresy próbne sieciom reklamowym bez żadnego identyfikatora
+- <strong>NIE są udostępniane:</strong> Twoje imię i nazwisko, adres e‑mail, współrzędne GPS, przejazdy ani dane pojazdu
+- Prywatność i RODO: <a href="https://airbridge.io/en/gdpr">https://airbridge.io/en/gdpr</a></p>
 <p><strong>Meta</strong> (Meta Platforms Ireland Ltd. / Meta Platforms, Inc.)
 - Cel: Pomiar skuteczności naszych reklam na Facebooku i Instagramie (która reklama doprowadziła do instalacji aplikacji, rozpoczęcia bezpłatnego okresu próbnego lub wykupienia subskrypcji) oraz optymalizacja wyświetlania tych reklam
-- Sposób: Meta SDK w aplikacji oraz zdarzenia subskrypcji wysyłane do Meta przez serwery RevenueCat (Meta Conversions API)
+- Sposób: Meta SDK w aplikacji oraz zdarzenia przekazywane do Meta przez Airbridge
 - Udostępniane dane:
   - Identyfikator reklamowy: Google Advertising ID na Androidzie; IDFA na iOS wyłącznie, jeśli zezwolisz na śledzenie poprzez App Tracking Transparency
   - Anonimowy identyfikator aplikacji nadawany przez Meta oraz, na iOS, identyfikator dostawcy (IDFV)
@@ -209,29 +222,30 @@ Strona: <a href="https://odomate.net">odomate.net</a></p>
 <li>Mapbox (mapy/geokodowanie/wyznaczanie tras) – renderowanie map, wyszukiwanie adresów (np. przy dodawaniu pojazdu lub przeglądaniu zarejestrowanego przejazdu) oraz wyznaczanie trasy do nawigacji (punkt początkowy, cel i współrzędne trasy)  </li>
 <li>OpenAI (serwis AI) – dane pojazdu, przebieg  </li>
 <li>Firebase (analityka/awarie) – dane analityczne i o awariach<br />
-Brak udostępniania do celów reklamowych/śledzących z wyjątkiem Meta i RevenueCat w celu pomiaru reklam (patrz 5.5).</li>
+Brak udostępniania do celów reklamowych/śledzących z wyjątkiem Airbridge i Meta w celu pomiaru reklam (patrz 5.5).</li>
 </ul>
 <h3 id="61-gdpr-rights">6.1 Prawa RODO (Użytkownicy EOG)</h3>
 <p>Jeśli znajdujesz się w Europejskim Obszarze Gospodarczym, masz prawo do:</p>
 <ul>
-<li>Dostępu do danych, które przekazujemy do Meta w celu pomiaru reklam</li>
+<li>Dostępu do danych, które przekazujemy do Airbridge i Meta w celu pomiaru reklam</li>
 <li>Żądania usunięcia swoich danych</li>
 <li>Sprzeciwu wobec pomiaru reklam lub wycofania zgody na niego</li>
 </ul>
 <p>Aby skorzystać z tych praw:
 - Wyślij nam e‑mail: <a href="mailto:app@odomate.net">app@odomate.net</a>
-- W przypadku danych przechowywanych przez Meta skorzystaj z Centrum prywatności Meta: <a href="https://www.facebook.com/privacy/center/">https://www.facebook.com/privacy/center/</a></p>
+- W przypadku danych przechowywanych przez Meta skorzystaj z Centrum prywatności Meta: <a href="https://www.facebook.com/privacy/center/">https://www.facebook.com/privacy/center/</a>
+- W przypadku danych przechowywanych przez Airbridge: <a href="mailto:compliance@ab180.co">compliance@ab180.co</a></p>
 <h2 id="7-advertising-marketing">7. Reklama i Marketing</h2>
 <h3 id="71-advertising-attribution">7.1 Atrybucja Reklamowa</h3>
-<p>Korzystamy z Meta (Meta SDK oraz integracji RevenueCat z Meta Conversions API) do pomiaru skuteczności naszych reklam na Facebooku i Instagramie. Pomaga nam to zrozumieć, które reklamy przyciągają użytkowników do naszej aplikacji i prowadzą do rozpoczęcia okresów próbnych oraz wykupienia subskrypcji.</p>
+<p>Korzystamy z Airbridge i Meta (Airbridge SDK oraz Meta SDK) do pomiaru skuteczności naszych reklam na Facebooku i Instagramie. Pomaga nam to zrozumieć, które reklamy przyciągają użytkowników do naszej aplikacji i prowadzą do rozpoczęcia okresów próbnych oraz wykupienia subskrypcji.</p>
 <p><strong>Jeśli zezwolisz na śledzenie poprzez prośbę App Tracking Transparency (iOS) lub na Androidzie, o ile nie usuniesz identyfikatora reklamowego:</strong>
-- Udostępniamy Meta identyfikator reklamowy Twojego urządzenia (IDFA / Google Advertising ID)
+- Udostępniamy Airbridge i Meta identyfikator reklamowy Twojego urządzenia (IDFA / Google Advertising ID)
 - Meta łączy instalacje aplikacji, okresy próbne i subskrypcje ze swoimi kampaniami reklamowymi
 - Meta wykorzystuje te zdarzenia do optymalizacji wyświetlania naszych reklam</p>
-<p><strong>Jeśli nie zezwolisz na śledzenie na iOS:</strong> IDFA nie jest zbierany ani udostępniany. Zdarzenia instalacji i subskrypcji mogą nadal być wysyłane do Meta bez niego, wraz z pozostałymi danymi wymienionymi w sekcji 5.5, i są wykorzystywane wyłącznie do zagregowanego pomiaru naszych kampanii.</p>
+<p><strong>Jeśli nie zezwolisz na śledzenie na iOS:</strong> IDFA nie jest zbierany ani udostępniany. Zdarzenia instalacji i subskrypcji mogą nadal być wysyłane do Airbridge i Meta bez niego, wraz z pozostałymi danymi wymienionymi w sekcji 5.5, i są wykorzystywane wyłącznie do zagregowanego pomiaru naszych kampanii (w tym za pomocą SKAdNetwork firmy Apple i Aggregated Event Measurement firmy Meta).</p>
 <p><strong>Te dane są udostępniane:</strong>
-- Meta (reklamy na Facebooku i Instagramie)
-- RevenueCat (przesyła w naszym imieniu zdarzenia subskrypcji do Meta)</p>
+- Airbridge (AB180 Inc.), nasz partner pomiaru mobilnego
+- Meta (reklamy na Facebooku i Instagramie)</p>
 <p>Możesz wycofać zgodę w dowolnym momencie poprzez Ustawienia iOS, Ustawienia Androida lub kontaktując się z nami.</p>
 <h2 id="8-transfery-miedzynarodowe">8. Transfery międzynarodowe</h2>
 <p>Przekazy do NA/SA/UE zgodnie z przepisami; stosowane są odpowiednie zabezpieczenia (m.in. standardowe klauzule umowne).</p>
